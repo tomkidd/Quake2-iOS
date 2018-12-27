@@ -130,7 +130,6 @@
 		A13B682B21D53B5D00AA2472 /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B667B21D534E300AA2472 /* client.c */; };
 		A13B682C21D53B5D00AA2472 /* hud.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B667C21D534E300AA2472 /* hud.c */; };
 		A13B682D21D53B5D00AA2472 /* view.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B667D21D534E300AA2472 /* view.c */; };
-		A13B682E21D53B6D00AA2472 /* game.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B67F821D53AD700AA2472 /* game.a */; };
 		A13B683C21D53D3000AA2472 /* gl1_model.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66CF21D534E300AA2472 /* gl1_model.c */; };
 		A13B683D21D53D3000AA2472 /* gl1_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D021D534E300AA2472 /* gl1_sdl.c */; };
 		A13B683E21D53D3000AA2472 /* gl1_mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D121D534E300AA2472 /* gl1_mesh.c */; };
@@ -181,8 +180,6 @@
 		A13B688521D53E0500AA2472 /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F921D534E300AA2472 /* pcx.c */; };
 		A13B688621D53E0600AA2472 /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F921D534E300AA2472 /* pcx.c */; };
 		A13B688721D53E0700AA2472 /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F921D534E300AA2472 /* pcx.c */; };
-		A13B688921D53E3F00AA2472 /* ref_gl3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B684F21D53D5800AA2472 /* ref_gl3.a */; };
-		A13B688A21D53E3F00AA2472 /* ref_soft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B686B21D53DB200AA2472 /* ref_soft.a */; };
 		A13B688B21D53FC000AA2472 /* pvs.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66FA21D534E300AA2472 /* pvs.c */; };
 		A13B688C21D53FC000AA2472 /* pvs.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66FA21D534E300AA2472 /* pvs.c */; };
 		A13B688D21D53FC100AA2472 /* pvs.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66FA21D534E300AA2472 /* pvs.c */; };
@@ -204,6 +201,10 @@
 		A13B68A121D54B5400AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
 		A13B68A221D54B5400AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
 		A13B68A321D54B5500AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
+		A13B68A521D54D3B00AA2472 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B68A421D54D3B00AA2472 /* Metal.framework */; };
+		A13B68A721D54EFD00AA2472 /* game.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B67F821D53AD700AA2472 /* game.a */; };
+		A13B68A821D54EFD00AA2472 /* ref_gl3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B684F21D53D5800AA2472 /* ref_gl3.a */; };
+		A13B68A921D54EFD00AA2472 /* ref_soft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B686B21D53DB200AA2472 /* ref_soft.a */; };
 		FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
 		FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
 		FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
@@ -525,6 +526,7 @@
 		A13B683321D53C7600AA2472 /* ref_gl1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = ref_gl1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13B684F21D53D5800AA2472 /* ref_gl3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = ref_gl3.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13B686B21D53DB200AA2472 /* ref_soft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = ref_soft.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13B68A421D54D3B00AA2472 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -539,9 +541,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13B688921D53E3F00AA2472 /* ref_gl3.a in Frameworks */,
-				A13B688A21D53E3F00AA2472 /* ref_soft.a in Frameworks */,
-				A13B682E21D53B6D00AA2472 /* game.a in Frameworks */,
+				A13B68A721D54EFD00AA2472 /* game.a in Frameworks */,
+				A13B68A821D54EFD00AA2472 /* ref_gl3.a in Frameworks */,
+				A13B68A921D54EFD00AA2472 /* ref_soft.a in Frameworks */,
+				A13B68A521D54D3B00AA2472 /* Metal.framework in Frameworks */,
 				A131F34F21D531A900B4BB5D /* libSDL2.a in Frameworks */,
 				A131F34121D52FA700B4BB5D /* AVFoundation.framework in Frameworks */,
 				FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */,
@@ -638,6 +641,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A13B68A421D54D3B00AA2472 /* Metal.framework */,
 				A131F33921D52FA700B4BB5D /* AVFoundation.framework */,
 				FAE0E9641BAF967F0098DFA4 /* GameController.framework */,
 				FA8B4B96196703B400F8EB7C /* CoreMotion.framework */,
@@ -1519,6 +1523,9 @@
 			attributes = {
 				LastUpgradeCheck = 1010;
 				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 9UY8SFDNQ8;
+					};
 					A13B67F721D53AD700AA2472 = {
 						CreatedOnToolsVersion = 10.1;
 						ProvisioningStyle = Automatic;
@@ -1838,6 +1845,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -1870,6 +1878,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -1915,6 +1924,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1949,6 +1959,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";

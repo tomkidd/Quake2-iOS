@@ -181,7 +181,6 @@
 		A13B688521D53E0500AA2472 /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F921D534E300AA2472 /* pcx.c */; };
 		A13B688621D53E0600AA2472 /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F921D534E300AA2472 /* pcx.c */; };
 		A13B688721D53E0700AA2472 /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F921D534E300AA2472 /* pcx.c */; };
-		A13B688821D53E3F00AA2472 /* ref_gl1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B683321D53C7600AA2472 /* ref_gl1.a */; };
 		A13B688921D53E3F00AA2472 /* ref_gl3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B684F21D53D5800AA2472 /* ref_gl3.a */; };
 		A13B688A21D53E3F00AA2472 /* ref_soft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B686B21D53DB200AA2472 /* ref_soft.a */; };
 		A13B688B21D53FC000AA2472 /* pvs.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66FA21D534E300AA2472 /* pvs.c */; };
@@ -201,10 +200,10 @@
 		A13B689921D5405600AA2472 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B669321D534E300AA2472 /* md4.c */; };
 		A13B689A21D5406E00AA2472 /* flash.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A021D534E300AA2472 /* flash.c */; };
 		A13B689B21D5407400AA2472 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B669F21D534E300AA2472 /* rand.c */; };
-		A13B689C21D5408100AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
-		A13B689D21D5408200AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
-		A13B689E21D5408200AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
-		A13B689F21D5408300AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
+		A13B68A021D54B5300AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
+		A13B68A121D54B5400AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
+		A13B68A221D54B5400AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
+		A13B68A321D54B5500AA2472 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A121D534E300AA2472 /* shared.c */; };
 		FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
 		FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
 		FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
@@ -540,7 +539,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13B688821D53E3F00AA2472 /* ref_gl1.a in Frameworks */,
 				A13B688921D53E3F00AA2472 /* ref_gl3.a in Frameworks */,
 				A13B688A21D53E3F00AA2472 /* ref_soft.a in Frameworks */,
 				A13B682E21D53B6D00AA2472 /* game.a in Frameworks */,
@@ -1681,7 +1679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13B689C21D5408100AA2472 /* shared.c in Sources */,
+				A13B68A021D54B5300AA2472 /* shared.c in Sources */,
 				A13B681421D53B5200AA2472 /* parasite.c in Sources */,
 				A13B680F21D53B1200AA2472 /* g_main.c in Sources */,
 				A13B682021D53B5200AA2472 /* boss3.c in Sources */,
@@ -1750,7 +1748,7 @@
 				A13B683F21D53D3000AA2472 /* gl1_misc.c in Sources */,
 				A13B689121D53FD400AA2472 /* wal.c in Sources */,
 				A13B683C21D53D3000AA2472 /* gl1_model.c in Sources */,
-				A13B689D21D5408200AA2472 /* shared.c in Sources */,
+				A13B68A121D54B5400AA2472 /* shared.c in Sources */,
 				A13B684721D53D3000AA2472 /* gl1_draw.c in Sources */,
 				A13B689721D5405500AA2472 /* md4.c in Sources */,
 				A13B684521D53D3000AA2472 /* gl1_light.c in Sources */,
@@ -1779,7 +1777,7 @@
 				A13B685921D53D7800AA2472 /* gl3_misc.c in Sources */,
 				A13B689221D53FD400AA2472 /* wal.c in Sources */,
 				A13B685B21D53D7800AA2472 /* gl3_mesh.c in Sources */,
-				A13B689E21D5408200AA2472 /* shared.c in Sources */,
+				A13B68A221D54B5400AA2472 /* shared.c in Sources */,
 				A13B686121D53D7800AA2472 /* gl3_draw.c in Sources */,
 				A13B689921D5405600AA2472 /* md4.c in Sources */,
 				A13B685D21D53D7800AA2472 /* gl3_main.c in Sources */,
@@ -1794,13 +1792,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13B68A321D54B5500AA2472 /* shared.c in Sources */,
 				A13B689321D53FD600AA2472 /* wal.c in Sources */,
 				A13B687D21D53DC800AA2472 /* sw_polyse.c in Sources */,
 				A13B688021D53DC800AA2472 /* sw_image.c in Sources */,
 				A13B689821D5405500AA2472 /* md4.c in Sources */,
 				A13B687421D53DC800AA2472 /* sw_part.c in Sources */,
 				A13B687B21D53DC800AA2472 /* sw_misc.c in Sources */,
-				A13B689F21D5408300AA2472 /* shared.c in Sources */,
 				A13B687921D53DC800AA2472 /* sw_light.c in Sources */,
 				A13B687E21D53DC800AA2472 /* sw_main.c in Sources */,
 				A13B687821D53DC800AA2472 /* sw_aclip.c in Sources */,
@@ -1828,12 +1826,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Quake2SDLiOS;
@@ -1846,10 +1858,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Quake2SDLiOS;

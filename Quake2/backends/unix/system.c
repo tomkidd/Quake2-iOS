@@ -39,6 +39,7 @@
 #ifdef __APPLE__
 #include <mach/clock.h>
 #include <mach/mach.h>
+#include <sys/time.h>
 #endif
 
 #include "../../common/header/common.h"

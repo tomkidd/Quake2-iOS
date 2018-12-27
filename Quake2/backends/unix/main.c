@@ -28,6 +28,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/stat.h>
+#include <SDL2/SDL_main.h>
 
 #include "../../common/header/common.h"
 

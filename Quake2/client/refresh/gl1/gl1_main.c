@@ -1017,10 +1017,11 @@ R_RenderView(refdef_t *fd)
 
 					glBegin(GL_QUADS);
 					{
-						glVertex2i(0, 0);
-						glVertex2i(vid.width, 0);
-						glVertex2i(vid.width, vid.height);
-						glVertex2i(0, vid.height);
+                        // temp - will probably ruin everything -tkidd
+//                        glVertex2i(0, 0);
+//                        glVertex2i(vid.width, 0);
+//                        glVertex2i(vid.width, vid.height);
+//                        glVertex2i(0, vid.height);
 					}
 					glEnd();
 

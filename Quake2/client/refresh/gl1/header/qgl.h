@@ -115,5 +115,8 @@ extern void ( APIENTRY *qglPointParameterfvARB ) ( GLenum param,
 		const GLfloat *value );
 extern void ( APIENTRY *qglColorTableEXT ) ( GLenum, GLenum, GLsizei, GLenum,
 		GLenum, const GLvoid * );
-
+// new stuff -tkidd
+extern  void ( APIENTRY *glVertex2i )(GLint x, GLint y);
+extern  void ( APIENTRY *glVertex2f )(GLfloat x, GLfloat y);
+//extern  void ( APIENTRY *glDrawBuffer )(GLenum mode);
 #endif

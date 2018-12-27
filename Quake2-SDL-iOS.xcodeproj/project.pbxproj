@@ -215,11 +215,23 @@
 		A13B694B21D5739600AA2472 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		A13B694C21D5739600AA2472 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		A13B694D21D5739600AA2472 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		A13B694E21D573B000AA2472 /* ref_gl3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B68F221D56FA900AA2472 /* ref_gl3.dylib */; };
 		A13B695121D574A000AA2472 /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
 		A13B695221D574A000AA2472 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
 		A13B695321D575F400AA2472 /* game.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A13B68B121D56D5200AA2472 /* game.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A13B695621D575F400AA2472 /* ref_gl3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A13B68F221D56FA900AA2472 /* ref_gl3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A13B695E21D594FC00AA2472 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F34C21D530B500B4BB5D /* libSDL2.a */; };
+		A13B695F21D5955400AA2472 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
+		A13B696021D5955400AA2472 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F33921D52FA700B4BB5D /* AVFoundation.framework */; };
+		A13B696121D5955400AA2472 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
+		A13B696221D5955400AA2472 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */; };
+		A13B696321D5955400AA2472 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
+		A13B696421D5955400AA2472 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		A13B696521D5955400AA2472 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
+		A13B696621D5955400AA2472 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B68A421D54D3B00AA2472 /* Metal.framework */; };
+		A13B696721D5955400AA2472 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		A13B696821D5955400AA2472 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		A13B696921D5955400AA2472 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		A13B696A21D597C400AA2472 /* ref_gl1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B68EA21D56F6100AA2472 /* ref_gl1.dylib */; };
+		A13B696B21D597CA00AA2472 /* ref_gl1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A13B68EA21D56F6100AA2472 /* ref_gl1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
 		FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
 		FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
@@ -251,12 +263,12 @@
 			remoteGlobalIDString = A13B68B021D56D5200AA2472;
 			remoteInfo = game;
 		};
-		A13B695721D575F400AA2472 /* PBXContainerItemProxy */ = {
+		A13B696C21D597CA00AA2472 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A13B68F121D56FA900AA2472;
-			remoteInfo = ref_gl3;
+			remoteGlobalIDString = A13B68E921D56F6100AA2472;
+			remoteInfo = ref_gl1;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -268,7 +280,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A13B695321D575F400AA2472 /* game.dylib in Embed Libraries */,
-				A13B695621D575F400AA2472 /* ref_gl3.dylib in Embed Libraries */,
+				A13B696B21D597CA00AA2472 /* ref_gl1.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,7 +560,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13B694E21D573B000AA2472 /* ref_gl3.dylib in Frameworks */,
+				A13B696A21D597C400AA2472 /* ref_gl1.dylib in Frameworks */,
 				A13B68E221D56DBA00AA2472 /* game.dylib in Frameworks */,
 				A13B68A521D54D3B00AA2472 /* Metal.framework in Frameworks */,
 				A131F34F21D531A900B4BB5D /* libSDL2.a in Frameworks */,
@@ -576,6 +588,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13B695F21D5955400AA2472 /* AudioToolbox.framework in Frameworks */,
+				A13B696021D5955400AA2472 /* AVFoundation.framework in Frameworks */,
+				A13B696121D5955400AA2472 /* CoreAudio.framework in Frameworks */,
+				A13B696221D5955400AA2472 /* CoreGraphics.framework in Frameworks */,
+				A13B696321D5955400AA2472 /* CoreMotion.framework in Frameworks */,
+				A13B696421D5955400AA2472 /* Foundation.framework in Frameworks */,
+				A13B696521D5955400AA2472 /* GameController.framework in Frameworks */,
+				A13B696621D5955400AA2472 /* Metal.framework in Frameworks */,
+				A13B696721D5955400AA2472 /* OpenGLES.framework in Frameworks */,
+				A13B696821D5955400AA2472 /* QuartzCore.framework in Frameworks */,
+				A13B696921D5955400AA2472 /* UIKit.framework in Frameworks */,
+				A13B695E21D594FC00AA2472 /* libSDL2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1494,7 +1518,7 @@
 			);
 			dependencies = (
 				A13B695521D575F400AA2472 /* PBXTargetDependency */,
-				A13B695821D575F400AA2472 /* PBXTargetDependency */,
+				A13B696D21D597CA00AA2472 /* PBXTargetDependency */,
 			);
 			name = "Quake2-SDL-iOS";
 			productName = "___PROJECTNAME___";
@@ -1893,10 +1917,10 @@
 			target = A13B68B021D56D5200AA2472 /* game */;
 			targetProxy = A13B695421D575F400AA2472 /* PBXContainerItemProxy */;
 		};
-		A13B695821D575F400AA2472 /* PBXTargetDependency */ = {
+		A13B696D21D597CA00AA2472 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A13B68F121D56FA900AA2472 /* ref_gl3 */;
-			targetProxy = A13B695721D575F400AA2472 /* PBXContainerItemProxy */;
+			target = A13B68E921D56F6100AA2472 /* ref_gl1 */;
+			targetProxy = A13B696C21D597CA00AA2472 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -1046,7 +1046,7 @@
 				4D7516FE1EE1C5B400820EEA /* SDL_vulkan.h */,
 			);
 			name = "Public Headers";
-			path = include;
+			path = SDL2;
 			sourceTree = "<group>";
 		};
 		FD99B8BD0DD52E6D00FB1D6B /* Library Source */ = {

@@ -217,7 +217,6 @@
 		A13B694D21D5739600AA2472 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		A13B695121D574A000AA2472 /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
 		A13B695221D574A000AA2472 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
-		A13B695321D575F400AA2472 /* game.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A13B68B121D56D5200AA2472 /* game.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A13B695E21D594FC00AA2472 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F34C21D530B500B4BB5D /* libSDL2.a */; };
 		A13B695F21D5955400AA2472 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
 		A13B696021D5955400AA2472 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F33921D52FA700B4BB5D /* AVFoundation.framework */; };
@@ -231,7 +230,8 @@
 		A13B696821D5955400AA2472 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		A13B696921D5955400AA2472 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		A13B696A21D597C400AA2472 /* ref_gl1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B68EA21D56F6100AA2472 /* ref_gl1.dylib */; };
-		A13B696B21D597CA00AA2472 /* ref_gl1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A13B68EA21D56F6100AA2472 /* ref_gl1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A13B696F21D9E46800AA2472 /* game.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = A13B68B121D56D5200AA2472 /* game.dylib */; };
+		A13B697021D9E46800AA2472 /* ref_gl1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = A13B68EA21D56F6100AA2472 /* ref_gl1.dylib */; };
 		FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
 		FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
 		FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
@@ -256,33 +256,18 @@
 			remoteGlobalIDString = FAB598141BB5C1B100BE72C5;
 			remoteInfo = "libSDL-tvOS";
 		};
-		A13B695421D575F400AA2472 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A13B68B021D56D5200AA2472;
-			remoteInfo = game;
-		};
-		A13B696C21D597CA00AA2472 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A13B68E921D56F6100AA2472;
-			remoteInfo = ref_gl1;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A13B695921D575F400AA2472 /* Embed Libraries */ = {
+		A13B696E21D9E44700AA2472 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstPath = baseq2;
+			dstSubfolderSpec = 7;
 			files = (
-				A13B695321D575F400AA2472 /* game.dylib in Embed Libraries */,
-				A13B696B21D597CA00AA2472 /* ref_gl1.dylib in Embed Libraries */,
+				A13B696F21D9E46800AA2472 /* game.dylib in CopyFiles */,
+				A13B697021D9E46800AA2472 /* ref_gl1.dylib in CopyFiles */,
 			);
-			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1512,13 +1497,11 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				A13B695921D575F400AA2472 /* Embed Libraries */,
+				A13B696E21D9E44700AA2472 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A13B695521D575F400AA2472 /* PBXTargetDependency */,
-				A13B696D21D597CA00AA2472 /* PBXTargetDependency */,
 			);
 			name = "Quake2-SDL-iOS";
 			productName = "___PROJECTNAME___";
@@ -1910,19 +1893,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A13B695521D575F400AA2472 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A13B68B021D56D5200AA2472 /* game */;
-			targetProxy = A13B695421D575F400AA2472 /* PBXContainerItemProxy */;
-		};
-		A13B696D21D597CA00AA2472 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A13B68E921D56F6100AA2472 /* ref_gl1 */;
-			targetProxy = A13B696C21D597CA00AA2472 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

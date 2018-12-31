@@ -183,16 +183,17 @@ int RI_InitContext(void* win)
 		return false;
 	}
 
-	// Check if it's really OpenGL 1.4.
-	const char* glver = (char *)glGetString(GL_VERSION);
-	sscanf(glver, "%d.%d", &gl_config.major_version, &gl_config.minor_version);
-
-	if (gl_config.major_version < 1 || (gl_config.major_version == 1 && gl_config.minor_version < 4))
-	{
-		R_Printf(PRINT_ALL, "R_InitContext(): Got an OpenGL version %d.%d context - need (at least) 1.4!\n", gl_config.major_version, gl_config.minor_version);
-
-		return false;
-	}
+    // this check is failing but it shouldn't - removing for now -tkidd
+//    // Check if it's really OpenGL 1.4.
+//    const char* glver = (char *)glGetString(GL_VERSION);
+//    sscanf(glver, "%d.%d", &gl_config.major_version, &gl_config.minor_version);
+//
+//    if (gl_config.major_version < 1 || (gl_config.major_version == 1 && gl_config.minor_version < 4))
+//    {
+//        R_Printf(PRINT_ALL, "R_InitContext(): Got an OpenGL version %d.%d context - need (at least) 1.4!\n", gl_config.major_version, gl_config.minor_version);
+//
+//        return false;
+//    }
 
 	// Check if we've got the requested MSAA.
 	int msaa_samples = 0;

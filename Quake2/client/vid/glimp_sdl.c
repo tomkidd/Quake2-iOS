@@ -46,6 +46,10 @@ static qboolean
 CreateSDLWindow(int flags, int w, int h)
 {
 	int windowPos = SDL_WINDOWPOS_UNDEFINED;
+    
+    // testing something for ios -tkidd
+    flags = SDL_WINDOW_OPENGL;
+    windowPos = 0;
 
 	window = SDL_CreateWindow("Yamagi Quake II", windowPos, windowPos, w, h, flags);
 
@@ -360,12 +364,13 @@ GLimp_GrabInput(qboolean grab)
 	{
 		SDL_SetWindowGrab(window, grab ? SDL_TRUE : SDL_FALSE);
 	}
-
-	if(SDL_SetRelativeMouseMode(grab ? SDL_TRUE : SDL_FALSE) < 0)
-	{
-		Com_Printf("WARNING: Setting Relative Mousemode failed, reason: %s\n", SDL_GetError());
-		Com_Printf("         You should probably update to SDL 2.0.3 or newer!\n");
-	}
+    
+    // commenting out for now -tkidd
+//    if(SDL_SetRelativeMouseMode(grab ? SDL_TRUE : SDL_FALSE) < 0)
+//    {
+//        Com_Printf("WARNING: Setting Relative Mousemode failed, reason: %s\n", SDL_GetError());
+//        Com_Printf("         You should probably update to SDL 2.0.3 or newer!\n");
+//    }
 }
 
 /*

@@ -586,7 +586,7 @@ SCR_DrawCinematic(void)
 
 	if (!vid_renderer)
 	{
-		vid_renderer = Cvar_Get("vid_renderer", "gl1", CVAR_ARCHIVE);
+		vid_renderer = Cvar_Get("vid_renderer", "gl3", CVAR_ARCHIVE);
 	}
 
 	if (Q_stricmp(vid_renderer->string, "soft") == 0)

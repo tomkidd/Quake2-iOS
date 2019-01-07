@@ -376,10 +376,6 @@ VID_LoadRenderer(void)
 
 		return false;
 	}
-#else
-    
-    //???
-    
 #endif
 
 	// Fill in the struct exported to the renderer.

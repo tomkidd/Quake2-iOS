@@ -45,6 +45,12 @@
 #include "../../common/header/common.h"
 #include "../../common/header/glob.h"
 
+#ifdef IOS
+// trying this for IOS - tkidd
+#include "game.h"
+game_export_t *GetGameAPI(game_import_t *import);
+#endif
+
 // Pointer to game library
 static void *game_library;
 
@@ -340,7 +346,7 @@ Sys_UnloadGame(void)
 void *
 Sys_GetGameAPI(void *parms)
 {
-	void *(*GetGameAPI)(void *);
+	void *(*GetGameAPIx)(void *);
 
 	char name[MAX_OSPATH];
 	char *path;
@@ -358,6 +364,8 @@ Sys_GetGameAPI(void *parms)
 
 	Com_Printf("LoadLibrary(\"%s\")\n", gamename);
 
+    // trying out routing around this for ios -tkidd
+#ifndef IOS
 	/* now run through the search paths */
 	path = NULL;
 
@@ -413,13 +421,14 @@ Sys_GetGameAPI(void *parms)
 		}
 	}
 
-	GetGameAPI = (void *)dlsym(game_library, "GetGameAPI");
+	GetGameAPIx = (void *)dlsym(game_library, "GetGameAPI");
 
-	if (!GetGameAPI)
+	if (!GetGameAPIx)
 	{
 		Sys_UnloadGame();
 		return NULL;
 	}
+#endif
 
 	return GetGameAPI(parms);
 }

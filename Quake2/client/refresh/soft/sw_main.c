@@ -1888,6 +1888,8 @@ SWimp_CreateRender(void)
 }
 
 // this is only here so the functions in q_shared.c and q_shwin.c can link
+// trying out removing it for ios -tkidd
+#ifndef IOS
 void
 Sys_Error (char *error, ...)
 {
@@ -1913,6 +1915,7 @@ Com_Printf (char *fmt, ...)
 
 	R_Printf(PRINT_ALL, "%s", text);
 }
+#endif
 
 /*
 ==============================================================================

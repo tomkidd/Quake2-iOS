@@ -30,6 +30,9 @@
 #include "../../client/header/client.h"
 #include "../../client/header/keyboard.h"
 
+// trying this for IOS - tkidd
+refexport_t GetRefAPI(refimport_t imp);
+
 // --------
 
 // Screenshots
@@ -336,8 +339,8 @@ qboolean
 VID_LoadRenderer(void)
 {
 	refimport_t	ri;
-	GetRefAPI_t	GetRefAPI;
-
+	GetRefAPI_t	GetRefAPIx;
+    
 #ifdef __APPLE__
 	const char* lib_ext = "dylib";
 #elif defined(_WIN32)
@@ -356,21 +359,28 @@ VID_LoadRenderer(void)
 	// Log what we're doing.
 	Com_Printf("----- refresher initialization -----\n");
 
+    // trying out routing around this for ios -tkidd
+#ifndef IOS
 	snprintf(reflib_name, sizeof(reflib_name), "ref_%s.%s", vid_renderer->string, lib_ext);
 	snprintf(reflib_path, sizeof(reflib_path), "%s%s", Sys_GetBinaryDir(), reflib_name);
 	Com_Printf("LoadLibrary(%s)\n", reflib_name);
 
 	// Mkay, let's load the requested renderer.
-	GetRefAPI = Sys_LoadLibrary(reflib_path, "GetRefAPI", &reflib_handle);
+	GetRefAPIx = Sys_LoadLibrary(reflib_path, "GetRefAPI", &reflib_handle);
 
 	// Okay, we couldn't load it. It's up to the
 	// caller to recover from this.
-	if (GetRefAPI == NULL)
+	if (GetRefAPIx == NULL)
 	{
 		Com_Printf("Loading %s as renderer lib failed!", reflib_path);
 
 		return false;
 	}
+#else
+    
+    //???
+    
+#endif
 
 	// Fill in the struct exported to the renderer.
 	// FIXME: Do we really need all these?

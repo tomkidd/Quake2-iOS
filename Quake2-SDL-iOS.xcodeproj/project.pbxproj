@@ -230,8 +230,23 @@
 		A13B696821D5955400AA2472 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		A13B696921D5955400AA2472 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		A13B696F21D9E46800AA2472 /* game.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = A13B68B121D56D5200AA2472 /* game.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		A1A95C8321E021AA00E352AD /* ref_soft.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B68FA21D56FF600AA2472 /* ref_soft.dylib */; };
-		A1A95C8521E021B300E352AD /* ref_soft.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = A13B68FA21D56FF600AA2472 /* ref_soft.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A16F5A7221E4139600F998E7 /* sw_aclip.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66E721D534E300AA2472 /* sw_aclip.c */; };
+		A16F5A7321E4139600F998E7 /* sw_alias.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66E521D534E300AA2472 /* sw_alias.c */; };
+		A16F5A7421E4139600F998E7 /* sw_bsp.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F021D534E300AA2472 /* sw_bsp.c */; };
+		A16F5A7521E4139600F998E7 /* sw_draw.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66E621D534E300AA2472 /* sw_draw.c */; };
+		A16F5A7621E4139600F998E7 /* sw_edge.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F621D534E300AA2472 /* sw_edge.c */; };
+		A16F5A7721E4139600F998E7 /* sw_image.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66EF21D534E300AA2472 /* sw_image.c */; };
+		A16F5A7821E4139600F998E7 /* sw_light.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66E821D534E300AA2472 /* sw_light.c */; };
+		A16F5A7921E4139600F998E7 /* sw_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66ED21D534E300AA2472 /* sw_main.c */; };
+		A16F5A7A21E4139600F998E7 /* sw_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66EA21D534E300AA2472 /* sw_misc.c */; };
+		A16F5A7B21E4139600F998E7 /* sw_model.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66EB21D534E300AA2472 /* sw_model.c */; };
+		A16F5A7C21E4139600F998E7 /* sw_part.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66E321D534E300AA2472 /* sw_part.c */; };
+		A16F5A7D21E4139600F998E7 /* sw_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66E921D534E300AA2472 /* sw_poly.c */; };
+		A16F5A7E21E4139600F998E7 /* sw_polyse.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66EC21D534E300AA2472 /* sw_polyse.c */; };
+		A16F5A7F21E4139600F998E7 /* sw_rast.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F121D534E300AA2472 /* sw_rast.c */; };
+		A16F5A8021E4139600F998E7 /* sw_scan.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66E421D534E300AA2472 /* sw_scan.c */; };
+		A16F5A8121E4139600F998E7 /* sw_sprite.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66F221D534E300AA2472 /* sw_sprite.c */; };
+		A16F5A8221E4139600F998E7 /* sw_surf.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66EE21D534E300AA2472 /* sw_surf.c */; };
 		A1A95C8621E0220E00E352AD /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F34C21D530B500B4BB5D /* libSDL2.a */; };
 		A1A95C8721E0225900E352AD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
 		A1A95C8821E0225900E352AD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F33921D52FA700B4BB5D /* AVFoundation.framework */; };
@@ -277,7 +292,6 @@
 			dstPath = baseq2;
 			dstSubfolderSpec = 7;
 			files = (
-				A1A95C8521E021B300E352AD /* ref_soft.dylib in CopyFiles */,
 				A13B696F21D9E46800AA2472 /* game.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +571,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A95C8321E021AA00E352AD /* ref_soft.dylib in Frameworks */,
 				A13B68E221D56DBA00AA2472 /* game.dylib in Frameworks */,
 				A13B68A521D54D3B00AA2472 /* Metal.framework in Frameworks */,
 				A131F34F21D531A900B4BB5D /* libSDL2.a in Frameworks */,
@@ -1699,11 +1712,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16F5A8021E4139600F998E7 /* sw_scan.c in Sources */,
 				A13B679421D534E300AA2472 /* frame.c in Sources */,
 				A13B679E21D534E300AA2472 /* cl_parse.c in Sources */,
 				A13B67E321D534E300AA2472 /* sdl.c in Sources */,
 				A13B67D821D534E300AA2472 /* cl_console.c in Sources */,
 				A13B679621D534E300AA2472 /* argproc.c in Sources */,
+				A16F5A7B21E4139600F998E7 /* sw_model.c in Sources */,
 				A13B679721D534E300AA2472 /* crc.c in Sources */,
 				A13B67EA21D534E300AA2472 /* sv_entities.c in Sources */,
 				A13B678E21D534E300AA2472 /* glob.c in Sources */,
@@ -1713,13 +1728,18 @@
 				A13B67E521D534E300AA2472 /* sound.c in Sources */,
 				A13B67C521D534E300AA2472 /* stb.c in Sources */,
 				A13B67F221D534E300AA2472 /* sv_world.c in Sources */,
+				A16F5A7E21E4139600F998E7 /* sw_polyse.c in Sources */,
+				A16F5A7321E4139600F998E7 /* sw_alias.c in Sources */,
+				A16F5A7A21E4139600F998E7 /* sw_misc.c in Sources */,
 				A13B67D721D534E300AA2472 /* cl_main.c in Sources */,
 				A13B67C221D534E300AA2472 /* pcx.c in Sources */,
 				A13B67E421D534E300AA2472 /* ogg.c in Sources */,
+				A16F5A8221E4139600F998E7 /* sw_surf.c in Sources */,
 				A13B678421D534E300AA2472 /* clientserver.c in Sources */,
 				A13B67DE21D534E300AA2472 /* cl_cin.c in Sources */,
 				A13B67E221D534E300AA2472 /* openal.c in Sources */,
 				A13B67F121D534E300AA2472 /* sv_send.c in Sources */,
+				A16F5A7F21E4139600F998E7 /* sw_rast.c in Sources */,
 				A13B677A21D534E300AA2472 /* signalhandler.c in Sources */,
 				A13B678821D534E300AA2472 /* miniz.c in Sources */,
 				A13B67E121D534E300AA2472 /* wave.c in Sources */,
@@ -1733,6 +1753,8 @@
 				A13B67A021D534E300AA2472 /* sdl.c in Sources */,
 				A13B679821D534E300AA2472 /* cvar.c in Sources */,
 				A13B679021D534E300AA2472 /* filesystem.c in Sources */,
+				A16F5A7721E4139600F998E7 /* sw_image.c in Sources */,
+				A16F5A7821E4139600F998E7 /* sw_light.c in Sources */,
 				A13B67ED21D534E300AA2472 /* sv_init.c in Sources */,
 				A13B677C21D534E300AA2472 /* hunk.c in Sources */,
 				A13B678921D534E300AA2472 /* unzip.c in Sources */,
@@ -1748,20 +1770,28 @@
 				A13B678C21D534E300AA2472 /* flash.c in Sources */,
 				A13B678621D534E300AA2472 /* pmove.c in Sources */,
 				A13B67A121D534E300AA2472 /* cl_prediction.c in Sources */,
+				A16F5A7221E4139600F998E7 /* sw_aclip.c in Sources */,
 				A13B677B21D534E300AA2472 /* system.c in Sources */,
 				A13B67E021D534E300AA2472 /* qal.c in Sources */,
 				A13B67DF21D534E300AA2472 /* cl_inventory.c in Sources */,
 				A13B67E821D534E300AA2472 /* cl_download.c in Sources */,
+				A16F5A7421E4139600F998E7 /* sw_bsp.c in Sources */,
+				A16F5A7921E4139600F998E7 /* sw_main.c in Sources */,
 				A13B67DA21D534E300AA2472 /* menu.c in Sources */,
 				A13B67DB21D534E300AA2472 /* videomenu.c in Sources */,
 				A13B67D921D534E300AA2472 /* qmenu.c in Sources */,
 				A13B679B21D534E300AA2472 /* cl_effects.c in Sources */,
 				A13B67E921D534E300AA2472 /* sv_save.c in Sources */,
 				A13B67EF21D534E300AA2472 /* sv_game.c in Sources */,
+				A16F5A7D21E4139600F998E7 /* sw_poly.c in Sources */,
 				A13B678A21D534E300AA2472 /* ioapi.c in Sources */,
+				A16F5A8121E4139600F998E7 /* sw_sprite.c in Sources */,
+				A16F5A7521E4139600F998E7 /* sw_draw.c in Sources */,
+				A16F5A7621E4139600F998E7 /* sw_edge.c in Sources */,
 				A13B67E621D534E300AA2472 /* cl_view.c in Sources */,
 				A13B67DD21D534E300AA2472 /* cl_keyboard.c in Sources */,
 				A13B677D21D534E300AA2472 /* main.c in Sources */,
+				A16F5A7C21E4139600F998E7 /* sw_part.c in Sources */,
 				A13B67D621D534E300AA2472 /* cl_particles.c in Sources */,
 				A13B679C21D534E300AA2472 /* cl_lights.c in Sources */,
 				A13B679921D534E300AA2472 /* glimp_sdl.c in Sources */,

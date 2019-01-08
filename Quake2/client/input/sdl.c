@@ -1236,7 +1236,8 @@ IN_Init(void)
 	Cmd_AddCommand("+mlook", IN_MLookDown);
 	Cmd_AddCommand("-mlook", IN_MLookUp);
 
-	SDL_StartTextInput();
+    // removing for now -tkidd
+//    SDL_StartTextInput();
 
 	/* Joystick init */
 	if (!SDL_WasInit(SDL_INIT_GAMECONTROLLER | SDL_INIT_HAPTIC))

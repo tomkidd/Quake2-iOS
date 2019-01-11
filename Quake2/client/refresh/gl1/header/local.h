@@ -413,7 +413,7 @@ void *RI_GetProcAddress (const char* proc);
 #define GL_RGBA8                0x8058
 #define glDepthRange glDepthRangef
 #define GL_RGB5_A1                        0x8057
-#define GL_RGBA4                          0x8056
+//#define GL_RGBA4                          0x8056
 #define GL_RGBA2                          0x8055
 #define GL_RGB5                       0x8050
 #define GL_RGB4                           0x804F

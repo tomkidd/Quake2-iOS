@@ -346,7 +346,9 @@ Sys_UnloadGame(void)
 void *
 Sys_GetGameAPI(void *parms)
 {
-	void *(*GetGameAPIx)(void *);
+    // trying out routing around this for ios -tkidd
+#ifndef IOS
+	void *(*GetGameAPI)(void *);
 
 	char name[MAX_OSPATH];
 	char *path;
@@ -364,8 +366,6 @@ Sys_GetGameAPI(void *parms)
 
 	Com_Printf("LoadLibrary(\"%s\")\n", gamename);
 
-    // trying out routing around this for ios -tkidd
-#ifndef IOS
 	/* now run through the search paths */
 	path = NULL;
 
@@ -421,9 +421,9 @@ Sys_GetGameAPI(void *parms)
 		}
 	}
 
-	GetGameAPIx = (void *)dlsym(game_library, "GetGameAPI");
+	GetGameAPI = (void *)dlsym(game_library, "GetGameAPI");
 
-	if (!GetGameAPIx)
+	if (!GetGameAPI)
 	{
 		Sys_UnloadGame();
 		return NULL;

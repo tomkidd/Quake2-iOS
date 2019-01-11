@@ -339,7 +339,10 @@ qboolean
 VID_LoadRenderer(void)
 {
 	refimport_t	ri;
-	GetRefAPI_t	GetRefAPIx;
+    // trying out routing around this for ios -tkidd
+#ifndef IOS
+	GetRefAPI_t	GetRefAPI;
+#endif
     
 #ifdef __APPLE__
 	const char* lib_ext = "dylib";
@@ -366,11 +369,11 @@ VID_LoadRenderer(void)
 	Com_Printf("LoadLibrary(%s)\n", reflib_name);
 
 	// Mkay, let's load the requested renderer.
-	GetRefAPIx = Sys_LoadLibrary(reflib_path, "GetRefAPI", &reflib_handle);
+	GetRefAPI = Sys_LoadLibrary(reflib_path, "GetRefAPI", &reflib_handle);
 
 	// Okay, we couldn't load it. It's up to the
 	// caller to recover from this.
-	if (GetRefAPIx == NULL)
+	if (GetRefAPI == NULL)
 	{
 		Com_Printf("Loading %s as renderer lib failed!", reflib_path);
 
@@ -500,7 +503,7 @@ VID_Init(void)
 	// Console variables
 	vid_fullscreen = Cvar_Get("vid_gamma", "1.0", CVAR_ARCHIVE);
 	vid_fullscreen = Cvar_Get("vid_fullscreen", "0", CVAR_ARCHIVE);
-	vid_renderer = Cvar_Get("vid_renderer", "gl3", CVAR_ARCHIVE);
+	vid_renderer = Cvar_Get("vid_renderer", "gl1", CVAR_ARCHIVE);
 
 	// Commands
 	Cmd_AddCommand("vid_restart", VID_Restart_f);

@@ -78,12 +78,24 @@ qboolean RI_IsVSyncActive(void)
  */
 int RI_PrepareForWindow(void)
 {
+    // experimenting -tkidd
 	// Set GL context attributs bound to the window.
-	SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
-	SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
-	SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
-	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
-	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+//    SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
+//    SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
+//    SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
+//    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
+    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+
+    SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 5);
+    SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 6);
+    SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 5);
+    SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 0);
+    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 0);
+    SDL_GL_SetAttribute(SDL_GL_RETAINED_BACKING, 0);
+    SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
+    
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 1);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 4);
 
 	if (SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8) < 0)
 	{
@@ -182,6 +194,14 @@ int RI_InitContext(void* win)
 
 		return false;
 	}
+    
+
+    
+    // experimenting! -tkidd
+    static int screen_w, screen_h;
+    int drawableW, drawableH;
+    SDL_GetWindowSize(window, &screen_w, &screen_h);
+    SDL_GL_GetDrawableSize(window, &drawableW, &drawableH);
 
     // this check is failing but it shouldn't - removing for now -tkidd
 //    // Check if it's really OpenGL 1.4.

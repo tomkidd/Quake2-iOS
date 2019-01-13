@@ -30,7 +30,7 @@
 #include "../../client/header/client.h"
 #include "../../client/header/keyboard.h"
 
-// trying this for IOS - tkidd
+// trying this for IOS -tkidd
 refexport_t GetRefAPI(refimport_t imp);
 
 // --------

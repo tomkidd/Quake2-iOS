@@ -291,10 +291,10 @@ R_RegisterVariables (void)
 	r_vsync = ri.Cvar_Get("r_vsync", "1", CVAR_ARCHIVE);
     
     // experiment -tkidd
-//    r_customwidth = ri.Cvar_Get("r_customwidth", "1024", CVAR_ARCHIVE);
-//    r_customheight = ri.Cvar_Get("r_customheight", "768", CVAR_ARCHIVE);
-    r_customwidth = ri.Cvar_Get("r_customwidth", "2436", CVAR_ARCHIVE);
-    r_customheight = ri.Cvar_Get("r_customheight", "1125", CVAR_ARCHIVE);
+    r_customwidth = ri.Cvar_Get("r_customwidth", "1024", CVAR_ARCHIVE);
+    r_customheight = ri.Cvar_Get("r_customheight", "768", CVAR_ARCHIVE);
+//    r_customwidth = ri.Cvar_Get("r_customwidth", "2436", CVAR_ARCHIVE);
+//    r_customheight = ri.Cvar_Get("r_customheight", "1125", CVAR_ARCHIVE);
 
 	vid_fullscreen = ri.Cvar_Get( "vid_fullscreen", "0", CVAR_ARCHIVE );
 	vid_gamma = ri.Cvar_Get( "vid_gamma", "1.0", CVAR_ARCHIVE );

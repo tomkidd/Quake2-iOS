@@ -46,7 +46,7 @@
 #include "../../common/header/glob.h"
 
 #ifdef IOS
-// trying this for IOS - tkidd
+// trying this for IOS -tkidd
 #include "game.h"
 game_export_t *GetGameAPI(game_import_t *import);
 #endif

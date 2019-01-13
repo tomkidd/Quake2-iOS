@@ -20,7 +20,6 @@
 		A13B677C21D534E300AA2472 /* hunk.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B668421D534E300AA2472 /* hunk.c */; };
 		A13B677D21D534E300AA2472 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B668521D534E300AA2472 /* main.c */; };
 		A13B677E21D534E300AA2472 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B668721D534E300AA2472 /* misc.c */; };
-		A13B678321D534E300AA2472 /* icon.rc in Resources */ = {isa = PBXBuildFile; fileRef = A13B669021D534E300AA2472 /* icon.rc */; };
 		A13B678421D534E300AA2472 /* clientserver.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B669221D534E300AA2472 /* clientserver.c */; };
 		A13B678521D534E300AA2472 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B669321D534E300AA2472 /* md4.c */; };
 		A13B678621D534E300AA2472 /* pmove.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B669421D534E300AA2472 /* pmove.c */; };
@@ -155,7 +154,6 @@
 		A16F5AB421E55EF600F998E7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07E0E26BDA900F39101 /* Default.png */; };
 		A16F5AB521E55EF600F998E7 /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
 		A16F5AB621E55EF600F998E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */; };
-		A16F5AB721E55EF600F998E7 /* icon.rc in Resources */ = {isa = PBXBuildFile; fileRef = A13B669021D534E300AA2472 /* icon.rc */; };
 		A16F5AB921E55EF600F998E7 /* g_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B662821D534E300AA2472 /* g_main.c */; };
 		A16F5ABB21E55EF600F998E7 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66A821D534E300AA2472 /* frame.c */; };
 		A16F5ABC21E55EF600F998E7 /* infantry.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B665221D534E300AA2472 /* infantry.c */; };
@@ -415,12 +413,6 @@
 		A13B668421D534E300AA2472 /* hunk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hunk.c; sourceTree = "<group>"; };
 		A13B668521D534E300AA2472 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A13B668721D534E300AA2472 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
-		A13B668921D534E300AA2472 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
-		A13B668A21D534E300AA2472 /* system.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = system.c; sourceTree = "<group>"; };
-		A13B668C21D534E300AA2472 /* hunk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hunk.c; sourceTree = "<group>"; };
-		A13B668D21D534E300AA2472 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		A13B668F21D534E300AA2472 /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
-		A13B669021D534E300AA2472 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
 		A13B669221D534E300AA2472 /* clientserver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clientserver.c; sourceTree = "<group>"; };
 		A13B669321D534E300AA2472 /* md4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md4.c; sourceTree = "<group>"; };
 		A13B669421D534E300AA2472 /* pmove.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pmove.c; sourceTree = "<group>"; };
@@ -554,7 +546,6 @@
 		A13B674721D534E300AA2472 /* server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server.h; sourceTree = "<group>"; };
 		A13B674821D534E300AA2472 /* sv_send.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sv_send.c; sourceTree = "<group>"; };
 		A13B674921D534E300AA2472 /* sv_world.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sv_world.c; sourceTree = "<group>"; };
-		A13B674B21D534E300AA2472 /* wrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wrapper.c; sourceTree = "<group>"; };
 		A13B68A421D54D3B00AA2472 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		A13B694F21D574A000AA2472 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = music; path = ../../../Dropbox/Files/quake2/music; sourceTree = "<group>"; };
 		A13B695021D574A000AA2472 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = ../../../Dropbox/Files/quake2/baseq2; sourceTree = "<group>"; };
@@ -645,7 +636,6 @@
 				A13B669121D534E300AA2472 /* common */,
 				A13B661921D534E300AA2472 /* game */,
 				A13B673D21D534E300AA2472 /* server */,
-				A13B674A21D534E300AA2472 /* win-wrapper */,
 				A131F34321D530B500B4BB5D /* SDL.xcodeproj */,
 			);
 			name = Sources;
@@ -976,7 +966,6 @@
 			children = (
 				A13B668621D534E300AA2472 /* generic */,
 				A13B667F21D534E300AA2472 /* unix */,
-				A13B668821D534E300AA2472 /* windows */,
 			);
 			name = backends;
 			path = Quake2/backends;
@@ -1008,35 +997,6 @@
 				A13B668721D534E300AA2472 /* misc.c */,
 			);
 			path = generic;
-			sourceTree = "<group>";
-		};
-		A13B668821D534E300AA2472 /* windows */ = {
-			isa = PBXGroup;
-			children = (
-				A13B668921D534E300AA2472 /* network.c */,
-				A13B668A21D534E300AA2472 /* system.c */,
-				A13B668B21D534E300AA2472 /* shared */,
-				A13B668D21D534E300AA2472 /* main.c */,
-				A13B668E21D534E300AA2472 /* header */,
-				A13B669021D534E300AA2472 /* icon.rc */,
-			);
-			path = windows;
-			sourceTree = "<group>";
-		};
-		A13B668B21D534E300AA2472 /* shared */ = {
-			isa = PBXGroup;
-			children = (
-				A13B668C21D534E300AA2472 /* hunk.c */,
-			);
-			path = shared;
-			sourceTree = "<group>";
-		};
-		A13B668E21D534E300AA2472 /* header */ = {
-			isa = PBXGroup;
-			children = (
-				A13B668F21D534E300AA2472 /* resource.h */,
-			);
-			path = header;
 			sourceTree = "<group>";
 		};
 		A13B669121D534E300AA2472 /* common */ = {
@@ -1364,15 +1324,6 @@
 			path = header;
 			sourceTree = "<group>";
 		};
-		A13B674A21D534E300AA2472 /* win-wrapper */ = {
-			isa = PBXGroup;
-			children = (
-				A13B674B21D534E300AA2472 /* wrapper.c */,
-			);
-			name = "win-wrapper";
-			path = "Quake2/win-wrapper";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1479,7 +1430,6 @@
 				FD77A07F0E26BDA900F39101 /* Default.png in Resources */,
 				A13B695121D574A000AA2472 /* music in Resources */,
 				945C4F53195AF17F00DBBF61 /* Default-568h@2x.png in Resources */,
-				A13B678321D534E300AA2472 /* icon.rc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1492,7 +1442,6 @@
 				A16F5AB421E55EF600F998E7 /* Default.png in Resources */,
 				A16F5AB521E55EF600F998E7 /* music in Resources */,
 				A16F5AB621E55EF600F998E7 /* Default-568h@2x.png in Resources */,
-				A16F5AB721E55EF600F998E7 /* icon.rc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

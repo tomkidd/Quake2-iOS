@@ -550,8 +550,6 @@
 		A13B694F21D574A000AA2472 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = music; path = ../../../Dropbox/Files/quake2/music; sourceTree = "<group>"; };
 		A13B695021D574A000AA2472 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = ../../../Dropbox/Files/quake2/baseq2; sourceTree = "<group>"; };
 		A16F5B4D21E55EF600F998E7 /* Quake2-SDL-iOS-gl1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2-SDL-iOS-gl1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A16F5B4E21E55EF600F998E7 /* Quake2-SDL-iOS-sw copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Quake2-SDL-iOS-sw copy-Info.plist"; path = "/Users/tomkidd/Documents/GitHub/Quake2-SDL-iOS/Quake2-SDL-iOS-sw copy-Info.plist"; sourceTree = "<absolute>"; };
-		A16F5BFA21E5624800F998E7 /* Quake2-SDL-iOS-gl1 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Quake2-SDL-iOS-gl1 copy-Info.plist"; path = "/Users/tomkidd/Documents/GitHub/Quake2-SDL-iOS/Quake2-SDL-iOS-gl1 copy-Info.plist"; sourceTree = "<absolute>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -616,14 +614,12 @@
 			isa = PBXGroup;
 			children = (
 				A13B695021D574A000AA2472 /* baseq2 */,
+				A13B694F21D574A000AA2472 /* music */,
 				945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				A13B694F21D574A000AA2472 /* music */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97315FDCFA39411CA2CEA /* Sources */,
-				A16F5B4E21E55EF600F998E7 /* Quake2-SDL-iOS-sw copy-Info.plist */,
-				A16F5BFA21E5624800F998E7 /* Quake2-SDL-iOS-gl1 copy-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -654,17 +650,17 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A13B68A421D54D3B00AA2472 /* Metal.framework */,
-				A131F33921D52FA700B4BB5D /* AVFoundation.framework */,
-				FAE0E9641BAF967F0098DFA4 /* GameController.framework */,
-				FA8B4B96196703B400F8EB7C /* CoreMotion.framework */,
-				FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */,
 				FD77A0840E26BDB800F39101 /* AudioToolbox.framework */,
+				A131F33921D52FA700B4BB5D /* AVFoundation.framework */,
 				FD779EDD0E26BA1200F39101 /* CoreAudio.framework */,
-				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
-				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
-				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */,
+				FA8B4B96196703B400F8EB7C /* CoreMotion.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				FAE0E9641BAF967F0098DFA4 /* GameController.framework */,
+				A13B68A421D54D3B00AA2472 /* Metal.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -710,8 +706,8 @@
 		A13B662921D534E300AA2472 /* savegame */ = {
 			isa = PBXGroup;
 			children = (
-				A13B662A21D534E300AA2472 /* tables */,
 				A13B663221D534E300AA2472 /* savegame.c */,
+				A13B662A21D534E300AA2472 /* tables */,
 			);
 			path = savegame;
 			sourceTree = "<group>";
@@ -719,13 +715,13 @@
 		A13B662A21D534E300AA2472 /* tables */ = {
 			isa = PBXGroup;
 			children = (
-				A13B662B21D534E300AA2472 /* gamefunc_list.h */,
-				A13B662C21D534E300AA2472 /* gamemmove_list.h */,
 				A13B662D21D534E300AA2472 /* clientfields.h */,
 				A13B662E21D534E300AA2472 /* fields.h */,
-				A13B662F21D534E300AA2472 /* levelfields.h */,
-				A13B663021D534E300AA2472 /* gamemmove_decs.h */,
 				A13B663121D534E300AA2472 /* gamefunc_decs.h */,
+				A13B662B21D534E300AA2472 /* gamefunc_list.h */,
+				A13B663021D534E300AA2472 /* gamemmove_decs.h */,
+				A13B662C21D534E300AA2472 /* gamemmove_list.h */,
+				A13B662F21D534E300AA2472 /* levelfields.h */,
 			);
 			path = tables;
 			sourceTree = "<group>";
@@ -742,26 +738,26 @@
 		A13B663721D534E300AA2472 /* monster */ = {
 			isa = PBXGroup;
 			children = (
+				A13B666E21D534E300AA2472 /* berserker */,
+				A13B667421D534E300AA2472 /* boss2 */,
+				A13B666221D534E300AA2472 /* boss3 */,
+				A13B665F21D534E300AA2472 /* brain */,
+				A13B665921D534E300AA2472 /* chick */,
+				A13B665321D534E300AA2472 /* flipper */,
+				A13B665C21D534E300AA2472 /* float */,
+				A13B666B21D534E300AA2472 /* flyer */,
 				A13B663821D534E300AA2472 /* gladiator */,
+				A13B664D21D534E300AA2472 /* gunner */,
+				A13B664A21D534E300AA2472 /* hover */,
+				A13B665021D534E300AA2472 /* infantry */,
+				A13B667121D534E300AA2472 /* insane */,
+				A13B665621D534E300AA2472 /* medic */,
 				A13B663B21D534E300AA2472 /* misc */,
+				A13B666821D534E300AA2472 /* mutant */,
 				A13B663E21D534E300AA2472 /* parasite */,
+				A13B664721D534E300AA2472 /* soldier */,
 				A13B664121D534E300AA2472 /* supertank */,
 				A13B664421D534E300AA2472 /* tank */,
-				A13B664721D534E300AA2472 /* soldier */,
-				A13B664A21D534E300AA2472 /* hover */,
-				A13B664D21D534E300AA2472 /* gunner */,
-				A13B665021D534E300AA2472 /* infantry */,
-				A13B665321D534E300AA2472 /* flipper */,
-				A13B665621D534E300AA2472 /* medic */,
-				A13B665921D534E300AA2472 /* chick */,
-				A13B665C21D534E300AA2472 /* float */,
-				A13B665F21D534E300AA2472 /* brain */,
-				A13B666221D534E300AA2472 /* boss3 */,
-				A13B666821D534E300AA2472 /* mutant */,
-				A13B666B21D534E300AA2472 /* flyer */,
-				A13B666E21D534E300AA2472 /* berserker */,
-				A13B667121D534E300AA2472 /* insane */,
-				A13B667421D534E300AA2472 /* boss2 */,
 			);
 			path = monster;
 			sourceTree = "<group>";
@@ -769,8 +765,8 @@
 		A13B663821D534E300AA2472 /* gladiator */ = {
 			isa = PBXGroup;
 			children = (
-				A13B663921D534E300AA2472 /* gladiator.h */,
 				A13B663A21D534E300AA2472 /* gladiator.c */,
+				A13B663921D534E300AA2472 /* gladiator.h */,
 			);
 			path = gladiator;
 			sourceTree = "<group>";
@@ -787,8 +783,8 @@
 		A13B663E21D534E300AA2472 /* parasite */ = {
 			isa = PBXGroup;
 			children = (
-				A13B663F21D534E300AA2472 /* parasite.h */,
 				A13B664021D534E300AA2472 /* parasite.c */,
+				A13B663F21D534E300AA2472 /* parasite.h */,
 			);
 			path = parasite;
 			sourceTree = "<group>";
@@ -805,8 +801,8 @@
 		A13B664421D534E300AA2472 /* tank */ = {
 			isa = PBXGroup;
 			children = (
-				A13B664521D534E300AA2472 /* tank.h */,
 				A13B664621D534E300AA2472 /* tank.c */,
+				A13B664521D534E300AA2472 /* tank.h */,
 			);
 			path = tank;
 			sourceTree = "<group>";
@@ -814,8 +810,8 @@
 		A13B664721D534E300AA2472 /* soldier */ = {
 			isa = PBXGroup;
 			children = (
-				A13B664821D534E300AA2472 /* soldier.h */,
 				A13B664921D534E300AA2472 /* soldier.c */,
+				A13B664821D534E300AA2472 /* soldier.h */,
 			);
 			path = soldier;
 			sourceTree = "<group>";
@@ -823,8 +819,8 @@
 		A13B664A21D534E300AA2472 /* hover */ = {
 			isa = PBXGroup;
 			children = (
-				A13B664B21D534E300AA2472 /* hover.h */,
 				A13B664C21D534E300AA2472 /* hover.c */,
+				A13B664B21D534E300AA2472 /* hover.h */,
 			);
 			path = hover;
 			sourceTree = "<group>";
@@ -832,8 +828,8 @@
 		A13B664D21D534E300AA2472 /* gunner */ = {
 			isa = PBXGroup;
 			children = (
-				A13B664E21D534E300AA2472 /* gunner.h */,
 				A13B664F21D534E300AA2472 /* gunner.c */,
+				A13B664E21D534E300AA2472 /* gunner.h */,
 			);
 			path = gunner;
 			sourceTree = "<group>";
@@ -841,8 +837,8 @@
 		A13B665021D534E300AA2472 /* infantry */ = {
 			isa = PBXGroup;
 			children = (
-				A13B665121D534E300AA2472 /* infantry.h */,
 				A13B665221D534E300AA2472 /* infantry.c */,
+				A13B665121D534E300AA2472 /* infantry.h */,
 			);
 			path = infantry;
 			sourceTree = "<group>";
@@ -850,8 +846,8 @@
 		A13B665321D534E300AA2472 /* flipper */ = {
 			isa = PBXGroup;
 			children = (
-				A13B665421D534E300AA2472 /* flipper.h */,
 				A13B665521D534E300AA2472 /* flipper.c */,
+				A13B665421D534E300AA2472 /* flipper.h */,
 			);
 			path = flipper;
 			sourceTree = "<group>";
@@ -868,8 +864,8 @@
 		A13B665921D534E300AA2472 /* chick */ = {
 			isa = PBXGroup;
 			children = (
-				A13B665A21D534E300AA2472 /* chick.h */,
 				A13B665B21D534E300AA2472 /* chick.c */,
+				A13B665A21D534E300AA2472 /* chick.h */,
 			);
 			path = chick;
 			sourceTree = "<group>";
@@ -877,8 +873,8 @@
 		A13B665C21D534E300AA2472 /* float */ = {
 			isa = PBXGroup;
 			children = (
-				A13B665D21D534E300AA2472 /* float.h */,
 				A13B665E21D534E300AA2472 /* float.c */,
+				A13B665D21D534E300AA2472 /* float.h */,
 			);
 			path = float;
 			sourceTree = "<group>";
@@ -896,10 +892,10 @@
 			isa = PBXGroup;
 			children = (
 				A13B666321D534E300AA2472 /* boss3.c */,
-				A13B666421D534E300AA2472 /* boss31.h */,
-				A13B666521D534E300AA2472 /* boss32.h */,
 				A13B666621D534E300AA2472 /* boss31.c */,
+				A13B666421D534E300AA2472 /* boss31.h */,
 				A13B666721D534E300AA2472 /* boss32.c */,
+				A13B666521D534E300AA2472 /* boss32.h */,
 			);
 			path = boss3;
 			sourceTree = "<group>";
@@ -925,8 +921,8 @@
 		A13B666E21D534E300AA2472 /* berserker */ = {
 			isa = PBXGroup;
 			children = (
-				A13B666F21D534E300AA2472 /* berserker.h */,
 				A13B667021D534E300AA2472 /* berserker.c */,
+				A13B666F21D534E300AA2472 /* berserker.h */,
 			);
 			path = berserker;
 			sourceTree = "<group>";
@@ -943,8 +939,8 @@
 		A13B667421D534E300AA2472 /* boss2 */ = {
 			isa = PBXGroup;
 			children = (
-				A13B667521D534E300AA2472 /* boss2.h */,
 				A13B667621D534E300AA2472 /* boss2.c */,
+				A13B667521D534E300AA2472 /* boss2.h */,
 			);
 			path = boss2;
 			sourceTree = "<group>";
@@ -952,11 +948,11 @@
 		A13B667821D534E300AA2472 /* player */ = {
 			isa = PBXGroup;
 			children = (
-				A13B667921D534E300AA2472 /* trail.c */,
-				A13B667A21D534E300AA2472 /* weapon.c */,
 				A13B667B21D534E300AA2472 /* client.c */,
 				A13B667C21D534E300AA2472 /* hud.c */,
+				A13B667921D534E300AA2472 /* trail.c */,
 				A13B667D21D534E300AA2472 /* view.c */,
+				A13B667A21D534E300AA2472 /* weapon.c */,
 			);
 			path = player;
 			sourceTree = "<group>";
@@ -1028,13 +1024,13 @@
 		A13B669621D534E300AA2472 /* unzip */ = {
 			isa = PBXGroup;
 			children = (
-				A13B669721D534E300AA2472 /* miniz.c */,
-				A13B669821D534E300AA2472 /* unzip.c */,
 				A13B669921D534E300AA2472 /* ioapi.c */,
+				A13B669D21D534E300AA2472 /* ioapi.h */,
+				A13B669721D534E300AA2472 /* miniz.c */,
 				A13B669A21D534E300AA2472 /* miniz.h */,
 				A13B669B21D534E300AA2472 /* minizconf.h */,
+				A13B669821D534E300AA2472 /* unzip.c */,
 				A13B669C21D534E300AA2472 /* unzip.h */,
-				A13B669D21D534E300AA2472 /* ioapi.h */,
 			);
 			path = unzip;
 			sourceTree = "<group>";
@@ -1042,8 +1038,8 @@
 		A13B669E21D534E300AA2472 /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				A13B669F21D534E300AA2472 /* rand.c */,
 				A13B66A021D534E300AA2472 /* flash.c */,
+				A13B669F21D534E300AA2472 /* rand.c */,
 				A13B66A121D534E300AA2472 /* shared.c */,
 			);
 			path = shared;
@@ -1052,12 +1048,12 @@
 		A13B66AD21D534E300AA2472 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				A13B66AE21D534E300AA2472 /* zone.h */,
-				A13B66AF21D534E300AA2472 /* shared.h */,
-				A13B66B021D534E300AA2472 /* crc.h */,
 				A13B66B121D534E300AA2472 /* common.h */,
+				A13B66B021D534E300AA2472 /* crc.h */,
 				A13B66B221D534E300AA2472 /* files.h */,
 				A13B66B321D534E300AA2472 /* glob.h */,
+				A13B66AF21D534E300AA2472 /* shared.h */,
+				A13B66AE21D534E300AA2472 /* zone.h */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -1097,9 +1093,9 @@
 			isa = PBXGroup;
 			children = (
 				A13B66B621D534E300AA2472 /* glimp_sdl.c */,
-				A13B66B721D534E300AA2472 /* vid.c */,
-				A13B66B821D534E300AA2472 /* icon */,
 				A13B66BA21D534E300AA2472 /* header */,
+				A13B66B821D534E300AA2472 /* icon */,
+				A13B66B721D534E300AA2472 /* vid.c */,
 			);
 			path = vid;
 			sourceTree = "<group>";
@@ -1115,8 +1111,8 @@
 		A13B66BA21D534E300AA2472 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				A13B66BB21D534E300AA2472 /* stb_image_write.h */,
 				A13B66BC21D534E300AA2472 /* ref.h */,
+				A13B66BB21D534E300AA2472 /* stb_image_write.h */,
 				A13B66BD21D534E300AA2472 /* vid.h */,
 			);
 			path = header;
@@ -1125,8 +1121,8 @@
 		A13B66C321D534E300AA2472 /* input */ = {
 			isa = PBXGroup;
 			children = (
-				A13B66C421D534E300AA2472 /* sdl.c */,
 				A13B66C521D534E300AA2472 /* header */,
+				A13B66C421D534E300AA2472 /* sdl.c */,
 			);
 			path = input;
 			sourceTree = "<group>";
@@ -1154,10 +1150,10 @@
 		A13B66C921D534E300AA2472 /* constants */ = {
 			isa = PBXGroup;
 			children = (
-				A13B66CA21D534E300AA2472 /* anormtab.h */,
 				A13B66CB21D534E300AA2472 /* adivtab.h */,
-				A13B66CC21D534E300AA2472 /* warpsin.h */,
 				A13B66CD21D534E300AA2472 /* anorms.h */,
+				A13B66CA21D534E300AA2472 /* anormtab.h */,
+				A13B66CC21D534E300AA2472 /* warpsin.h */,
 			);
 			path = constants;
 			sourceTree = "<group>";
@@ -1188,9 +1184,9 @@
 		A13B66DE21D534E300AA2472 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				A13B66DF21D534E300AA2472 /* qgl.h */,
-				A13B66E021D534E300AA2472 /* model.h */,
 				A13B66E121D534E300AA2472 /* local.h */,
+				A13B66E021D534E300AA2472 /* model.h */,
+				A13B66DF21D534E300AA2472 /* qgl.h */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -1223,8 +1219,8 @@
 		A13B66F321D534E300AA2472 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				A13B66F421D534E300AA2472 /* model.h */,
 				A13B66F521D534E300AA2472 /* local.h */,
+				A13B66F421D534E300AA2472 /* model.h */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -1244,10 +1240,10 @@
 		A13B671E21D534E300AA2472 /* menu */ = {
 			isa = PBXGroup;
 			children = (
-				A13B671F21D534E300AA2472 /* qmenu.c */,
-				A13B672021D534E300AA2472 /* menu.c */,
-				A13B672121D534E300AA2472 /* videomenu.c */,
 				A13B672221D534E300AA2472 /* header */,
+				A13B672021D534E300AA2472 /* menu.c */,
+				A13B671F21D534E300AA2472 /* qmenu.c */,
+				A13B672121D534E300AA2472 /* videomenu.c */,
 			);
 			path = menu;
 			sourceTree = "<group>";
@@ -1263,13 +1259,13 @@
 		A13B672821D534E300AA2472 /* sound */ = {
 			isa = PBXGroup;
 			children = (
-				A13B672921D534E300AA2472 /* qal.c */,
-				A13B672A21D534E300AA2472 /* wave.c */,
-				A13B672B21D534E300AA2472 /* openal.c */,
-				A13B672C21D534E300AA2472 /* sdl.c */,
-				A13B672D21D534E300AA2472 /* ogg.c */,
-				A13B672E21D534E300AA2472 /* sound.c */,
 				A13B672F21D534E300AA2472 /* header */,
+				A13B672D21D534E300AA2472 /* ogg.c */,
+				A13B672B21D534E300AA2472 /* openal.c */,
+				A13B672921D534E300AA2472 /* qal.c */,
+				A13B672C21D534E300AA2472 /* sdl.c */,
+				A13B672E21D534E300AA2472 /* sound.c */,
+				A13B672A21D534E300AA2472 /* wave.c */,
 			);
 			path = sound;
 			sourceTree = "<group>";
@@ -1277,11 +1273,11 @@
 		A13B672F21D534E300AA2472 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				A13B673021D534E300AA2472 /* sound.h */,
-				A13B673121D534E300AA2472 /* vorbis.h */,
-				A13B673221D534E300AA2472 /* qal.h */,
 				A13B673321D534E300AA2472 /* local.h */,
+				A13B673221D534E300AA2472 /* qal.h */,
+				A13B673021D534E300AA2472 /* sound.h */,
 				A13B673421D534E300AA2472 /* stb_vorbis.h */,
+				A13B673121D534E300AA2472 /* vorbis.h */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -1289,8 +1285,8 @@
 		A13B673521D534E300AA2472 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				A13B673621D534E300AA2472 /* console.h */,
 				A13B673721D534E300AA2472 /* client.h */,
+				A13B673621D534E300AA2472 /* console.h */,
 				A13B673821D534E300AA2472 /* keyboard.h */,
 				A13B673921D534E300AA2472 /* screen.h */,
 			);
@@ -1822,7 +1818,7 @@
 				GCC_PREFIX_HEADER = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "Quake2-SDL-iOS-sw copy-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Quake2SDLiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1856,7 +1852,7 @@
 				GCC_PREFIX_HEADER = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "Quake2-SDL-iOS-sw copy-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Quake2SDLiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -36,6 +36,7 @@
 #if defined(__APPLE__)
 #if defined(IOS)
 #include <OpenGLES/ES1/gl.h>
+#include <OpenGLES/ES3/gl.h>
 #else
 #include <OpenGL/gl.h>
 #endif
@@ -116,8 +117,8 @@ extern void ( APIENTRY *qglPointParameterfvARB ) ( GLenum param,
 extern void ( APIENTRY *qglColorTableEXT ) ( GLenum, GLenum, GLsizei, GLenum,
 		GLenum, const GLvoid * );
 // new stuff -tkidd
-extern  void ( APIENTRY *glVertex2i )(GLint x, GLint y);
-extern  void ( APIENTRY *glVertex2f )(GLfloat x, GLfloat y);
-extern  void ( APIENTRY *glPolygonMode )(GLenum face, GLenum mode);
+//extern  void ( APIENTRY *glVertex2i )(GLint x, GLint y);
+//extern  void ( APIENTRY *glVertex2f )(GLfloat x, GLfloat y);
+//extern  void ( APIENTRY *glPolygonMode )(GLenum face, GLenum mode);
 //extern  void ( APIENTRY *glDrawBuffer )(GLenum mode);
 #endif

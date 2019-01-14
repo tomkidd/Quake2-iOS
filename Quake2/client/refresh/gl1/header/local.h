@@ -48,7 +48,7 @@ enum {
 };
 #define UNIMPL()    Com_Printf("%s(): Unimplemented\n", __FUNCTION__)
 #define glVertex2f(x, y)   glVertex3f(x, y, 0.0)
-#define glVertex2i(x, y)   glVertex3i(x, y, 0)
+#define glVertex2i(x, y)   glVertex3f(x, y, 0.0)
 
 #ifndef GL_COLOR_INDEX8_EXT
  #define GL_COLOR_INDEX8_EXT GL_COLOR_INDEX

@@ -1015,31 +1015,14 @@ R_RenderView(refdef_t *fd)
 					glStencilOp(GL_REPLACE, GL_KEEP, GL_KEEP);
 					glStencilFunc(GL_NEVER, 0, 1);
 
-                    // temp - will probably ruin everything -tkidd
-//                    glBegin(GL_QUADS);
-//                    {
-//                        glVertex2i(0, 0);
-//                        glVertex2i(vid.width, 0);
-//                        glVertex2i(vid.width, vid.height);
-//                        glVertex2i(0, vid.height);
-//                    }
-//                    glEnd();
-                    
-                    // vvv lol I have no idea what I'm doing -tkidd
-                    
-                    GLshort vtx1[] = {      0, 0,     vid.width, 0,      vid.width, vid.height,       0, vid.height       };
-                    GLshort tex1[] = {      0, 1,           0, 0,           1, 0,           1, 1            };
-                    glEnableClientState(GL_VERTEX_ARRAY);
-                    glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-                    
-                    glVertexPointer(2, GL_SHORT, 0, vtx1);
-                    glTexCoordPointer(2, GL_SHORT, 0, tex1);
-                    glDrawArrays(GL_TRIANGLE_FAN,0,4);
-                    
-                    glDisableClientState(GL_VERTEX_ARRAY);
-                    glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-                    
-                    // ^^^ lol I have no idea what I'm doing -tkidd
+                    glBegin(GL_QUADS);
+                    {
+                        glVertex2i(0, 0);
+                        glVertex2i(vid.width, 0);
+                        glVertex2i(vid.width, vid.height);
+                        glVertex2i(0, vid.height);
+                    }
+                    glEnd();
 
 					glStencilOp(GL_INVERT, GL_KEEP, GL_KEEP);
 					glStencilFunc(GL_NEVER, 1, 1);

@@ -32,6 +32,7 @@
 #if defined(__APPLE__)
 #if defined(IOS)
 #include <OpenGLES/ES1/gl.h>
+#include <OpenGLES/ES3/gl.h>
 #else
 #include <OpenGL/gl.h>
 #endif

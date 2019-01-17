@@ -1763,7 +1763,6 @@ void R_Printf(int level, const char* msg, ...)
  * this is only here so the functions in shared source files
  * (shared.c, rand.c, flash.c, mem.c/hunk.c) can link
  */
-#ifndef IOS
 void
 Sys_Error(char *error, ...)
 {
@@ -1785,4 +1784,3 @@ Com_Printf(char *msg, ...)
 	ri.Com_VPrintf(PRINT_ALL, msg, argptr);
 	va_end(argptr);
 }
-#endif

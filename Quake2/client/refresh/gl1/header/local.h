@@ -34,11 +34,11 @@
 #include "../../ref_shared.h"
 #include "qgl.h"
 
+// new things -tkidd
 #include <OpenGLES/ES1/gl.h>
 //#include <OpenGLES/ES2/gl.h>
 #include <OpenGLES/ES3/gl.h>
 
-// new things -tkidd
 #define GL_COLOR_INDEX                0x1900
 enum {
     IOS_QUADS = 0x10000,
@@ -49,6 +49,7 @@ enum {
 #define UNIMPL()    Com_Printf("%s(): Unimplemented\n", __FUNCTION__)
 #define glVertex2f(x, y)   glVertex3f(x, y, 0.0)
 #define glVertex2i(x, y)   glVertex3f(x, y, 0.0)
+// new stuff ends -tkidd
 
 #ifndef GL_COLOR_INDEX8_EXT
  #define GL_COLOR_INDEX8_EXT GL_COLOR_INDEX

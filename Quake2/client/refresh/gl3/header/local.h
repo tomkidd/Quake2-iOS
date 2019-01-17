@@ -511,7 +511,4 @@ extern cvar_t *gl_shadows;
 
 extern cvar_t *gl3_debugcontext;
 
-#undef glPolygonMode
-#define glPolygonMode(f, m)
-
 #endif /* SRC_CLIENT_REFRESH_GL3_HEADER_LOCAL_H_ */

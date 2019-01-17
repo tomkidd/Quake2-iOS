@@ -180,7 +180,7 @@ int GL3_PrepareForWindow(void)
 	}
 
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
 
 	// Set GL context flags.
@@ -291,7 +291,7 @@ int GL3_InitContext(void* win)
 
 		return false;
 	}
-	else if (GLVersion.major < 3 || (GLVersion.major == 3 && GLVersion.minor < 0))
+	else if (GLVersion.major < 3 || (GLVersion.major == 3 && GLVersion.minor < 2))
 	{
 		R_Printf(PRINT_ALL, "GL3_InitContext(): ERROR: glad only got GL version %d.%d!\n", GLVersion.major, GLVersion.minor);
 

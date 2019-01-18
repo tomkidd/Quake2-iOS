@@ -36,15 +36,17 @@
 
 // new things -tkidd
 #define GL_COLOR_INDEX                0x1900
-enum {
-    IOS_QUADS = 0x10000,
-    GL_BACK_LEFT_DONT_USE=0x0402,
-    GL_BACK_RIGHT_DONT_USE=0x0403,
-    IOS_POLYGON
-};
 #define UNIMPL()    Com_Printf("%s(): Unimplemented\n", __FUNCTION__)
-#define glVertex2f(x, y)   glVertex3f(x, y, 0.0)
-#define glVertex2i(x, y)   glVertex3f(x, y, 0.0)
+#define glPolygonMode(f, m)
+#define glDepthRange glDepthRangef
+#define GLdouble     GLfloat
+#define glOrtho      glOrthof
+#define glFrustum    glFrustumf
+void glDrawBuffer(GLenum mode);
+#define GL_RGBA2                      0x8055
+#define GL_RGB5                       0x8050
+#define GL_RGB4                       0x804F
+#define GL_R3_G3_B2                   0x2A10
 // new stuff ends -tkidd
 
 #ifndef GL_COLOR_INDEX8_EXT
@@ -403,30 +405,5 @@ void RI_ShutdownContext(void);
  * or NULL if the function is not found.
  */
 void *RI_GetProcAddress (const char* proc);
-
-// new stuff -tkidd
-#define glPolygonMode(f, m)
-#define GLdouble     GLfloat
-#define GL_RGBA8                0x8058
-#define glDepthRange glDepthRangef
-#define GL_RGB5_A1                        0x8057
-//#define GL_RGBA4                          0x8056
-#define GL_RGBA2                          0x8055
-#define GL_RGB5                       0x8050
-#define GL_RGB4                           0x804F
-#define GL_R3_G3_B2                       0x2A10
-
-#undef GL_QUADS
-#define GL_QUADS                IOS_QUADS
-
-#define GLdouble     GLfloat
-#define GL_CLAMP     GL_CLAMP_TO_EDGE
-#define glClearDepth glClearDepthf
-#define glOrtho      glOrthof
-#define glFrustum    glFrustumf
-
-void glVertex3fv(GLfloat *v);
-void glVertex3f(GLfloat x, GLfloat y, GLfloat z);
-void glDrawBuffer(GLenum mode);
 
 #endif

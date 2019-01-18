@@ -26,18 +26,6 @@
 
 #include "header/local.h"
 
-// new things -tkidd
-#define MAX_ARRAY_SIZE      1024
-unsigned int QGLBeginStarted = 0;
-static GLenum _GLimp_beginmode;
-static float _GLimp_texcoords[MAX_ARRAY_SIZE][2];
-static float _GLimp_vertexes[MAX_ARRAY_SIZE][3];
-static float _GLimp_colors[MAX_ARRAY_SIZE][4];
-static GLuint _GLimp_numInputVerts, _GLimp_numOutputVerts;
-static qboolean _GLimp_texcoordbuffer;
-static qboolean _GLimp_colorbuffer;
-
-
 static byte dottexture[16][16] = {
 	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	{0, 0, 1, 2, 3, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -225,37 +213,6 @@ R_SetDefaultState(void)
 }
 
 // new thing -tkidd
-
-void glVertex3f(GLfloat x, GLfloat y, GLfloat z) {
-    GLfloat v[3] = { x, y, z };
-    
-    glVertex3fv(v);
-}
-
-void glVertex3fv(GLfloat *v) {
-    assert(_GLimp_numOutputVerts < MAX_ARRAY_SIZE);
-    bcopy(v, _GLimp_vertexes[_GLimp_numOutputVerts++], sizeof(_GLimp_vertexes[0]));
-    ++_GLimp_numInputVerts;
-    
-    if (_GLimp_beginmode == IOS_QUADS && _GLimp_numInputVerts % 4 == 0) {
-        assert(_GLimp_numOutputVerts < MAX_ARRAY_SIZE - 2);
-        bcopy(_GLimp_vertexes[_GLimp_numOutputVerts - 4],
-              _GLimp_vertexes[_GLimp_numOutputVerts],
-              sizeof(_GLimp_vertexes[0]));
-        bcopy(_GLimp_texcoords[_GLimp_numOutputVerts - 4],
-              _GLimp_texcoords[_GLimp_numOutputVerts],
-              sizeof(_GLimp_texcoords[0]));
-        bcopy(_GLimp_vertexes[_GLimp_numOutputVerts - 2],
-              _GLimp_vertexes[_GLimp_numOutputVerts + 1],
-              sizeof(_GLimp_vertexes[0]));
-        bcopy(_GLimp_texcoords[_GLimp_numOutputVerts - 2],
-              _GLimp_texcoords[_GLimp_numOutputVerts + 1],
-              sizeof(_GLimp_texcoords[0]));
-        _GLimp_numOutputVerts += 2;
-    }
-    else if (_GLimp_beginmode == IOS_POLYGON)
-        assert(0);
-}
 
 void glDrawBuffer(GLenum mode) {
     if (mode != GL_BACK)

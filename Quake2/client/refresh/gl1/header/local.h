@@ -35,10 +35,6 @@
 #include "qgl.h"
 
 // new things -tkidd
-#include <OpenGLES/ES1/gl.h>
-//#include <OpenGLES/ES2/gl.h>
-#include <OpenGLES/ES3/gl.h>
-
 #define GL_COLOR_INDEX                0x1900
 enum {
     IOS_QUADS = 0x10000,
@@ -429,9 +425,6 @@ void *RI_GetProcAddress (const char* proc);
 #define glOrtho      glOrthof
 #define glFrustum    glFrustumf
 
-
-void glBegin(GLenum mode);
-void glEnd(void);
 void glVertex3fv(GLfloat *v);
 void glVertex3f(GLfloat x, GLfloat y, GLfloat z);
 void glDrawBuffer(GLenum mode);

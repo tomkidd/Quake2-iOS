@@ -758,6 +758,8 @@ R_DrawAliasModel(entity_t *e)
 
 	if (gl_showbbox->value)
 	{
+        // this whole section is not used by iOS so let's not confuse GLES
+#ifndef IOS
 		glDisable(GL_CULL_FACE);
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		glDisable(GL_TEXTURE_2D);
@@ -772,6 +774,7 @@ R_DrawAliasModel(entity_t *e)
 		glEnable(GL_TEXTURE_2D);
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 		glEnable(GL_CULL_FACE);
+#endif
 	}
 
 	if (currententity->flags & RF_WEAPONMODEL)

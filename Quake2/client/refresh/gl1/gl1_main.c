@@ -998,6 +998,8 @@ R_RenderView(refdef_t *fd)
 			case STEREO_MODE_ROW_INTERLEAVED:
 			case STEREO_MODE_COLUMN_INTERLEAVED:
 			case STEREO_MODE_PIXEL_INTERLEAVED:
+// this whole section is not used by iOS so let's not confuse GLES
+#ifndef IOS
 				{
 					qboolean flip_eyes = true;
 					int client_x, client_y;
@@ -1055,6 +1057,7 @@ R_RenderView(refdef_t *fd)
 					glStencilFunc(GL_EQUAL, drawing_left_eye ^ flip_eyes, 1);
 					glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP);
 				}
+#endif
 				break;
 			default:
 				break;

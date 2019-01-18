@@ -226,48 +226,6 @@ R_SetDefaultState(void)
 
 // new thing -tkidd
 
-void glBegin(GLenum mode) {
-    assert(!QGLBeginStarted);
-    QGLBeginStarted = true;
-    _GLimp_beginmode = mode;
-    _GLimp_numInputVerts = _GLimp_numOutputVerts = 0;
-    _GLimp_texcoordbuffer = false;
-    _GLimp_colorbuffer = false;
-}
-
-void glEnd(void) {
-    GLenum mode;
-    
-    assert(QGLBeginStarted);
-    QGLBeginStarted = false;
-    
-    if (_GLimp_texcoordbuffer) {
-        glTexCoordPointer(2, GL_FLOAT, sizeof(_GLimp_texcoords[0]), _GLimp_texcoords);
-        glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-    }
-    else
-        glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-    
-    if (_GLimp_colorbuffer) {
-        glColorPointer(4, GL_FLOAT, sizeof(_GLimp_colors[0]), _GLimp_colors);
-        glEnableClientState(GL_COLOR_ARRAY);
-    }
-    else
-        glDisableClientState(GL_COLOR_ARRAY);
-    
-    glVertexPointer(3, GL_FLOAT, sizeof(_GLimp_vertexes[0]), _GLimp_vertexes);
-    glEnableClientState(GL_VERTEX_ARRAY);
-    
-    if (_GLimp_beginmode == IOS_QUADS)
-        mode = GL_TRIANGLES;
-    else if (_GLimp_beginmode == IOS_POLYGON)
-        assert(0);
-    else
-        mode = _GLimp_beginmode;
-    
-    glDrawArrays(mode, 0, _GLimp_numOutputVerts);
-}
-
 void glVertex3f(GLfloat x, GLfloat y, GLfloat z) {
     GLfloat v[3] = { x, y, z };
     

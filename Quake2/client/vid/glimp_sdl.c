@@ -46,14 +46,8 @@ static qboolean
 CreateSDLWindow(int flags, int w, int h)
 {
 	int windowPos = SDL_WINDOWPOS_UNDEFINED;
-    
-    // testing something for ios -tkidd
-//    flags = SDL_WINDOW_OPENGL | SDL_WINDOW_BORDERLESS | SDL_WINDOW_ALLOW_HIGHDPI;
-//    windowPos = 0;
 
-    window = SDL_CreateWindow("Yamagi Quake II", windowPos, windowPos, w, h, flags);
-//    window = SDL_CreateWindow(NULL, 0, 0, 320, 480,
-//                              SDL_WINDOW_OPENGL | SDL_WINDOW_BORDERLESS | SDL_WINDOW_ALLOW_HIGHDPI);
+	window = SDL_CreateWindow("Yamagi Quake II", windowPos, windowPos, w, h, flags);
 
 	return window != NULL;
 }

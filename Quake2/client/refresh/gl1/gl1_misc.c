@@ -214,9 +214,3 @@ R_SetDefaultState(void)
 	}
 }
 
-// new thing -tkidd
-
-void glDrawBuffer(GLenum mode) {
-    if (mode != GL_BACK)
-        UNIMPL();
-}

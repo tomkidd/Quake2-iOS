@@ -34,21 +34,6 @@
 #include "../../ref_shared.h"
 #include "qgl.h"
 
-// new things -tkidd
-#define GL_COLOR_INDEX                0x1900
-#define UNIMPL()    Com_Printf("%s(): Unimplemented\n", __FUNCTION__)
-#define glPolygonMode(f, m)
-#define glDepthRange glDepthRangef
-#define GLdouble     GLfloat
-#define glOrtho      glOrthof
-#define glFrustum    glFrustumf
-void glDrawBuffer(GLenum mode);
-#define GL_RGBA2                      0x8055
-#define GL_RGB5                       0x8050
-#define GL_RGB4                       0x804F
-#define GL_R3_G3_B2                   0x2A10
-// new stuff ends -tkidd
-
 #ifndef GL_COLOR_INDEX8_EXT
  #define GL_COLOR_INDEX8_EXT GL_COLOR_INDEX
 #endif

@@ -418,15 +418,15 @@ VID_MenuInit(void)
 	s_brightness_slider.minvalue = 1;
 	s_brightness_slider.maxvalue = 20;
 #ifdef IOS
-    if( yquake2Renderer == 1 ) // Don't have any gamma control
-    {
+//    if( yquake2Renderer == 1 ) // Don't have any gamma control
+//    {
         float gl1_overbrightbits = Cvar_VariableValue("gl1_overbrightbits");
         s_brightness_slider.curvalue = ((gl1_overbrightbits  - 1) * 7.f);
-    }
-    else
-    {
-        s_brightness_slider.curvalue = vid_gamma->value * 10;
-    }
+//    }
+//    else
+//    {
+//        s_brightness_slider.curvalue = vid_gamma->value * 10;
+//    }
 #else
     s_brightness_slider.curvalue = vid_gamma->value * 10;
 #endif

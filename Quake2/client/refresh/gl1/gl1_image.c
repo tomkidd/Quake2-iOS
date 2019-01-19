@@ -46,7 +46,11 @@ qboolean R_Upload32(unsigned *data, int width, int height, qboolean mipmap);
 int gl_solid_format = GL_RGB;
 int gl_alpha_format = GL_RGBA;
 
+#ifdef USE_GLES1
+int gl_tex_solid_format = GL_RGBA;
+#else
 int gl_tex_solid_format = GL_RGB;
+#endif
 int gl_tex_alpha_format = GL_RGBA;
 
 int gl_filter_min = GL_LINEAR_MIPMAP_NEAREST;
@@ -80,10 +84,12 @@ typedef struct
 gltmode_t gl_alpha_modes[] = {
 	{"default", GL_RGBA},
 	{"GL_RGBA", GL_RGBA},
+#ifndef USE_GLES1
 	{"GL_RGBA8", GL_RGBA8},
 	{"GL_RGB5_A1", GL_RGB5_A1},
 	{"GL_RGBA4", GL_RGBA4},
 	{"GL_RGBA2", GL_RGBA2},
+#endif
 };
 
 #define NUM_GL_ALPHA_MODES (sizeof(gl_alpha_modes) / sizeof(gltmode_t))
@@ -91,10 +97,12 @@ gltmode_t gl_alpha_modes[] = {
 gltmode_t gl_solid_modes[] = {
 	{"default", GL_RGB},
 	{"GL_RGB", GL_RGB},
+#ifndef USE_GLES1
 	{"GL_RGB8", GL_RGB8},
 	{"GL_RGB5", GL_RGB5},
 	{"GL_RGB4", GL_RGB4},
 	{"GL_R3_G3_B2", GL_R3_G3_B2},
+#endif
 };
 
 #define NUM_GL_SOLID_MODES (sizeof(gl_solid_modes) / sizeof(gltmode_t))
@@ -279,6 +287,9 @@ R_TextureSolidMode(char *string)
 	}
 
 	gl_tex_solid_format = gl_solid_modes[i].mode;
+#ifdef USE_GLES1
+    gl_tex_solid_format = GL_RGBA;
+#endif
 }
 
 void
@@ -669,6 +680,7 @@ R_Upload32Soft(unsigned *data, int width, int height, qboolean mipmap)
 	{
 		if (!mipmap)
 		{
+#ifndef USE_GLES1
 			if (qglColorTableEXT && gl1_palettedtexture->value &&
 				(samples == gl_solid_format))
 			{
@@ -680,6 +692,7 @@ R_Upload32Soft(unsigned *data, int width, int height, qboolean mipmap)
 						GL_UNSIGNED_BYTE, paletted_texture);
 			}
 			else
+#endif
 			{
 				glTexImage2D(GL_TEXTURE_2D, 0, comp, scaled_width,
 						scaled_height, 0, GL_RGBA, GL_UNSIGNED_BYTE,
@@ -698,7 +711,7 @@ R_Upload32Soft(unsigned *data, int width, int height, qboolean mipmap)
 	}
 
 	R_LightScaleTexture(scaled, scaled_width, scaled_height, !mipmap);
-
+#ifndef USE_GLES1
 	if (qglColorTableEXT && gl1_palettedtexture->value &&
 		(samples == gl_solid_format))
 	{
@@ -710,6 +723,7 @@ R_Upload32Soft(unsigned *data, int width, int height, qboolean mipmap)
 				GL_UNSIGNED_BYTE, paletted_texture);
 	}
 	else
+#endif
 	{
 		glTexImage2D(GL_TEXTURE_2D, 0, comp, scaled_width,
 				scaled_height, 0, GL_RGBA, GL_UNSIGNED_BYTE,
@@ -740,6 +754,7 @@ R_Upload32Soft(unsigned *data, int width, int height, qboolean mipmap)
 
 			miplevel++;
 
+#ifndef USE_GLES1
 			if (qglColorTableEXT && gl1_palettedtexture->value &&
 				(samples == gl_solid_format))
 			{
@@ -751,6 +766,7 @@ R_Upload32Soft(unsigned *data, int width, int height, qboolean mipmap)
 						GL_UNSIGNED_BYTE, paletted_texture);
 			}
 			else
+#endif
 			{
 				glTexImage2D(GL_TEXTURE_2D, miplevel, comp, scaled_width,
 						scaled_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, scaled);
@@ -814,6 +830,7 @@ R_Upload8(byte *data, int width, int height, qboolean mipmap, qboolean is_sky)
 		ri.Sys_Error(ERR_DROP, "R_Upload8: too large");
 	}
 
+#ifndef USE_GLES1
 	if (gl_config.palettedtexture && is_sky)
 	{
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_COLOR_INDEX8_EXT,
@@ -826,6 +843,7 @@ R_Upload8(byte *data, int width, int height, qboolean mipmap, qboolean is_sky)
 		return false; /* SBF: FIXME - what is the correct return value? */
 	}
 	else
+#endif
 	{
 		for (i = 0; i < s; i++)
 		{
@@ -1303,7 +1321,11 @@ R_InitImages(void)
 	registration_sequence = 1;
 
 	/* init intensity conversions */
+#ifdef IOS
+    intensity = ri.Cvar_Get("gl1_intensity", "2.5", CVAR_ARCHIVE); // Make brighter by default
+#else
 	intensity = ri.Cvar_Get("gl1_intensity", "2", CVAR_ARCHIVE);
+#endif
 
 	if (intensity->value <= 1)
 	{

@@ -953,6 +953,7 @@ R_SetGL2D(void)
 void
 R_RenderView(refdef_t *fd)
 {
+#ifndef USE_GLES1
 	if ((gl_state.stereo_mode != STEREO_MODE_NONE) && gl_state.camera_separation) {
 
 		qboolean drawing_left_eye = gl_state.camera_separation < 0;
@@ -998,8 +999,6 @@ R_RenderView(refdef_t *fd)
 			case STEREO_MODE_ROW_INTERLEAVED:
 			case STEREO_MODE_COLUMN_INTERLEAVED:
 			case STEREO_MODE_PIXEL_INTERLEAVED:
-// this whole section is not used by iOS so let's not confuse GLES
-#ifndef IOS
 				{
 					qboolean flip_eyes = true;
 					int client_x, client_y;
@@ -1057,13 +1056,12 @@ R_RenderView(refdef_t *fd)
 					glStencilFunc(GL_EQUAL, drawing_left_eye ^ flip_eyes, 1);
 					glStencilOp(GL_KEEP, GL_KEEP, GL_KEEP);
 				}
-#endif
 				break;
 			default:
 				break;
 		}
 	}
-
+#endif
 
 	if (r_norefresh->value)
 	{
@@ -1665,6 +1663,7 @@ RI_BeginFrame(float camera_separation)
 	{
 		gl_drawbuffer->modified = false;
 
+#ifndef USE_GLES1
 		if ((gl_state.camera_separation == 0) || gl_state.stereo_mode != STEREO_MODE_OPENGL)
 		{
 			if (Q_stricmp(gl_drawbuffer->string, "GL_FRONT") == 0)
@@ -1676,6 +1675,7 @@ RI_BeginFrame(float camera_separation)
 				glDrawBuffer(GL_BACK);
 			}
 		}
+#endif
 	}
 
 	/* texturemode stuff */

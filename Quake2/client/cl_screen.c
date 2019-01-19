@@ -537,8 +537,12 @@ SCR_DrawConsole(void)
 	if ((cls.state == ca_disconnected) || (cls.state == ca_connecting))
 	{
 		/* forced full screen console */
-		Con_DrawConsole(1.0);
-		return;
+#ifdef IOS
+        Con_DrawConsole(0.5); // Always half screen for keyboard
+#else
+        Con_DrawConsole(1.0);
+#endif
+        return;
 	}
 
 	if ((cls.state != ca_active) || !cl.refresh_prepped)

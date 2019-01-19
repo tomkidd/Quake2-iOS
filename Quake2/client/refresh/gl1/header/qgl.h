@@ -34,9 +34,18 @@
 #endif
 
 #if defined(__APPLE__)
-#if defined(IOS)
+
+#ifdef USE_GLES1
 #include <OpenGLES/ES1/gl.h>
+#define GLdouble double
+#define glDepthRange glDepthRangef
+#define glOrtho      glOrthof
+#define glFrustum    glFrustumf
+
+#elif USE_GLES3
+
 #include <OpenGLES/ES3/gl.h>
+
 #else
 #include <OpenGL/gl.h>
 #endif

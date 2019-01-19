@@ -30,9 +30,8 @@
 #include <SDL2/SDL.h>
 
 #if defined(__APPLE__)
-#if defined(IOS)
+#ifdef USE_GLES1
 #include <OpenGLES/ES1/gl.h>
-#include <OpenGLES/ES3/gl.h>
 #else
 #include <OpenGL/gl.h>
 #endif
@@ -83,7 +82,11 @@ int RI_PrepareForWindow(void)
     SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
     SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
     SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
+#ifdef IOS
+    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 16);
+#else
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
+#endif
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
     // experimenting -tkidd
@@ -190,16 +193,21 @@ int RI_InitContext(void* win)
 		return false;
 	}
 
-//    // Check if it's really OpenGL 1.4.
-//    const char* glver = (char *)glGetString(GL_VERSION);
-//    sscanf(glver, "%d.%d", &gl_config.major_version, &gl_config.minor_version);
-//
-//    if (gl_config.major_version < 1 || (gl_config.major_version == 1 && gl_config.minor_version < 4))
-//    {
-//        R_Printf(PRINT_ALL, "R_InitContext(): Got an OpenGL version %d.%d context - need (at least) 1.4!\n", gl_config.major_version, gl_config.minor_version);
-//
-//        return false;
-//    }
+    // Check if it's really OpenGL 1.4.
+    const char* glver = (char *)glGetString(GL_VERSION);
+    sscanf(glver, "%d.%d", &gl_config.major_version, &gl_config.minor_version);
+
+#ifdef USE_GLES1
+    R_Printf( PRINT_ALL, "glver = %s", glver );
+    gl_config.major_version = 1;
+    gl_config.minor_version = 4;
+#endif
+    if (gl_config.major_version < 1 || (gl_config.major_version == 1 && gl_config.minor_version < 4))
+    {
+        R_Printf(PRINT_ALL, "R_InitContext(): Got an OpenGL version %d.%d context - need (at least) 1.4!\n", gl_config.major_version, gl_config.minor_version);
+
+        return false;
+    }
 
 	// Check if we've got the requested MSAA.
 	int msaa_samples = 0;

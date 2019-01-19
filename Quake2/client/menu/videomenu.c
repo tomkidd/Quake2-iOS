@@ -104,10 +104,23 @@ GetCustomValue(menulist_s *list)
 	return i;
 }
 
+#ifdef IOS
+extern int yquake2Renderer;
+#endif
+
 static void
 BrightnessCallback(void *s)
 {
 	menuslider_s *slider = (menuslider_s *)s;
+    
+#ifdef IOS
+    if( yquake2Renderer == 1 ) // GLES1 use overbright for brightness
+    {
+        float overbright =  (slider->curvalue / 7.f) + 1;
+        Cvar_SetValue("gl1_overbrightbits", overbright);
+        return;
+    }
+#endif
 
 	float gamma = slider->curvalue / 10.0;
 	Cvar_SetValue("vid_gamma", gamma);
@@ -404,7 +417,19 @@ VID_MenuInit(void)
 	s_brightness_slider.generic.callback = BrightnessCallback;
 	s_brightness_slider.minvalue = 1;
 	s_brightness_slider.maxvalue = 20;
-	s_brightness_slider.curvalue = vid_gamma->value * 10;
+#ifdef IOS
+    if( yquake2Renderer == 1 ) // Don't have any gamma control
+    {
+        float gl1_overbrightbits = Cvar_VariableValue("gl1_overbrightbits");
+        s_brightness_slider.curvalue = ((gl1_overbrightbits  - 1) * 7.f);
+    }
+    else
+    {
+        s_brightness_slider.curvalue = vid_gamma->value * 10;
+    }
+#else
+    s_brightness_slider.curvalue = vid_gamma->value * 10;
+#endif
 
 	s_fov_slider.generic.type = MTYPE_SLIDER;
 	s_fov_slider.generic.x = 0;

@@ -213,6 +213,16 @@ typedef struct model_s
 	void *extradata;
 } model_t;
 
+
+#ifdef IOS
+// used for vertex array elements when drawing models
+typedef struct gl3_alias_vtx_s {
+    GLfloat pos[3];
+    GLfloat texCoord[2];
+    GLfloat color[4];
+} gl3_alias_vtx_t;
+#endif
+
 void Mod_Init(void);
 void Mod_ClearAll(void);
 model_t *Mod_ForName(char *name, qboolean crash);

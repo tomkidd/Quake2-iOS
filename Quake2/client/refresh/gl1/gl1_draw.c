@@ -401,8 +401,10 @@ RDraw_StretchRaw(int x, int y, int w, int h, int cols, int rows, byte *data)
 			x, y + h
 	};
 
+#ifndef USE_GLES1
 	if (!gl_config.palettedtexture)
 	{
+#endif
 		unsigned image32[320*240]; /* was 256 * 256, but we want a bit more space */
 
 		/* .. because now if non-power-of-2 textures are supported, we just load
@@ -470,6 +472,7 @@ RDraw_StretchRaw(int x, int y, int w, int h, int cols, int rows, byte *data)
 					256, 256, 0, GL_RGBA, GL_UNSIGNED_BYTE,
 					image32);
 		}
+#ifndef USE_GLES1
 	}
 	else
 	{
@@ -500,7 +503,7 @@ RDraw_StretchRaw(int x, int y, int w, int h, int cols, int rows, byte *data)
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_COLOR_INDEX8_EXT, 256, 256,
 				0, GL_COLOR_INDEX, GL_UNSIGNED_BYTE, image8);
 	}
-
+#endif
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 

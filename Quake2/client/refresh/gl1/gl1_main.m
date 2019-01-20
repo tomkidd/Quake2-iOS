@@ -26,6 +26,8 @@
 
 #include "header/local.h"
 
+#import <UIKit/UIKit.h>
+
 #define NUM_BEAM_SEGS 6
 
 viddef_t vid;
@@ -1257,8 +1259,13 @@ R_Register(void)
 	vid_gamma = ri.Cvar_Get("vid_gamma", "1.2", CVAR_ARCHIVE);
 
 #ifdef IOS
-    r_customwidth = ri.Cvar_Get("r_customwidth", "2436", CVAR_ARCHIVE);
-    r_customheight = ri.Cvar_Get("r_customheight", "1125", CVAR_ARCHIVE);
+    
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    CGFloat screenScale = [[UIScreen mainScreen] scale];
+    CGSize screenSize = CGSizeMake(screenBounds.size.width * screenScale, screenBounds.size.height * screenScale);
+    
+    r_customwidth = ri.Cvar_Get("r_customwidth", (char*)[[[NSNumber numberWithFloat:screenSize.width] stringValue] UTF8String], CVAR_ARCHIVE);
+    r_customheight = ri.Cvar_Get("r_customheight", (char*)[[[NSNumber numberWithFloat:screenSize.height] stringValue] UTF8String], CVAR_ARCHIVE);
 #else
     r_customwidth = ri.Cvar_Get("r_customwidth", "1024", CVAR_ARCHIVE);
     r_customheight = ri.Cvar_Get("r_customheight", "768", CVAR_ARCHIVE);

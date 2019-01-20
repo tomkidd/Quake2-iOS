@@ -285,7 +285,7 @@
 		A16F5B5021E55F1000F998E7 /* gl1_image.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D421D534E300AA2472 /* gl1_image.c */; };
 		A16F5B5121E55F1000F998E7 /* gl1_light.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D821D534E300AA2472 /* gl1_light.c */; };
 		A16F5B5221E55F1000F998E7 /* gl1_lightmap.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D321D534E300AA2472 /* gl1_lightmap.c */; };
-		A16F5B5321E55F1000F998E7 /* gl1_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D721D534E300AA2472 /* gl1_main.c */; };
+		A16F5B5321E55F1000F998E7 /* gl1_main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D721D534E300AA2472 /* gl1_main.m */; };
 		A16F5B5421E55F1000F998E7 /* gl1_md2.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66DD21D534E300AA2472 /* gl1_md2.c */; };
 		A16F5B5521E55F1000F998E7 /* gl1_mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D121D534E300AA2472 /* gl1_mesh.c */; };
 		A16F5B5621E55F1000F998E7 /* gl1_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D221D534E300AA2472 /* gl1_misc.c */; };
@@ -472,7 +472,7 @@
 		A13B66D421D534E300AA2472 /* gl1_image.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl1_image.c; sourceTree = "<group>"; };
 		A13B66D521D534E300AA2472 /* gl1_scrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl1_scrap.c; sourceTree = "<group>"; };
 		A13B66D621D534E300AA2472 /* gl1_surf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl1_surf.c; sourceTree = "<group>"; };
-		A13B66D721D534E300AA2472 /* gl1_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl1_main.c; sourceTree = "<group>"; };
+		A13B66D721D534E300AA2472 /* gl1_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gl1_main.m; sourceTree = "<group>"; };
 		A13B66D821D534E300AA2472 /* gl1_light.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl1_light.c; sourceTree = "<group>"; };
 		A13B66D921D534E300AA2472 /* qgl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qgl.c; sourceTree = "<group>"; };
 		A13B66DA21D534E300AA2472 /* gl1_draw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl1_draw.c; sourceTree = "<group>"; };
@@ -1169,7 +1169,7 @@
 				A13B66D421D534E300AA2472 /* gl1_image.c */,
 				A13B66D821D534E300AA2472 /* gl1_light.c */,
 				A13B66D321D534E300AA2472 /* gl1_lightmap.c */,
-				A13B66D721D534E300AA2472 /* gl1_main.c */,
+				A13B66D721D534E300AA2472 /* gl1_main.m */,
 				A13B66DD21D534E300AA2472 /* gl1_md2.c */,
 				A13B66D121D534E300AA2472 /* gl1_mesh.c */,
 				A13B66D221D534E300AA2472 /* gl1_misc.c */,
@@ -1597,7 +1597,7 @@
 				A16F5AB921E55EF600F998E7 /* g_main.c in Sources */,
 				A16F5ABB21E55EF600F998E7 /* frame.c in Sources */,
 				A16F5ABC21E55EF600F998E7 /* infantry.c in Sources */,
-				A16F5B5321E55F1000F998E7 /* gl1_main.c in Sources */,
+				A16F5B5321E55F1000F998E7 /* gl1_main.m in Sources */,
 				A16F5ABD21E55EF600F998E7 /* cl_parse.c in Sources */,
 				A16F5ABE21E55EF600F998E7 /* sdl.c in Sources */,
 				A16F5ABF21E55EF600F998E7 /* cl_console.c in Sources */,

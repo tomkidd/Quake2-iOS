@@ -1256,8 +1256,14 @@ R_Register(void)
 	vid_fullscreen = ri.Cvar_Get("vid_fullscreen", "0", CVAR_ARCHIVE);
 	vid_gamma = ri.Cvar_Get("vid_gamma", "1.2", CVAR_ARCHIVE);
 
-	r_customwidth = ri.Cvar_Get("r_customwidth", "1024", CVAR_ARCHIVE);
-	r_customheight = ri.Cvar_Get("r_customheight", "768", CVAR_ARCHIVE);
+#ifdef IOS
+    r_customwidth = ri.Cvar_Get("r_customwidth", "2436", CVAR_ARCHIVE);
+    r_customheight = ri.Cvar_Get("r_customheight", "1125", CVAR_ARCHIVE);
+#else
+    r_customwidth = ri.Cvar_Get("r_customwidth", "1024", CVAR_ARCHIVE);
+    r_customheight = ri.Cvar_Get("r_customheight", "768", CVAR_ARCHIVE);
+#endif
+
 	gl_msaa_samples = ri.Cvar_Get ( "gl_msaa_samples", "0", CVAR_ARCHIVE );
 
 	gl_retexturing = ri.Cvar_Get("gl_retexturing", "1", CVAR_ARCHIVE);

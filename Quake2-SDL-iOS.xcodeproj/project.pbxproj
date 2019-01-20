@@ -296,6 +296,8 @@
 		A16F5B5B21E55F1000F998E7 /* gl1_surf.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D621D534E300AA2472 /* gl1_surf.c */; };
 		A16F5B5C21E55F1000F998E7 /* gl1_warp.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66DC21D534E300AA2472 /* gl1_warp.c */; };
 		A16F5B5D21E55F1500F998E7 /* qgl.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B66D921D534E300AA2472 /* qgl.c */; };
+		A1B80A0321F438C200560711 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B80A0221F438C200560711 /* Launch Screen.storyboard */; };
+		A1B80A0421F438C200560711 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B80A0221F438C200560711 /* Launch Screen.storyboard */; };
 		FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
 		FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
 		FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
@@ -550,6 +552,7 @@
 		A13B694F21D574A000AA2472 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = music; path = ../../../Dropbox/Files/quake2/music; sourceTree = "<group>"; };
 		A13B695021D574A000AA2472 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = ../../../Dropbox/Files/quake2/baseq2; sourceTree = "<group>"; };
 		A16F5B4D21E55EF600F998E7 /* Quake2-SDL-iOS-gl1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2-SDL-iOS-gl1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B80A0221F438C200560711 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -643,6 +646,7 @@
 				FD77A07E0E26BDA900F39101 /* Default.png */,
 				FD77A07C0E26BD8C00F39101 /* Icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				A1B80A0221F438C200560711 /* Launch Screen.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1421,6 +1425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B80A0321F438C200560711 /* Launch Screen.storyboard in Resources */,
 				A13B695221D574A000AA2472 /* baseq2 in Resources */,
 				FD77A07D0E26BD8C00F39101 /* Icon.png in Resources */,
 				FD77A07F0E26BDA900F39101 /* Default.png in Resources */,
@@ -1433,6 +1438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B80A0421F438C200560711 /* Launch Screen.storyboard in Resources */,
 				A16F5AB221E55EF600F998E7 /* baseq2 in Resources */,
 				A16F5AB321E55EF600F998E7 /* Icon.png in Resources */,
 				A16F5AB421E55EF600F998E7 /* Default.png in Resources */,

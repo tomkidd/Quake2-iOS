@@ -374,9 +374,94 @@ IN_Update(void)
 	/* Get and process an event */
 	while (SDL_PollEvent(&event))
 	{
+//        printf("SDL_PollEvent: %i\n", event.type);
 
 		switch (event.type)
 		{
+            case SDL_JOYDEVICEADDED:
+                printf("JSADD\n");
+                
+                // cribbed from elsewhere -tkidd
+                
+                Com_Printf ("TAKE 2: %i joysticks were found.\n", SDL_NumJoysticks());
+                
+                if (SDL_NumJoysticks() > 0) {
+                    for (int i = 0; i < SDL_NumJoysticks(); i++) {
+                        joystick = SDL_JoystickOpen(i);
+                        
+                        Com_Printf ("The name of the joystick is '%s'\n", SDL_JoystickName(joystick));
+                        Com_Printf ("Number of Axes: %d\n", SDL_JoystickNumAxes(joystick));
+                        Com_Printf ("Number of Buttons: %d\n", SDL_JoystickNumButtons(joystick));
+                        Com_Printf ("Number of Balls: %d\n", SDL_JoystickNumBalls(joystick));
+                        Com_Printf ("Number of Hats: %d\n", SDL_JoystickNumHats(joystick));
+                        
+                        joystick_haptic = SDL_HapticOpenFromJoystick(joystick);
+                        
+                        if (joystick_haptic == NULL)
+                        {
+                            Com_Printf("Most likely joystick isn't haptic\n");
+                        }
+                        else
+                        {
+//                            IN_Haptic_Effects_Info();
+                        }
+                        
+                        if(SDL_IsGameController(i))
+                        {
+                            SDL_GameControllerButtonBind backBind;
+                            controller = SDL_GameControllerOpen(i);
+                            
+                            Com_Printf ("Controller settings: %s\n", SDL_GameControllerMapping(controller));
+                            Com_Printf ("Controller axis: \n");
+                            Com_Printf (" * leftx = %s\n", joy_axis_leftx->string);
+                            Com_Printf (" * lefty = %s\n", joy_axis_lefty->string);
+                            Com_Printf (" * rightx = %s\n", joy_axis_rightx->string);
+                            Com_Printf (" * righty = %s\n", joy_axis_righty->string);
+                            Com_Printf (" * triggerleft = %s\n", joy_axis_triggerleft->string);
+                            Com_Printf (" * triggerright = %s\n", joy_axis_triggerright->string);
+                            
+                            Com_Printf ("Controller thresholds: \n");
+                            Com_Printf (" * leftx = %f\n", joy_axis_leftx_threshold->value);
+                            Com_Printf (" * lefty = %f\n", joy_axis_lefty_threshold->value);
+                            Com_Printf (" * rightx = %f\n", joy_axis_rightx_threshold->value);
+                            Com_Printf (" * righty = %f\n", joy_axis_righty_threshold->value);
+                            Com_Printf (" * triggerleft = %f\n", joy_axis_triggerleft_threshold->value);
+                            Com_Printf (" * triggerright = %f\n", joy_axis_triggerright_threshold->value);
+                            
+                            backBind = SDL_GameControllerGetBindForButton(controller, SDL_CONTROLLER_BUTTON_BACK);
+                            
+                            if (backBind.bindType == SDL_CONTROLLER_BINDTYPE_BUTTON)
+                            {
+                                back_button_id = backBind.value.button;
+                                Com_Printf ("\nBack button JOY%d will be unbindable.\n", back_button_id+1);
+                            }
+                            
+                            Cbuf_AddText(va("bind TRIG_RIGHT \"+attack\"\n"));
+                            Cbuf_AddText(va("bind JOY1 \"+movedown\"\n"));
+                            Cbuf_AddText(va("bind JOY2 \"+moveup\"\n"));
+                            Cbuf_AddText(va("bind JOY3 \"cmd help\"\n"));
+                            Cbuf_AddText(va("bind JOY5 \"weapnext\"\n"));
+                            Cbuf_AddText(va("bind JOY6 \"weapprev\"\n"));
+
+                            break;
+                        }
+                        else
+                        {
+                            char joystick_guid[256] = {0};
+                            
+                            SDL_JoystickGUID guid;
+                            guid = SDL_JoystickGetDeviceGUID(i);
+                            
+                            SDL_JoystickGetGUIDString(guid, joystick_guid, 255);
+                            
+                            Com_Printf ("To use joystick as game controller please set SDL_GAMECONTROLLERCONFIG:\n");
+                            Com_Printf ("e.g.: SDL_GAMECONTROLLERCONFIG='%s,%s,leftx:a0,lefty:a1,rightx:a2,righty:a3,back:b1,...\n", joystick_guid, SDL_JoystickName(joystick));
+                        }
+                    }
+                }
+                
+                break;
+                
 			case SDL_MOUSEWHEEL:
 				Key_Event((event.wheel.y > 0 ? K_MWHEELUP : K_MWHEELDOWN), true, true);
 				Key_Event((event.wheel.y > 0 ? K_MWHEELUP : K_MWHEELDOWN), false, true);
@@ -1238,8 +1323,10 @@ IN_Init(void)
 
 #ifndef IOS
     SDL_StartTextInput();
+#else
+    SDL_SetHint(SDL_HINT_ACCELEROMETER_AS_JOYSTICK, "0");
 #endif
-
+    
 	/* Joystick init */
 	if (!SDL_WasInit(SDL_INIT_GAMECONTROLLER | SDL_INIT_HAPTIC))
 	{

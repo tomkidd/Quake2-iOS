@@ -150,8 +150,6 @@
 		A16F5AAE21E417C800F998E7 /* view.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B667D21D534E300AA2472 /* view.c */; };
 		A16F5AAF21E417CF00F998E7 /* savegame.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B663221D534E300AA2472 /* savegame.c */; };
 		A16F5AB221E55EF600F998E7 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
-		A16F5AB321E55EF600F998E7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07C0E26BD8C00F39101 /* Icon.png */; };
-		A16F5AB421E55EF600F998E7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07E0E26BDA900F39101 /* Default.png */; };
 		A16F5AB521E55EF600F998E7 /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
 		A16F5AB621E55EF600F998E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */; };
 		A16F5AB921E55EF600F998E7 /* g_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B662821D534E300AA2472 /* g_main.c */; };
@@ -300,8 +298,6 @@
 		A1B80A0421F438C200560711 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B80A0221F438C200560711 /* Launch Screen.storyboard */; };
 		A1B80A4721F96DAA00560711 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B80A0221F438C200560711 /* Launch Screen.storyboard */; };
 		A1B80A4821F96DAA00560711 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
-		A1B80A4921F96DAA00560711 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07C0E26BD8C00F39101 /* Icon.png */; };
-		A1B80A4A21F96DAA00560711 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07E0E26BDA900F39101 /* Default.png */; };
 		A1B80A4B21F96DAA00560711 /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
 		A1B80A4C21F96DAA00560711 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */; };
 		A1B80A4F21F96DAA00560711 /* g_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B662821D534E300AA2472 /* g_main.c */; };
@@ -446,11 +442,12 @@
 		A1B80AEE21F96DEA00560711 /* gl3_sp2.c in Sources */ = {isa = PBXBuildFile; fileRef = A1B80A3C21F96D9300560711 /* gl3_sp2.c */; };
 		A1B80AEF21F96DEA00560711 /* gl3_surf.c in Sources */ = {isa = PBXBuildFile; fileRef = A1B80A3121F96D9300560711 /* gl3_surf.c */; };
 		A1B80AF021F96DEA00560711 /* gl3_warp.c in Sources */ = {isa = PBXBuildFile; fileRef = A1B80A4321F96D9300560711 /* gl3_warp.c */; };
+		A1B80AF221F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */; };
+		A1B80AF321F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */; };
+		A1B80AF421F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */; };
 		FA8B4B97196703B400F8EB7C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
 		FAE0E9651BAF967F0098DFA4 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
 		FD779EDE0E26BA1200F39101 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
-		FD77A07D0E26BD8C00F39101 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07C0E26BD8C00F39101 /* Icon.png */; };
-		FD77A07F0E26BDA900F39101 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD77A07E0E26BDA900F39101 /* Default.png */; };
 		FD77A0850E26BDB800F39101 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
 		FDB8BFC60E5A0F6A00980157 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
@@ -723,11 +720,10 @@
 		A1B80A4321F96D9300560711 /* gl3_warp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gl3_warp.c; sourceTree = "<group>"; };
 		A1B80A4421F96D9300560711 /* gl3_md2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gl3_md2.c; sourceTree = "<group>"; };
 		A1B80AE021F96DAA00560711 /* Quake2-SDL-iOS-gl3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2-SDL-iOS-gl3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Quake2-SDL-iOS.xcassets"; sourceTree = "<group>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		FD77A07C0E26BD8C00F39101 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		FD77A07E0E26BDA900F39101 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FD77A0840E26BDB800F39101 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -833,10 +829,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FD77A07E0E26BDA900F39101 /* Default.png */,
-				FD77A07C0E26BD8C00F39101 /* Icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				A1B80A0221F438C200560711 /* Launch Screen.storyboard */,
+				A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1715,10 +1710,9 @@
 			files = (
 				A1B80A0321F438C200560711 /* Launch Screen.storyboard in Resources */,
 				A13B695221D574A000AA2472 /* baseq2 in Resources */,
-				FD77A07D0E26BD8C00F39101 /* Icon.png in Resources */,
-				FD77A07F0E26BDA900F39101 /* Default.png in Resources */,
 				A13B695121D574A000AA2472 /* music in Resources */,
 				945C4F53195AF17F00DBBF61 /* Default-568h@2x.png in Resources */,
+				A1B80AF221F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1728,10 +1722,9 @@
 			files = (
 				A1B80A0421F438C200560711 /* Launch Screen.storyboard in Resources */,
 				A16F5AB221E55EF600F998E7 /* baseq2 in Resources */,
-				A16F5AB321E55EF600F998E7 /* Icon.png in Resources */,
-				A16F5AB421E55EF600F998E7 /* Default.png in Resources */,
 				A16F5AB521E55EF600F998E7 /* music in Resources */,
 				A16F5AB621E55EF600F998E7 /* Default-568h@2x.png in Resources */,
+				A1B80AF321F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1741,10 +1734,9 @@
 			files = (
 				A1B80A4721F96DAA00560711 /* Launch Screen.storyboard in Resources */,
 				A1B80A4821F96DAA00560711 /* baseq2 in Resources */,
-				A1B80A4921F96DAA00560711 /* Icon.png in Resources */,
-				A1B80A4A21F96DAA00560711 /* Default.png in Resources */,
 				A1B80A4B21F96DAA00560711 /* music in Resources */,
 				A1B80A4C21F96DAA00560711 /* Default-568h@2x.png in Resources */,
+				A1B80AF421F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2171,6 +2163,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2206,6 +2199,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2240,6 +2234,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2285,6 +2280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2327,6 +2323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2372,6 +2369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

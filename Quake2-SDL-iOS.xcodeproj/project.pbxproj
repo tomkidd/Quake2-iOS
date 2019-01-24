@@ -867,7 +867,7 @@
 		A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Quake2-SDL-iOS.xcassets"; sourceTree = "<group>"; };
 		A1B80AF921FA5BEE00560711 /* Quake2-SDL-tvOS-gl3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2-SDL-tvOS-gl3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Quake2-SDL-tvOS.xcassets"; sourceTree = "<group>"; };
-		A1B80B0621FA5BF200560711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B80B0621FA5BF200560711 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		A1B80B0F21FA5D0500560711 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
 		A1B80B1021FA5D0500560711 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		A1B80B1121FA5D0500560711 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
@@ -981,7 +981,6 @@
 				A13B695021D574A000AA2472 /* baseq2 */,
 				A13B694F21D574A000AA2472 /* music */,
 				945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */,
-				A1B80AFA21FA5BEE00560711 /* Quake2-SDL-tvOS-gl3 */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -1006,6 +1005,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */,
+				A1B80B0621FA5BF200560711 /* Info-tvOS.plist */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				A1B80A0221F438C200560711 /* Launch Screen.storyboard */,
 				A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */,
@@ -1771,15 +1772,6 @@
 				A1B80A4221F96D9300560711 /* local.h */,
 			);
 			path = header;
-			sourceTree = "<group>";
-		};
-		A1B80AFA21FA5BEE00560711 /* Quake2-SDL-tvOS-gl3 */ = {
-			isa = PBXGroup;
-			children = (
-				A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */,
-				A1B80B0621FA5BF200560711 /* Info.plist */,
-			);
-			path = "Quake2-SDL-tvOS-gl3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2805,7 +2797,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "Quake2-SDL-tvOS-gl3/Info.plist";
+				INFOPLIST_FILE = "Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -2850,7 +2842,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "Quake2-SDL-tvOS-gl3/Info.plist";
+				INFOPLIST_FILE = "Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

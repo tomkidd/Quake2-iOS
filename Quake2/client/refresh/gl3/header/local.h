@@ -38,7 +38,10 @@
   #include <GL/gl.h>
   #include <GL/glext.h>
 #else
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
   #include "../glad/include/glad/glad.h"
+#pragma clang diagnostic pop
 #endif
 
 #include "../../ref_shared.h"

@@ -1110,6 +1110,11 @@ GLAPI PFNGLISENABLEDPROC glad_glIsEnabled;
 typedef void (APIENTRYP PFNGLDEPTHRANGEPROC)(GLdouble near, GLdouble far);
 GLAPI PFNGLDEPTHRANGEPROC glad_glDepthRange;
 #define glDepthRange glad_glDepthRange
+
+typedef void (APIENTRYP PFNGLDEPTHRANGEFPROC)(GLfloat near, GLfloat far);
+GLAPI PFNGLDEPTHRANGEFPROC glad_glDepthRangef;
+#define glDepthRangef glad_glDepthRangef
+    
 typedef void (APIENTRYP PFNGLVIEWPORTPROC)(GLint x, GLint y, GLsizei width, GLsizei height);
 GLAPI PFNGLVIEWPORTPROC glad_glViewport;
 #define glViewport glad_glViewport

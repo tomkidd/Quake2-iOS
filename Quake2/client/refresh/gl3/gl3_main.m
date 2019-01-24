@@ -25,6 +25,7 @@
  * =======================================================================
  */
 
+#import <UIKit/UIKit.h>
 
 #include "../ref_shared.h"
 #include "header/local.h"
@@ -200,8 +201,22 @@ GL3_Register(void)
 	gl_retexturing = ri.Cvar_Get("gl_retexturing", "1", CVAR_ARCHIVE);
 	gl3_debugcontext = ri.Cvar_Get("gl3_debugcontext", "0", 0);
 	r_mode = ri.Cvar_Get("r_mode", "4", CVAR_ARCHIVE);
-	r_customwidth = ri.Cvar_Get("r_customwidth", "1024", CVAR_ARCHIVE);
-	r_customheight = ri.Cvar_Get("r_customheight", "768", CVAR_ARCHIVE);
+    
+#ifdef IOS
+    
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    CGFloat screenScale = [[UIScreen mainScreen] scale];
+    CGSize screenSize = CGSizeMake(screenBounds.size.width * screenScale, screenBounds.size.height * screenScale);
+    
+    r_customwidth = ri.Cvar_Get("r_customwidth", (char*)[[[NSNumber numberWithFloat:screenSize.width] stringValue] UTF8String], CVAR_ARCHIVE);
+    r_customheight = ri.Cvar_Get("r_customheight", (char*)[[[NSNumber numberWithFloat:screenSize.height] stringValue] UTF8String], CVAR_ARCHIVE);
+#else
+    r_customwidth = ri.Cvar_Get("r_customwidth", "1024", CVAR_ARCHIVE);
+    r_customheight = ri.Cvar_Get("r_customheight", "768", CVAR_ARCHIVE);
+#endif
+    
+//    r_customwidth = ri.Cvar_Get("r_customwidth", "1024", CVAR_ARCHIVE);
+//    r_customheight = ri.Cvar_Get("r_customheight", "768", CVAR_ARCHIVE);
 	gl3_particle_size = ri.Cvar_Get("gl3_particle_size", "40", CVAR_ARCHIVE);
 	gl3_particle_fade_factor = ri.Cvar_Get("gl3_particle_fade_factor", "1.2", CVAR_ARCHIVE);
 	gl3_particle_square = ri.Cvar_Get("gl3_particle_square", "0", CVAR_ARCHIVE);
@@ -815,8 +830,9 @@ GL3_DrawParticles(void)
 
 		glDepthMask(GL_FALSE);
 		glEnable(GL_BLEND);
+#ifndef USE_GLES3
 		glEnable(GL_PROGRAM_POINT_SIZE);
-
+#endif
 		GL3_UseProgram(gl3state.siParticle.shaderProgram);
 
 		for ( i = 0, p = gl3_newrefdef.particles; i < numParticles; i++, p++ )
@@ -843,7 +859,9 @@ GL3_DrawParticles(void)
 
 		glDisable(GL_BLEND);
 		glDepthMask(GL_TRUE);
+#ifndef USE_GLES3
 		glDisable(GL_PROGRAM_POINT_SIZE);
+#endif
 	}
 }
 
@@ -1546,7 +1564,11 @@ GL3_Clear(void)
 	gl3depthmax = 1;
 	glDepthFunc(GL_LEQUAL);
 
-	glDepthRange(gl3depthmin, gl3depthmax);
+#ifdef USE_GLES3
+    glDepthRangef(gl3depthmin, gl3depthmax);
+#else
+    glDepthRange(gl3depthmin, gl3depthmax);
+#endif
 
 	if (gl_zfix->value)
 	{
@@ -1642,6 +1664,7 @@ GL3_BeginFrame(float camera_separation)
 	{
 		gl_drawbuffer->modified = false;
 
+#ifndef USE_GLES3 // glDrawBuffer does not exist
 		// TODO: stereo stuff
 		//if ((gl3state.camera_separation == 0) || gl3state.stereo_mode != STEREO_MODE_OPENGL)
 		{
@@ -1654,6 +1677,7 @@ GL3_BeginFrame(float camera_separation)
 				glDrawBuffer(GL_BACK);
 			}
 		}
+#endif
 	}
 
 	/* texturemode stuff */
@@ -1763,6 +1787,7 @@ void R_Printf(int level, const char* msg, ...)
  * this is only here so the functions in shared source files
  * (shared.c, rand.c, flash.c, mem.c/hunk.c) can link
  */
+#ifndef IOS
 void
 Sys_Error(char *error, ...)
 {
@@ -1784,3 +1809,4 @@ Com_Printf(char *msg, ...)
 	ri.Com_VPrintf(PRINT_ALL, msg, argptr);
 	va_end(argptr);
 }
+#endif

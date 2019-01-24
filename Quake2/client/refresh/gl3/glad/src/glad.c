@@ -421,6 +421,7 @@ PFNGLVERTEXATTRIB2SPROC glad_glVertexAttrib2s;
 PFNGLTEXIMAGE3DMULTISAMPLEPROC glad_glTexImage3DMultisample;
 PFNGLUNIFORMMATRIX4FVPROC glad_glUniformMatrix4fv;
 PFNGLDEPTHRANGEPROC glad_glDepthRange;
+PFNGLDEPTHRANGEFPROC glad_glDepthRangef;
 PFNGLGETACTIVEUNIFORMPROC glad_glGetActiveUniform;
 PFNGLVERTEXATTRIBI4USVPROC glad_glVertexAttribI4usv;
 PFNGLTEXPARAMETERFPROC glad_glTexParameterf;
@@ -494,6 +495,7 @@ static void load_GL_VERSION_1_0(GLADloadproc load) {
 	glad_glGetTexLevelParameteriv = (PFNGLGETTEXLEVELPARAMETERIVPROC)load("glGetTexLevelParameteriv");
 	glad_glIsEnabled = (PFNGLISENABLEDPROC)load("glIsEnabled");
 	glad_glDepthRange = (PFNGLDEPTHRANGEPROC)load("glDepthRange");
+    glad_glDepthRangef = (PFNGLDEPTHRANGEFPROC)load("glDepthRangef");
 	glad_glViewport = (PFNGLVIEWPORTPROC)load("glViewport");
 }
 static void load_GL_VERSION_1_1(GLADloadproc load) {
@@ -846,6 +848,12 @@ static void find_coreGL(void) {
     sscanf(version, "%d.%d", &major, &minor);
 #endif
 
+
+#ifdef USE_GLES3 // HACK to allow GLES 3.0 to work
+    major = 3;
+    minor = 2;
+#endif
+    
     GLVersion.major = major; GLVersion.minor = minor;
     max_loaded_major = major; max_loaded_minor = minor;
 	GLAD_GL_VERSION_1_0 = (major == 1 && minor >= 0) || major > 1;

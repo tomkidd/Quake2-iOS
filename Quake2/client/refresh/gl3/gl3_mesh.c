@@ -804,7 +804,11 @@ GL3_DrawAliasModel(entity_t *entity)
 	if (entity->flags & RF_DEPTHHACK)
 	{
 		/* hack the depth range to prevent view model from poking into walls */
-		glDepthRange(gl3depthmin, gl3depthmin + 0.3 * (gl3depthmax - gl3depthmin));
+#ifdef USE_GLES3
+        glDepthRangef(gl3depthmin, gl3depthmin + 0.3 * (gl3depthmax - gl3depthmin));
+#else
+        glDepthRange(gl3depthmin, gl3depthmin + 0.3 * (gl3depthmax - gl3depthmin));
+#endif
 	}
 
 	if (entity->flags & RF_WEAPONMODEL)
@@ -915,7 +919,11 @@ GL3_DrawAliasModel(entity_t *entity)
 
 	if (entity->flags & RF_DEPTHHACK)
 	{
-		glDepthRange(gl3depthmin, gl3depthmax);
+#ifdef USE_GLES3
+        glDepthRangef(gl3depthmin, gl3depthmax);
+#else
+        glDepthRange(gl3depthmin, gl3depthmax);
+#endif
 	}
 
 	if (gl_shadows->value && gl3config.stencil && !(entity->flags & (RF_TRANSLUCENT | RF_WEAPONMODEL | RF_NOSHADOW)))

@@ -34,14 +34,18 @@ void
 GL3_SetDefaultState(void)
 {
 	glClearColor(1, 0, 0.5, 0.5);
+#ifndef USE_GLES3
 	glDisable(GL_MULTISAMPLE);
+#endif
 	glCullFace(GL_FRONT);
 
 	glDisable(GL_DEPTH_TEST);
 	glDisable(GL_CULL_FACE);
 	glDisable(GL_BLEND);
 
+#ifndef USE_GLES3
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+#endif
 
 	// TODO: gl_texturemode, gl1_texturealphamode?
 	//GL3_TextureMode(gl_texturemode->string);

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A16F5B5E21E5624800F998E7"
+               BlueprintIdentifier = "A1B80A4521F96DAA00560711"
                BuildableName = "Quake2-SDL-iOS-gl3.app"
                BlueprintName = "Quake2-SDL-iOS-gl3"
                ReferencedContainer = "container:Quake2-SDL-iOS.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A16F5B5E21E5624800F998E7"
+            BlueprintIdentifier = "A1B80A4521F96DAA00560711"
             BuildableName = "Quake2-SDL-iOS-gl3.app"
             BlueprintName = "Quake2-SDL-iOS-gl3"
             ReferencedContainer = "container:Quake2-SDL-iOS.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A16F5B5E21E5624800F998E7"
+            BlueprintIdentifier = "A1B80A4521F96DAA00560711"
             BuildableName = "Quake2-SDL-iOS-gl3.app"
             BlueprintName = "Quake2-SDL-iOS-gl3"
             ReferencedContainer = "container:Quake2-SDL-iOS.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A16F5B5E21E5624800F998E7"
+            BlueprintIdentifier = "A1B80A4521F96DAA00560711"
             BuildableName = "Quake2-SDL-iOS-gl3.app"
             BlueprintName = "Quake2-SDL-iOS-gl3"
             ReferencedContainer = "container:Quake2-SDL-iOS.xcodeproj">

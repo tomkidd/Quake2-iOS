@@ -659,7 +659,6 @@
 				A13B669121D534E300AA2472 /* common */,
 				A13B661921D534E300AA2472 /* game */,
 				A13B673D21D534E300AA2472 /* server */,
-				A131F34321D530B500B4BB5D /* SDL.xcodeproj */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -680,25 +679,26 @@
 			isa = PBXGroup;
 			children = (
 				FD77A0840E26BDB800F39101 /* AudioToolbox.framework */,
-				A131F33921D52FA700B4BB5D /* AVFoundation.framework */,
 				A1B80B1121FA5D0500560711 /* AudioToolbox.framework */,
+				A131F33921D52FA700B4BB5D /* AVFoundation.framework */,
 				A1B80B1321FA5D0500560711 /* AVFoundation.framework */,
 				FD779EDD0E26BA1200F39101 /* CoreAudio.framework */,
-				FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */,
 				A1B80B0F21FA5D0500560711 /* CoreAudio.framework */,
+				FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */,
 				A1B80B1521FA5D0500560711 /* CoreGraphics.framework */,
-				A1B80B1721FA5D0500560711 /* Foundation.framework */,
-				A1B80B1621FA5D0500560711 /* GameController.framework */,
-				A1B80B1421FA5D0500560711 /* Metal.framework */,
-				A1B80B1821FA5D0500560711 /* OpenGLES.framework */,
-				A1B80B1021FA5D0500560711 /* QuartzCore.framework */,
-				A1B80B1221FA5D0500560711 /* UIKit.framework */,
 				FA8B4B96196703B400F8EB7C /* CoreMotion.framework */,
+				A1B80B1721FA5D0500560711 /* Foundation.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				A1B80B1621FA5D0500560711 /* GameController.framework */,
 				FAE0E9641BAF967F0098DFA4 /* GameController.framework */,
+				A1B80B1421FA5D0500560711 /* Metal.framework */,
 				A13B68A421D54D3B00AA2472 /* Metal.framework */,
+				A1B80B1821FA5D0500560711 /* OpenGLES.framework */,
 				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				A1B80B1021FA5D0500560711 /* QuartzCore.framework */,
 				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				A131F34321D530B500B4BB5D /* SDL.xcodeproj */,
+				A1B80B1221FA5D0500560711 /* UIKit.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 			);
 			name = Frameworks;

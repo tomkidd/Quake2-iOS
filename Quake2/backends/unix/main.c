@@ -28,14 +28,18 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/stat.h>
-#include <SDL2/SDL_main.h>
+//#include <SDL2/SDL_main.h>
 
 #include "../../common/header/common.h"
 
 void registerHandler(void);
 
+#ifdef IOS
+int Sys_Startup( int argc, char **argv )
+#else
 int
 main(int argc, char **argv)
+#endif
 {
 	// register signal handler
 	registerHandler();

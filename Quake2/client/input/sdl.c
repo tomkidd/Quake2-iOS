@@ -1325,7 +1325,7 @@ IN_Init(void)
     SDL_StartTextInput();
 #else
     SDL_SetHint(SDL_HINT_ACCELEROMETER_AS_JOYSTICK, "0");
-    SDL_SetHint(SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH, "0");
+    SDL_SetHint(SDL_HINT_TOUCH_MOUSE_EVENTS, "0");
 #endif
     
 	/* Joystick init */

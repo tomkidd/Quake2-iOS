@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B6S-26-QQH">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,48 +9,93 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="dpquake.ttf">
+            <string>DpQuake</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main Menu View Controller-->
         <scene sceneID="wg1-bM-6Tx">
             <objects>
                 <viewController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="byW-bL-l5m" customClass="MainMenuViewController" customModule="Quake2_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nhk-ED-EMS">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quake 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-G9-Y44">
-                                <rect key="frame" x="228" y="64" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quake2background" translatesAutoresizingMaskIntoConstraints="NO" id="WE9-jb-ZdU">
+                                <rect key="frame" x="-57.666666666666686" y="0.0" width="666.66666666666674" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WE9-jb-ZdU" secondAttribute="height" multiplier="16:9" id="eLd-Jm-Ii7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q u a k e  ii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-G9-Y44">
+                                <rect key="frame" x="307.66666666666674" y="8" width="440" height="85"/>
+                                <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="72"/>
+                                <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-Gj-xg9">
-                                <rect key="frame" x="237" y="108" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-Gj-xg9">
+                                <rect key="frame" x="512" y="101" width="236" height="69"/>
+                                <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
+                                <state key="normal" title="start game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="ZbM-Ov-oft" kind="show" id="Z4m-7e-yuz"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tdG-Gj-xg9" firstAttribute="top" secondItem="i1s-G9-Y44" secondAttribute="bottom" constant="8" id="AAJ-Pf-ja7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i1s-G9-Y44" secondAttribute="trailing" constant="0.33000000000000002" id="Chh-1v-0Rn"/>
+                            <constraint firstAttribute="top" secondItem="WE9-jb-ZdU" secondAttribute="top" id="HgZ-Bg-Ae8"/>
+                            <constraint firstAttribute="trailing" secondItem="WE9-jb-ZdU" secondAttribute="trailing" constant="203" id="XBR-Fl-bah">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="i1s-G9-Y44" firstAttribute="top" secondItem="qC1-tp-PXt" secondAttribute="top" constant="8" id="YZP-aH-wAN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tdG-Gj-xg9" secondAttribute="trailing" id="a3y-47-xLt"/>
+                            <constraint firstAttribute="bottom" secondItem="WE9-jb-ZdU" secondAttribute="bottom" id="hwM-co-d4n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qC1-tp-PXt"/>
                     </view>
                     <navigationItem key="navigationItem" id="bJL-Du-FQP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHd-Mz-pIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917.09145427286364" y="704.79999999999995"/>
+            <point key="canvasLocation" x="916.99507389162568" y="704.79999999999995"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="7LL-Xc-QXH">
             <objects>
                 <viewController id="ZbM-Ov-oft" customClass="GameViewController" customModule="Quake2_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zay-pc-Dpq">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quake2background" translatesAutoresizingMaskIntoConstraints="NO" id="12b-vS-7K6">
+                                <rect key="frame" x="0.0" y="-41" width="812" height="457"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="12b-vS-7K6" secondAttribute="height" multiplier="16:9" id="uWN-iN-98x"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOI-0W-Afg">
+                                <rect key="frame" x="48" y="278" width="241" height="87"/>
+                                <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="74"/>
+                                <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="iOI-0W-Afg" secondAttribute="bottom" constant="10" id="4WM-ih-oce"/>
+                            <constraint firstItem="iOI-0W-Afg" firstAttribute="leading" secondItem="0Y3-kc-ye4" secondAttribute="leading" constant="4" id="QZq-zJ-IB7"/>
+                            <constraint firstItem="12b-vS-7K6" firstAttribute="centerX" secondItem="zay-pc-Dpq" secondAttribute="centerX" id="aNt-0b-XGC"/>
+                            <constraint firstAttribute="trailing" secondItem="12b-vS-7K6" secondAttribute="trailing" id="ahk-83-aN1"/>
+                            <constraint firstItem="12b-vS-7K6" firstAttribute="leading" secondItem="zay-pc-Dpq" secondAttribute="leading" id="bdI-Zw-OIt"/>
+                            <constraint firstItem="12b-vS-7K6" firstAttribute="centerY" secondItem="zay-pc-Dpq" secondAttribute="centerY" id="rw7-rJ-Efc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Y3-kc-ye4"/>
                     </view>
                 </viewController>
@@ -76,4 +121,7 @@
             <point key="canvasLocation" x="152" y="705"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="quake2background" width="1920" height="1080"/>
+    </resources>
 </document>

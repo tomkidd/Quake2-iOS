@@ -301,6 +301,8 @@
 		A1B80B2021FA5D0500560711 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1621FA5D0500560711 /* GameController.framework */; };
 		A1B80B2121FA5D0500560711 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1721FA5D0500560711 /* Foundation.framework */; };
 		A1B80B2221FA5D0500560711 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1821FA5D0500560711 /* OpenGLES.framework */; };
+		A1C1205421FD178100EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
+		A1C1205521FD178100EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -551,6 +553,7 @@
 		A1B80B1621FA5D0500560711 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
 		A1B80B1721FA5D0500560711 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A1B80B1821FA5D0500560711 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		A1C1204E21FD178100EAD9CB /* dpquake.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dpquake.ttf; sourceTree = "<group>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -625,6 +628,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A1C1204E21FD178100EAD9CB /* dpquake.ttf */,
 				A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */,
 				A1B80B0621FA5BF200560711 /* Info-tvOS.plist */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -1454,6 +1458,7 @@
 				A15BF74B21FCF7E3005F4B74 /* Main.storyboard in Resources */,
 				A1B80A4821F96DAA00560711 /* baseq2 in Resources */,
 				A1B80A4B21F96DAA00560711 /* music in Resources */,
+				A1C1205421FD178100EAD9CB /* dpquake.ttf in Resources */,
 				A1B80AF421F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1464,6 +1469,7 @@
 			files = (
 				A1B80B0D21FA5C6500560711 /* music in Resources */,
 				A1B80B0C21FA5C6300560711 /* baseq2 in Resources */,
+				A1C1205521FD178100EAD9CB /* dpquake.ttf in Resources */,
 				A1B80B0521FA5BF200560711 /* Quake2-SDL-tvOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

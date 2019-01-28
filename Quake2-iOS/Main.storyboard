@@ -106,7 +106,7 @@
         <!--Navigation Controller-->
         <scene sceneID="XN9-xE-miP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="B6S-26-QQH" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootNC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="B6S-26-QQH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hpv-RZ-Sll">
                         <autoresizingMask key="autoresizingMask"/>

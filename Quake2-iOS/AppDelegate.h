@@ -8,14 +8,12 @@
 #import <UIKit/UIKit.h>
 #import "../SDL/src/video/uikit/SDL_uikitappdelegate.h"
 
-@class MainMenuViewController;
-
 @interface AppDelegate : SDLUIKitDelegate {
-    MainMenuViewController *mainViewController;     // required to dismiss the SettingsBaseViewController
+    UINavigationController *rootNavigationController;     // required to dismiss the SettingsBaseViewController
     UIWindow *uiwindow;
 }
 
-@property (nonatomic, strong) MainMenuViewController *mainViewController;
+@property (nonatomic, strong) UINavigationController *rootNavigationController;
 @property (nonatomic, strong) UIWindow *uiwindow;
 
 @end

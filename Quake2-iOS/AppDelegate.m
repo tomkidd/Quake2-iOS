@@ -18,13 +18,13 @@
 @end
 
 @implementation AppDelegate
-@synthesize mainViewController, uiwindow;
+@synthesize rootNavigationController, uiwindow;
 
 #pragma mark -
 #pragma mark AppDelegate methods
 - (id)init {
     if ((self = [super init])) {
-        mainViewController = nil;
+        rootNavigationController = nil;
         uiwindow = nil;
     }
     return self;
@@ -47,9 +47,9 @@
 
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
 
-    mainViewController = (MainMenuViewController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"MainVC"];
+    rootNavigationController = (UINavigationController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"RootNC"];
 
-    self.uiwindow.rootViewController = self.mainViewController;
+    self.uiwindow.rootViewController = self.rootNavigationController;
     
     [self.uiwindow makeKeyAndVisible];
 }

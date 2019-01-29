@@ -171,8 +171,8 @@
 		A15BF69E21FCDD7A005F4B74 /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56B21FCDD7A005F4B74 /* crc.c */; };
 		A15BF69F21FCDD7A005F4B74 /* cvar.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56C21FCDD7A005F4B74 /* cvar.c */; };
 		A15BF6A021FCDD7A005F4B74 /* cvar.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56C21FCDD7A005F4B74 /* cvar.c */; };
-		A15BF6A121FCDD7A005F4B74 /* glimp_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57621FCDD7A005F4B74 /* glimp_sdl.c */; };
-		A15BF6A221FCDD7A005F4B74 /* glimp_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57621FCDD7A005F4B74 /* glimp_sdl.c */; };
+		A15BF6A121FCDD7A005F4B74 /* glimp_sdl.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57621FCDD7A005F4B74 /* glimp_sdl.m */; };
+		A15BF6A221FCDD7A005F4B74 /* glimp_sdl.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57621FCDD7A005F4B74 /* glimp_sdl.m */; };
 		A15BF6A321FCDD7A005F4B74 /* vid.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57721FCDD7A005F4B74 /* vid.c */; };
 		A15BF6A421FCDD7A005F4B74 /* vid.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57721FCDD7A005F4B74 /* vid.c */; };
 		A15BF6A521FCDD7A005F4B74 /* cl_effects.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57E21FCDD7A005F4B74 /* cl_effects.c */; };
@@ -305,6 +305,7 @@
 		A1C1205521FD178100EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
 		A1C1205721FE821900EAD9CB /* JoyStickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1205621FE821900EAD9CB /* JoyStickView.swift */; };
 		A1C1206021FE840D00EAD9CB /* CoreGraphics+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */; };
+		A1C120632200C27B00EAD9CB /* SDL_uikitviewcontroller+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -458,7 +459,7 @@
 		A15BF57121FCDD7A005F4B74 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		A15BF57221FCDD7A005F4B74 /* files.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = files.h; sourceTree = "<group>"; };
 		A15BF57321FCDD7A005F4B74 /* glob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glob.h; sourceTree = "<group>"; };
-		A15BF57621FCDD7A005F4B74 /* glimp_sdl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glimp_sdl.c; sourceTree = "<group>"; };
+		A15BF57621FCDD7A005F4B74 /* glimp_sdl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glimp_sdl.m; sourceTree = "<group>"; };
 		A15BF57721FCDD7A005F4B74 /* vid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vid.c; sourceTree = "<group>"; };
 		A15BF57921FCDD7A005F4B74 /* q2icon64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = q2icon64.h; sourceTree = "<group>"; };
 		A15BF57B21FCDD7A005F4B74 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
@@ -558,6 +559,7 @@
 		A1C1204E21FD178100EAD9CB /* dpquake.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dpquake.ttf; sourceTree = "<group>"; };
 		A1C1205621FE821900EAD9CB /* JoyStickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoyStickView.swift; sourceTree = "<group>"; };
 		A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Additions.swift"; sourceTree = "<group>"; };
+		A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDL_uikitviewcontroller+Additions.swift"; sourceTree = "<group>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -1132,7 +1134,7 @@
 		A15BF57521FCDD7A005F4B74 /* vid */ = {
 			isa = PBXGroup;
 			children = (
-				A15BF57621FCDD7A005F4B74 /* glimp_sdl.c */,
+				A15BF57621FCDD7A005F4B74 /* glimp_sdl.m */,
 				A15BF57721FCDD7A005F4B74 /* vid.c */,
 				A15BF57821FCDD7A005F4B74 /* icon */,
 				A15BF57A21FCDD7A005F4B74 /* header */,
@@ -1344,14 +1346,15 @@
 		A15BF74921FCF773005F4B74 /* Quake2-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A15BF75921FD02AD005F4B74 /* AppDelegate.h */,
+				A15BF75721FD02A0005F4B74 /* AppDelegate.m */,
 				A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */,
+				A15BF75F21FD0819005F4B74 /* GameViewController.swift */,
 				A1C1205621FE821900EAD9CB /* JoyStickView.swift */,
 				A15BF74A21FCF7E3005F4B74 /* Main.storyboard */,
-				A15BF75721FD02A0005F4B74 /* AppDelegate.m */,
-				A15BF75921FD02AD005F4B74 /* AppDelegate.h */,
-				A15BF75A21FD05C8005F4B74 /* Quake2-iOS-Bridging-Header.h */,
 				A15BF75D21FD0604005F4B74 /* MainMenuViewController.swift */,
-				A15BF75F21FD0819005F4B74 /* GameViewController.swift */,
+				A15BF75A21FD05C8005F4B74 /* Quake2-iOS-Bridging-Header.h */,
+				A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */,
 			);
 			path = "Quake2-iOS";
 			sourceTree = "<group>";
@@ -1514,6 +1517,7 @@
 				A15BF75E21FD0604005F4B74 /* MainMenuViewController.swift in Sources */,
 				A15BF68721FCDD7A005F4B74 /* flash.c in Sources */,
 				A15BF63D21FCDD7A005F4B74 /* g_phys.c in Sources */,
+				A1C120632200C27B00EAD9CB /* SDL_uikitviewcontroller+Additions.swift in Sources */,
 				A15BF60D21FCDD7A005F4B74 /* sv_main.c in Sources */,
 				A15BF60921FCDD7A005F4B74 /* sv_save.c in Sources */,
 				A15BF70321FCDD7A005F4B74 /* gl3_image.c in Sources */,
@@ -1567,7 +1571,7 @@
 				A15BF62D21FCDD7A005F4B74 /* g_monster.c in Sources */,
 				A15BF70121FCDD7A005F4B74 /* gl3_mesh.c in Sources */,
 				A15BF6FD21FCDD7A005F4B74 /* gl3_misc.c in Sources */,
-				A15BF6A121FCDD7A005F4B74 /* glimp_sdl.c in Sources */,
+				A15BF6A121FCDD7A005F4B74 /* glimp_sdl.m in Sources */,
 				A15BF64121FCDD7A005F4B74 /* move.c in Sources */,
 				A15BF6F321FCDD7A005F4B74 /* pcx.c in Sources */,
 				A15BF67521FCDD7A005F4B74 /* view.c in Sources */,
@@ -1706,7 +1710,7 @@
 				A15BF62E21FCDD7A005F4B74 /* g_monster.c in Sources */,
 				A15BF70221FCDD7A005F4B74 /* gl3_mesh.c in Sources */,
 				A15BF6FE21FCDD7A005F4B74 /* gl3_misc.c in Sources */,
-				A15BF6A221FCDD7A005F4B74 /* glimp_sdl.c in Sources */,
+				A15BF6A221FCDD7A005F4B74 /* glimp_sdl.m in Sources */,
 				A15BF64221FCDD7A005F4B74 /* move.c in Sources */,
 				A15BF6F421FCDD7A005F4B74 /* pcx.c in Sources */,
 				A15BF67621FCDD7A005F4B74 /* view.c in Sources */,
@@ -1992,7 +1996,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/SDL",
+					"$(PROJECT_DIR)/SDL/**",
 					"$(PROJECT_DIR)/Quake2/client/refresh/gl3/glad/include",
 				);
 				ONLY_ACTIVE_ARCH = YES;
@@ -2041,7 +2045,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/SDL",
+					"$(PROJECT_DIR)/SDL/**",
 					"$(PROJECT_DIR)/Quake2/client/refresh/gl3/glad/include",
 				);
 				OTHER_CFLAGS = "";

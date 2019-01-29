@@ -7,3 +7,5 @@
 
 int Sys_Startup( int argc, char **argv );
 void Key_Event(int key, qboolean down, qboolean special);
+#include "SDL_uikitviewcontroller.h"
+#include "keyboard.h"

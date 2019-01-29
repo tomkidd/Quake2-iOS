@@ -27,11 +27,21 @@
  * =======================================================================
  */
 
+#include "../../client/header/keyboard.h"
 #include "../../common/header/common.h"
 #include "header/ref.h"
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_video.h>
+
+#include <UIKit/UIKit.h>
+#include <SDL2/SDL_syswm.h>
+
+#if TARGET_OS_TV
+#import "Quake2_tvOS-Swift.h"
+#else
+#import "Quake2_iOS-Swift.h"
+#endif
 
 cvar_t *vid_displayrefreshrate;
 int glimp_refreshRate = -1;
@@ -42,13 +52,25 @@ static qboolean initSuccessful = false;
 
 // --------
 
+UIViewController* GetSDLViewController(SDL_Window *sdlWindow) {
+    SDL_SysWMinfo systemWindowInfo;
+    SDL_VERSION(&systemWindowInfo.version);
+    if ( ! SDL_GetWindowWMInfo(sdlWindow, &systemWindowInfo)) {
+        // error handle?
+        return nil;
+    }
+    UIWindow *appWindow = systemWindowInfo.info.uikit.window;
+    UIViewController *rootVC = appWindow.rootViewController;
+    return rootVC;
+}
+
 static qboolean
 CreateSDLWindow(int flags, int w, int h)
 {
 	int windowPos = SDL_WINDOWPOS_UNDEFINED;
 
 	window = SDL_CreateWindow("Yamagi Quake II", windowPos, windowPos, w, h, flags);
-
+    
 	return window != NULL;
 }
 
@@ -334,10 +356,31 @@ GLimp_InitGraphics(int fullscreen, int *pwidth, int *pheight)
 
 	/* No cursor */
 	SDL_ShowCursor(0);
+    
+#if TARGET_OS_IPHONE
+    // adding on-screen controls -tkidd
+    SDL_uikitviewcontroller *rootVC = (SDL_uikitviewcontroller *)GetSDLViewController(window);
+    NSLog(@"root VC = %@",rootVC);
+
+    [rootVC.view addSubview:[rootVC fireButtonWithRect:[rootVC.view frame]]];
+    [rootVC.view addSubview:[rootVC jumpButtonWithRect:[rootVC.view frame]]];
+    [rootVC.view addSubview:[rootVC joyStickWithRect:[rootVC.view frame]]];
+#endif
 
 	initSuccessful = true;
 
 	return true;
+}
+
+// this is the wrong place for it, figure out right place later -tkidd
+
+//- (void) updateDate:(id) obj { }
+
+
+void
+firePressed(void)
+{
+    Key_Event(133, true, true);
 }
 
 /*

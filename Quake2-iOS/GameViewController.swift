@@ -14,6 +14,10 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let documentsDir = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path
+        
+        Sys_SetHomeDir(documentsDir)
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
             
             var argv: [String?] = [ Bundle.main.resourcePath! + "/quake2", "+map", "base1"];
@@ -21,7 +25,6 @@ class GameViewController: UIViewController {
             argv.append(nil)
             let argc:Int32 = Int32(argv.count - 1)
             var cargs = argv.map { $0.flatMap { UnsafeMutablePointer<Int8>(strdup($0)) } }
-
             
             Sys_Startup(argc, &cargs)
 

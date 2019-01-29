@@ -46,7 +46,8 @@
 #include "../../common/header/glob.h"
 
 #ifdef IOS
-// trying this for IOS -tkidd
+// Used to determine where to store user-specific files
+char homePath[MAX_OSPATH] = { 0 };
 #include "game.h"
 game_export_t *GetGameAPI(game_import_t *import);
 #endif
@@ -221,6 +222,14 @@ Sys_Microseconds(void)
 
 	return sec*1000000ll + nsec/1000ll;
 }
+
+#ifdef IOS
+void Sys_SetHomeDir( const char* newHomeDir )
+{
+    strncpy(homePath, newHomeDir, sizeof(homePath));
+    strcat(homePath, "/");
+}
+#endif
 
 int
 Sys_Milliseconds(void)
@@ -476,6 +485,9 @@ Sys_IsFile(const char *path)
 char *
 Sys_GetHomeDir(void)
 {
+#ifdef IOS
+    return homePath;
+#else
 	static char gdir[MAX_OSPATH];
 	char *home;
 
@@ -489,6 +501,7 @@ Sys_GetHomeDir(void)
 	snprintf(gdir, sizeof(gdir), "%s/%s/", home, CFGDIR);
 
 	return gdir;
+#endif
 }
 
 void

@@ -81,13 +81,11 @@ extension SDL_uikitviewcontroller: JoystickDelegate {
             Key_Event(133, qboolean(0), qboolean(1))
         }
         
-        print("x: \(x)")
-        
         cl_joyscale_x.0 = Int32(x * 20)        
     }
     
     func handleJoyStick(angle: CGFloat, displacement: CGFloat) {
-        print("angle: \(angle) displacement: \(displacement)")
+//        print("angle: \(angle) displacement: \(displacement)")
     }
     
 }

@@ -50,7 +50,11 @@
 #ifdef _WIN32
  #define CFGDIR "YamagiQ2"
 #else
+ #ifdef IOS
+  #define CFGDIR ""
+ #else
  #define CFGDIR ".yq2"
+ #endif
 #endif
 
 /* ================================================================== */
@@ -796,6 +800,10 @@ qboolean Sys_SetWorkDir(char *path);
 #ifdef _WIN32
 void Sys_RedirectStdout(void);
 void Sys_SetHighDPIMode(void);
+#endif
+
+#ifdef IOS
+void Sys_SetHomeDir( const char *newHomeDir );
 #endif
 
 // misc.c

@@ -4,6 +4,8 @@
 
 #import "AppDelegate.h"
 #import "shared.h"
+#include "client.h"
+#include "input.h"
 
 int Sys_Startup( int argc, char **argv );
 void Key_Event(int key, qboolean down, qboolean special);

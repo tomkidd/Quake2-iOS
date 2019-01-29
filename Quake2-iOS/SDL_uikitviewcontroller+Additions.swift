@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension SDL_uikitviewcontroller {    
+extension SDL_uikitviewcontroller {
     
     @objc func fireButton(rect: CGRect) -> UIButton {
         let fireButton = UIButton(frame: CGRect(x: rect.width - 155, y: rect.height - 90, width: 75, height: 75))
@@ -65,8 +65,25 @@ extension SDL_uikitviewcontroller {
 extension SDL_uikitviewcontroller: JoystickDelegate {
     
     func handleJoyStickPosition(x: CGFloat, y: CGFloat) {
-        //        in_sidestepmove = Float(y) // misnamed but whatever
-        //        in_rollangle = Float(x)
+
+        if y > 0 {
+            cl_joyscale_y.0 = Int32(abs(y) * 60)
+            Key_Event(132, qboolean(1), qboolean(1))
+            Key_Event(133, qboolean(0), qboolean(1))
+        } else if y < 0 {
+            cl_joyscale_y.1 = Int32(abs(y) * 60)
+            Key_Event(132, qboolean(0), qboolean(1))
+            Key_Event(133, qboolean(1), qboolean(1))
+        } else {
+            cl_joyscale_y.0 = 0
+            cl_joyscale_y.1 = 0
+            Key_Event(132, qboolean(0), qboolean(1))
+            Key_Event(133, qboolean(0), qboolean(1))
+        }
+        
+        print("x: \(x)")
+        
+        cl_joyscale_x.0 = Int32(x * 20)        
     }
     
     func handleJoyStick(angle: CGFloat, displacement: CGFloat) {

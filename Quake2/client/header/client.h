@@ -255,6 +255,11 @@ extern client_static_t	cls;
   fires his shotgun onto a Brain. */
 extern int num_power_sounds;
 
+#ifdef IOS
+int cl_joyscale_x[2];
+int cl_joyscale_y[2];
+#endif
+
 /* cvars */
 extern	cvar_t	*gl1_stereo_separation;
 extern	cvar_t	*gl1_stereo_convergence;

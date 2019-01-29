@@ -465,6 +465,27 @@ CL_BaseMove(usercmd_t *cmd)
 
 	VectorCopy(cl.viewangles, cmd->angles);
 
+#ifdef IOS
+    if (in_strafe.state & 1)
+    {
+        cmd->sidemove += cl_sidespeed->value * CL_KeyState(&in_right);
+        cmd->sidemove -= cl_sidespeed->value * CL_KeyState(&in_left);
+    }
+    
+    cmd->sidemove += cl_joyscale_x[0] * 2.0f * CL_KeyState(&in_moveright);
+    cmd->sidemove -= cl_joyscale_x[1] * 2.0f * CL_KeyState(&in_moveleft);
+    
+    cl.viewangles[YAW] -= cl_joyscale_x[0];
+    
+    cmd->upmove = cl_upspeed->value * CL_KeyState(&in_up);
+    cmd->upmove -= cl_upspeed->value * CL_KeyState(&in_down);
+    
+    if (!(in_klook.state & 1))
+    {
+        cmd->forwardmove += cl_joyscale_y[0] * 4.0f * CL_KeyState(&in_forward);
+        cmd->forwardmove -= cl_joyscale_y[1] * 4.0f * CL_KeyState(&in_back);
+    }
+#else
 	if (in_strafe.state & 1)
 	{
 		cmd->sidemove += cl_sidespeed->value * CL_KeyState(&in_right);
@@ -482,6 +503,7 @@ CL_BaseMove(usercmd_t *cmd)
 		cmd->forwardmove += cl_forwardspeed->value * CL_KeyState(&in_forward);
 		cmd->forwardmove -= cl_forwardspeed->value * CL_KeyState(&in_back);
 	}
+#endif
 
 	/* adjust for speed key / running */
 	if ((in_speed.state & 1) ^ (int)(cl_run->value))

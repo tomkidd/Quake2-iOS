@@ -9,7 +9,8 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var joysticksInitialized = false
+    var difficulty = 0
+    var newgame = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,16 @@ class GameViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.
             
-            var argv: [String?] = [ Bundle.main.resourcePath! + "/quake2", "+map", "base1"];
+            var argv: [String?] = [ Bundle.main.resourcePath! + "/quake2"];
+            
+            if self.newgame {
+                argv.append("+newgame")
+            }
+            
+            if self.difficulty >= 0 {
+                argv.append("+skill")
+                argv.append("\(self.difficulty)")
+            }
             
             argv.append(nil)
             let argc:Int32 = Int32(argv.count - 1)

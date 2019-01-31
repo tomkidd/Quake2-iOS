@@ -306,6 +306,8 @@
 		A1C1205721FE821900EAD9CB /* JoyStickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1205621FE821900EAD9CB /* JoyStickView.swift */; };
 		A1C1206021FE840D00EAD9CB /* CoreGraphics+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */; };
 		A1C120632200C27B00EAD9CB /* SDL_uikitviewcontroller+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */; };
+		A1C1206722026DED00EAD9CB /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */; };
+		A1C1206822026DED00EAD9CB /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -560,6 +562,7 @@
 		A1C1205621FE821900EAD9CB /* JoyStickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoyStickView.swift; sourceTree = "<group>"; };
 		A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Additions.swift"; sourceTree = "<group>"; };
 		A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDL_uikitviewcontroller+Additions.swift"; sourceTree = "<group>"; };
+		A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyViewController.swift; sourceTree = "<group>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -1355,6 +1358,7 @@
 				A15BF74A21FCF7E3005F4B74 /* Main.storyboard */,
 				A15BF75D21FD0604005F4B74 /* MainMenuViewController.swift */,
 				A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */,
+				A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */,
 			);
 			path = "Quake2-iOS";
 			sourceTree = "<group>";
@@ -1410,6 +1414,7 @@
 					};
 					A1B80AF821FA5BEE00560711 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1547,6 +1552,7 @@
 				A15BF61F21FCDD7A005F4B74 /* g_turret.c in Sources */,
 				A15BF66F21FCDD7A005F4B74 /* weapon.c in Sources */,
 				A15BF70D21FCDD7A005F4B74 /* gl3_draw.c in Sources */,
+				A1C1206722026DED00EAD9CB /* DifficultyViewController.swift in Sources */,
 				A15BF6AD21FCDD7A005F4B74 /* cl_network.c in Sources */,
 				A15BF65F21FCDD7A005F4B74 /* boss32.c in Sources */,
 				A15BF72521FCDD7A005F4B74 /* videomenu.c in Sources */,
@@ -1729,6 +1735,7 @@
 				A15BF60821FCDD7A005F4B74 /* misc.c in Sources */,
 				A15BF69C21FCDD7A005F4B74 /* argproc.c in Sources */,
 				A15BF68C21FCDD7A005F4B74 /* glob.c in Sources */,
+				A1C1206822026DED00EAD9CB /* DifficultyViewController.swift in Sources */,
 				A15BF66E21FCDD7A005F4B74 /* trail.c in Sources */,
 				A15BF61C21FCDD7A005F4B74 /* sv_world.c in Sources */,
 				A15BF62A21FCDD7A005F4B74 /* g_ai.c in Sources */,
@@ -1903,6 +1910,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.Quake2-SDL-tvOS-gl3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/Quake2-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.1;
 			};
@@ -1948,6 +1958,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.Quake2-SDL-tvOS-gl3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/Quake2-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.1;
 				VALIDATE_PRODUCT = YES;

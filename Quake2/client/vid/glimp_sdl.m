@@ -38,9 +38,21 @@
 #include <SDL2/SDL_syswm.h>
 
 #if TARGET_OS_TV
+#if BASEQ2
 #import "Quake2_tvOS-Swift.h"
+#elif XATRIX
+#import "Quake2mp1_tvOS-Swift.h"
+#elif ROGUE
+#import "Quake2mp2_tvOS-Swift.h"
+#endif
 #else
+#if BASEQ2
 #import "Quake2_iOS-Swift.h"
+#elif XATRIX
+#import "Quake2mp1_iOS-Swift.h"
+#elif ROGUE
+#import "Quake2mp2_iOS-Swift.h"
+#endif
 #endif
 
 cvar_t *vid_displayrefreshrate;

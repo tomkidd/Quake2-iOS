@@ -308,6 +308,166 @@
 		A1C120632200C27B00EAD9CB /* SDL_uikitviewcontroller+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */; };
 		A1C1206722026DED00EAD9CB /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */; };
 		A1C1206822026DED00EAD9CB /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */; };
+		A1C1233D2203B37600EAD9CB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B80A0221F438C200560711 /* Launch Screen.storyboard */; };
+		A1C1233E2203B37600EAD9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BF74A21FCF7E3005F4B74 /* Main.storyboard */; };
+		A1C123402203B37600EAD9CB /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
+		A1C123412203B37600EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
+		A1C123422203B37600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */; };
+		A1C123442203B37600EAD9CB /* qal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E921FCDD7A005F4B74 /* qal.c */; };
+		A1C123452203B37600EAD9CB /* cl_cin.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E621FCDD7A005F4B74 /* cl_cin.c */; };
+		A1C123462203B37600EAD9CB /* cl_view.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FA21FCDD7A005F4B74 /* cl_view.c */; };
+		A1C1234B2203B37600EAD9CB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DC21FCDD7A005F4B74 /* main.c */; };
+		A1C1234E2203B37600EAD9CB /* openal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EB21FCDD7A005F4B74 /* openal.c */; };
+		A1C1234F2203B37600EAD9CB /* gl3_sp2.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D121FCDD7A005F4B74 /* gl3_sp2.c */; };
+		A1C123502203B37600EAD9CB /* ogg.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5ED21FCDD7A005F4B74 /* ogg.c */; };
+		A1C123512203B37600EAD9CB /* menu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E021FCDD7A005F4B74 /* menu.c */; };
+		A1C123542203B37600EAD9CB /* cl_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DC21FCDD7A005F4B74 /* cl_main.c */; };
+		A1C123552203B37600EAD9CB /* gl3_light.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D221FCDD7A005F4B74 /* gl3_light.c */; };
+		A1C123572203B37600EAD9CB /* wal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BB21FCDD7A005F4B74 /* wal.c */; };
+		A1C123592203B37600EAD9CB /* cl_effects.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57E21FCDD7A005F4B74 /* cl_effects.c */; };
+		A1C1235B2203B37600EAD9CB /* cl_prediction.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58721FCDD7A005F4B74 /* cl_prediction.c */; };
+		A1C1235C2203B37600EAD9CB /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75D21FD0604005F4B74 /* MainMenuViewController.swift */; };
+		A1C1235D2203B37600EAD9CB /* flash.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56021FCDD7A005F4B74 /* flash.c */; };
+		A1C1235F2203B37600EAD9CB /* SDL_uikitviewcontroller+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */; };
+		A1C123602203B37600EAD9CB /* sv_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E221FCDD7A005F4B74 /* sv_main.c */; };
+		A1C123612203B37600EAD9CB /* sv_save.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E021FCDD7A005F4B74 /* sv_save.c */; };
+		A1C123622203B37600EAD9CB /* gl3_image.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C321FCDD7A005F4B74 /* gl3_image.c */; };
+		A1C123632203B37600EAD9CB /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55721FCDD7A005F4B74 /* miniz.c */; };
+		A1C123642203B37600EAD9CB /* sv_user.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E721FCDD7A005F4B74 /* sv_user.c */; };
+		A1C123652203B37600EAD9CB /* JoyStickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1205621FE821900EAD9CB /* JoyStickView.swift */; };
+		A1C123662203B37600EAD9CB /* cl_console.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DD21FCDD7A005F4B74 /* cl_console.c */; };
+		A1C123682203B37600EAD9CB /* qmenu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DF21FCDD7A005F4B74 /* qmenu.c */; };
+		A1C123692203B37600EAD9CB /* cvar.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56C21FCDD7A005F4B74 /* cvar.c */; };
+		A1C1236A2203B37600EAD9CB /* netchan.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56621FCDD7A005F4B74 /* netchan.c */; };
+		A1C1236B2203B37600EAD9CB /* system.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D921FCDD7A005F4B74 /* system.c */; };
+		A1C1236E2203B37600EAD9CB /* cl_lights.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57F21FCDD7A005F4B74 /* cl_lights.c */; };
+		A1C1236F2203B37600EAD9CB /* cl_screen.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E421FCDD7A005F4B74 /* cl_screen.c */; };
+		A1C123702203B37600EAD9CB /* gl3_model.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C721FCDD7A005F4B74 /* gl3_model.c */; };
+		A1C123712203B37600EAD9CB /* filesystem.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56421FCDD7A005F4B74 /* filesystem.c */; };
+		A1C123722203B37600EAD9CB /* sv_entities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E121FCDD7A005F4B74 /* sv_entities.c */; };
+		A1C123742203B37600EAD9CB /* cl_entities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FB21FCDD7A005F4B74 /* cl_entities.c */; };
+		A1C123752203B37600EAD9CB /* gl3_lightmap.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C121FCDD7A005F4B74 /* gl3_lightmap.c */; };
+		A1C123772203B37600EAD9CB /* stb.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BD21FCDD7A005F4B74 /* stb.c */; };
+		A1C123782203B37600EAD9CB /* sound.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.c */; };
+		A1C123792203B37600EAD9CB /* sv_cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E521FCDD7A005F4B74 /* sv_cmd.c */; };
+		A1C1237C2203B37600EAD9CB /* gl3_draw.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C821FCDD7A005F4B74 /* gl3_draw.c */; };
+		A1C1237D2203B37600EAD9CB /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */; };
+		A1C1237E2203B37600EAD9CB /* cl_network.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58221FCDD7A005F4B74 /* cl_network.c */; };
+		A1C123802203B37600EAD9CB /* videomenu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E121FCDD7A005F4B74 /* videomenu.c */; };
+		A1C123832203B37600EAD9CB /* CoreGraphics+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */; };
+		A1C123862203B37600EAD9CB /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58421FCDD7A005F4B74 /* sdl.c */; };
+		A1C123882203B37600EAD9CB /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D021FCDD7A005F4B74 /* glad.c */; };
+		A1C123892203B37600EAD9CB /* hunk.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DB21FCDD7A005F4B74 /* hunk.c */; };
+		A1C1238B2203B37600EAD9CB /* zone.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56321FCDD7A005F4B74 /* zone.c */; };
+		A1C1238C2203B37600EAD9CB /* cl_download.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FC21FCDD7A005F4B74 /* cl_download.c */; };
+		A1C1238E2203B37600EAD9CB /* gl3_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BF21FCDD7A005F4B74 /* gl3_sdl.c */; };
+		A1C1238F2203B37600EAD9CB /* gl3_warp.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D821FCDD7A005F4B74 /* gl3_warp.c */; };
+		A1C123922203B37600EAD9CB /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55321FCDD7A005F4B74 /* md4.c */; };
+		A1C123942203B37600EAD9CB /* gl3_mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C221FCDD7A005F4B74 /* gl3_mesh.c */; };
+		A1C123952203B37600EAD9CB /* gl3_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C021FCDD7A005F4B74 /* gl3_misc.c */; };
+		A1C123962203B37600EAD9CB /* glimp_sdl.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57621FCDD7A005F4B74 /* glimp_sdl.m */; };
+		A1C123982203B37600EAD9CB /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5B921FCDD7A005F4B74 /* pcx.c */; };
+		A1C1239A2203B37600EAD9CB /* szone.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56521FCDD7A005F4B74 /* szone.c */; };
+		A1C1239B2203B37600EAD9CB /* sv_conless.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E321FCDD7A005F4B74 /* sv_conless.c */; };
+		A1C1239C2203B37600EAD9CB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75F21FD0819005F4B74 /* GameViewController.swift */; };
+		A1C1239D2203B37600EAD9CB /* gl3_shaders.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C421FCDD7A005F4B74 /* gl3_shaders.c */; };
+		A1C1239E2203B37600EAD9CB /* wave.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EA21FCDD7A005F4B74 /* wave.c */; };
+		A1C1239F2203B37600EAD9CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75721FD02A0005F4B74 /* AppDelegate.m */; };
+		A1C123A02203B37600EAD9CB /* sv_game.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E621FCDD7A005F4B74 /* sv_game.c */; };
+		A1C123A22203B37600EAD9CB /* gl3_md2.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D921FCDD7A005F4B74 /* gl3_md2.c */; };
+		A1C123A32203B37600EAD9CB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55821FCDD7A005F4B74 /* unzip.c */; };
+		A1C123A42203B37600EAD9CB /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56821FCDD7A005F4B74 /* frame.c */; };
+		A1C123A82203B37600EAD9CB /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DE21FCDD7A005F4B74 /* misc.c */; };
+		A1C123A92203B37600EAD9CB /* argproc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56A21FCDD7A005F4B74 /* argproc.c */; };
+		A1C123AA2203B37600EAD9CB /* glob.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56221FCDD7A005F4B74 /* glob.c */; };
+		A1C123AC2203B37600EAD9CB /* sv_world.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4EB21FCDD7A005F4B74 /* sv_world.c */; };
+		A1C123AE2203B37600EAD9CB /* signalhandler.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D821FCDD7A005F4B74 /* signalhandler.c */; };
+		A1C123B12203B37600EAD9CB /* sv_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E421FCDD7A005F4B74 /* sv_init.c */; };
+		A1C123B22203B37600EAD9CB /* clientserver.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55221FCDD7A005F4B74 /* clientserver.c */; };
+		A1C123B42203B37600EAD9CB /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EC21FCDD7A005F4B74 /* sdl.c */; };
+		A1C123B62203B37600EAD9CB /* cmdparser.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55521FCDD7A005F4B74 /* cmdparser.c */; };
+		A1C123B82203B37600EAD9CB /* gl3_surf.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C521FCDD7A005F4B74 /* gl3_surf.c */; };
+		A1C123B92203B37600EAD9CB /* sv_send.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4EA21FCDD7A005F4B74 /* sv_send.c */; };
+		A1C123BA2203B37600EAD9CB /* gl3_main.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C621FCDD7A005F4B74 /* gl3_main.m */; };
+		A1C123BB2203B37600EAD9CB /* collision.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56921FCDD7A005F4B74 /* collision.c */; };
+		A1C123BC2203B37600EAD9CB /* cl_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58121FCDD7A005F4B74 /* cl_parse.c */; };
+		A1C123BD2203B37600EAD9CB /* cl_keyboard.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E521FCDD7A005F4B74 /* cl_keyboard.c */; };
+		A1C123BF2203B37600EAD9CB /* pvs.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BA21FCDD7A005F4B74 /* pvs.c */; };
+		A1C123C22203B37600EAD9CB /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56B21FCDD7A005F4B74 /* crc.c */; };
+		A1C123C32203B37600EAD9CB /* cl_particles.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DB21FCDD7A005F4B74 /* cl_particles.c */; };
+		A1C123C42203B37600EAD9CB /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D721FCDD7A005F4B74 /* network.c */; };
+		A1C123C52203B37600EAD9CB /* cl_tempentities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58021FCDD7A005F4B74 /* cl_tempentities.c */; };
+		A1C123C62203B37600EAD9CB /* movemsg.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56721FCDD7A005F4B74 /* movemsg.c */; };
+		A1C123C72203B37600EAD9CB /* cl_input.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DA21FCDD7A005F4B74 /* cl_input.c */; };
+		A1C123C82203B37600EAD9CB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55921FCDD7A005F4B74 /* ioapi.c */; };
+		A1C123C92203B37600EAD9CB /* vid.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57721FCDD7A005F4B74 /* vid.c */; };
+		A1C123CB2203B37600EAD9CB /* cl_inventory.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E721FCDD7A005F4B74 /* cl_inventory.c */; };
+		A1C123CC2203B37600EAD9CB /* pmove.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55421FCDD7A005F4B74 /* pmove.c */; };
+		A1C123CE2203B37600EAD9CB /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B68A421D54D3B00AA2472 /* Metal.framework */; };
+		A1C123CF2203B37600EAD9CB /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F34C21D530B500B4BB5D /* libSDL2.a */; };
+		A1C123D02203B37600EAD9CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F33921D52FA700B4BB5D /* AVFoundation.framework */; };
+		A1C123D12203B37600EAD9CB /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
+		A1C123D22203B37600EAD9CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		A1C123D32203B37600EAD9CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		A1C123D42203B37600EAD9CB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		A1C123D52203B37600EAD9CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		A1C123D62203B37600EAD9CB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
+		A1C123D72203B37600EAD9CB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
+		A1C123D82203B37600EAD9CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */; };
+		A1C123D92203B37600EAD9CB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
+		A1C123E12203B49200EAD9CB /* g_ai.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1224E2203B31D00EAD9CB /* g_ai.c */; };
+		A1C123E22203B49200EAD9CB /* g_chase.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122462203B31D00EAD9CB /* g_chase.c */; };
+		A1C123E32203B49200EAD9CB /* g_cmds.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122542203B31D00EAD9CB /* g_cmds.c */; };
+		A1C123E42203B49200EAD9CB /* g_combat.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122512203B31D00EAD9CB /* g_combat.c */; };
+		A1C123E52203B49200EAD9CB /* g_func.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122442203B31D00EAD9CB /* g_func.c */; };
+		A1C123E62203B49200EAD9CB /* g_items.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1224F2203B31D00EAD9CB /* g_items.c */; };
+		A1C123E72203B49200EAD9CB /* g_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122562203B31D00EAD9CB /* g_main.c */; };
+		A1C123E82203B49200EAD9CB /* g_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1224D2203B31D00EAD9CB /* g_misc.c */; };
+		A1C123E92203B49200EAD9CB /* g_monster.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122502203B31D00EAD9CB /* g_monster.c */; };
+		A1C123EA2203B49200EAD9CB /* g_phys.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122652203B31D00EAD9CB /* g_phys.c */; };
+		A1C123EB2203B49200EAD9CB /* g_spawn.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122482203B31D00EAD9CB /* g_spawn.c */; };
+		A1C123EC2203B49200EAD9CB /* g_svcmds.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122532203B31D00EAD9CB /* g_svcmds.c */; };
+		A1C123ED2203B49200EAD9CB /* g_target.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122552203B31D00EAD9CB /* g_target.c */; };
+		A1C123EE2203B49200EAD9CB /* g_trigger.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B02203B31D00EAD9CB /* g_trigger.c */; };
+		A1C123EF2203B49200EAD9CB /* g_turret.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122452203B31D00EAD9CB /* g_turret.c */; };
+		A1C123F02203B49200EAD9CB /* g_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122472203B31D00EAD9CB /* g_utils.c */; };
+		A1C123F12203B49200EAD9CB /* g_weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122522203B31D00EAD9CB /* g_weapon.c */; };
+		A1C123F22203B4B400EAD9CB /* berserker.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122A42203B31D00EAD9CB /* berserker.c */; };
+		A1C123F32203B4B400EAD9CB /* boss2.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122AF2203B31D00EAD9CB /* boss2.c */; };
+		A1C123F42203B4B400EAD9CB /* boss3.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122972203B31D00EAD9CB /* boss3.c */; };
+		A1C123F52203B4B400EAD9CB /* boss31.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1229A2203B31D00EAD9CB /* boss31.c */; };
+		A1C123F62203B4B400EAD9CB /* boss32.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1229B2203B31D00EAD9CB /* boss32.c */; };
+		A1C123F72203B4B400EAD9CB /* boss5.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122A92203B31D00EAD9CB /* boss5.c */; };
+		A1C123F82203B4B400EAD9CB /* brain.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122942203B31D00EAD9CB /* brain.c */; };
+		A1C123F92203B4B400EAD9CB /* chick.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1228C2203B31D00EAD9CB /* chick.c */; };
+		A1C123FA2203B4B400EAD9CB /* fixbot.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1228F2203B31D00EAD9CB /* fixbot.c */; };
+		A1C123FB2203B4B400EAD9CB /* flipper.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122862203B31D00EAD9CB /* flipper.c */; };
+		A1C123FC2203B4B400EAD9CB /* float.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122922203B31D00EAD9CB /* float.c */; };
+		A1C123FD2203B4B400EAD9CB /* flyer.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122A02203B31D00EAD9CB /* flyer.c */; };
+		A1C123FE2203B4B400EAD9CB /* gekk.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122AC2203B31D00EAD9CB /* gekk.c */; };
+		A1C123FF2203B4B400EAD9CB /* gladb.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122682203B31D00EAD9CB /* gladb.c */; };
+		A1C124002203B4B400EAD9CB /* gladiator.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1226A2203B31D00EAD9CB /* gladiator.c */; };
+		A1C124012203B4B400EAD9CB /* gunner.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122802203B31D00EAD9CB /* gunner.c */; };
+		A1C124022203B4B400EAD9CB /* hover.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1227D2203B31D00EAD9CB /* hover.c */; };
+		A1C124032203B4B400EAD9CB /* infantry.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122832203B31D00EAD9CB /* infantry.c */; };
+		A1C124042203B4B400EAD9CB /* insane.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122A62203B31D00EAD9CB /* insane.c */; };
+		A1C124052203B4B400EAD9CB /* medic.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122882203B31D00EAD9CB /* medic.c */; };
+		A1C124062203B4B400EAD9CB /* move.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1226C2203B31D00EAD9CB /* move.c */; };
+		A1C124072203B4B400EAD9CB /* mutant.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1229D2203B31D00EAD9CB /* mutant.c */; };
+		A1C124082203B4B400EAD9CB /* parasite.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122702203B31D00EAD9CB /* parasite.c */; };
+		A1C124092203B4B400EAD9CB /* soldier.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122792203B31D00EAD9CB /* soldier.c */; };
+		A1C1240A2203B4B400EAD9CB /* supertank.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122722203B31D00EAD9CB /* supertank.c */; };
+		A1C1240B2203B4B400EAD9CB /* tank.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122762203B31D00EAD9CB /* tank.c */; };
+		A1C1240C2203B5AF00EAD9CB /* trail.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B22203B31D00EAD9CB /* trail.c */; };
+		A1C1240D2203B5AF00EAD9CB /* weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B32203B31D00EAD9CB /* weapon.c */; };
+		A1C1240E2203B5AF00EAD9CB /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B42203B31D00EAD9CB /* client.c */; };
+		A1C1240F2203B5AF00EAD9CB /* hud.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B52203B31D00EAD9CB /* hud.c */; };
+		A1C124102203B5AF00EAD9CB /* view.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B62203B31D00EAD9CB /* view.c */; };
+		A1C124112203B5B400EAD9CB /* savegame.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122602203B31D00EAD9CB /* savegame.c */; };
+		A1C124152203B6D600EAD9CB /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55F21FCDD7A005F4B74 /* rand.c */; };
+		A1C124162203B6D600EAD9CB /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56121FCDD7A005F4B74 /* shared.c */; };
+		A1C124172203B76500EAD9CB /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
+		A1C124182203B76E00EAD9CB /* xatrix in Resources */ = {isa = PBXBuildFile; fileRef = A1C123392203B34F00EAD9CB /* xatrix */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -563,6 +723,194 @@
 		A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Additions.swift"; sourceTree = "<group>"; };
 		A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDL_uikitviewcontroller+Additions.swift"; sourceTree = "<group>"; };
 		A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyViewController.swift; sourceTree = "<group>"; };
+		A1C122442203B31D00EAD9CB /* g_func.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_func.c; sourceTree = "<group>"; };
+		A1C122452203B31D00EAD9CB /* g_turret.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_turret.c; sourceTree = "<group>"; };
+		A1C122462203B31D00EAD9CB /* g_chase.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_chase.c; sourceTree = "<group>"; };
+		A1C122472203B31D00EAD9CB /* g_utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_utils.c; sourceTree = "<group>"; };
+		A1C122482203B31D00EAD9CB /* g_spawn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_spawn.c; sourceTree = "<group>"; };
+		A1C1224A2203B31D00EAD9CB /* rand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rand.c; sourceTree = "<group>"; };
+		A1C1224B2203B31D00EAD9CB /* flash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = flash.c; sourceTree = "<group>"; };
+		A1C1224C2203B31D00EAD9CB /* shared.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shared.c; sourceTree = "<group>"; };
+		A1C1224D2203B31D00EAD9CB /* g_misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_misc.c; sourceTree = "<group>"; };
+		A1C1224E2203B31D00EAD9CB /* g_ai.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_ai.c; sourceTree = "<group>"; };
+		A1C1224F2203B31D00EAD9CB /* g_items.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_items.c; sourceTree = "<group>"; };
+		A1C122502203B31D00EAD9CB /* g_monster.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_monster.c; sourceTree = "<group>"; };
+		A1C122512203B31D00EAD9CB /* g_combat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_combat.c; sourceTree = "<group>"; };
+		A1C122522203B31D00EAD9CB /* g_weapon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_weapon.c; sourceTree = "<group>"; };
+		A1C122532203B31D00EAD9CB /* g_svcmds.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_svcmds.c; sourceTree = "<group>"; };
+		A1C122542203B31D00EAD9CB /* g_cmds.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_cmds.c; sourceTree = "<group>"; };
+		A1C122552203B31D00EAD9CB /* g_target.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_target.c; sourceTree = "<group>"; };
+		A1C122562203B31D00EAD9CB /* g_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_main.c; sourceTree = "<group>"; };
+		A1C122592203B31D00EAD9CB /* gamefunc_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamefunc_list.h; sourceTree = "<group>"; };
+		A1C1225A2203B31D00EAD9CB /* gamemmove_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamemmove_list.h; sourceTree = "<group>"; };
+		A1C1225B2203B31D00EAD9CB /* clientfields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clientfields.h; sourceTree = "<group>"; };
+		A1C1225C2203B31D00EAD9CB /* fields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fields.h; sourceTree = "<group>"; };
+		A1C1225D2203B31D00EAD9CB /* levelfields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = levelfields.h; sourceTree = "<group>"; };
+		A1C1225E2203B31D00EAD9CB /* gamemmove_decs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamemmove_decs.h; sourceTree = "<group>"; };
+		A1C1225F2203B31D00EAD9CB /* gamefunc_decs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamefunc_decs.h; sourceTree = "<group>"; };
+		A1C122602203B31D00EAD9CB /* savegame.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = savegame.c; sourceTree = "<group>"; };
+		A1C122622203B31D00EAD9CB /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
+		A1C122632203B31D00EAD9CB /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		A1C122642203B31D00EAD9CB /* local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = local.h; sourceTree = "<group>"; };
+		A1C122652203B31D00EAD9CB /* g_phys.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_phys.c; sourceTree = "<group>"; };
+		A1C122682203B31D00EAD9CB /* gladb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gladb.c; sourceTree = "<group>"; };
+		A1C122692203B31D00EAD9CB /* gladiator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gladiator.h; sourceTree = "<group>"; };
+		A1C1226A2203B31D00EAD9CB /* gladiator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gladiator.c; sourceTree = "<group>"; };
+		A1C1226C2203B31D00EAD9CB /* move.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = move.c; sourceTree = "<group>"; };
+		A1C1226D2203B31D00EAD9CB /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		A1C1226F2203B31D00EAD9CB /* parasite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parasite.h; sourceTree = "<group>"; };
+		A1C122702203B31D00EAD9CB /* parasite.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parasite.c; sourceTree = "<group>"; };
+		A1C122722203B31D00EAD9CB /* supertank.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = supertank.c; sourceTree = "<group>"; };
+		A1C122732203B31D00EAD9CB /* supertank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = supertank.h; sourceTree = "<group>"; };
+		A1C122752203B31D00EAD9CB /* tank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tank.h; sourceTree = "<group>"; };
+		A1C122762203B31D00EAD9CB /* tank.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tank.c; sourceTree = "<group>"; };
+		A1C122782203B31D00EAD9CB /* soldier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soldier.h; sourceTree = "<group>"; };
+		A1C122792203B31D00EAD9CB /* soldier.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = soldier.c; sourceTree = "<group>"; };
+		A1C1227A2203B31D00EAD9CB /* soldierh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soldierh.h; sourceTree = "<group>"; };
+		A1C1227C2203B31D00EAD9CB /* hover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hover.h; sourceTree = "<group>"; };
+		A1C1227D2203B31D00EAD9CB /* hover.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hover.c; sourceTree = "<group>"; };
+		A1C1227F2203B31D00EAD9CB /* gunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gunner.h; sourceTree = "<group>"; };
+		A1C122802203B31D00EAD9CB /* gunner.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gunner.c; sourceTree = "<group>"; };
+		A1C122822203B31D00EAD9CB /* infantry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infantry.h; sourceTree = "<group>"; };
+		A1C122832203B31D00EAD9CB /* infantry.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = infantry.c; sourceTree = "<group>"; };
+		A1C122852203B31D00EAD9CB /* flipper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flipper.h; sourceTree = "<group>"; };
+		A1C122862203B31D00EAD9CB /* flipper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = flipper.c; sourceTree = "<group>"; };
+		A1C122882203B31D00EAD9CB /* medic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = medic.c; sourceTree = "<group>"; };
+		A1C122892203B31D00EAD9CB /* medic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = medic.h; sourceTree = "<group>"; };
+		A1C1228B2203B31D00EAD9CB /* chick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chick.h; sourceTree = "<group>"; };
+		A1C1228C2203B31D00EAD9CB /* chick.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chick.c; sourceTree = "<group>"; };
+		A1C1228E2203B31D00EAD9CB /* fixbot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fixbot.h; sourceTree = "<group>"; };
+		A1C1228F2203B31D00EAD9CB /* fixbot.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fixbot.c; sourceTree = "<group>"; };
+		A1C122912203B31D00EAD9CB /* float.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = float.h; sourceTree = "<group>"; };
+		A1C122922203B31D00EAD9CB /* float.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = float.c; sourceTree = "<group>"; };
+		A1C122942203B31D00EAD9CB /* brain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = brain.c; sourceTree = "<group>"; };
+		A1C122952203B31D00EAD9CB /* brain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brain.h; sourceTree = "<group>"; };
+		A1C122972203B31D00EAD9CB /* boss3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss3.c; sourceTree = "<group>"; };
+		A1C122982203B31D00EAD9CB /* boss31.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boss31.h; sourceTree = "<group>"; };
+		A1C122992203B31D00EAD9CB /* boss32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boss32.h; sourceTree = "<group>"; };
+		A1C1229A2203B31D00EAD9CB /* boss31.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss31.c; sourceTree = "<group>"; };
+		A1C1229B2203B31D00EAD9CB /* boss32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss32.c; sourceTree = "<group>"; };
+		A1C1229D2203B31D00EAD9CB /* mutant.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mutant.c; sourceTree = "<group>"; };
+		A1C1229E2203B31D00EAD9CB /* mutant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mutant.h; sourceTree = "<group>"; };
+		A1C122A02203B31D00EAD9CB /* flyer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = flyer.c; sourceTree = "<group>"; };
+		A1C122A12203B31D00EAD9CB /* flyer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flyer.h; sourceTree = "<group>"; };
+		A1C122A32203B31D00EAD9CB /* berserker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = berserker.h; sourceTree = "<group>"; };
+		A1C122A42203B31D00EAD9CB /* berserker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = berserker.c; sourceTree = "<group>"; };
+		A1C122A62203B31D00EAD9CB /* insane.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = insane.c; sourceTree = "<group>"; };
+		A1C122A72203B31D00EAD9CB /* insane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = insane.h; sourceTree = "<group>"; };
+		A1C122A92203B31D00EAD9CB /* boss5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss5.c; sourceTree = "<group>"; };
+		A1C122AB2203B31D00EAD9CB /* gekk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gekk.h; sourceTree = "<group>"; };
+		A1C122AC2203B31D00EAD9CB /* gekk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gekk.c; sourceTree = "<group>"; };
+		A1C122AE2203B31D00EAD9CB /* boss2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boss2.h; sourceTree = "<group>"; };
+		A1C122AF2203B31D00EAD9CB /* boss2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss2.c; sourceTree = "<group>"; };
+		A1C122B02203B31D00EAD9CB /* g_trigger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_trigger.c; sourceTree = "<group>"; };
+		A1C122B22203B31D00EAD9CB /* trail.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = trail.c; sourceTree = "<group>"; };
+		A1C122B32203B31D00EAD9CB /* weapon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = weapon.c; sourceTree = "<group>"; };
+		A1C122B42203B31D00EAD9CB /* client.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
+		A1C122B52203B31D00EAD9CB /* hud.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hud.c; sourceTree = "<group>"; };
+		A1C122B62203B31D00EAD9CB /* view.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = view.c; sourceTree = "<group>"; };
+		A1C122B82203B31D00EAD9CB /* g_func.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_func.c; sourceTree = "<group>"; };
+		A1C122B92203B31D00EAD9CB /* g_turret.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_turret.c; sourceTree = "<group>"; };
+		A1C122BA2203B31D00EAD9CB /* g_chase.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_chase.c; sourceTree = "<group>"; };
+		A1C122BB2203B31D00EAD9CB /* g_newtrig.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_newtrig.c; sourceTree = "<group>"; };
+		A1C122BC2203B31D00EAD9CB /* g_utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_utils.c; sourceTree = "<group>"; };
+		A1C122BD2203B31D00EAD9CB /* g_newdm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_newdm.c; sourceTree = "<group>"; };
+		A1C122BE2203B31D00EAD9CB /* g_sphere.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_sphere.c; sourceTree = "<group>"; };
+		A1C122BF2203B31D00EAD9CB /* g_spawn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_spawn.c; sourceTree = "<group>"; };
+		A1C122C12203B31D00EAD9CB /* rand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rand.c; sourceTree = "<group>"; };
+		A1C122C22203B31D00EAD9CB /* flash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = flash.c; sourceTree = "<group>"; };
+		A1C122C32203B31D00EAD9CB /* shared.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shared.c; sourceTree = "<group>"; };
+		A1C122C42203B31D00EAD9CB /* g_newai.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_newai.c; sourceTree = "<group>"; };
+		A1C122C52203B31D00EAD9CB /* g_misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_misc.c; sourceTree = "<group>"; };
+		A1C122C62203B31D00EAD9CB /* g_ai.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_ai.c; sourceTree = "<group>"; };
+		A1C122C72203B31D00EAD9CB /* g_items.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_items.c; sourceTree = "<group>"; };
+		A1C122C82203B31D00EAD9CB /* g_monster.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_monster.c; sourceTree = "<group>"; };
+		A1C122C92203B31D00EAD9CB /* g_newfnc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_newfnc.c; sourceTree = "<group>"; };
+		A1C122CA2203B31D00EAD9CB /* g_combat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_combat.c; sourceTree = "<group>"; };
+		A1C122CB2203B31D00EAD9CB /* g_weapon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_weapon.c; sourceTree = "<group>"; };
+		A1C122CC2203B31D00EAD9CB /* g_newweap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_newweap.c; sourceTree = "<group>"; };
+		A1C122CD2203B31D00EAD9CB /* g_svcmds.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_svcmds.c; sourceTree = "<group>"; };
+		A1C122CF2203B31D00EAD9CB /* tag.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tag.c; sourceTree = "<group>"; };
+		A1C122D02203B31D00EAD9CB /* ball.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ball.c; sourceTree = "<group>"; };
+		A1C122D12203B31D00EAD9CB /* g_cmds.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_cmds.c; sourceTree = "<group>"; };
+		A1C122D22203B31D00EAD9CB /* g_target.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_target.c; sourceTree = "<group>"; };
+		A1C122D32203B31D00EAD9CB /* g_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_main.c; sourceTree = "<group>"; };
+		A1C122D62203B31D00EAD9CB /* gamefunc_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamefunc_list.h; sourceTree = "<group>"; };
+		A1C122D72203B31D00EAD9CB /* gamemmove_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamemmove_list.h; sourceTree = "<group>"; };
+		A1C122D82203B31D00EAD9CB /* clientfields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clientfields.h; sourceTree = "<group>"; };
+		A1C122D92203B31D00EAD9CB /* fields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fields.h; sourceTree = "<group>"; };
+		A1C122DA2203B31D00EAD9CB /* levelfields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = levelfields.h; sourceTree = "<group>"; };
+		A1C122DB2203B31D00EAD9CB /* gamemmove_decs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamemmove_decs.h; sourceTree = "<group>"; };
+		A1C122DC2203B31D00EAD9CB /* gamefunc_decs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamefunc_decs.h; sourceTree = "<group>"; };
+		A1C122DD2203B31D00EAD9CB /* savegame.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = savegame.c; sourceTree = "<group>"; };
+		A1C122DE2203B31D00EAD9CB /* g_newtarg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_newtarg.c; sourceTree = "<group>"; };
+		A1C122E02203B31D00EAD9CB /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
+		A1C122E12203B31D00EAD9CB /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		A1C122E22203B31D00EAD9CB /* local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = local.h; sourceTree = "<group>"; };
+		A1C122E32203B31D00EAD9CB /* g_phys.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_phys.c; sourceTree = "<group>"; };
+		A1C122E62203B31D00EAD9CB /* gladiator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gladiator.h; sourceTree = "<group>"; };
+		A1C122E72203B31D00EAD9CB /* gladiator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gladiator.c; sourceTree = "<group>"; };
+		A1C122E92203B31D00EAD9CB /* move.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = move.c; sourceTree = "<group>"; };
+		A1C122EA2203B31D00EAD9CB /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		A1C122EC2203B31D00EAD9CB /* parasite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parasite.h; sourceTree = "<group>"; };
+		A1C122ED2203B31D00EAD9CB /* parasite.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parasite.c; sourceTree = "<group>"; };
+		A1C122EF2203B31D00EAD9CB /* supertank.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = supertank.c; sourceTree = "<group>"; };
+		A1C122F02203B31D00EAD9CB /* supertank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = supertank.h; sourceTree = "<group>"; };
+		A1C122F22203B31D00EAD9CB /* tank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tank.h; sourceTree = "<group>"; };
+		A1C122F32203B31D00EAD9CB /* tank.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tank.c; sourceTree = "<group>"; };
+		A1C122F52203B31D00EAD9CB /* soldier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soldier.h; sourceTree = "<group>"; };
+		A1C122F62203B31D00EAD9CB /* soldier.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = soldier.c; sourceTree = "<group>"; };
+		A1C122F82203B31D00EAD9CB /* hover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hover.h; sourceTree = "<group>"; };
+		A1C122F92203B31D00EAD9CB /* hover.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hover.c; sourceTree = "<group>"; };
+		A1C122FB2203B31D00EAD9CB /* turret.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = turret.h; sourceTree = "<group>"; };
+		A1C122FC2203B31D00EAD9CB /* turret.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = turret.c; sourceTree = "<group>"; };
+		A1C122FE2203B31D00EAD9CB /* stalker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stalker.c; sourceTree = "<group>"; };
+		A1C122FF2203B31D00EAD9CB /* stalker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stalker.h; sourceTree = "<group>"; };
+		A1C123012203B31D00EAD9CB /* gunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gunner.h; sourceTree = "<group>"; };
+		A1C123022203B31D00EAD9CB /* gunner.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gunner.c; sourceTree = "<group>"; };
+		A1C123042203B31D00EAD9CB /* infantry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infantry.h; sourceTree = "<group>"; };
+		A1C123052203B31D00EAD9CB /* infantry.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = infantry.c; sourceTree = "<group>"; };
+		A1C123072203B31D00EAD9CB /* flipper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flipper.h; sourceTree = "<group>"; };
+		A1C123082203B31D00EAD9CB /* flipper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = flipper.c; sourceTree = "<group>"; };
+		A1C1230A2203B31D00EAD9CB /* medic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = medic.c; sourceTree = "<group>"; };
+		A1C1230B2203B31D00EAD9CB /* medic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = medic.h; sourceTree = "<group>"; };
+		A1C1230D2203B31D00EAD9CB /* chick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chick.h; sourceTree = "<group>"; };
+		A1C1230E2203B31D00EAD9CB /* chick.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chick.c; sourceTree = "<group>"; };
+		A1C123102203B31D00EAD9CB /* widow.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = widow.c; sourceTree = "<group>"; };
+		A1C123112203B31D00EAD9CB /* widow2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = widow2.c; sourceTree = "<group>"; };
+		A1C123122203B31D00EAD9CB /* widow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = widow.h; sourceTree = "<group>"; };
+		A1C123132203B31D00EAD9CB /* widow2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = widow2.h; sourceTree = "<group>"; };
+		A1C123152203B31D00EAD9CB /* float.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = float.h; sourceTree = "<group>"; };
+		A1C123162203B31D00EAD9CB /* float.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = float.c; sourceTree = "<group>"; };
+		A1C123182203B31D00EAD9CB /* brain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = brain.c; sourceTree = "<group>"; };
+		A1C123192203B31D00EAD9CB /* brain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brain.h; sourceTree = "<group>"; };
+		A1C1231B2203B31D00EAD9CB /* carrier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = carrier.h; sourceTree = "<group>"; };
+		A1C1231C2203B31D00EAD9CB /* carrier.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = carrier.c; sourceTree = "<group>"; };
+		A1C1231E2203B31D00EAD9CB /* boss3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss3.c; sourceTree = "<group>"; };
+		A1C1231F2203B31D00EAD9CB /* boss31.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boss31.h; sourceTree = "<group>"; };
+		A1C123202203B31D00EAD9CB /* boss32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boss32.h; sourceTree = "<group>"; };
+		A1C123212203B31D00EAD9CB /* boss31.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss31.c; sourceTree = "<group>"; };
+		A1C123222203B31D00EAD9CB /* boss32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss32.c; sourceTree = "<group>"; };
+		A1C123242203B31D00EAD9CB /* mutant.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mutant.c; sourceTree = "<group>"; };
+		A1C123252203B31D00EAD9CB /* mutant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mutant.h; sourceTree = "<group>"; };
+		A1C123272203B31D00EAD9CB /* flyer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = flyer.c; sourceTree = "<group>"; };
+		A1C123282203B31D00EAD9CB /* flyer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flyer.h; sourceTree = "<group>"; };
+		A1C1232A2203B31D00EAD9CB /* berserker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = berserker.h; sourceTree = "<group>"; };
+		A1C1232B2203B31D00EAD9CB /* berserker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = berserker.c; sourceTree = "<group>"; };
+		A1C1232D2203B31D00EAD9CB /* insane.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = insane.c; sourceTree = "<group>"; };
+		A1C1232E2203B31D00EAD9CB /* insane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = insane.h; sourceTree = "<group>"; };
+		A1C123302203B31D00EAD9CB /* boss2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boss2.h; sourceTree = "<group>"; };
+		A1C123312203B31D00EAD9CB /* boss2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = boss2.c; sourceTree = "<group>"; };
+		A1C123322203B31D00EAD9CB /* g_trigger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = g_trigger.c; sourceTree = "<group>"; };
+		A1C123342203B31D00EAD9CB /* trail.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = trail.c; sourceTree = "<group>"; };
+		A1C123352203B31D00EAD9CB /* weapon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = weapon.c; sourceTree = "<group>"; };
+		A1C123362203B31D00EAD9CB /* client.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
+		A1C123372203B31D00EAD9CB /* hud.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hud.c; sourceTree = "<group>"; };
+		A1C123382203B31D00EAD9CB /* view.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = view.c; sourceTree = "<group>"; };
+		A1C123392203B34F00EAD9CB /* xatrix */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xatrix; path = ../../../Dropbox/Files/quake2/xatrix; sourceTree = "<group>"; };
+		A1C1233A2203B34F00EAD9CB /* rogue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rogue; path = ../../../Dropbox/Files/quake2/rogue; sourceTree = "<group>"; };
+		A1C123DD2203B37600EAD9CB /* Quake2mp1-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp1-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C123DE2203B37600EAD9CB /* Quake2-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Quake2-iOS copy-Info.plist"; path = "/Users/tomkidd/Documents/GitHub/Quake2-SDL-iOS/Quake2-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -608,6 +956,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1C123CD2203B37600EAD9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C123CE2203B37600EAD9CB /* Metal.framework in Frameworks */,
+				A1C123CF2203B37600EAD9CB /* libSDL2.a in Frameworks */,
+				A1C123D02203B37600EAD9CB /* AVFoundation.framework in Frameworks */,
+				A1C123D12203B37600EAD9CB /* GameController.framework in Frameworks */,
+				A1C123D22203B37600EAD9CB /* Foundation.framework in Frameworks */,
+				A1C123D32203B37600EAD9CB /* UIKit.framework in Frameworks */,
+				A1C123D42203B37600EAD9CB /* OpenGLES.framework in Frameworks */,
+				A1C123D52203B37600EAD9CB /* QuartzCore.framework in Frameworks */,
+				A1C123D62203B37600EAD9CB /* CoreAudio.framework in Frameworks */,
+				A1C123D72203B37600EAD9CB /* AudioToolbox.framework in Frameworks */,
+				A1C123D82203B37600EAD9CB /* CoreGraphics.framework in Frameworks */,
+				A1C123D92203B37600EAD9CB /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -616,6 +983,7 @@
 			children = (
 				A1B80AE021F96DAA00560711 /* Quake2-iOS.app */,
 				A1B80AF921FA5BEE00560711 /* Quake2-tvOS.app */,
+				A1C123DD2203B37600EAD9CB /* Quake2mp1-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -624,12 +992,15 @@
 			isa = PBXGroup;
 			children = (
 				A13B695021D574A000AA2472 /* baseq2 */,
+				A1C123392203B34F00EAD9CB /* xatrix */,
+				A1C1233A2203B34F00EAD9CB /* rogue */,
 				A13B694F21D574A000AA2472 /* music */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
 				A15BF4D421FCDD7A005F4B74 /* Quake2 */,
 				A15BF74921FCF773005F4B74 /* Quake2-iOS */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
+				A1C123DE2203B37600EAD9CB /* Quake2-iOS copy-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -692,7 +1063,9 @@
 				A15BF57421FCDD7A005F4B74 /* client */,
 				A15BF55121FCDD7A005F4B74 /* common */,
 				A15BF4EC21FCDD7A005F4B74 /* game */,
+				A1C122B72203B31D00EAD9CB /* rogue */,
 				A15BF4DF21FCDD7A005F4B74 /* server */,
+				A1C122432203B31D00EAD9CB /* xatrix */,
 			);
 			path = Quake2;
 			sourceTree = "<group>";
@@ -1363,6 +1736,684 @@
 			path = "Quake2-iOS";
 			sourceTree = "<group>";
 		};
+		A1C122432203B31D00EAD9CB /* xatrix */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1224E2203B31D00EAD9CB /* g_ai.c */,
+				A1C122462203B31D00EAD9CB /* g_chase.c */,
+				A1C122542203B31D00EAD9CB /* g_cmds.c */,
+				A1C122512203B31D00EAD9CB /* g_combat.c */,
+				A1C122442203B31D00EAD9CB /* g_func.c */,
+				A1C1224F2203B31D00EAD9CB /* g_items.c */,
+				A1C122562203B31D00EAD9CB /* g_main.c */,
+				A1C1224D2203B31D00EAD9CB /* g_misc.c */,
+				A1C122502203B31D00EAD9CB /* g_monster.c */,
+				A1C122652203B31D00EAD9CB /* g_phys.c */,
+				A1C122482203B31D00EAD9CB /* g_spawn.c */,
+				A1C122532203B31D00EAD9CB /* g_svcmds.c */,
+				A1C122552203B31D00EAD9CB /* g_target.c */,
+				A1C122B02203B31D00EAD9CB /* g_trigger.c */,
+				A1C122452203B31D00EAD9CB /* g_turret.c */,
+				A1C122472203B31D00EAD9CB /* g_utils.c */,
+				A1C122522203B31D00EAD9CB /* g_weapon.c */,
+				A1C122612203B31D00EAD9CB /* header */,
+				A1C122662203B31D00EAD9CB /* monster */,
+				A1C122B12203B31D00EAD9CB /* player */,
+				A1C122572203B31D00EAD9CB /* savegame */,
+				A1C122492203B31D00EAD9CB /* shared */,
+			);
+			path = xatrix;
+			sourceTree = "<group>";
+		};
+		A1C122492203B31D00EAD9CB /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1224A2203B31D00EAD9CB /* rand.c */,
+				A1C1224B2203B31D00EAD9CB /* flash.c */,
+				A1C1224C2203B31D00EAD9CB /* shared.c */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		A1C122572203B31D00EAD9CB /* savegame */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122582203B31D00EAD9CB /* tables */,
+				A1C122602203B31D00EAD9CB /* savegame.c */,
+			);
+			path = savegame;
+			sourceTree = "<group>";
+		};
+		A1C122582203B31D00EAD9CB /* tables */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1225B2203B31D00EAD9CB /* clientfields.h */,
+				A1C1225C2203B31D00EAD9CB /* fields.h */,
+				A1C1225F2203B31D00EAD9CB /* gamefunc_decs.h */,
+				A1C122592203B31D00EAD9CB /* gamefunc_list.h */,
+				A1C1225E2203B31D00EAD9CB /* gamemmove_decs.h */,
+				A1C1225A2203B31D00EAD9CB /* gamemmove_list.h */,
+				A1C1225D2203B31D00EAD9CB /* levelfields.h */,
+			);
+			path = tables;
+			sourceTree = "<group>";
+		};
+		A1C122612203B31D00EAD9CB /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122632203B31D00EAD9CB /* game.h */,
+				A1C122642203B31D00EAD9CB /* local.h */,
+				A1C122622203B31D00EAD9CB /* shared.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		A1C122662203B31D00EAD9CB /* monster */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122A22203B31D00EAD9CB /* berserker */,
+				A1C122AD2203B31D00EAD9CB /* boss2 */,
+				A1C122962203B31D00EAD9CB /* boss3 */,
+				A1C122A82203B31D00EAD9CB /* boss5 */,
+				A1C122932203B31D00EAD9CB /* brain */,
+				A1C1228A2203B31D00EAD9CB /* chick */,
+				A1C1228D2203B31D00EAD9CB /* fixbot */,
+				A1C122842203B31D00EAD9CB /* flipper */,
+				A1C122902203B31D00EAD9CB /* float */,
+				A1C1229F2203B31D00EAD9CB /* flyer */,
+				A1C122AA2203B31D00EAD9CB /* gekk */,
+				A1C122672203B31D00EAD9CB /* gladiator */,
+				A1C1227E2203B31D00EAD9CB /* gunner */,
+				A1C1227B2203B31D00EAD9CB /* hover */,
+				A1C122812203B31D00EAD9CB /* infantry */,
+				A1C122A52203B31D00EAD9CB /* insane */,
+				A1C122872203B31D00EAD9CB /* medic */,
+				A1C1226B2203B31D00EAD9CB /* misc */,
+				A1C1229C2203B31D00EAD9CB /* mutant */,
+				A1C1226E2203B31D00EAD9CB /* parasite */,
+				A1C122772203B31D00EAD9CB /* soldier */,
+				A1C122712203B31D00EAD9CB /* supertank */,
+				A1C122742203B31D00EAD9CB /* tank */,
+			);
+			path = monster;
+			sourceTree = "<group>";
+		};
+		A1C122672203B31D00EAD9CB /* gladiator */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122682203B31D00EAD9CB /* gladb.c */,
+				A1C1226A2203B31D00EAD9CB /* gladiator.c */,
+				A1C122692203B31D00EAD9CB /* gladiator.h */,
+			);
+			path = gladiator;
+			sourceTree = "<group>";
+		};
+		A1C1226B2203B31D00EAD9CB /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1226C2203B31D00EAD9CB /* move.c */,
+				A1C1226D2203B31D00EAD9CB /* player.h */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		A1C1226E2203B31D00EAD9CB /* parasite */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122702203B31D00EAD9CB /* parasite.c */,
+				A1C1226F2203B31D00EAD9CB /* parasite.h */,
+			);
+			path = parasite;
+			sourceTree = "<group>";
+		};
+		A1C122712203B31D00EAD9CB /* supertank */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122722203B31D00EAD9CB /* supertank.c */,
+				A1C122732203B31D00EAD9CB /* supertank.h */,
+			);
+			path = supertank;
+			sourceTree = "<group>";
+		};
+		A1C122742203B31D00EAD9CB /* tank */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122762203B31D00EAD9CB /* tank.c */,
+				A1C122752203B31D00EAD9CB /* tank.h */,
+			);
+			path = tank;
+			sourceTree = "<group>";
+		};
+		A1C122772203B31D00EAD9CB /* soldier */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122792203B31D00EAD9CB /* soldier.c */,
+				A1C122782203B31D00EAD9CB /* soldier.h */,
+				A1C1227A2203B31D00EAD9CB /* soldierh.h */,
+			);
+			path = soldier;
+			sourceTree = "<group>";
+		};
+		A1C1227B2203B31D00EAD9CB /* hover */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1227D2203B31D00EAD9CB /* hover.c */,
+				A1C1227C2203B31D00EAD9CB /* hover.h */,
+			);
+			path = hover;
+			sourceTree = "<group>";
+		};
+		A1C1227E2203B31D00EAD9CB /* gunner */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122802203B31D00EAD9CB /* gunner.c */,
+				A1C1227F2203B31D00EAD9CB /* gunner.h */,
+			);
+			path = gunner;
+			sourceTree = "<group>";
+		};
+		A1C122812203B31D00EAD9CB /* infantry */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122832203B31D00EAD9CB /* infantry.c */,
+				A1C122822203B31D00EAD9CB /* infantry.h */,
+			);
+			path = infantry;
+			sourceTree = "<group>";
+		};
+		A1C122842203B31D00EAD9CB /* flipper */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122862203B31D00EAD9CB /* flipper.c */,
+				A1C122852203B31D00EAD9CB /* flipper.h */,
+			);
+			path = flipper;
+			sourceTree = "<group>";
+		};
+		A1C122872203B31D00EAD9CB /* medic */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122882203B31D00EAD9CB /* medic.c */,
+				A1C122892203B31D00EAD9CB /* medic.h */,
+			);
+			path = medic;
+			sourceTree = "<group>";
+		};
+		A1C1228A2203B31D00EAD9CB /* chick */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1228C2203B31D00EAD9CB /* chick.c */,
+				A1C1228B2203B31D00EAD9CB /* chick.h */,
+			);
+			path = chick;
+			sourceTree = "<group>";
+		};
+		A1C1228D2203B31D00EAD9CB /* fixbot */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1228F2203B31D00EAD9CB /* fixbot.c */,
+				A1C1228E2203B31D00EAD9CB /* fixbot.h */,
+			);
+			path = fixbot;
+			sourceTree = "<group>";
+		};
+		A1C122902203B31D00EAD9CB /* float */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122922203B31D00EAD9CB /* float.c */,
+				A1C122912203B31D00EAD9CB /* float.h */,
+			);
+			path = float;
+			sourceTree = "<group>";
+		};
+		A1C122932203B31D00EAD9CB /* brain */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122942203B31D00EAD9CB /* brain.c */,
+				A1C122952203B31D00EAD9CB /* brain.h */,
+			);
+			path = brain;
+			sourceTree = "<group>";
+		};
+		A1C122962203B31D00EAD9CB /* boss3 */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122972203B31D00EAD9CB /* boss3.c */,
+				A1C1229A2203B31D00EAD9CB /* boss31.c */,
+				A1C122982203B31D00EAD9CB /* boss31.h */,
+				A1C1229B2203B31D00EAD9CB /* boss32.c */,
+				A1C122992203B31D00EAD9CB /* boss32.h */,
+			);
+			path = boss3;
+			sourceTree = "<group>";
+		};
+		A1C1229C2203B31D00EAD9CB /* mutant */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1229D2203B31D00EAD9CB /* mutant.c */,
+				A1C1229E2203B31D00EAD9CB /* mutant.h */,
+			);
+			path = mutant;
+			sourceTree = "<group>";
+		};
+		A1C1229F2203B31D00EAD9CB /* flyer */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122A02203B31D00EAD9CB /* flyer.c */,
+				A1C122A12203B31D00EAD9CB /* flyer.h */,
+			);
+			path = flyer;
+			sourceTree = "<group>";
+		};
+		A1C122A22203B31D00EAD9CB /* berserker */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122A42203B31D00EAD9CB /* berserker.c */,
+				A1C122A32203B31D00EAD9CB /* berserker.h */,
+			);
+			path = berserker;
+			sourceTree = "<group>";
+		};
+		A1C122A52203B31D00EAD9CB /* insane */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122A62203B31D00EAD9CB /* insane.c */,
+				A1C122A72203B31D00EAD9CB /* insane.h */,
+			);
+			path = insane;
+			sourceTree = "<group>";
+		};
+		A1C122A82203B31D00EAD9CB /* boss5 */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122A92203B31D00EAD9CB /* boss5.c */,
+			);
+			path = boss5;
+			sourceTree = "<group>";
+		};
+		A1C122AA2203B31D00EAD9CB /* gekk */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122AC2203B31D00EAD9CB /* gekk.c */,
+				A1C122AB2203B31D00EAD9CB /* gekk.h */,
+			);
+			path = gekk;
+			sourceTree = "<group>";
+		};
+		A1C122AD2203B31D00EAD9CB /* boss2 */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122AF2203B31D00EAD9CB /* boss2.c */,
+				A1C122AE2203B31D00EAD9CB /* boss2.h */,
+			);
+			path = boss2;
+			sourceTree = "<group>";
+		};
+		A1C122B12203B31D00EAD9CB /* player */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122B42203B31D00EAD9CB /* client.c */,
+				A1C122B52203B31D00EAD9CB /* hud.c */,
+				A1C122B22203B31D00EAD9CB /* trail.c */,
+				A1C122B62203B31D00EAD9CB /* view.c */,
+				A1C122B32203B31D00EAD9CB /* weapon.c */,
+			);
+			path = player;
+			sourceTree = "<group>";
+		};
+		A1C122B72203B31D00EAD9CB /* rogue */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122B82203B31D00EAD9CB /* g_func.c */,
+				A1C122B92203B31D00EAD9CB /* g_turret.c */,
+				A1C122BA2203B31D00EAD9CB /* g_chase.c */,
+				A1C122BB2203B31D00EAD9CB /* g_newtrig.c */,
+				A1C122BC2203B31D00EAD9CB /* g_utils.c */,
+				A1C122BD2203B31D00EAD9CB /* g_newdm.c */,
+				A1C122BE2203B31D00EAD9CB /* g_sphere.c */,
+				A1C122BF2203B31D00EAD9CB /* g_spawn.c */,
+				A1C122C02203B31D00EAD9CB /* shared */,
+				A1C122C42203B31D00EAD9CB /* g_newai.c */,
+				A1C122C52203B31D00EAD9CB /* g_misc.c */,
+				A1C122C62203B31D00EAD9CB /* g_ai.c */,
+				A1C122C72203B31D00EAD9CB /* g_items.c */,
+				A1C122C82203B31D00EAD9CB /* g_monster.c */,
+				A1C122C92203B31D00EAD9CB /* g_newfnc.c */,
+				A1C122CA2203B31D00EAD9CB /* g_combat.c */,
+				A1C122CB2203B31D00EAD9CB /* g_weapon.c */,
+				A1C122CC2203B31D00EAD9CB /* g_newweap.c */,
+				A1C122CD2203B31D00EAD9CB /* g_svcmds.c */,
+				A1C122CE2203B31D00EAD9CB /* dm */,
+				A1C122D12203B31D00EAD9CB /* g_cmds.c */,
+				A1C122D22203B31D00EAD9CB /* g_target.c */,
+				A1C122D32203B31D00EAD9CB /* g_main.c */,
+				A1C122D42203B31D00EAD9CB /* savegame */,
+				A1C122DE2203B31D00EAD9CB /* g_newtarg.c */,
+				A1C122DF2203B31D00EAD9CB /* header */,
+				A1C122E32203B31D00EAD9CB /* g_phys.c */,
+				A1C122E42203B31D00EAD9CB /* monster */,
+				A1C123322203B31D00EAD9CB /* g_trigger.c */,
+				A1C123332203B31D00EAD9CB /* player */,
+			);
+			path = rogue;
+			sourceTree = "<group>";
+		};
+		A1C122C02203B31D00EAD9CB /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122C12203B31D00EAD9CB /* rand.c */,
+				A1C122C22203B31D00EAD9CB /* flash.c */,
+				A1C122C32203B31D00EAD9CB /* shared.c */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		A1C122CE2203B31D00EAD9CB /* dm */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122CF2203B31D00EAD9CB /* tag.c */,
+				A1C122D02203B31D00EAD9CB /* ball.c */,
+			);
+			path = dm;
+			sourceTree = "<group>";
+		};
+		A1C122D42203B31D00EAD9CB /* savegame */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122D52203B31D00EAD9CB /* tables */,
+				A1C122DD2203B31D00EAD9CB /* savegame.c */,
+			);
+			path = savegame;
+			sourceTree = "<group>";
+		};
+		A1C122D52203B31D00EAD9CB /* tables */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122D62203B31D00EAD9CB /* gamefunc_list.h */,
+				A1C122D72203B31D00EAD9CB /* gamemmove_list.h */,
+				A1C122D82203B31D00EAD9CB /* clientfields.h */,
+				A1C122D92203B31D00EAD9CB /* fields.h */,
+				A1C122DA2203B31D00EAD9CB /* levelfields.h */,
+				A1C122DB2203B31D00EAD9CB /* gamemmove_decs.h */,
+				A1C122DC2203B31D00EAD9CB /* gamefunc_decs.h */,
+			);
+			path = tables;
+			sourceTree = "<group>";
+		};
+		A1C122DF2203B31D00EAD9CB /* header */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122E02203B31D00EAD9CB /* shared.h */,
+				A1C122E12203B31D00EAD9CB /* game.h */,
+				A1C122E22203B31D00EAD9CB /* local.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		A1C122E42203B31D00EAD9CB /* monster */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122E52203B31D00EAD9CB /* gladiator */,
+				A1C122E82203B31D00EAD9CB /* misc */,
+				A1C122EB2203B31D00EAD9CB /* parasite */,
+				A1C122EE2203B31D00EAD9CB /* supertank */,
+				A1C122F12203B31D00EAD9CB /* tank */,
+				A1C122F42203B31D00EAD9CB /* soldier */,
+				A1C122F72203B31D00EAD9CB /* hover */,
+				A1C122FA2203B31D00EAD9CB /* turret */,
+				A1C122FD2203B31D00EAD9CB /* stalker */,
+				A1C123002203B31D00EAD9CB /* gunner */,
+				A1C123032203B31D00EAD9CB /* infantry */,
+				A1C123062203B31D00EAD9CB /* flipper */,
+				A1C123092203B31D00EAD9CB /* medic */,
+				A1C1230C2203B31D00EAD9CB /* chick */,
+				A1C1230F2203B31D00EAD9CB /* widow */,
+				A1C123142203B31D00EAD9CB /* float */,
+				A1C123172203B31D00EAD9CB /* brain */,
+				A1C1231A2203B31D00EAD9CB /* carrier */,
+				A1C1231D2203B31D00EAD9CB /* boss3 */,
+				A1C123232203B31D00EAD9CB /* mutant */,
+				A1C123262203B31D00EAD9CB /* flyer */,
+				A1C123292203B31D00EAD9CB /* berserker */,
+				A1C1232C2203B31D00EAD9CB /* insane */,
+				A1C1232F2203B31D00EAD9CB /* boss2 */,
+			);
+			path = monster;
+			sourceTree = "<group>";
+		};
+		A1C122E52203B31D00EAD9CB /* gladiator */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122E62203B31D00EAD9CB /* gladiator.h */,
+				A1C122E72203B31D00EAD9CB /* gladiator.c */,
+			);
+			path = gladiator;
+			sourceTree = "<group>";
+		};
+		A1C122E82203B31D00EAD9CB /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122E92203B31D00EAD9CB /* move.c */,
+				A1C122EA2203B31D00EAD9CB /* player.h */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		A1C122EB2203B31D00EAD9CB /* parasite */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122EC2203B31D00EAD9CB /* parasite.h */,
+				A1C122ED2203B31D00EAD9CB /* parasite.c */,
+			);
+			path = parasite;
+			sourceTree = "<group>";
+		};
+		A1C122EE2203B31D00EAD9CB /* supertank */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122EF2203B31D00EAD9CB /* supertank.c */,
+				A1C122F02203B31D00EAD9CB /* supertank.h */,
+			);
+			path = supertank;
+			sourceTree = "<group>";
+		};
+		A1C122F12203B31D00EAD9CB /* tank */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122F22203B31D00EAD9CB /* tank.h */,
+				A1C122F32203B31D00EAD9CB /* tank.c */,
+			);
+			path = tank;
+			sourceTree = "<group>";
+		};
+		A1C122F42203B31D00EAD9CB /* soldier */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122F52203B31D00EAD9CB /* soldier.h */,
+				A1C122F62203B31D00EAD9CB /* soldier.c */,
+			);
+			path = soldier;
+			sourceTree = "<group>";
+		};
+		A1C122F72203B31D00EAD9CB /* hover */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122F82203B31D00EAD9CB /* hover.h */,
+				A1C122F92203B31D00EAD9CB /* hover.c */,
+			);
+			path = hover;
+			sourceTree = "<group>";
+		};
+		A1C122FA2203B31D00EAD9CB /* turret */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122FB2203B31D00EAD9CB /* turret.h */,
+				A1C122FC2203B31D00EAD9CB /* turret.c */,
+			);
+			path = turret;
+			sourceTree = "<group>";
+		};
+		A1C122FD2203B31D00EAD9CB /* stalker */ = {
+			isa = PBXGroup;
+			children = (
+				A1C122FE2203B31D00EAD9CB /* stalker.c */,
+				A1C122FF2203B31D00EAD9CB /* stalker.h */,
+			);
+			path = stalker;
+			sourceTree = "<group>";
+		};
+		A1C123002203B31D00EAD9CB /* gunner */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123012203B31D00EAD9CB /* gunner.h */,
+				A1C123022203B31D00EAD9CB /* gunner.c */,
+			);
+			path = gunner;
+			sourceTree = "<group>";
+		};
+		A1C123032203B31D00EAD9CB /* infantry */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123042203B31D00EAD9CB /* infantry.h */,
+				A1C123052203B31D00EAD9CB /* infantry.c */,
+			);
+			path = infantry;
+			sourceTree = "<group>";
+		};
+		A1C123062203B31D00EAD9CB /* flipper */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123072203B31D00EAD9CB /* flipper.h */,
+				A1C123082203B31D00EAD9CB /* flipper.c */,
+			);
+			path = flipper;
+			sourceTree = "<group>";
+		};
+		A1C123092203B31D00EAD9CB /* medic */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1230A2203B31D00EAD9CB /* medic.c */,
+				A1C1230B2203B31D00EAD9CB /* medic.h */,
+			);
+			path = medic;
+			sourceTree = "<group>";
+		};
+		A1C1230C2203B31D00EAD9CB /* chick */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1230D2203B31D00EAD9CB /* chick.h */,
+				A1C1230E2203B31D00EAD9CB /* chick.c */,
+			);
+			path = chick;
+			sourceTree = "<group>";
+		};
+		A1C1230F2203B31D00EAD9CB /* widow */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123102203B31D00EAD9CB /* widow.c */,
+				A1C123112203B31D00EAD9CB /* widow2.c */,
+				A1C123122203B31D00EAD9CB /* widow.h */,
+				A1C123132203B31D00EAD9CB /* widow2.h */,
+			);
+			path = widow;
+			sourceTree = "<group>";
+		};
+		A1C123142203B31D00EAD9CB /* float */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123152203B31D00EAD9CB /* float.h */,
+				A1C123162203B31D00EAD9CB /* float.c */,
+			);
+			path = float;
+			sourceTree = "<group>";
+		};
+		A1C123172203B31D00EAD9CB /* brain */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123182203B31D00EAD9CB /* brain.c */,
+				A1C123192203B31D00EAD9CB /* brain.h */,
+			);
+			path = brain;
+			sourceTree = "<group>";
+		};
+		A1C1231A2203B31D00EAD9CB /* carrier */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1231B2203B31D00EAD9CB /* carrier.h */,
+				A1C1231C2203B31D00EAD9CB /* carrier.c */,
+			);
+			path = carrier;
+			sourceTree = "<group>";
+		};
+		A1C1231D2203B31D00EAD9CB /* boss3 */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1231E2203B31D00EAD9CB /* boss3.c */,
+				A1C1231F2203B31D00EAD9CB /* boss31.h */,
+				A1C123202203B31D00EAD9CB /* boss32.h */,
+				A1C123212203B31D00EAD9CB /* boss31.c */,
+				A1C123222203B31D00EAD9CB /* boss32.c */,
+			);
+			path = boss3;
+			sourceTree = "<group>";
+		};
+		A1C123232203B31D00EAD9CB /* mutant */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123242203B31D00EAD9CB /* mutant.c */,
+				A1C123252203B31D00EAD9CB /* mutant.h */,
+			);
+			path = mutant;
+			sourceTree = "<group>";
+		};
+		A1C123262203B31D00EAD9CB /* flyer */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123272203B31D00EAD9CB /* flyer.c */,
+				A1C123282203B31D00EAD9CB /* flyer.h */,
+			);
+			path = flyer;
+			sourceTree = "<group>";
+		};
+		A1C123292203B31D00EAD9CB /* berserker */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1232A2203B31D00EAD9CB /* berserker.h */,
+				A1C1232B2203B31D00EAD9CB /* berserker.c */,
+			);
+			path = berserker;
+			sourceTree = "<group>";
+		};
+		A1C1232C2203B31D00EAD9CB /* insane */ = {
+			isa = PBXGroup;
+			children = (
+				A1C1232D2203B31D00EAD9CB /* insane.c */,
+				A1C1232E2203B31D00EAD9CB /* insane.h */,
+			);
+			path = insane;
+			sourceTree = "<group>";
+		};
+		A1C1232F2203B31D00EAD9CB /* boss2 */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123302203B31D00EAD9CB /* boss2.h */,
+				A1C123312203B31D00EAD9CB /* boss2.c */,
+			);
+			path = boss2;
+			sourceTree = "<group>";
+		};
+		A1C123332203B31D00EAD9CB /* player */ = {
+			isa = PBXGroup;
+			children = (
+				A1C123342203B31D00EAD9CB /* trail.c */,
+				A1C123352203B31D00EAD9CB /* weapon.c */,
+				A1C123362203B31D00EAD9CB /* client.c */,
+				A1C123372203B31D00EAD9CB /* hud.c */,
+				A1C123382203B31D00EAD9CB /* view.c */,
+			);
+			path = player;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1400,6 +2451,23 @@
 			productReference = A1B80AF921FA5BEE00560711 /* Quake2-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A1C1233B2203B37600EAD9CB /* Quake2mp1-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C123DA2203B37600EAD9CB /* Build configuration list for PBXNativeTarget "Quake2mp1-iOS" */;
+			buildPhases = (
+				A1C1233C2203B37600EAD9CB /* Resources */,
+				A1C123432203B37600EAD9CB /* Sources */,
+				A1C123CD2203B37600EAD9CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quake2mp1-iOS";
+			productName = "___PROJECTNAME___";
+			productReference = A1C123DD2203B37600EAD9CB /* Quake2mp1-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1416,6 +2484,9 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
+					};
+					A1C1233B2203B37600EAD9CB = {
+						DevelopmentTeam = 9UY8SFDNQ8;
 					};
 				};
 			};
@@ -1442,6 +2513,7 @@
 			targets = (
 				A1B80A4521F96DAA00560711 /* Quake2-iOS */,
 				A1B80AF821FA5BEE00560711 /* Quake2-tvOS */,
+				A1C1233B2203B37600EAD9CB /* Quake2mp1-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -1485,6 +2557,20 @@
 				A1B80B0C21FA5C6300560711 /* baseq2 in Resources */,
 				A1C1205521FD178100EAD9CB /* dpquake.ttf in Resources */,
 				A1B80B0521FA5BF200560711 /* Quake2-SDL-tvOS.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C1233C2203B37600EAD9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C124182203B76E00EAD9CB /* xatrix in Resources */,
+				A1C124172203B76500EAD9CB /* baseq2 in Resources */,
+				A1C1233D2203B37600EAD9CB /* Launch Screen.storyboard in Resources */,
+				A1C1233E2203B37600EAD9CB /* Main.storyboard in Resources */,
+				A1C123402203B37600EAD9CB /* music in Resources */,
+				A1C123412203B37600EAD9CB /* dpquake.ttf in Resources */,
+				A1C123422203B37600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1773,6 +2859,154 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1C123432203B37600EAD9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C123FF2203B4B400EAD9CB /* gladb.c in Sources */,
+				A1C123FC2203B4B400EAD9CB /* float.c in Sources */,
+				A1C123442203B37600EAD9CB /* qal.c in Sources */,
+				A1C123452203B37600EAD9CB /* cl_cin.c in Sources */,
+				A1C123462203B37600EAD9CB /* cl_view.c in Sources */,
+				A1C1234B2203B37600EAD9CB /* main.c in Sources */,
+				A1C124032203B4B400EAD9CB /* infantry.c in Sources */,
+				A1C1234E2203B37600EAD9CB /* openal.c in Sources */,
+				A1C1234F2203B37600EAD9CB /* gl3_sp2.c in Sources */,
+				A1C123502203B37600EAD9CB /* ogg.c in Sources */,
+				A1C123512203B37600EAD9CB /* menu.c in Sources */,
+				A1C123ED2203B49200EAD9CB /* g_target.c in Sources */,
+				A1C124092203B4B400EAD9CB /* soldier.c in Sources */,
+				A1C123542203B37600EAD9CB /* cl_main.c in Sources */,
+				A1C123552203B37600EAD9CB /* gl3_light.c in Sources */,
+				A1C123EA2203B49200EAD9CB /* g_phys.c in Sources */,
+				A1C123572203B37600EAD9CB /* wal.c in Sources */,
+				A1C123E22203B49200EAD9CB /* g_chase.c in Sources */,
+				A1C123EC2203B49200EAD9CB /* g_svcmds.c in Sources */,
+				A1C123592203B37600EAD9CB /* cl_effects.c in Sources */,
+				A1C1235B2203B37600EAD9CB /* cl_prediction.c in Sources */,
+				A1C1235C2203B37600EAD9CB /* MainMenuViewController.swift in Sources */,
+				A1C1235D2203B37600EAD9CB /* flash.c in Sources */,
+				A1C123F62203B4B400EAD9CB /* boss32.c in Sources */,
+				A1C1235F2203B37600EAD9CB /* SDL_uikitviewcontroller+Additions.swift in Sources */,
+				A1C123602203B37600EAD9CB /* sv_main.c in Sources */,
+				A1C1240E2203B5AF00EAD9CB /* client.c in Sources */,
+				A1C123F72203B4B400EAD9CB /* boss5.c in Sources */,
+				A1C123612203B37600EAD9CB /* sv_save.c in Sources */,
+				A1C123622203B37600EAD9CB /* gl3_image.c in Sources */,
+				A1C123632203B37600EAD9CB /* miniz.c in Sources */,
+				A1C123642203B37600EAD9CB /* sv_user.c in Sources */,
+				A1C123652203B37600EAD9CB /* JoyStickView.swift in Sources */,
+				A1C123662203B37600EAD9CB /* cl_console.c in Sources */,
+				A1C123682203B37600EAD9CB /* qmenu.c in Sources */,
+				A1C123692203B37600EAD9CB /* cvar.c in Sources */,
+				A1C1236A2203B37600EAD9CB /* netchan.c in Sources */,
+				A1C1240B2203B4B400EAD9CB /* tank.c in Sources */,
+				A1C1236B2203B37600EAD9CB /* system.c in Sources */,
+				A1C1236E2203B37600EAD9CB /* cl_lights.c in Sources */,
+				A1C1236F2203B37600EAD9CB /* cl_screen.c in Sources */,
+				A1C123F12203B49200EAD9CB /* g_weapon.c in Sources */,
+				A1C123F32203B4B400EAD9CB /* boss2.c in Sources */,
+				A1C123702203B37600EAD9CB /* gl3_model.c in Sources */,
+				A1C123712203B37600EAD9CB /* filesystem.c in Sources */,
+				A1C1240C2203B5AF00EAD9CB /* trail.c in Sources */,
+				A1C1240A2203B4B400EAD9CB /* supertank.c in Sources */,
+				A1C123722203B37600EAD9CB /* sv_entities.c in Sources */,
+				A1C123742203B37600EAD9CB /* cl_entities.c in Sources */,
+				A1C123752203B37600EAD9CB /* gl3_lightmap.c in Sources */,
+				A1C123772203B37600EAD9CB /* stb.c in Sources */,
+				A1C124022203B4B400EAD9CB /* hover.c in Sources */,
+				A1C123782203B37600EAD9CB /* sound.c in Sources */,
+				A1C123EF2203B49200EAD9CB /* g_turret.c in Sources */,
+				A1C123792203B37600EAD9CB /* sv_cmd.c in Sources */,
+				A1C123E32203B49200EAD9CB /* g_cmds.c in Sources */,
+				A1C123E82203B49200EAD9CB /* g_misc.c in Sources */,
+				A1C1237C2203B37600EAD9CB /* gl3_draw.c in Sources */,
+				A1C1237D2203B37600EAD9CB /* DifficultyViewController.swift in Sources */,
+				A1C1237E2203B37600EAD9CB /* cl_network.c in Sources */,
+				A1C123802203B37600EAD9CB /* videomenu.c in Sources */,
+				A1C124052203B4B400EAD9CB /* medic.c in Sources */,
+				A1C123832203B37600EAD9CB /* CoreGraphics+Additions.swift in Sources */,
+				A1C123E92203B49200EAD9CB /* g_monster.c in Sources */,
+				A1C123F02203B49200EAD9CB /* g_utils.c in Sources */,
+				A1C123862203B37600EAD9CB /* sdl.c in Sources */,
+				A1C123FA2203B4B400EAD9CB /* fixbot.c in Sources */,
+				A1C123882203B37600EAD9CB /* glad.c in Sources */,
+				A1C123892203B37600EAD9CB /* hunk.c in Sources */,
+				A1C1238B2203B37600EAD9CB /* zone.c in Sources */,
+				A1C1238C2203B37600EAD9CB /* cl_download.c in Sources */,
+				A1C1238E2203B37600EAD9CB /* gl3_sdl.c in Sources */,
+				A1C1238F2203B37600EAD9CB /* gl3_warp.c in Sources */,
+				A1C123922203B37600EAD9CB /* md4.c in Sources */,
+				A1C123EB2203B49200EAD9CB /* g_spawn.c in Sources */,
+				A1C123942203B37600EAD9CB /* gl3_mesh.c in Sources */,
+				A1C123952203B37600EAD9CB /* gl3_misc.c in Sources */,
+				A1C123F52203B4B400EAD9CB /* boss31.c in Sources */,
+				A1C123962203B37600EAD9CB /* glimp_sdl.m in Sources */,
+				A1C123982203B37600EAD9CB /* pcx.c in Sources */,
+				A1C123E52203B49200EAD9CB /* g_func.c in Sources */,
+				A1C1239A2203B37600EAD9CB /* szone.c in Sources */,
+				A1C1239B2203B37600EAD9CB /* sv_conless.c in Sources */,
+				A1C1239C2203B37600EAD9CB /* GameViewController.swift in Sources */,
+				A1C1239D2203B37600EAD9CB /* gl3_shaders.c in Sources */,
+				A1C1239E2203B37600EAD9CB /* wave.c in Sources */,
+				A1C123F42203B4B400EAD9CB /* boss3.c in Sources */,
+				A1C1239F2203B37600EAD9CB /* AppDelegate.m in Sources */,
+				A1C123A02203B37600EAD9CB /* sv_game.c in Sources */,
+				A1C123FB2203B4B400EAD9CB /* flipper.c in Sources */,
+				A1C1240F2203B5AF00EAD9CB /* hud.c in Sources */,
+				A1C123A22203B37600EAD9CB /* gl3_md2.c in Sources */,
+				A1C123A32203B37600EAD9CB /* unzip.c in Sources */,
+				A1C123A42203B37600EAD9CB /* frame.c in Sources */,
+				A1C123A82203B37600EAD9CB /* misc.c in Sources */,
+				A1C123A92203B37600EAD9CB /* argproc.c in Sources */,
+				A1C124162203B6D600EAD9CB /* shared.c in Sources */,
+				A1C123E72203B49200EAD9CB /* g_main.c in Sources */,
+				A1C123AA2203B37600EAD9CB /* glob.c in Sources */,
+				A1C123E12203B49200EAD9CB /* g_ai.c in Sources */,
+				A1C123AC2203B37600EAD9CB /* sv_world.c in Sources */,
+				A1C124152203B6D600EAD9CB /* rand.c in Sources */,
+				A1C123EE2203B49200EAD9CB /* g_trigger.c in Sources */,
+				A1C123AE2203B37600EAD9CB /* signalhandler.c in Sources */,
+				A1C123B12203B37600EAD9CB /* sv_init.c in Sources */,
+				A1C123B22203B37600EAD9CB /* clientserver.c in Sources */,
+				A1C123F22203B4B400EAD9CB /* berserker.c in Sources */,
+				A1C123F92203B4B400EAD9CB /* chick.c in Sources */,
+				A1C124072203B4B400EAD9CB /* mutant.c in Sources */,
+				A1C123B42203B37600EAD9CB /* sdl.c in Sources */,
+				A1C1240D2203B5AF00EAD9CB /* weapon.c in Sources */,
+				A1C123B62203B37600EAD9CB /* cmdparser.c in Sources */,
+				A1C123B82203B37600EAD9CB /* gl3_surf.c in Sources */,
+				A1C123B92203B37600EAD9CB /* sv_send.c in Sources */,
+				A1C123BA2203B37600EAD9CB /* gl3_main.m in Sources */,
+				A1C123BB2203B37600EAD9CB /* collision.c in Sources */,
+				A1C124082203B4B400EAD9CB /* parasite.c in Sources */,
+				A1C123E42203B49200EAD9CB /* g_combat.c in Sources */,
+				A1C123BC2203B37600EAD9CB /* cl_parse.c in Sources */,
+				A1C123E62203B49200EAD9CB /* g_items.c in Sources */,
+				A1C123F82203B4B400EAD9CB /* brain.c in Sources */,
+				A1C123BD2203B37600EAD9CB /* cl_keyboard.c in Sources */,
+				A1C124062203B4B400EAD9CB /* move.c in Sources */,
+				A1C123BF2203B37600EAD9CB /* pvs.c in Sources */,
+				A1C123C22203B37600EAD9CB /* crc.c in Sources */,
+				A1C124012203B4B400EAD9CB /* gunner.c in Sources */,
+				A1C123C32203B37600EAD9CB /* cl_particles.c in Sources */,
+				A1C123C42203B37600EAD9CB /* network.c in Sources */,
+				A1C124002203B4B400EAD9CB /* gladiator.c in Sources */,
+				A1C123FD2203B4B400EAD9CB /* flyer.c in Sources */,
+				A1C124112203B5B400EAD9CB /* savegame.c in Sources */,
+				A1C123C52203B37600EAD9CB /* cl_tempentities.c in Sources */,
+				A1C124102203B5AF00EAD9CB /* view.c in Sources */,
+				A1C124042203B4B400EAD9CB /* insane.c in Sources */,
+				A1C123C62203B37600EAD9CB /* movemsg.c in Sources */,
+				A1C123FE2203B4B400EAD9CB /* gekk.c in Sources */,
+				A1C123C72203B37600EAD9CB /* cl_input.c in Sources */,
+				A1C123C82203B37600EAD9CB /* ioapi.c in Sources */,
+				A1C123C92203B37600EAD9CB /* vid.c in Sources */,
+				A1C123CB2203B37600EAD9CB /* cl_inventory.c in Sources */,
+				A1C123CC2203B37600EAD9CB /* pmove.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -1810,13 +3044,14 @@
 					IOS,
 					GLES_SILENCE_DEPRECATION,
 					USE_GLES3,
+					BASEQ2,
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Quake2SDLiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1857,13 +3092,14 @@
 					IOS,
 					GLES_SILENCE_DEPRECATION,
 					USE_GLES3,
+					BASEQ2,
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Quake2SDLiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
 				SWIFT_VERSION = 4.2;
@@ -1900,6 +3136,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 					USE_GLES3,
+					BASEQ2,
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1907,7 +3144,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.Quake2-SDL-tvOS-gl3";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/Quake2-tvOS-Bridging-Header.h";
@@ -1948,6 +3185,7 @@
 					IOS,
 					GLES_SILENCE_DEPRECATION,
 					USE_GLES3,
+					BASEQ2,
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1955,7 +3193,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.Quake2-SDL-tvOS-gl3";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/Quake2-tvOS-Bridging-Header.h";
@@ -1963,6 +3201,110 @@
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.1;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1C123DB2203B37600EAD9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					SDL2,
+					"YQ2OSTYPE=\\\"Darwin\\\"",
+					"YQ2ARCH=\\\"x86_64\\\"",
+					IOS,
+					GLES_SILENCE_DEPRECATION,
+					USE_GLES3,
+					XATRIX,
+					"OSTYPE=\\\"Darwin\\\"",
+					"ARCH=\\\"x86_64\\\"",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Quake2-iOS copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "-D XATRIX";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		A1C123DC2203B37600EAD9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SDL2,
+					"YQ2OSTYPE=\\\"Darwin\\\"",
+					"YQ2ARCH=\\\"x86_64\\\"",
+					IOS,
+					GLES_SILENCE_DEPRECATION,
+					USE_GLES3,
+					XATRIX,
+					"OSTYPE=\\\"Darwin\\\"",
+					"ARCH=\\\"x86_64\\\"",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Quake2-iOS copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "-D XATRIX";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -2083,6 +3425,15 @@
 			buildConfigurations = (
 				A1B80B0A21FA5BF200560711 /* Debug */,
 				A1B80B0B21FA5BF200560711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C123DA2203B37600EAD9CB /* Build configuration list for PBXNativeTarget "Quake2mp1-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C123DB2203B37600EAD9CB /* Debug */,
+				A1C123DC2203B37600EAD9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

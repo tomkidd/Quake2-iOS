@@ -32,6 +32,12 @@ class GameViewController: UIViewController {
                 argv.append("\(self.difficulty)")
             }
             
+            #if XATRIX
+            argv.append("+set")
+            argv.append("game")
+            argv.append("xatrix")
+            #endif
+            
             argv.append(nil)
             let argc:Int32 = Int32(argv.count - 1)
             var cargs = argv.map { $0.flatMap { UnsafeMutablePointer<Int8>(strdup($0)) } }

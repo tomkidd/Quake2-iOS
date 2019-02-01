@@ -642,6 +642,161 @@
 		A1C124FF2204F3D700EAD9CB /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75D21FD0604005F4B74 /* MainMenuViewController.swift */; };
 		A1C125002204F4C900EAD9CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75721FD02A0005F4B74 /* AppDelegate.m */; };
 		A1C125052204F73000EAD9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C125042204F73000EAD9CB /* Main.storyboard */; };
+		A1C125082204FA3300EAD9CB /* qal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E921FCDD7A005F4B74 /* qal.c */; };
+		A1C125092204FA3300EAD9CB /* cl_cin.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E621FCDD7A005F4B74 /* cl_cin.c */; };
+		A1C1250A2204FA3300EAD9CB /* cl_view.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FA21FCDD7A005F4B74 /* cl_view.c */; };
+		A1C1250F2204FA3300EAD9CB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DC21FCDD7A005F4B74 /* main.c */; };
+		A1C125122204FA3300EAD9CB /* openal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EB21FCDD7A005F4B74 /* openal.c */; };
+		A1C125132204FA3300EAD9CB /* gl3_sp2.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D121FCDD7A005F4B74 /* gl3_sp2.c */; };
+		A1C125142204FA3300EAD9CB /* ogg.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5ED21FCDD7A005F4B74 /* ogg.c */; };
+		A1C125152204FA3300EAD9CB /* menu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E021FCDD7A005F4B74 /* menu.c */; };
+		A1C125182204FA3300EAD9CB /* cl_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DC21FCDD7A005F4B74 /* cl_main.c */; };
+		A1C125192204FA3300EAD9CB /* gl3_light.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D221FCDD7A005F4B74 /* gl3_light.c */; };
+		A1C1251B2204FA3300EAD9CB /* wal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BB21FCDD7A005F4B74 /* wal.c */; };
+		A1C1251D2204FA3300EAD9CB /* cl_effects.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57E21FCDD7A005F4B74 /* cl_effects.c */; };
+		A1C1251F2204FA3300EAD9CB /* cl_prediction.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58721FCDD7A005F4B74 /* cl_prediction.c */; };
+		A1C125202204FA3300EAD9CB /* flash.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56021FCDD7A005F4B74 /* flash.c */; };
+		A1C125222204FA3300EAD9CB /* sv_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E221FCDD7A005F4B74 /* sv_main.c */; };
+		A1C125232204FA3300EAD9CB /* sv_save.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E021FCDD7A005F4B74 /* sv_save.c */; };
+		A1C125242204FA3300EAD9CB /* gl3_image.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C321FCDD7A005F4B74 /* gl3_image.c */; };
+		A1C125252204FA3300EAD9CB /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55721FCDD7A005F4B74 /* miniz.c */; };
+		A1C125262204FA3300EAD9CB /* sv_user.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E721FCDD7A005F4B74 /* sv_user.c */; };
+		A1C125272204FA3300EAD9CB /* cl_console.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DD21FCDD7A005F4B74 /* cl_console.c */; };
+		A1C125292204FA3300EAD9CB /* qmenu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DF21FCDD7A005F4B74 /* qmenu.c */; };
+		A1C1252A2204FA3300EAD9CB /* cvar.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56C21FCDD7A005F4B74 /* cvar.c */; };
+		A1C1252B2204FA3300EAD9CB /* netchan.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56621FCDD7A005F4B74 /* netchan.c */; };
+		A1C1252C2204FA3300EAD9CB /* system.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D921FCDD7A005F4B74 /* system.c */; };
+		A1C1252F2204FA3300EAD9CB /* cl_lights.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57F21FCDD7A005F4B74 /* cl_lights.c */; };
+		A1C125302204FA3300EAD9CB /* cl_screen.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E421FCDD7A005F4B74 /* cl_screen.c */; };
+		A1C125312204FA3300EAD9CB /* gl3_model.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C721FCDD7A005F4B74 /* gl3_model.c */; };
+		A1C125322204FA3300EAD9CB /* filesystem.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56421FCDD7A005F4B74 /* filesystem.c */; };
+		A1C125332204FA3300EAD9CB /* sv_entities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E121FCDD7A005F4B74 /* sv_entities.c */; };
+		A1C125352204FA3300EAD9CB /* cl_entities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FB21FCDD7A005F4B74 /* cl_entities.c */; };
+		A1C125362204FA3300EAD9CB /* gl3_lightmap.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C121FCDD7A005F4B74 /* gl3_lightmap.c */; };
+		A1C125372204FA3300EAD9CB /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56121FCDD7A005F4B74 /* shared.c */; };
+		A1C125382204FA3300EAD9CB /* stb.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BD21FCDD7A005F4B74 /* stb.c */; };
+		A1C125392204FA3300EAD9CB /* sound.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.m */; };
+		A1C1253A2204FA3300EAD9CB /* sv_cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E521FCDD7A005F4B74 /* sv_cmd.c */; };
+		A1C1253D2204FA3300EAD9CB /* gl3_draw.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C821FCDD7A005F4B74 /* gl3_draw.c */; };
+		A1C1253E2204FA3300EAD9CB /* cl_network.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58221FCDD7A005F4B74 /* cl_network.c */; };
+		A1C125402204FA3300EAD9CB /* videomenu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E121FCDD7A005F4B74 /* videomenu.c */; };
+		A1C125452204FA3300EAD9CB /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58421FCDD7A005F4B74 /* sdl.c */; };
+		A1C125472204FA3300EAD9CB /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D021FCDD7A005F4B74 /* glad.c */; };
+		A1C125482204FA3300EAD9CB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75F21FD0819005F4B74 /* GameViewController.swift */; };
+		A1C125492204FA3300EAD9CB /* hunk.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DB21FCDD7A005F4B74 /* hunk.c */; };
+		A1C1254B2204FA3300EAD9CB /* zone.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56321FCDD7A005F4B74 /* zone.c */; };
+		A1C1254C2204FA3300EAD9CB /* cl_download.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FC21FCDD7A005F4B74 /* cl_download.c */; };
+		A1C1254E2204FA3300EAD9CB /* gl3_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BF21FCDD7A005F4B74 /* gl3_sdl.c */; };
+		A1C1254F2204FA3300EAD9CB /* gl3_warp.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D821FCDD7A005F4B74 /* gl3_warp.c */; };
+		A1C125522204FA3300EAD9CB /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75D21FD0604005F4B74 /* MainMenuViewController.swift */; };
+		A1C125532204FA3300EAD9CB /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55321FCDD7A005F4B74 /* md4.c */; };
+		A1C125552204FA3300EAD9CB /* gl3_mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C221FCDD7A005F4B74 /* gl3_mesh.c */; };
+		A1C125562204FA3300EAD9CB /* gl3_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C021FCDD7A005F4B74 /* gl3_misc.c */; };
+		A1C125572204FA3300EAD9CB /* glimp_sdl.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57621FCDD7A005F4B74 /* glimp_sdl.m */; };
+		A1C125592204FA3300EAD9CB /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5B921FCDD7A005F4B74 /* pcx.c */; };
+		A1C1255B2204FA3300EAD9CB /* szone.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56521FCDD7A005F4B74 /* szone.c */; };
+		A1C1255C2204FA3300EAD9CB /* sv_conless.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E321FCDD7A005F4B74 /* sv_conless.c */; };
+		A1C1255D2204FA3300EAD9CB /* gl3_shaders.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C421FCDD7A005F4B74 /* gl3_shaders.c */; };
+		A1C1255E2204FA3300EAD9CB /* wave.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EA21FCDD7A005F4B74 /* wave.c */; };
+		A1C1255F2204FA3300EAD9CB /* sv_game.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E621FCDD7A005F4B74 /* sv_game.c */; };
+		A1C125612204FA3300EAD9CB /* gl3_md2.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D921FCDD7A005F4B74 /* gl3_md2.c */; };
+		A1C125622204FA3300EAD9CB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55821FCDD7A005F4B74 /* unzip.c */; };
+		A1C125632204FA3300EAD9CB /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56821FCDD7A005F4B74 /* frame.c */; };
+		A1C125672204FA3300EAD9CB /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DE21FCDD7A005F4B74 /* misc.c */; };
+		A1C125682204FA3300EAD9CB /* argproc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56A21FCDD7A005F4B74 /* argproc.c */; };
+		A1C125692204FA3300EAD9CB /* glob.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56221FCDD7A005F4B74 /* glob.c */; };
+		A1C1256A2204FA3300EAD9CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75721FD02A0005F4B74 /* AppDelegate.m */; };
+		A1C1256B2204FA3300EAD9CB /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */; };
+		A1C1256D2204FA3300EAD9CB /* sv_world.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4EB21FCDD7A005F4B74 /* sv_world.c */; };
+		A1C1256F2204FA3300EAD9CB /* signalhandler.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D821FCDD7A005F4B74 /* signalhandler.c */; };
+		A1C125722204FA3300EAD9CB /* sv_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E421FCDD7A005F4B74 /* sv_init.c */; };
+		A1C125732204FA3300EAD9CB /* clientserver.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55221FCDD7A005F4B74 /* clientserver.c */; };
+		A1C125752204FA3300EAD9CB /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EC21FCDD7A005F4B74 /* sdl.c */; };
+		A1C125772204FA3300EAD9CB /* cmdparser.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55521FCDD7A005F4B74 /* cmdparser.c */; };
+		A1C125792204FA3300EAD9CB /* gl3_surf.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C521FCDD7A005F4B74 /* gl3_surf.c */; };
+		A1C1257A2204FA3300EAD9CB /* sv_send.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4EA21FCDD7A005F4B74 /* sv_send.c */; };
+		A1C1257B2204FA3300EAD9CB /* gl3_main.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C621FCDD7A005F4B74 /* gl3_main.m */; };
+		A1C1257C2204FA3300EAD9CB /* collision.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56921FCDD7A005F4B74 /* collision.c */; };
+		A1C1257D2204FA3300EAD9CB /* cl_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58121FCDD7A005F4B74 /* cl_parse.c */; };
+		A1C1257E2204FA3300EAD9CB /* cl_keyboard.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E521FCDD7A005F4B74 /* cl_keyboard.c */; };
+		A1C125802204FA3300EAD9CB /* pvs.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BA21FCDD7A005F4B74 /* pvs.c */; };
+		A1C125832204FA3300EAD9CB /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56B21FCDD7A005F4B74 /* crc.c */; };
+		A1C125842204FA3300EAD9CB /* cl_particles.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DB21FCDD7A005F4B74 /* cl_particles.c */; };
+		A1C125852204FA3300EAD9CB /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D721FCDD7A005F4B74 /* network.c */; };
+		A1C125862204FA3300EAD9CB /* cl_tempentities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58021FCDD7A005F4B74 /* cl_tempentities.c */; };
+		A1C125872204FA3300EAD9CB /* movemsg.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56721FCDD7A005F4B74 /* movemsg.c */; };
+		A1C125882204FA3300EAD9CB /* cl_input.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DA21FCDD7A005F4B74 /* cl_input.c */; };
+		A1C125892204FA3300EAD9CB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55921FCDD7A005F4B74 /* ioapi.c */; };
+		A1C1258A2204FA3300EAD9CB /* vid.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57721FCDD7A005F4B74 /* vid.c */; };
+		A1C1258B2204FA3300EAD9CB /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55F21FCDD7A005F4B74 /* rand.c */; };
+		A1C1258C2204FA3300EAD9CB /* cl_inventory.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E721FCDD7A005F4B74 /* cl_inventory.c */; };
+		A1C1258D2204FA3300EAD9CB /* pmove.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55421FCDD7A005F4B74 /* pmove.c */; };
+		A1C1258F2204FA3300EAD9CB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B0F21FA5D0500560711 /* CoreAudio.framework */; };
+		A1C125902204FA3300EAD9CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1021FA5D0500560711 /* QuartzCore.framework */; };
+		A1C125912204FA3300EAD9CB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1121FA5D0500560711 /* AudioToolbox.framework */; };
+		A1C125922204FA3300EAD9CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1221FA5D0500560711 /* UIKit.framework */; };
+		A1C125932204FA3300EAD9CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1321FA5D0500560711 /* AVFoundation.framework */; };
+		A1C125942204FA3300EAD9CB /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1421FA5D0500560711 /* Metal.framework */; };
+		A1C125952204FA3300EAD9CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1521FA5D0500560711 /* CoreGraphics.framework */; };
+		A1C125962204FA3300EAD9CB /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1621FA5D0500560711 /* GameController.framework */; };
+		A1C125972204FA3300EAD9CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1721FA5D0500560711 /* Foundation.framework */; };
+		A1C125982204FA3300EAD9CB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B80B1821FA5D0500560711 /* OpenGLES.framework */; };
+		A1C125992204FA3300EAD9CB /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F34E21D530B500B4BB5D /* libSDL2.a */; };
+		A1C1259B2204FA3300EAD9CB /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
+		A1C1259C2204FA3300EAD9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C125042204F73000EAD9CB /* Main.storyboard */; };
+		A1C1259D2204FA3300EAD9CB /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
+		A1C1259E2204FA3300EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
+		A1C1259F2204FA3300EAD9CB /* Quake2-SDL-tvOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */; };
+		A1C125A52204FA5700EAD9CB /* xatrix in Resources */ = {isa = PBXBuildFile; fileRef = A1C123392203B34F00EAD9CB /* xatrix */; };
+		A1C125A62204FAB600EAD9CB /* g_ai.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1224E2203B31D00EAD9CB /* g_ai.c */; };
+		A1C125A72204FAB600EAD9CB /* g_chase.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122462203B31D00EAD9CB /* g_chase.c */; };
+		A1C125A82204FAB600EAD9CB /* g_cmds.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122542203B31D00EAD9CB /* g_cmds.c */; };
+		A1C125A92204FAB600EAD9CB /* g_combat.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122512203B31D00EAD9CB /* g_combat.c */; };
+		A1C125AA2204FAB600EAD9CB /* g_func.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122442203B31D00EAD9CB /* g_func.c */; };
+		A1C125AB2204FAB600EAD9CB /* g_items.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1224F2203B31D00EAD9CB /* g_items.c */; };
+		A1C125AC2204FAB600EAD9CB /* g_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122562203B31D00EAD9CB /* g_main.c */; };
+		A1C125AD2204FAB600EAD9CB /* g_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1224D2203B31D00EAD9CB /* g_misc.c */; };
+		A1C125AE2204FAB600EAD9CB /* g_monster.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122502203B31D00EAD9CB /* g_monster.c */; };
+		A1C125AF2204FAB600EAD9CB /* g_phys.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122652203B31D00EAD9CB /* g_phys.c */; };
+		A1C125B02204FAB600EAD9CB /* g_spawn.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122482203B31D00EAD9CB /* g_spawn.c */; };
+		A1C125B12204FAB600EAD9CB /* g_svcmds.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122532203B31D00EAD9CB /* g_svcmds.c */; };
+		A1C125B22204FAB600EAD9CB /* g_target.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122552203B31D00EAD9CB /* g_target.c */; };
+		A1C125B32204FAB600EAD9CB /* g_trigger.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B02203B31D00EAD9CB /* g_trigger.c */; };
+		A1C125B42204FAB600EAD9CB /* g_turret.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122452203B31D00EAD9CB /* g_turret.c */; };
+		A1C125B52204FAB600EAD9CB /* g_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122472203B31D00EAD9CB /* g_utils.c */; };
+		A1C125B62204FAB600EAD9CB /* g_weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122522203B31D00EAD9CB /* g_weapon.c */; };
+		A1C125B72204FAE400EAD9CB /* berserker.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122A42203B31D00EAD9CB /* berserker.c */; };
+		A1C125B82204FAE400EAD9CB /* boss2.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122AF2203B31D00EAD9CB /* boss2.c */; };
+		A1C125B92204FAE400EAD9CB /* boss3.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122972203B31D00EAD9CB /* boss3.c */; };
+		A1C125BA2204FAE400EAD9CB /* boss31.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1229A2203B31D00EAD9CB /* boss31.c */; };
+		A1C125BB2204FAE400EAD9CB /* boss32.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1229B2203B31D00EAD9CB /* boss32.c */; };
+		A1C125BC2204FAE400EAD9CB /* boss5.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122A92203B31D00EAD9CB /* boss5.c */; };
+		A1C125BD2204FAE400EAD9CB /* brain.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122942203B31D00EAD9CB /* brain.c */; };
+		A1C125BE2204FAE400EAD9CB /* chick.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1228C2203B31D00EAD9CB /* chick.c */; };
+		A1C125BF2204FAE400EAD9CB /* fixbot.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1228F2203B31D00EAD9CB /* fixbot.c */; };
+		A1C125C02204FAE400EAD9CB /* flipper.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122862203B31D00EAD9CB /* flipper.c */; };
+		A1C125C12204FAE400EAD9CB /* float.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122922203B31D00EAD9CB /* float.c */; };
+		A1C125C22204FAE400EAD9CB /* flyer.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122A02203B31D00EAD9CB /* flyer.c */; };
+		A1C125C32204FAE400EAD9CB /* gekk.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122AC2203B31D00EAD9CB /* gekk.c */; };
+		A1C125C42204FAE400EAD9CB /* gladb.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122682203B31D00EAD9CB /* gladb.c */; };
+		A1C125C52204FAE400EAD9CB /* gladiator.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1226A2203B31D00EAD9CB /* gladiator.c */; };
+		A1C125C62204FAE400EAD9CB /* gunner.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122802203B31D00EAD9CB /* gunner.c */; };
+		A1C125C72204FAE400EAD9CB /* hover.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1227D2203B31D00EAD9CB /* hover.c */; };
+		A1C125C82204FAE400EAD9CB /* infantry.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122832203B31D00EAD9CB /* infantry.c */; };
+		A1C125C92204FAE400EAD9CB /* insane.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122A62203B31D00EAD9CB /* insane.c */; };
+		A1C125CA2204FAE400EAD9CB /* medic.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122882203B31D00EAD9CB /* medic.c */; };
+		A1C125CB2204FAE400EAD9CB /* move.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1226C2203B31D00EAD9CB /* move.c */; };
+		A1C125CC2204FAE400EAD9CB /* mutant.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1229D2203B31D00EAD9CB /* mutant.c */; };
+		A1C125CD2204FAE400EAD9CB /* parasite.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122702203B31D00EAD9CB /* parasite.c */; };
+		A1C125CE2204FAE400EAD9CB /* soldier.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122792203B31D00EAD9CB /* soldier.c */; };
+		A1C125CF2204FAE400EAD9CB /* supertank.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122722203B31D00EAD9CB /* supertank.c */; };
+		A1C125D02204FAE400EAD9CB /* tank.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122762203B31D00EAD9CB /* tank.c */; };
+		A1C125D12204FAEB00EAD9CB /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B42203B31D00EAD9CB /* client.c */; };
+		A1C125D22204FAEB00EAD9CB /* hud.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B52203B31D00EAD9CB /* hud.c */; };
+		A1C125D32204FAEB00EAD9CB /* trail.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B22203B31D00EAD9CB /* trail.c */; };
+		A1C125D42204FAEB00EAD9CB /* view.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B62203B31D00EAD9CB /* view.c */; };
+		A1C125D52204FAEB00EAD9CB /* weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B32203B31D00EAD9CB /* weapon.c */; };
+		A1C125D62204FAF200EAD9CB /* savegame.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122602203B31D00EAD9CB /* savegame.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1088,6 +1243,8 @@
 		A1C124C02203FE2600EAD9CB /* Quake2mp2-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp2-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C124C12203FE2600EAD9CB /* Quake2mp1-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Quake2mp1-iOS copy-Info.plist"; path = "/Users/tomkidd/Documents/GitHub/Quake2-SDL-iOS/Quake2mp1-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		A1C125042204F73000EAD9CB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A1C125A32204FA3300EAD9CB /* Quake2mp1-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp1-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C125A42204FA3300EAD9CB /* Quake2-tvOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Quake2-tvOS copy-Info.plist"; path = "/Users/tomkidd/Documents/GitHub/Quake2-SDL-iOS/Quake2-tvOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -1171,6 +1328,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1C1258E2204FA3300EAD9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C1258F2204FA3300EAD9CB /* CoreAudio.framework in Frameworks */,
+				A1C125902204FA3300EAD9CB /* QuartzCore.framework in Frameworks */,
+				A1C125912204FA3300EAD9CB /* AudioToolbox.framework in Frameworks */,
+				A1C125922204FA3300EAD9CB /* UIKit.framework in Frameworks */,
+				A1C125932204FA3300EAD9CB /* AVFoundation.framework in Frameworks */,
+				A1C125942204FA3300EAD9CB /* Metal.framework in Frameworks */,
+				A1C125952204FA3300EAD9CB /* CoreGraphics.framework in Frameworks */,
+				A1C125962204FA3300EAD9CB /* GameController.framework in Frameworks */,
+				A1C125972204FA3300EAD9CB /* Foundation.framework in Frameworks */,
+				A1C125982204FA3300EAD9CB /* OpenGLES.framework in Frameworks */,
+				A1C125992204FA3300EAD9CB /* libSDL2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1181,6 +1356,7 @@
 				A1B80AF921FA5BEE00560711 /* Quake2-tvOS.app */,
 				A1C123DD2203B37600EAD9CB /* Quake2mp1-iOS.app */,
 				A1C124C02203FE2600EAD9CB /* Quake2mp2-iOS.app */,
+				A1C125A32204FA3300EAD9CB /* Quake2mp1-tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1200,6 +1376,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				A1C123DE2203B37600EAD9CB /* Quake2-iOS copy-Info.plist */,
 				A1C124C12203FE2600EAD9CB /* Quake2mp1-iOS copy-Info.plist */,
+				A1C125A42204FA3300EAD9CB /* Quake2-tvOS copy-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -2692,6 +2869,23 @@
 			productReference = A1C124C02203FE2600EAD9CB /* Quake2mp2-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A1C125062204FA3300EAD9CB /* Quake2mp1-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C125A02204FA3300EAD9CB /* Build configuration list for PBXNativeTarget "Quake2mp1-tvOS" */;
+			buildPhases = (
+				A1C125072204FA3300EAD9CB /* Sources */,
+				A1C1258E2204FA3300EAD9CB /* Frameworks */,
+				A1C1259A2204FA3300EAD9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quake2mp1-tvOS";
+			productName = "Quake2-SDL-tvOS-gl3";
+			productReference = A1C125A32204FA3300EAD9CB /* Quake2mp1-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2715,6 +2909,10 @@
 					};
 					A1C124192203FE2600EAD9CB = {
 						DevelopmentTeam = 9UY8SFDNQ8;
+					};
+					A1C125062204FA3300EAD9CB = {
+						DevelopmentTeam = 9UY8SFDNQ8;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -2742,6 +2940,7 @@
 				A1B80A4521F96DAA00560711 /* Quake2-iOS */,
 				A1B80AF821FA5BEE00560711 /* Quake2-tvOS */,
 				A1C1233B2203B37600EAD9CB /* Quake2mp1-iOS */,
+				A1C125062204FA3300EAD9CB /* Quake2mp1-tvOS */,
 				A1C124192203FE2600EAD9CB /* Quake2mp2-iOS */,
 			);
 		};
@@ -2815,6 +3014,19 @@
 				A1C1241F2203FE2600EAD9CB /* music in Resources */,
 				A1C124202203FE2600EAD9CB /* dpquake.ttf in Resources */,
 				A1C124212203FE2600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C1259A2204FA3300EAD9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C1259B2204FA3300EAD9CB /* music in Resources */,
+				A1C1259C2204FA3300EAD9CB /* Main.storyboard in Resources */,
+				A1C1259D2204FA3300EAD9CB /* baseq2 in Resources */,
+				A1C1259E2204FA3300EAD9CB /* dpquake.ttf in Resources */,
+				A1C125A52204FA5700EAD9CB /* xatrix in Resources */,
+				A1C1259F2204FA3300EAD9CB /* Quake2-SDL-tvOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3412,6 +3624,151 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1C125072204FA3300EAD9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C125BE2204FAE400EAD9CB /* chick.c in Sources */,
+				A1C125B22204FAB600EAD9CB /* g_target.c in Sources */,
+				A1C125082204FA3300EAD9CB /* qal.c in Sources */,
+				A1C125092204FA3300EAD9CB /* cl_cin.c in Sources */,
+				A1C1250A2204FA3300EAD9CB /* cl_view.c in Sources */,
+				A1C125B12204FAB600EAD9CB /* g_svcmds.c in Sources */,
+				A1C1250F2204FA3300EAD9CB /* main.c in Sources */,
+				A1C125122204FA3300EAD9CB /* openal.c in Sources */,
+				A1C125D12204FAEB00EAD9CB /* client.c in Sources */,
+				A1C125B32204FAB600EAD9CB /* g_trigger.c in Sources */,
+				A1C125132204FA3300EAD9CB /* gl3_sp2.c in Sources */,
+				A1C125B82204FAE400EAD9CB /* boss2.c in Sources */,
+				A1C125142204FA3300EAD9CB /* ogg.c in Sources */,
+				A1C125152204FA3300EAD9CB /* menu.c in Sources */,
+				A1C125C92204FAE400EAD9CB /* insane.c in Sources */,
+				A1C125182204FA3300EAD9CB /* cl_main.c in Sources */,
+				A1C125192204FA3300EAD9CB /* gl3_light.c in Sources */,
+				A1C1251B2204FA3300EAD9CB /* wal.c in Sources */,
+				A1C1251D2204FA3300EAD9CB /* cl_effects.c in Sources */,
+				A1C1251F2204FA3300EAD9CB /* cl_prediction.c in Sources */,
+				A1C125B52204FAB600EAD9CB /* g_utils.c in Sources */,
+				A1C125202204FA3300EAD9CB /* flash.c in Sources */,
+				A1C125222204FA3300EAD9CB /* sv_main.c in Sources */,
+				A1C125BC2204FAE400EAD9CB /* boss5.c in Sources */,
+				A1C125232204FA3300EAD9CB /* sv_save.c in Sources */,
+				A1C125242204FA3300EAD9CB /* gl3_image.c in Sources */,
+				A1C125AA2204FAB600EAD9CB /* g_func.c in Sources */,
+				A1C125252204FA3300EAD9CB /* miniz.c in Sources */,
+				A1C125262204FA3300EAD9CB /* sv_user.c in Sources */,
+				A1C125272204FA3300EAD9CB /* cl_console.c in Sources */,
+				A1C125292204FA3300EAD9CB /* qmenu.c in Sources */,
+				A1C1252A2204FA3300EAD9CB /* cvar.c in Sources */,
+				A1C125A82204FAB600EAD9CB /* g_cmds.c in Sources */,
+				A1C1252B2204FA3300EAD9CB /* netchan.c in Sources */,
+				A1C1252C2204FA3300EAD9CB /* system.c in Sources */,
+				A1C1252F2204FA3300EAD9CB /* cl_lights.c in Sources */,
+				A1C125302204FA3300EAD9CB /* cl_screen.c in Sources */,
+				A1C125312204FA3300EAD9CB /* gl3_model.c in Sources */,
+				A1C125322204FA3300EAD9CB /* filesystem.c in Sources */,
+				A1C125332204FA3300EAD9CB /* sv_entities.c in Sources */,
+				A1C125352204FA3300EAD9CB /* cl_entities.c in Sources */,
+				A1C125362204FA3300EAD9CB /* gl3_lightmap.c in Sources */,
+				A1C125372204FA3300EAD9CB /* shared.c in Sources */,
+				A1C125CA2204FAE400EAD9CB /* medic.c in Sources */,
+				A1C125382204FA3300EAD9CB /* stb.c in Sources */,
+				A1C125C42204FAE400EAD9CB /* gladb.c in Sources */,
+				A1C125392204FA3300EAD9CB /* sound.m in Sources */,
+				A1C125AC2204FAB600EAD9CB /* g_main.c in Sources */,
+				A1C125C22204FAE400EAD9CB /* flyer.c in Sources */,
+				A1C1253A2204FA3300EAD9CB /* sv_cmd.c in Sources */,
+				A1C125AF2204FAB600EAD9CB /* g_phys.c in Sources */,
+				A1C125CC2204FAE400EAD9CB /* mutant.c in Sources */,
+				A1C1253D2204FA3300EAD9CB /* gl3_draw.c in Sources */,
+				A1C1253E2204FA3300EAD9CB /* cl_network.c in Sources */,
+				A1C125B92204FAE400EAD9CB /* boss3.c in Sources */,
+				A1C125402204FA3300EAD9CB /* videomenu.c in Sources */,
+				A1C125452204FA3300EAD9CB /* sdl.c in Sources */,
+				A1C125472204FA3300EAD9CB /* glad.c in Sources */,
+				A1C125482204FA3300EAD9CB /* GameViewController.swift in Sources */,
+				A1C125BD2204FAE400EAD9CB /* brain.c in Sources */,
+				A1C125AE2204FAB600EAD9CB /* g_monster.c in Sources */,
+				A1C125492204FA3300EAD9CB /* hunk.c in Sources */,
+				A1C1254B2204FA3300EAD9CB /* zone.c in Sources */,
+				A1C125A72204FAB600EAD9CB /* g_chase.c in Sources */,
+				A1C1254C2204FA3300EAD9CB /* cl_download.c in Sources */,
+				A1C1254E2204FA3300EAD9CB /* gl3_sdl.c in Sources */,
+				A1C125BB2204FAE400EAD9CB /* boss32.c in Sources */,
+				A1C1254F2204FA3300EAD9CB /* gl3_warp.c in Sources */,
+				A1C125BA2204FAE400EAD9CB /* boss31.c in Sources */,
+				A1C125522204FA3300EAD9CB /* MainMenuViewController.swift in Sources */,
+				A1C125532204FA3300EAD9CB /* md4.c in Sources */,
+				A1C125552204FA3300EAD9CB /* gl3_mesh.c in Sources */,
+				A1C125562204FA3300EAD9CB /* gl3_misc.c in Sources */,
+				A1C125572204FA3300EAD9CB /* glimp_sdl.m in Sources */,
+				A1C125D42204FAEB00EAD9CB /* view.c in Sources */,
+				A1C125592204FA3300EAD9CB /* pcx.c in Sources */,
+				A1C1255B2204FA3300EAD9CB /* szone.c in Sources */,
+				A1C125C72204FAE400EAD9CB /* hover.c in Sources */,
+				A1C1255C2204FA3300EAD9CB /* sv_conless.c in Sources */,
+				A1C1255D2204FA3300EAD9CB /* gl3_shaders.c in Sources */,
+				A1C125C02204FAE400EAD9CB /* flipper.c in Sources */,
+				A1C125AD2204FAB600EAD9CB /* g_misc.c in Sources */,
+				A1C125C62204FAE400EAD9CB /* gunner.c in Sources */,
+				A1C125A62204FAB600EAD9CB /* g_ai.c in Sources */,
+				A1C1255E2204FA3300EAD9CB /* wave.c in Sources */,
+				A1C1255F2204FA3300EAD9CB /* sv_game.c in Sources */,
+				A1C125CB2204FAE400EAD9CB /* move.c in Sources */,
+				A1C125612204FA3300EAD9CB /* gl3_md2.c in Sources */,
+				A1C125622204FA3300EAD9CB /* unzip.c in Sources */,
+				A1C125632204FA3300EAD9CB /* frame.c in Sources */,
+				A1C125672204FA3300EAD9CB /* misc.c in Sources */,
+				A1C125C12204FAE400EAD9CB /* float.c in Sources */,
+				A1C125C82204FAE400EAD9CB /* infantry.c in Sources */,
+				A1C125B62204FAB600EAD9CB /* g_weapon.c in Sources */,
+				A1C125CE2204FAE400EAD9CB /* soldier.c in Sources */,
+				A1C125682204FA3300EAD9CB /* argproc.c in Sources */,
+				A1C125692204FA3300EAD9CB /* glob.c in Sources */,
+				A1C1256A2204FA3300EAD9CB /* AppDelegate.m in Sources */,
+				A1C125BF2204FAE400EAD9CB /* fixbot.c in Sources */,
+				A1C1256B2204FA3300EAD9CB /* DifficultyViewController.swift in Sources */,
+				A1C125C52204FAE400EAD9CB /* gladiator.c in Sources */,
+				A1C1256D2204FA3300EAD9CB /* sv_world.c in Sources */,
+				A1C1256F2204FA3300EAD9CB /* signalhandler.c in Sources */,
+				A1C125C32204FAE400EAD9CB /* gekk.c in Sources */,
+				A1C125D22204FAEB00EAD9CB /* hud.c in Sources */,
+				A1C125722204FA3300EAD9CB /* sv_init.c in Sources */,
+				A1C125732204FA3300EAD9CB /* clientserver.c in Sources */,
+				A1C125D52204FAEB00EAD9CB /* weapon.c in Sources */,
+				A1C125D62204FAF200EAD9CB /* savegame.c in Sources */,
+				A1C125752204FA3300EAD9CB /* sdl.c in Sources */,
+				A1C125772204FA3300EAD9CB /* cmdparser.c in Sources */,
+				A1C125792204FA3300EAD9CB /* gl3_surf.c in Sources */,
+				A1C1257A2204FA3300EAD9CB /* sv_send.c in Sources */,
+				A1C125B02204FAB600EAD9CB /* g_spawn.c in Sources */,
+				A1C125B72204FAE400EAD9CB /* berserker.c in Sources */,
+				A1C1257B2204FA3300EAD9CB /* gl3_main.m in Sources */,
+				A1C1257C2204FA3300EAD9CB /* collision.c in Sources */,
+				A1C1257D2204FA3300EAD9CB /* cl_parse.c in Sources */,
+				A1C1257E2204FA3300EAD9CB /* cl_keyboard.c in Sources */,
+				A1C125802204FA3300EAD9CB /* pvs.c in Sources */,
+				A1C125A92204FAB600EAD9CB /* g_combat.c in Sources */,
+				A1C125832204FA3300EAD9CB /* crc.c in Sources */,
+				A1C125842204FA3300EAD9CB /* cl_particles.c in Sources */,
+				A1C125852204FA3300EAD9CB /* network.c in Sources */,
+				A1C125862204FA3300EAD9CB /* cl_tempentities.c in Sources */,
+				A1C125872204FA3300EAD9CB /* movemsg.c in Sources */,
+				A1C125D32204FAEB00EAD9CB /* trail.c in Sources */,
+				A1C125882204FA3300EAD9CB /* cl_input.c in Sources */,
+				A1C125892204FA3300EAD9CB /* ioapi.c in Sources */,
+				A1C1258A2204FA3300EAD9CB /* vid.c in Sources */,
+				A1C125CF2204FAE400EAD9CB /* supertank.c in Sources */,
+				A1C125D02204FAE400EAD9CB /* tank.c in Sources */,
+				A1C125CD2204FAE400EAD9CB /* parasite.c in Sources */,
+				A1C1258B2204FA3300EAD9CB /* rand.c in Sources */,
+				A1C1258C2204FA3300EAD9CB /* cl_inventory.c in Sources */,
+				A1C125AB2204FAB600EAD9CB /* g_items.c in Sources */,
+				A1C1258D2204FA3300EAD9CB /* pmove.c in Sources */,
+				A1C125B42204FAB600EAD9CB /* g_turret.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -3541,6 +3898,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					SDL2,
+					"YQ2OSTYPE=\\\"Darwin\\\"",
+					"YQ2ARCH=\\\"x86_64\\\"",
+					IOS,
+					GLES_SILENCE_DEPRECATION,
 					USE_GLES3,
 					BASEQ2,
 				);
@@ -3819,6 +4181,115 @@
 			};
 			name = Release;
 		};
+		A1C125A12204FA3300EAD9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					SDL2,
+					"YQ2OSTYPE=\\\"Darwin\\\"",
+					"YQ2ARCH=\\\"x86_64\\\"",
+					IOS,
+					GLES_SILENCE_DEPRECATION,
+					USE_GLES3,
+					XATRIX,
+					"OSTYPE=\\\"Darwin\\\"",
+					"ARCH=\\\"x86_64\\\"",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Quake2-tvOS copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-D XATRIX";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		A1C125A22204FA3300EAD9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SDL2,
+					"YQ2OSTYPE=\\\"Darwin\\\"",
+					"YQ2ARCH=\\\"x86_64\\\"",
+					IOS,
+					GLES_SILENCE_DEPRECATION,
+					USE_GLES3,
+					BASEQ2,
+					"OSTYPE=\\\"Darwin\\\"",
+					"ARCH=\\\"x86_64\\\"",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Quake2-tvOS copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-D XATRIX";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3954,6 +4425,15 @@
 			buildConfigurations = (
 				A1C124BE2203FE2600EAD9CB /* Debug */,
 				A1C124BF2203FE2600EAD9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C125A02204FA3300EAD9CB /* Build configuration list for PBXNativeTarget "Quake2mp1-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C125A12204FA3300EAD9CB /* Debug */,
+				A1C125A22204FA3300EAD9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

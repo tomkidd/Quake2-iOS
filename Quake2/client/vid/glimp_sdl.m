@@ -369,7 +369,7 @@ GLimp_InitGraphics(int fullscreen, int *pwidth, int *pheight)
 	/* No cursor */
 	SDL_ShowCursor(0);
     
-#if TARGET_OS_IPHONE
+#if !TARGET_OS_TV
     // adding on-screen controls -tkidd
     SDL_uikitviewcontroller *rootVC = (SDL_uikitviewcontroller *)GetSDLViewController(window);
     NSLog(@"root VC = %@",rootVC);

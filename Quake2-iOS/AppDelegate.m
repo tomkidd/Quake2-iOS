@@ -35,8 +35,10 @@
 - (void)postFinishLaunch
 {
     [self performSelector:@selector(hideLaunchScreen) withObject:nil afterDelay:0.0];
-    
+
+#if !TARGET_OS_TV
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
+#endif
     
     self.uiwindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.uiwindow.backgroundColor = [UIColor blackColor];

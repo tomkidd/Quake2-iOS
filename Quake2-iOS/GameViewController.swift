@@ -9,7 +9,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var difficulty = 0
+    var difficulty = -1
     var newgame = false
 
     override func viewDidLoad() {
@@ -32,10 +32,18 @@ class GameViewController: UIViewController {
                 argv.append("\(self.difficulty)")
             }
             
+            // Mission Pack 1
             #if XATRIX
             argv.append("+set")
             argv.append("game")
             argv.append("xatrix")
+            #endif
+            
+            // Mission Pack 2
+            #if ROGUE
+            argv.append("+set")
+            argv.append("game")
+            argv.append("rogue")
             #endif
             
             argv.append(nil)

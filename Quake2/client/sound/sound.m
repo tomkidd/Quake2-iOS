@@ -32,6 +32,7 @@
 #include "header/local.h"
 #include "header/qal.h"
 #include "header/vorbis.h"
+#import <AVFoundation/AVFoundation.h>
 
 /* During registration it is possible to have more sounds
    than could actually be referenced during gameplay,
@@ -1046,6 +1047,12 @@ S_Init(void)
 
 	s_volume = Cvar_Get("s_volume", "0.7", CVAR_ARCHIVE);
 	s_khz = Cvar_Get("s_khz", "44", CVAR_ARCHIVE);
+    
+#ifdef IOS
+    Cvar_SetValue("s_khz", [[AVAudioSession sharedInstance] sampleRate] / 1000);
+    s_khz = Cvar_Get("s_khz", "44", CVAR_ARCHIVE);
+#endif
+    
 	s_loadas8bit = Cvar_Get("s_loadas8bit", "0", CVAR_ARCHIVE);
 	s_mixahead = Cvar_Get("s_mixahead", "0.14", CVAR_ARCHIVE);
 	s_show = Cvar_Get("s_show", "0", 0);

@@ -131,6 +131,7 @@ GetGameAPI(game_import_t *import)
 	return &globals;
 }
 
+#ifndef IOS
 /*
  * this is only here so the functions in
  * q_shared.c and q_shwin.c can link
@@ -160,6 +161,7 @@ Com_Printf(char *msg, ...)
 
 	gi.dprintf("%s", text);
 }
+#endif
 
 /* ====================================================================== */
 

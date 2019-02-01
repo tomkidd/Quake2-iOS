@@ -259,8 +259,8 @@
 		A15BF73621FCDD7A005F4B74 /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EC21FCDD7A005F4B74 /* sdl.c */; };
 		A15BF73721FCDD7A005F4B74 /* ogg.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5ED21FCDD7A005F4B74 /* ogg.c */; };
 		A15BF73821FCDD7A005F4B74 /* ogg.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5ED21FCDD7A005F4B74 /* ogg.c */; };
-		A15BF73921FCDD7A005F4B74 /* sound.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.c */; };
-		A15BF73A21FCDD7A005F4B74 /* sound.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.c */; };
+		A15BF73921FCDD7A005F4B74 /* sound.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.m */; };
+		A15BF73A21FCDD7A005F4B74 /* sound.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.m */; };
 		A15BF73B21FCDD7A005F4B74 /* cl_view.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FA21FCDD7A005F4B74 /* cl_view.c */; };
 		A15BF73C21FCDD7A005F4B74 /* cl_view.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FA21FCDD7A005F4B74 /* cl_view.c */; };
 		A15BF73D21FCDD7A005F4B74 /* cl_entities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FB21FCDD7A005F4B74 /* cl_entities.c */; };
@@ -348,7 +348,7 @@
 		A1C123742203B37600EAD9CB /* cl_entities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FB21FCDD7A005F4B74 /* cl_entities.c */; };
 		A1C123752203B37600EAD9CB /* gl3_lightmap.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C121FCDD7A005F4B74 /* gl3_lightmap.c */; };
 		A1C123772203B37600EAD9CB /* stb.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BD21FCDD7A005F4B74 /* stb.c */; };
-		A1C123782203B37600EAD9CB /* sound.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.c */; };
+		A1C123782203B37600EAD9CB /* sound.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.m */; };
 		A1C123792203B37600EAD9CB /* sv_cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E521FCDD7A005F4B74 /* sv_cmd.c */; };
 		A1C1237C2203B37600EAD9CB /* gl3_draw.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C821FCDD7A005F4B74 /* gl3_draw.c */; };
 		A1C1237D2203B37600EAD9CB /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */; };
@@ -468,6 +468,176 @@
 		A1C124162203B6D600EAD9CB /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56121FCDD7A005F4B74 /* shared.c */; };
 		A1C124172203B76500EAD9CB /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
 		A1C124182203B76E00EAD9CB /* xatrix in Resources */ = {isa = PBXBuildFile; fileRef = A1C123392203B34F00EAD9CB /* xatrix */; };
+		A1C1241C2203FE2600EAD9CB /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
+		A1C1241D2203FE2600EAD9CB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B80A0221F438C200560711 /* Launch Screen.storyboard */; };
+		A1C1241E2203FE2600EAD9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BF74A21FCF7E3005F4B74 /* Main.storyboard */; };
+		A1C1241F2203FE2600EAD9CB /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
+		A1C124202203FE2600EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
+		A1C124212203FE2600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */; };
+		A1C124252203FE2600EAD9CB /* qal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E921FCDD7A005F4B74 /* qal.c */; };
+		A1C124262203FE2600EAD9CB /* cl_cin.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E621FCDD7A005F4B74 /* cl_cin.c */; };
+		A1C124272203FE2600EAD9CB /* cl_view.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FA21FCDD7A005F4B74 /* cl_view.c */; };
+		A1C124282203FE2600EAD9CB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DC21FCDD7A005F4B74 /* main.c */; };
+		A1C1242A2203FE2600EAD9CB /* openal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EB21FCDD7A005F4B74 /* openal.c */; };
+		A1C1242B2203FE2600EAD9CB /* gl3_sp2.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D121FCDD7A005F4B74 /* gl3_sp2.c */; };
+		A1C1242C2203FE2600EAD9CB /* ogg.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5ED21FCDD7A005F4B74 /* ogg.c */; };
+		A1C1242D2203FE2600EAD9CB /* menu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E021FCDD7A005F4B74 /* menu.c */; };
+		A1C124302203FE2600EAD9CB /* cl_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DC21FCDD7A005F4B74 /* cl_main.c */; };
+		A1C124312203FE2600EAD9CB /* gl3_light.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D221FCDD7A005F4B74 /* gl3_light.c */; };
+		A1C124332203FE2600EAD9CB /* wal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BB21FCDD7A005F4B74 /* wal.c */; };
+		A1C124362203FE2600EAD9CB /* cl_effects.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57E21FCDD7A005F4B74 /* cl_effects.c */; };
+		A1C124372203FE2600EAD9CB /* cl_prediction.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58721FCDD7A005F4B74 /* cl_prediction.c */; };
+		A1C124382203FE2600EAD9CB /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75D21FD0604005F4B74 /* MainMenuViewController.swift */; };
+		A1C124392203FE2600EAD9CB /* flash.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56021FCDD7A005F4B74 /* flash.c */; };
+		A1C1243B2203FE2600EAD9CB /* SDL_uikitviewcontroller+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */; };
+		A1C1243C2203FE2600EAD9CB /* sv_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E221FCDD7A005F4B74 /* sv_main.c */; };
+		A1C1243F2203FE2600EAD9CB /* sv_save.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E021FCDD7A005F4B74 /* sv_save.c */; };
+		A1C124402203FE2600EAD9CB /* gl3_image.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C321FCDD7A005F4B74 /* gl3_image.c */; };
+		A1C124412203FE2600EAD9CB /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55721FCDD7A005F4B74 /* miniz.c */; };
+		A1C124422203FE2600EAD9CB /* sv_user.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E721FCDD7A005F4B74 /* sv_user.c */; };
+		A1C124432203FE2600EAD9CB /* JoyStickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1205621FE821900EAD9CB /* JoyStickView.swift */; };
+		A1C124442203FE2600EAD9CB /* cl_console.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DD21FCDD7A005F4B74 /* cl_console.c */; };
+		A1C124452203FE2600EAD9CB /* qmenu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DF21FCDD7A005F4B74 /* qmenu.c */; };
+		A1C124462203FE2600EAD9CB /* cvar.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56C21FCDD7A005F4B74 /* cvar.c */; };
+		A1C124472203FE2600EAD9CB /* netchan.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56621FCDD7A005F4B74 /* netchan.c */; };
+		A1C124492203FE2600EAD9CB /* system.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D921FCDD7A005F4B74 /* system.c */; };
+		A1C1244A2203FE2600EAD9CB /* cl_lights.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57F21FCDD7A005F4B74 /* cl_lights.c */; };
+		A1C1244B2203FE2600EAD9CB /* cl_screen.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E421FCDD7A005F4B74 /* cl_screen.c */; };
+		A1C1244E2203FE2600EAD9CB /* gl3_model.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C721FCDD7A005F4B74 /* gl3_model.c */; };
+		A1C1244F2203FE2600EAD9CB /* filesystem.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56421FCDD7A005F4B74 /* filesystem.c */; };
+		A1C124522203FE2600EAD9CB /* sv_entities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E121FCDD7A005F4B74 /* sv_entities.c */; };
+		A1C124532203FE2600EAD9CB /* cl_entities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FB21FCDD7A005F4B74 /* cl_entities.c */; };
+		A1C124542203FE2600EAD9CB /* gl3_lightmap.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C121FCDD7A005F4B74 /* gl3_lightmap.c */; };
+		A1C124552203FE2600EAD9CB /* stb.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BD21FCDD7A005F4B74 /* stb.c */; };
+		A1C124572203FE2600EAD9CB /* sound.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EE21FCDD7A005F4B74 /* sound.m */; };
+		A1C124592203FE2600EAD9CB /* sv_cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E521FCDD7A005F4B74 /* sv_cmd.c */; };
+		A1C1245C2203FE2600EAD9CB /* gl3_draw.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C821FCDD7A005F4B74 /* gl3_draw.c */; };
+		A1C1245D2203FE2600EAD9CB /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */; };
+		A1C1245E2203FE2600EAD9CB /* cl_network.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58221FCDD7A005F4B74 /* cl_network.c */; };
+		A1C1245F2203FE2600EAD9CB /* videomenu.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E121FCDD7A005F4B74 /* videomenu.c */; };
+		A1C124612203FE2600EAD9CB /* CoreGraphics+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */; };
+		A1C124642203FE2600EAD9CB /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58421FCDD7A005F4B74 /* sdl.c */; };
+		A1C124662203FE2600EAD9CB /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D021FCDD7A005F4B74 /* glad.c */; };
+		A1C124672203FE2600EAD9CB /* hunk.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DB21FCDD7A005F4B74 /* hunk.c */; };
+		A1C124682203FE2600EAD9CB /* zone.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56321FCDD7A005F4B74 /* zone.c */; };
+		A1C124692203FE2600EAD9CB /* cl_download.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FC21FCDD7A005F4B74 /* cl_download.c */; };
+		A1C1246A2203FE2600EAD9CB /* gl3_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BF21FCDD7A005F4B74 /* gl3_sdl.c */; };
+		A1C1246B2203FE2600EAD9CB /* gl3_warp.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D821FCDD7A005F4B74 /* gl3_warp.c */; };
+		A1C1246C2203FE2600EAD9CB /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55321FCDD7A005F4B74 /* md4.c */; };
+		A1C1246E2203FE2600EAD9CB /* gl3_mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C221FCDD7A005F4B74 /* gl3_mesh.c */; };
+		A1C1246F2203FE2600EAD9CB /* gl3_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C021FCDD7A005F4B74 /* gl3_misc.c */; };
+		A1C124712203FE2600EAD9CB /* glimp_sdl.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57621FCDD7A005F4B74 /* glimp_sdl.m */; };
+		A1C124722203FE2600EAD9CB /* pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5B921FCDD7A005F4B74 /* pcx.c */; };
+		A1C124742203FE2600EAD9CB /* szone.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56521FCDD7A005F4B74 /* szone.c */; };
+		A1C124752203FE2600EAD9CB /* sv_conless.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E321FCDD7A005F4B74 /* sv_conless.c */; };
+		A1C124762203FE2600EAD9CB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75F21FD0819005F4B74 /* GameViewController.swift */; };
+		A1C124772203FE2600EAD9CB /* gl3_shaders.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C421FCDD7A005F4B74 /* gl3_shaders.c */; };
+		A1C124782203FE2600EAD9CB /* wave.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EA21FCDD7A005F4B74 /* wave.c */; };
+		A1C1247A2203FE2600EAD9CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF75721FD02A0005F4B74 /* AppDelegate.m */; };
+		A1C1247B2203FE2600EAD9CB /* sv_game.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E621FCDD7A005F4B74 /* sv_game.c */; };
+		A1C1247E2203FE2600EAD9CB /* gl3_md2.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5D921FCDD7A005F4B74 /* gl3_md2.c */; };
+		A1C1247F2203FE2600EAD9CB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55821FCDD7A005F4B74 /* unzip.c */; };
+		A1C124802203FE2600EAD9CB /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56821FCDD7A005F4B74 /* frame.c */; };
+		A1C124812203FE2600EAD9CB /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4DE21FCDD7A005F4B74 /* misc.c */; };
+		A1C124822203FE2600EAD9CB /* argproc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56A21FCDD7A005F4B74 /* argproc.c */; };
+		A1C124832203FE2600EAD9CB /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56121FCDD7A005F4B74 /* shared.c */; };
+		A1C124852203FE2600EAD9CB /* glob.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56221FCDD7A005F4B74 /* glob.c */; };
+		A1C124872203FE2600EAD9CB /* sv_world.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4EB21FCDD7A005F4B74 /* sv_world.c */; };
+		A1C124882203FE2600EAD9CB /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55F21FCDD7A005F4B74 /* rand.c */; };
+		A1C1248A2203FE2600EAD9CB /* signalhandler.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D821FCDD7A005F4B74 /* signalhandler.c */; };
+		A1C1248B2203FE2600EAD9CB /* sv_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4E421FCDD7A005F4B74 /* sv_init.c */; };
+		A1C1248C2203FE2600EAD9CB /* clientserver.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55221FCDD7A005F4B74 /* clientserver.c */; };
+		A1C124902203FE2600EAD9CB /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5EC21FCDD7A005F4B74 /* sdl.c */; };
+		A1C124922203FE2600EAD9CB /* cmdparser.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55521FCDD7A005F4B74 /* cmdparser.c */; };
+		A1C124932203FE2600EAD9CB /* gl3_surf.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C521FCDD7A005F4B74 /* gl3_surf.c */; };
+		A1C124942203FE2600EAD9CB /* sv_send.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4EA21FCDD7A005F4B74 /* sv_send.c */; };
+		A1C124952203FE2600EAD9CB /* gl3_main.m in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5C621FCDD7A005F4B74 /* gl3_main.m */; };
+		A1C124962203FE2600EAD9CB /* collision.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56921FCDD7A005F4B74 /* collision.c */; };
+		A1C124992203FE2600EAD9CB /* cl_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58121FCDD7A005F4B74 /* cl_parse.c */; };
+		A1C1249C2203FE2600EAD9CB /* cl_keyboard.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E521FCDD7A005F4B74 /* cl_keyboard.c */; };
+		A1C1249E2203FE2600EAD9CB /* pvs.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5BA21FCDD7A005F4B74 /* pvs.c */; };
+		A1C1249F2203FE2600EAD9CB /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56B21FCDD7A005F4B74 /* crc.c */; };
+		A1C124A12203FE2600EAD9CB /* cl_particles.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DB21FCDD7A005F4B74 /* cl_particles.c */; };
+		A1C124A22203FE2600EAD9CB /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D721FCDD7A005F4B74 /* network.c */; };
+		A1C124A62203FE2600EAD9CB /* cl_tempentities.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF58021FCDD7A005F4B74 /* cl_tempentities.c */; };
+		A1C124A92203FE2600EAD9CB /* movemsg.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF56721FCDD7A005F4B74 /* movemsg.c */; };
+		A1C124AB2203FE2600EAD9CB /* cl_input.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5DA21FCDD7A005F4B74 /* cl_input.c */; };
+		A1C124AC2203FE2600EAD9CB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55921FCDD7A005F4B74 /* ioapi.c */; };
+		A1C124AD2203FE2600EAD9CB /* vid.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF57721FCDD7A005F4B74 /* vid.c */; };
+		A1C124AE2203FE2600EAD9CB /* cl_inventory.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E721FCDD7A005F4B74 /* cl_inventory.c */; };
+		A1C124AF2203FE2600EAD9CB /* pmove.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55421FCDD7A005F4B74 /* pmove.c */; };
+		A1C124B12203FE2600EAD9CB /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B68A421D54D3B00AA2472 /* Metal.framework */; };
+		A1C124B22203FE2600EAD9CB /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F34C21D530B500B4BB5D /* libSDL2.a */; };
+		A1C124B32203FE2600EAD9CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F33921D52FA700B4BB5D /* AVFoundation.framework */; };
+		A1C124B42203FE2600EAD9CB /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE0E9641BAF967F0098DFA4 /* GameController.framework */; };
+		A1C124B52203FE2600EAD9CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		A1C124B62203FE2600EAD9CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		A1C124B72203FE2600EAD9CB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		A1C124B82203FE2600EAD9CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		A1C124B92203FE2600EAD9CB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD779EDD0E26BA1200F39101 /* CoreAudio.framework */; };
+		A1C124BA2203FE2600EAD9CB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
+		A1C124BB2203FE2600EAD9CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */; };
+		A1C124BC2203FE2600EAD9CB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
+		A1C124C22203FF1600EAD9CB /* ball.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122D02203B31D00EAD9CB /* ball.c */; };
+		A1C124C32203FF1600EAD9CB /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122CF2203B31D00EAD9CB /* tag.c */; };
+		A1C124C42203FF1A00EAD9CB /* g_ai.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122C62203B31D00EAD9CB /* g_ai.c */; };
+		A1C124C52203FF1A00EAD9CB /* g_chase.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122BA2203B31D00EAD9CB /* g_chase.c */; };
+		A1C124C62203FF1A00EAD9CB /* g_cmds.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122D12203B31D00EAD9CB /* g_cmds.c */; };
+		A1C124C72203FF1A00EAD9CB /* g_combat.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122CA2203B31D00EAD9CB /* g_combat.c */; };
+		A1C124C82203FF1A00EAD9CB /* g_func.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B82203B31D00EAD9CB /* g_func.c */; };
+		A1C124C92203FF1A00EAD9CB /* g_items.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122C72203B31D00EAD9CB /* g_items.c */; };
+		A1C124CA2203FF1A00EAD9CB /* g_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122D32203B31D00EAD9CB /* g_main.c */; };
+		A1C124CB2203FF1A00EAD9CB /* g_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122C52203B31D00EAD9CB /* g_misc.c */; };
+		A1C124CC2203FF1A00EAD9CB /* g_monster.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122C82203B31D00EAD9CB /* g_monster.c */; };
+		A1C124CD2203FF1A00EAD9CB /* g_newai.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122C42203B31D00EAD9CB /* g_newai.c */; };
+		A1C124CE2203FF1A00EAD9CB /* g_newdm.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122BD2203B31D00EAD9CB /* g_newdm.c */; };
+		A1C124CF2203FF1A00EAD9CB /* g_newfnc.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122C92203B31D00EAD9CB /* g_newfnc.c */; };
+		A1C124D02203FF1A00EAD9CB /* g_newtarg.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122DE2203B31D00EAD9CB /* g_newtarg.c */; };
+		A1C124D12203FF1A00EAD9CB /* g_newtrig.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122BB2203B31D00EAD9CB /* g_newtrig.c */; };
+		A1C124D22203FF1A00EAD9CB /* g_newweap.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122CC2203B31D00EAD9CB /* g_newweap.c */; };
+		A1C124D32203FF1A00EAD9CB /* g_phys.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122E32203B31D00EAD9CB /* g_phys.c */; };
+		A1C124D42203FF1A00EAD9CB /* g_spawn.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122BF2203B31D00EAD9CB /* g_spawn.c */; };
+		A1C124D52203FF1A00EAD9CB /* g_sphere.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122BE2203B31D00EAD9CB /* g_sphere.c */; };
+		A1C124D62203FF1A00EAD9CB /* g_svcmds.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122CD2203B31D00EAD9CB /* g_svcmds.c */; };
+		A1C124D72203FF1A00EAD9CB /* g_target.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122D22203B31D00EAD9CB /* g_target.c */; };
+		A1C124D82203FF1A00EAD9CB /* g_trigger.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123322203B31D00EAD9CB /* g_trigger.c */; };
+		A1C124D92203FF1A00EAD9CB /* g_turret.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122B92203B31D00EAD9CB /* g_turret.c */; };
+		A1C124DA2203FF1A00EAD9CB /* g_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122BC2203B31D00EAD9CB /* g_utils.c */; };
+		A1C124DB2203FF1A00EAD9CB /* g_weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122CB2203B31D00EAD9CB /* g_weapon.c */; };
+		A1C124DC2203FF2D00EAD9CB /* berserker.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1232B2203B31D00EAD9CB /* berserker.c */; };
+		A1C124DD2203FF2D00EAD9CB /* boss2.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123312203B31D00EAD9CB /* boss2.c */; };
+		A1C124DE2203FF2D00EAD9CB /* boss3.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1231E2203B31D00EAD9CB /* boss3.c */; };
+		A1C124DF2203FF2D00EAD9CB /* boss31.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123212203B31D00EAD9CB /* boss31.c */; };
+		A1C124E02203FF2D00EAD9CB /* boss32.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123222203B31D00EAD9CB /* boss32.c */; };
+		A1C124E12203FF4400EAD9CB /* brain.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123182203B31D00EAD9CB /* brain.c */; };
+		A1C124E22203FF4400EAD9CB /* carrier.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1231C2203B31D00EAD9CB /* carrier.c */; };
+		A1C124E32203FF4400EAD9CB /* chick.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1230E2203B31D00EAD9CB /* chick.c */; };
+		A1C124E42203FF4400EAD9CB /* flipper.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123082203B31D00EAD9CB /* flipper.c */; };
+		A1C124E52203FF4400EAD9CB /* float.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123162203B31D00EAD9CB /* float.c */; };
+		A1C124E62203FF4400EAD9CB /* flyer.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123272203B31D00EAD9CB /* flyer.c */; };
+		A1C124E72203FF4400EAD9CB /* gladiator.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122E72203B31D00EAD9CB /* gladiator.c */; };
+		A1C124E82203FF4400EAD9CB /* gunner.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123022203B31D00EAD9CB /* gunner.c */; };
+		A1C124E92203FF4400EAD9CB /* hover.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122F92203B31D00EAD9CB /* hover.c */; };
+		A1C124EA2203FF4400EAD9CB /* infantry.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123052203B31D00EAD9CB /* infantry.c */; };
+		A1C124EB2203FF4400EAD9CB /* insane.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1232D2203B31D00EAD9CB /* insane.c */; };
+		A1C124EC2203FF4400EAD9CB /* medic.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1230A2203B31D00EAD9CB /* medic.c */; };
+		A1C124ED2203FF4400EAD9CB /* move.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122E92203B31D00EAD9CB /* move.c */; };
+		A1C124EE2203FF4400EAD9CB /* mutant.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123242203B31D00EAD9CB /* mutant.c */; };
+		A1C124EF2203FF4400EAD9CB /* parasite.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122ED2203B31D00EAD9CB /* parasite.c */; };
+		A1C124F02203FF4400EAD9CB /* soldier.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122F62203B31D00EAD9CB /* soldier.c */; };
+		A1C124F12203FF4400EAD9CB /* stalker.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122FE2203B31D00EAD9CB /* stalker.c */; };
+		A1C124F22203FF4400EAD9CB /* supertank.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122EF2203B31D00EAD9CB /* supertank.c */; };
+		A1C124F32203FF4400EAD9CB /* tank.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122F32203B31D00EAD9CB /* tank.c */; };
+		A1C124F42203FF4400EAD9CB /* turret.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122FC2203B31D00EAD9CB /* turret.c */; };
+		A1C124F52203FF4400EAD9CB /* widow.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123102203B31D00EAD9CB /* widow.c */; };
+		A1C124F62203FF4400EAD9CB /* widow2.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123112203B31D00EAD9CB /* widow2.c */; };
+		A1C124F72203FF4900EAD9CB /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123362203B31D00EAD9CB /* client.c */; };
+		A1C124F82203FF4900EAD9CB /* hud.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123372203B31D00EAD9CB /* hud.c */; };
+		A1C124F92203FF4900EAD9CB /* trail.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123342203B31D00EAD9CB /* trail.c */; };
+		A1C124FA2203FF4900EAD9CB /* view.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123382203B31D00EAD9CB /* view.c */; };
+		A1C124FB2203FF4900EAD9CB /* weapon.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C123352203B31D00EAD9CB /* weapon.c */; };
+		A1C124FC2203FF4E00EAD9CB /* savegame.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122DD2203B31D00EAD9CB /* savegame.c */; };
+		A1C124FD2203FF5E00EAD9CB /* rogue in Resources */ = {isa = PBXBuildFile; fileRef = A1C1233A2203B34F00EAD9CB /* rogue */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -683,7 +853,7 @@
 		A15BF5EB21FCDD7A005F4B74 /* openal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = openal.c; sourceTree = "<group>"; };
 		A15BF5EC21FCDD7A005F4B74 /* sdl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sdl.c; sourceTree = "<group>"; };
 		A15BF5ED21FCDD7A005F4B74 /* ogg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ogg.c; sourceTree = "<group>"; };
-		A15BF5EE21FCDD7A005F4B74 /* sound.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sound.c; sourceTree = "<group>"; };
+		A15BF5EE21FCDD7A005F4B74 /* sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sound.m; sourceTree = "<group>"; };
 		A15BF5F021FCDD7A005F4B74 /* sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sound.h; sourceTree = "<group>"; };
 		A15BF5F121FCDD7A005F4B74 /* vorbis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vorbis.h; sourceTree = "<group>"; };
 		A15BF5F221FCDD7A005F4B74 /* qal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qal.h; sourceTree = "<group>"; };
@@ -911,6 +1081,8 @@
 		A1C1233A2203B34F00EAD9CB /* rogue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rogue; path = ../../../Dropbox/Files/quake2/rogue; sourceTree = "<group>"; };
 		A1C123DD2203B37600EAD9CB /* Quake2mp1-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp1-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C123DE2203B37600EAD9CB /* Quake2-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Quake2-iOS copy-Info.plist"; path = "/Users/tomkidd/Documents/GitHub/Quake2-SDL-iOS/Quake2-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		A1C124C02203FE2600EAD9CB /* Quake2mp2-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp2-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C124C12203FE2600EAD9CB /* Quake2mp1-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Quake2mp1-iOS copy-Info.plist"; path = "/Users/tomkidd/Documents/GitHub/Quake2-SDL-iOS/Quake2mp1-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -975,6 +1147,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1C124B02203FE2600EAD9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C124B12203FE2600EAD9CB /* Metal.framework in Frameworks */,
+				A1C124B22203FE2600EAD9CB /* libSDL2.a in Frameworks */,
+				A1C124B32203FE2600EAD9CB /* AVFoundation.framework in Frameworks */,
+				A1C124B42203FE2600EAD9CB /* GameController.framework in Frameworks */,
+				A1C124B52203FE2600EAD9CB /* Foundation.framework in Frameworks */,
+				A1C124B62203FE2600EAD9CB /* UIKit.framework in Frameworks */,
+				A1C124B72203FE2600EAD9CB /* OpenGLES.framework in Frameworks */,
+				A1C124B82203FE2600EAD9CB /* QuartzCore.framework in Frameworks */,
+				A1C124B92203FE2600EAD9CB /* CoreAudio.framework in Frameworks */,
+				A1C124BA2203FE2600EAD9CB /* AudioToolbox.framework in Frameworks */,
+				A1C124BB2203FE2600EAD9CB /* CoreGraphics.framework in Frameworks */,
+				A1C124BC2203FE2600EAD9CB /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -984,6 +1175,7 @@
 				A1B80AE021F96DAA00560711 /* Quake2-iOS.app */,
 				A1B80AF921FA5BEE00560711 /* Quake2-tvOS.app */,
 				A1C123DD2203B37600EAD9CB /* Quake2mp1-iOS.app */,
+				A1C124C02203FE2600EAD9CB /* Quake2mp2-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1001,6 +1193,7 @@
 				A15BF74921FCF773005F4B74 /* Quake2-iOS */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				A1C123DE2203B37600EAD9CB /* Quake2-iOS copy-Info.plist */,
+				A1C124C12203FE2600EAD9CB /* Quake2mp1-iOS copy-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1690,7 +1883,7 @@
 				A15BF5EB21FCDD7A005F4B74 /* openal.c */,
 				A15BF5EC21FCDD7A005F4B74 /* sdl.c */,
 				A15BF5ED21FCDD7A005F4B74 /* ogg.c */,
-				A15BF5EE21FCDD7A005F4B74 /* sound.c */,
+				A15BF5EE21FCDD7A005F4B74 /* sound.m */,
 				A15BF5EF21FCDD7A005F4B74 /* header */,
 			);
 			path = sound;
@@ -2064,36 +2257,36 @@
 		A1C122B72203B31D00EAD9CB /* rogue */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122B82203B31D00EAD9CB /* g_func.c */,
-				A1C122B92203B31D00EAD9CB /* g_turret.c */,
-				A1C122BA2203B31D00EAD9CB /* g_chase.c */,
-				A1C122BB2203B31D00EAD9CB /* g_newtrig.c */,
-				A1C122BC2203B31D00EAD9CB /* g_utils.c */,
-				A1C122BD2203B31D00EAD9CB /* g_newdm.c */,
-				A1C122BE2203B31D00EAD9CB /* g_sphere.c */,
-				A1C122BF2203B31D00EAD9CB /* g_spawn.c */,
-				A1C122C02203B31D00EAD9CB /* shared */,
-				A1C122C42203B31D00EAD9CB /* g_newai.c */,
-				A1C122C52203B31D00EAD9CB /* g_misc.c */,
-				A1C122C62203B31D00EAD9CB /* g_ai.c */,
-				A1C122C72203B31D00EAD9CB /* g_items.c */,
-				A1C122C82203B31D00EAD9CB /* g_monster.c */,
-				A1C122C92203B31D00EAD9CB /* g_newfnc.c */,
-				A1C122CA2203B31D00EAD9CB /* g_combat.c */,
-				A1C122CB2203B31D00EAD9CB /* g_weapon.c */,
-				A1C122CC2203B31D00EAD9CB /* g_newweap.c */,
-				A1C122CD2203B31D00EAD9CB /* g_svcmds.c */,
 				A1C122CE2203B31D00EAD9CB /* dm */,
+				A1C122C62203B31D00EAD9CB /* g_ai.c */,
+				A1C122BA2203B31D00EAD9CB /* g_chase.c */,
 				A1C122D12203B31D00EAD9CB /* g_cmds.c */,
-				A1C122D22203B31D00EAD9CB /* g_target.c */,
+				A1C122CA2203B31D00EAD9CB /* g_combat.c */,
+				A1C122B82203B31D00EAD9CB /* g_func.c */,
+				A1C122C72203B31D00EAD9CB /* g_items.c */,
 				A1C122D32203B31D00EAD9CB /* g_main.c */,
-				A1C122D42203B31D00EAD9CB /* savegame */,
+				A1C122C52203B31D00EAD9CB /* g_misc.c */,
+				A1C122C82203B31D00EAD9CB /* g_monster.c */,
+				A1C122C42203B31D00EAD9CB /* g_newai.c */,
+				A1C122BD2203B31D00EAD9CB /* g_newdm.c */,
+				A1C122C92203B31D00EAD9CB /* g_newfnc.c */,
 				A1C122DE2203B31D00EAD9CB /* g_newtarg.c */,
-				A1C122DF2203B31D00EAD9CB /* header */,
+				A1C122BB2203B31D00EAD9CB /* g_newtrig.c */,
+				A1C122CC2203B31D00EAD9CB /* g_newweap.c */,
 				A1C122E32203B31D00EAD9CB /* g_phys.c */,
-				A1C122E42203B31D00EAD9CB /* monster */,
+				A1C122BF2203B31D00EAD9CB /* g_spawn.c */,
+				A1C122BE2203B31D00EAD9CB /* g_sphere.c */,
+				A1C122CD2203B31D00EAD9CB /* g_svcmds.c */,
+				A1C122D22203B31D00EAD9CB /* g_target.c */,
 				A1C123322203B31D00EAD9CB /* g_trigger.c */,
+				A1C122B92203B31D00EAD9CB /* g_turret.c */,
+				A1C122BC2203B31D00EAD9CB /* g_utils.c */,
+				A1C122CB2203B31D00EAD9CB /* g_weapon.c */,
+				A1C122DF2203B31D00EAD9CB /* header */,
+				A1C122E42203B31D00EAD9CB /* monster */,
 				A1C123332203B31D00EAD9CB /* player */,
+				A1C122D42203B31D00EAD9CB /* savegame */,
+				A1C122C02203B31D00EAD9CB /* shared */,
 			);
 			path = rogue;
 			sourceTree = "<group>";
@@ -2101,8 +2294,8 @@
 		A1C122C02203B31D00EAD9CB /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122C12203B31D00EAD9CB /* rand.c */,
 				A1C122C22203B31D00EAD9CB /* flash.c */,
+				A1C122C12203B31D00EAD9CB /* rand.c */,
 				A1C122C32203B31D00EAD9CB /* shared.c */,
 			);
 			path = shared;
@@ -2111,8 +2304,8 @@
 		A1C122CE2203B31D00EAD9CB /* dm */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122CF2203B31D00EAD9CB /* tag.c */,
 				A1C122D02203B31D00EAD9CB /* ball.c */,
+				A1C122CF2203B31D00EAD9CB /* tag.c */,
 			);
 			path = dm;
 			sourceTree = "<group>";
@@ -2120,8 +2313,8 @@
 		A1C122D42203B31D00EAD9CB /* savegame */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122D52203B31D00EAD9CB /* tables */,
 				A1C122DD2203B31D00EAD9CB /* savegame.c */,
+				A1C122D52203B31D00EAD9CB /* tables */,
 			);
 			path = savegame;
 			sourceTree = "<group>";
@@ -2143,9 +2336,9 @@
 		A1C122DF2203B31D00EAD9CB /* header */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122E02203B31D00EAD9CB /* shared.h */,
 				A1C122E12203B31D00EAD9CB /* game.h */,
 				A1C122E22203B31D00EAD9CB /* local.h */,
+				A1C122E02203B31D00EAD9CB /* shared.h */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -2153,30 +2346,30 @@
 		A1C122E42203B31D00EAD9CB /* monster */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122E52203B31D00EAD9CB /* gladiator */,
-				A1C122E82203B31D00EAD9CB /* misc */,
-				A1C122EB2203B31D00EAD9CB /* parasite */,
-				A1C122EE2203B31D00EAD9CB /* supertank */,
-				A1C122F12203B31D00EAD9CB /* tank */,
-				A1C122F42203B31D00EAD9CB /* soldier */,
-				A1C122F72203B31D00EAD9CB /* hover */,
-				A1C122FA2203B31D00EAD9CB /* turret */,
-				A1C122FD2203B31D00EAD9CB /* stalker */,
-				A1C123002203B31D00EAD9CB /* gunner */,
-				A1C123032203B31D00EAD9CB /* infantry */,
-				A1C123062203B31D00EAD9CB /* flipper */,
-				A1C123092203B31D00EAD9CB /* medic */,
-				A1C1230C2203B31D00EAD9CB /* chick */,
-				A1C1230F2203B31D00EAD9CB /* widow */,
-				A1C123142203B31D00EAD9CB /* float */,
+				A1C123292203B31D00EAD9CB /* berserker */,
+				A1C1232F2203B31D00EAD9CB /* boss2 */,
+				A1C1231D2203B31D00EAD9CB /* boss3 */,
 				A1C123172203B31D00EAD9CB /* brain */,
 				A1C1231A2203B31D00EAD9CB /* carrier */,
-				A1C1231D2203B31D00EAD9CB /* boss3 */,
-				A1C123232203B31D00EAD9CB /* mutant */,
+				A1C1230C2203B31D00EAD9CB /* chick */,
+				A1C123062203B31D00EAD9CB /* flipper */,
+				A1C123142203B31D00EAD9CB /* float */,
 				A1C123262203B31D00EAD9CB /* flyer */,
-				A1C123292203B31D00EAD9CB /* berserker */,
+				A1C122E52203B31D00EAD9CB /* gladiator */,
+				A1C123002203B31D00EAD9CB /* gunner */,
+				A1C122F72203B31D00EAD9CB /* hover */,
+				A1C123032203B31D00EAD9CB /* infantry */,
 				A1C1232C2203B31D00EAD9CB /* insane */,
-				A1C1232F2203B31D00EAD9CB /* boss2 */,
+				A1C123092203B31D00EAD9CB /* medic */,
+				A1C122E82203B31D00EAD9CB /* misc */,
+				A1C123232203B31D00EAD9CB /* mutant */,
+				A1C122EB2203B31D00EAD9CB /* parasite */,
+				A1C122F42203B31D00EAD9CB /* soldier */,
+				A1C122FD2203B31D00EAD9CB /* stalker */,
+				A1C122EE2203B31D00EAD9CB /* supertank */,
+				A1C122F12203B31D00EAD9CB /* tank */,
+				A1C122FA2203B31D00EAD9CB /* turret */,
+				A1C1230F2203B31D00EAD9CB /* widow */,
 			);
 			path = monster;
 			sourceTree = "<group>";
@@ -2184,8 +2377,8 @@
 		A1C122E52203B31D00EAD9CB /* gladiator */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122E62203B31D00EAD9CB /* gladiator.h */,
 				A1C122E72203B31D00EAD9CB /* gladiator.c */,
+				A1C122E62203B31D00EAD9CB /* gladiator.h */,
 			);
 			path = gladiator;
 			sourceTree = "<group>";
@@ -2202,8 +2395,8 @@
 		A1C122EB2203B31D00EAD9CB /* parasite */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122EC2203B31D00EAD9CB /* parasite.h */,
 				A1C122ED2203B31D00EAD9CB /* parasite.c */,
+				A1C122EC2203B31D00EAD9CB /* parasite.h */,
 			);
 			path = parasite;
 			sourceTree = "<group>";
@@ -2220,8 +2413,8 @@
 		A1C122F12203B31D00EAD9CB /* tank */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122F22203B31D00EAD9CB /* tank.h */,
 				A1C122F32203B31D00EAD9CB /* tank.c */,
+				A1C122F22203B31D00EAD9CB /* tank.h */,
 			);
 			path = tank;
 			sourceTree = "<group>";
@@ -2229,8 +2422,8 @@
 		A1C122F42203B31D00EAD9CB /* soldier */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122F52203B31D00EAD9CB /* soldier.h */,
 				A1C122F62203B31D00EAD9CB /* soldier.c */,
+				A1C122F52203B31D00EAD9CB /* soldier.h */,
 			);
 			path = soldier;
 			sourceTree = "<group>";
@@ -2238,8 +2431,8 @@
 		A1C122F72203B31D00EAD9CB /* hover */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122F82203B31D00EAD9CB /* hover.h */,
 				A1C122F92203B31D00EAD9CB /* hover.c */,
+				A1C122F82203B31D00EAD9CB /* hover.h */,
 			);
 			path = hover;
 			sourceTree = "<group>";
@@ -2247,8 +2440,8 @@
 		A1C122FA2203B31D00EAD9CB /* turret */ = {
 			isa = PBXGroup;
 			children = (
-				A1C122FB2203B31D00EAD9CB /* turret.h */,
 				A1C122FC2203B31D00EAD9CB /* turret.c */,
+				A1C122FB2203B31D00EAD9CB /* turret.h */,
 			);
 			path = turret;
 			sourceTree = "<group>";
@@ -2265,8 +2458,8 @@
 		A1C123002203B31D00EAD9CB /* gunner */ = {
 			isa = PBXGroup;
 			children = (
-				A1C123012203B31D00EAD9CB /* gunner.h */,
 				A1C123022203B31D00EAD9CB /* gunner.c */,
+				A1C123012203B31D00EAD9CB /* gunner.h */,
 			);
 			path = gunner;
 			sourceTree = "<group>";
@@ -2274,8 +2467,8 @@
 		A1C123032203B31D00EAD9CB /* infantry */ = {
 			isa = PBXGroup;
 			children = (
-				A1C123042203B31D00EAD9CB /* infantry.h */,
 				A1C123052203B31D00EAD9CB /* infantry.c */,
+				A1C123042203B31D00EAD9CB /* infantry.h */,
 			);
 			path = infantry;
 			sourceTree = "<group>";
@@ -2283,8 +2476,8 @@
 		A1C123062203B31D00EAD9CB /* flipper */ = {
 			isa = PBXGroup;
 			children = (
-				A1C123072203B31D00EAD9CB /* flipper.h */,
 				A1C123082203B31D00EAD9CB /* flipper.c */,
+				A1C123072203B31D00EAD9CB /* flipper.h */,
 			);
 			path = flipper;
 			sourceTree = "<group>";
@@ -2301,8 +2494,8 @@
 		A1C1230C2203B31D00EAD9CB /* chick */ = {
 			isa = PBXGroup;
 			children = (
-				A1C1230D2203B31D00EAD9CB /* chick.h */,
 				A1C1230E2203B31D00EAD9CB /* chick.c */,
+				A1C1230D2203B31D00EAD9CB /* chick.h */,
 			);
 			path = chick;
 			sourceTree = "<group>";
@@ -2311,8 +2504,8 @@
 			isa = PBXGroup;
 			children = (
 				A1C123102203B31D00EAD9CB /* widow.c */,
-				A1C123112203B31D00EAD9CB /* widow2.c */,
 				A1C123122203B31D00EAD9CB /* widow.h */,
+				A1C123112203B31D00EAD9CB /* widow2.c */,
 				A1C123132203B31D00EAD9CB /* widow2.h */,
 			);
 			path = widow;
@@ -2321,8 +2514,8 @@
 		A1C123142203B31D00EAD9CB /* float */ = {
 			isa = PBXGroup;
 			children = (
-				A1C123152203B31D00EAD9CB /* float.h */,
 				A1C123162203B31D00EAD9CB /* float.c */,
+				A1C123152203B31D00EAD9CB /* float.h */,
 			);
 			path = float;
 			sourceTree = "<group>";
@@ -2339,8 +2532,8 @@
 		A1C1231A2203B31D00EAD9CB /* carrier */ = {
 			isa = PBXGroup;
 			children = (
-				A1C1231B2203B31D00EAD9CB /* carrier.h */,
 				A1C1231C2203B31D00EAD9CB /* carrier.c */,
+				A1C1231B2203B31D00EAD9CB /* carrier.h */,
 			);
 			path = carrier;
 			sourceTree = "<group>";
@@ -2349,10 +2542,10 @@
 			isa = PBXGroup;
 			children = (
 				A1C1231E2203B31D00EAD9CB /* boss3.c */,
-				A1C1231F2203B31D00EAD9CB /* boss31.h */,
-				A1C123202203B31D00EAD9CB /* boss32.h */,
 				A1C123212203B31D00EAD9CB /* boss31.c */,
+				A1C1231F2203B31D00EAD9CB /* boss31.h */,
 				A1C123222203B31D00EAD9CB /* boss32.c */,
+				A1C123202203B31D00EAD9CB /* boss32.h */,
 			);
 			path = boss3;
 			sourceTree = "<group>";
@@ -2378,8 +2571,8 @@
 		A1C123292203B31D00EAD9CB /* berserker */ = {
 			isa = PBXGroup;
 			children = (
-				A1C1232A2203B31D00EAD9CB /* berserker.h */,
 				A1C1232B2203B31D00EAD9CB /* berserker.c */,
+				A1C1232A2203B31D00EAD9CB /* berserker.h */,
 			);
 			path = berserker;
 			sourceTree = "<group>";
@@ -2396,8 +2589,8 @@
 		A1C1232F2203B31D00EAD9CB /* boss2 */ = {
 			isa = PBXGroup;
 			children = (
-				A1C123302203B31D00EAD9CB /* boss2.h */,
 				A1C123312203B31D00EAD9CB /* boss2.c */,
+				A1C123302203B31D00EAD9CB /* boss2.h */,
 			);
 			path = boss2;
 			sourceTree = "<group>";
@@ -2405,11 +2598,11 @@
 		A1C123332203B31D00EAD9CB /* player */ = {
 			isa = PBXGroup;
 			children = (
-				A1C123342203B31D00EAD9CB /* trail.c */,
-				A1C123352203B31D00EAD9CB /* weapon.c */,
 				A1C123362203B31D00EAD9CB /* client.c */,
 				A1C123372203B31D00EAD9CB /* hud.c */,
+				A1C123342203B31D00EAD9CB /* trail.c */,
 				A1C123382203B31D00EAD9CB /* view.c */,
+				A1C123352203B31D00EAD9CB /* weapon.c */,
 			);
 			path = player;
 			sourceTree = "<group>";
@@ -2468,6 +2661,23 @@
 			productReference = A1C123DD2203B37600EAD9CB /* Quake2mp1-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A1C124192203FE2600EAD9CB /* Quake2mp2-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C124BD2203FE2600EAD9CB /* Build configuration list for PBXNativeTarget "Quake2mp2-iOS" */;
+			buildPhases = (
+				A1C1241A2203FE2600EAD9CB /* Resources */,
+				A1C124222203FE2600EAD9CB /* Sources */,
+				A1C124B02203FE2600EAD9CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quake2mp2-iOS";
+			productName = "___PROJECTNAME___";
+			productReference = A1C124C02203FE2600EAD9CB /* Quake2mp2-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2486,6 +2696,9 @@
 						ProvisioningStyle = Automatic;
 					};
 					A1C1233B2203B37600EAD9CB = {
+						DevelopmentTeam = 9UY8SFDNQ8;
+					};
+					A1C124192203FE2600EAD9CB = {
 						DevelopmentTeam = 9UY8SFDNQ8;
 					};
 				};
@@ -2514,6 +2727,7 @@
 				A1B80A4521F96DAA00560711 /* Quake2-iOS */,
 				A1B80AF821FA5BEE00560711 /* Quake2-tvOS */,
 				A1C1233B2203B37600EAD9CB /* Quake2mp1-iOS */,
+				A1C124192203FE2600EAD9CB /* Quake2mp2-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -2571,6 +2785,20 @@
 				A1C123402203B37600EAD9CB /* music in Resources */,
 				A1C123412203B37600EAD9CB /* dpquake.ttf in Resources */,
 				A1C123422203B37600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C1241A2203FE2600EAD9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C1241C2203FE2600EAD9CB /* baseq2 in Resources */,
+				A1C124FD2203FF5E00EAD9CB /* rogue in Resources */,
+				A1C1241D2203FE2600EAD9CB /* Launch Screen.storyboard in Resources */,
+				A1C1241E2203FE2600EAD9CB /* Main.storyboard in Resources */,
+				A1C1241F2203FE2600EAD9CB /* music in Resources */,
+				A1C124202203FE2600EAD9CB /* dpquake.ttf in Resources */,
+				A1C124212203FE2600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2633,7 +2861,7 @@
 				A15BF6FF21FCDD7A005F4B74 /* gl3_lightmap.c in Sources */,
 				A15BF68921FCDD7A005F4B74 /* shared.c in Sources */,
 				A15BF6F921FCDD7A005F4B74 /* stb.c in Sources */,
-				A15BF73921FCDD7A005F4B74 /* sound.c in Sources */,
+				A15BF73921FCDD7A005F4B74 /* sound.m in Sources */,
 				A15BF61321FCDD7A005F4B74 /* sv_cmd.c in Sources */,
 				A15BF61F21FCDD7A005F4B74 /* g_turret.c in Sources */,
 				A15BF66F21FCDD7A005F4B74 /* weapon.c in Sources */,
@@ -2774,7 +3002,7 @@
 				A15BF70021FCDD7A005F4B74 /* gl3_lightmap.c in Sources */,
 				A15BF68A21FCDD7A005F4B74 /* shared.c in Sources */,
 				A15BF6FA21FCDD7A005F4B74 /* stb.c in Sources */,
-				A15BF73A21FCDD7A005F4B74 /* sound.c in Sources */,
+				A15BF73A21FCDD7A005F4B74 /* sound.m in Sources */,
 				A15BF61421FCDD7A005F4B74 /* sv_cmd.c in Sources */,
 				A15BF62021FCDD7A005F4B74 /* g_turret.c in Sources */,
 				A15BF67021FCDD7A005F4B74 /* weapon.c in Sources */,
@@ -2915,7 +3143,7 @@
 				A1C123752203B37600EAD9CB /* gl3_lightmap.c in Sources */,
 				A1C123772203B37600EAD9CB /* stb.c in Sources */,
 				A1C124022203B4B400EAD9CB /* hover.c in Sources */,
-				A1C123782203B37600EAD9CB /* sound.c in Sources */,
+				A1C123782203B37600EAD9CB /* sound.m in Sources */,
 				A1C123EF2203B49200EAD9CB /* g_turret.c in Sources */,
 				A1C123792203B37600EAD9CB /* sv_cmd.c in Sources */,
 				A1C123E32203B49200EAD9CB /* g_cmds.c in Sources */,
@@ -3004,6 +3232,164 @@
 				A1C123C92203B37600EAD9CB /* vid.c in Sources */,
 				A1C123CB2203B37600EAD9CB /* cl_inventory.c in Sources */,
 				A1C123CC2203B37600EAD9CB /* pmove.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C124222203FE2600EAD9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C124E62203FF4400EAD9CB /* flyer.c in Sources */,
+				A1C124E02203FF2D00EAD9CB /* boss32.c in Sources */,
+				A1C124252203FE2600EAD9CB /* qal.c in Sources */,
+				A1C124262203FE2600EAD9CB /* cl_cin.c in Sources */,
+				A1C124272203FE2600EAD9CB /* cl_view.c in Sources */,
+				A1C124282203FE2600EAD9CB /* main.c in Sources */,
+				A1C124D42203FF1A00EAD9CB /* g_spawn.c in Sources */,
+				A1C124EA2203FF4400EAD9CB /* infantry.c in Sources */,
+				A1C124CE2203FF1A00EAD9CB /* g_newdm.c in Sources */,
+				A1C124D72203FF1A00EAD9CB /* g_target.c in Sources */,
+				A1C124C52203FF1A00EAD9CB /* g_chase.c in Sources */,
+				A1C1242A2203FE2600EAD9CB /* openal.c in Sources */,
+				A1C1242B2203FE2600EAD9CB /* gl3_sp2.c in Sources */,
+				A1C124F02203FF4400EAD9CB /* soldier.c in Sources */,
+				A1C1242C2203FE2600EAD9CB /* ogg.c in Sources */,
+				A1C1242D2203FE2600EAD9CB /* menu.c in Sources */,
+				A1C124302203FE2600EAD9CB /* cl_main.c in Sources */,
+				A1C124312203FE2600EAD9CB /* gl3_light.c in Sources */,
+				A1C124332203FE2600EAD9CB /* wal.c in Sources */,
+				A1C124362203FE2600EAD9CB /* cl_effects.c in Sources */,
+				A1C124372203FE2600EAD9CB /* cl_prediction.c in Sources */,
+				A1C124F32203FF4400EAD9CB /* tank.c in Sources */,
+				A1C124382203FE2600EAD9CB /* MainMenuViewController.swift in Sources */,
+				A1C124392203FE2600EAD9CB /* flash.c in Sources */,
+				A1C1243B2203FE2600EAD9CB /* SDL_uikitviewcontroller+Additions.swift in Sources */,
+				A1C124C72203FF1A00EAD9CB /* g_combat.c in Sources */,
+				A1C1243C2203FE2600EAD9CB /* sv_main.c in Sources */,
+				A1C1243F2203FE2600EAD9CB /* sv_save.c in Sources */,
+				A1C124402203FE2600EAD9CB /* gl3_image.c in Sources */,
+				A1C124412203FE2600EAD9CB /* miniz.c in Sources */,
+				A1C124422203FE2600EAD9CB /* sv_user.c in Sources */,
+				A1C124432203FE2600EAD9CB /* JoyStickView.swift in Sources */,
+				A1C124FC2203FF4E00EAD9CB /* savegame.c in Sources */,
+				A1C124442203FE2600EAD9CB /* cl_console.c in Sources */,
+				A1C124452203FE2600EAD9CB /* qmenu.c in Sources */,
+				A1C124462203FE2600EAD9CB /* cvar.c in Sources */,
+				A1C124472203FE2600EAD9CB /* netchan.c in Sources */,
+				A1C124492203FE2600EAD9CB /* system.c in Sources */,
+				A1C1244A2203FE2600EAD9CB /* cl_lights.c in Sources */,
+				A1C1244B2203FE2600EAD9CB /* cl_screen.c in Sources */,
+				A1C1244E2203FE2600EAD9CB /* gl3_model.c in Sources */,
+				A1C1244F2203FE2600EAD9CB /* filesystem.c in Sources */,
+				A1C124F42203FF4400EAD9CB /* turret.c in Sources */,
+				A1C124F82203FF4900EAD9CB /* hud.c in Sources */,
+				A1C124D12203FF1A00EAD9CB /* g_newtrig.c in Sources */,
+				A1C124DA2203FF1A00EAD9CB /* g_utils.c in Sources */,
+				A1C124522203FE2600EAD9CB /* sv_entities.c in Sources */,
+				A1C124532203FE2600EAD9CB /* cl_entities.c in Sources */,
+				A1C124542203FE2600EAD9CB /* gl3_lightmap.c in Sources */,
+				A1C124552203FE2600EAD9CB /* stb.c in Sources */,
+				A1C124572203FE2600EAD9CB /* sound.m in Sources */,
+				A1C124592203FE2600EAD9CB /* sv_cmd.c in Sources */,
+				A1C124FB2203FF4900EAD9CB /* weapon.c in Sources */,
+				A1C124F12203FF4400EAD9CB /* stalker.c in Sources */,
+				A1C1245C2203FE2600EAD9CB /* gl3_draw.c in Sources */,
+				A1C124E52203FF4400EAD9CB /* float.c in Sources */,
+				A1C124E92203FF4400EAD9CB /* hover.c in Sources */,
+				A1C1245D2203FE2600EAD9CB /* DifficultyViewController.swift in Sources */,
+				A1C1245E2203FE2600EAD9CB /* cl_network.c in Sources */,
+				A1C1245F2203FE2600EAD9CB /* videomenu.c in Sources */,
+				A1C124612203FE2600EAD9CB /* CoreGraphics+Additions.swift in Sources */,
+				A1C124642203FE2600EAD9CB /* sdl.c in Sources */,
+				A1C124CB2203FF1A00EAD9CB /* g_misc.c in Sources */,
+				A1C124662203FE2600EAD9CB /* glad.c in Sources */,
+				A1C124C82203FF1A00EAD9CB /* g_func.c in Sources */,
+				A1C124672203FE2600EAD9CB /* hunk.c in Sources */,
+				A1C124F92203FF4900EAD9CB /* trail.c in Sources */,
+				A1C124DE2203FF2D00EAD9CB /* boss3.c in Sources */,
+				A1C124EC2203FF4400EAD9CB /* medic.c in Sources */,
+				A1C124682203FE2600EAD9CB /* zone.c in Sources */,
+				A1C124F52203FF4400EAD9CB /* widow.c in Sources */,
+				A1C124692203FE2600EAD9CB /* cl_download.c in Sources */,
+				A1C1246A2203FE2600EAD9CB /* gl3_sdl.c in Sources */,
+				A1C1246B2203FE2600EAD9CB /* gl3_warp.c in Sources */,
+				A1C1246C2203FE2600EAD9CB /* md4.c in Sources */,
+				A1C124C42203FF1A00EAD9CB /* g_ai.c in Sources */,
+				A1C124CA2203FF1A00EAD9CB /* g_main.c in Sources */,
+				A1C1246E2203FE2600EAD9CB /* gl3_mesh.c in Sources */,
+				A1C124F62203FF4400EAD9CB /* widow2.c in Sources */,
+				A1C1246F2203FE2600EAD9CB /* gl3_misc.c in Sources */,
+				A1C124712203FE2600EAD9CB /* glimp_sdl.m in Sources */,
+				A1C124CF2203FF1A00EAD9CB /* g_newfnc.c in Sources */,
+				A1C124722203FE2600EAD9CB /* pcx.c in Sources */,
+				A1C124CD2203FF1A00EAD9CB /* g_newai.c in Sources */,
+				A1C124742203FE2600EAD9CB /* szone.c in Sources */,
+				A1C124752203FE2600EAD9CB /* sv_conless.c in Sources */,
+				A1C124C22203FF1600EAD9CB /* ball.c in Sources */,
+				A1C124762203FE2600EAD9CB /* GameViewController.swift in Sources */,
+				A1C124772203FE2600EAD9CB /* gl3_shaders.c in Sources */,
+				A1C124FA2203FF4900EAD9CB /* view.c in Sources */,
+				A1C124782203FE2600EAD9CB /* wave.c in Sources */,
+				A1C1247A2203FE2600EAD9CB /* AppDelegate.m in Sources */,
+				A1C124D32203FF1A00EAD9CB /* g_phys.c in Sources */,
+				A1C1247B2203FE2600EAD9CB /* sv_game.c in Sources */,
+				A1C124E32203FF4400EAD9CB /* chick.c in Sources */,
+				A1C124D62203FF1A00EAD9CB /* g_svcmds.c in Sources */,
+				A1C124E22203FF4400EAD9CB /* carrier.c in Sources */,
+				A1C1247E2203FE2600EAD9CB /* gl3_md2.c in Sources */,
+				A1C1247F2203FE2600EAD9CB /* unzip.c in Sources */,
+				A1C124F72203FF4900EAD9CB /* client.c in Sources */,
+				A1C124802203FE2600EAD9CB /* frame.c in Sources */,
+				A1C124812203FE2600EAD9CB /* misc.c in Sources */,
+				A1C124DF2203FF2D00EAD9CB /* boss31.c in Sources */,
+				A1C124822203FE2600EAD9CB /* argproc.c in Sources */,
+				A1C124832203FE2600EAD9CB /* shared.c in Sources */,
+				A1C124852203FE2600EAD9CB /* glob.c in Sources */,
+				A1C124D92203FF1A00EAD9CB /* g_turret.c in Sources */,
+				A1C124872203FE2600EAD9CB /* sv_world.c in Sources */,
+				A1C124D02203FF1A00EAD9CB /* g_newtarg.c in Sources */,
+				A1C124882203FE2600EAD9CB /* rand.c in Sources */,
+				A1C1248A2203FE2600EAD9CB /* signalhandler.c in Sources */,
+				A1C1248B2203FE2600EAD9CB /* sv_init.c in Sources */,
+				A1C1248C2203FE2600EAD9CB /* clientserver.c in Sources */,
+				A1C124CC2203FF1A00EAD9CB /* g_monster.c in Sources */,
+				A1C124D52203FF1A00EAD9CB /* g_sphere.c in Sources */,
+				A1C124902203FE2600EAD9CB /* sdl.c in Sources */,
+				A1C124922203FE2600EAD9CB /* cmdparser.c in Sources */,
+				A1C124932203FE2600EAD9CB /* gl3_surf.c in Sources */,
+				A1C124942203FE2600EAD9CB /* sv_send.c in Sources */,
+				A1C124EE2203FF4400EAD9CB /* mutant.c in Sources */,
+				A1C124952203FE2600EAD9CB /* gl3_main.m in Sources */,
+				A1C124C62203FF1A00EAD9CB /* g_cmds.c in Sources */,
+				A1C124962203FE2600EAD9CB /* collision.c in Sources */,
+				A1C124992203FE2600EAD9CB /* cl_parse.c in Sources */,
+				A1C1249C2203FE2600EAD9CB /* cl_keyboard.c in Sources */,
+				A1C1249E2203FE2600EAD9CB /* pvs.c in Sources */,
+				A1C124EF2203FF4400EAD9CB /* parasite.c in Sources */,
+				A1C124E42203FF4400EAD9CB /* flipper.c in Sources */,
+				A1C124DB2203FF1A00EAD9CB /* g_weapon.c in Sources */,
+				A1C1249F2203FE2600EAD9CB /* crc.c in Sources */,
+				A1C124DD2203FF2D00EAD9CB /* boss2.c in Sources */,
+				A1C124F22203FF4400EAD9CB /* supertank.c in Sources */,
+				A1C124A12203FE2600EAD9CB /* cl_particles.c in Sources */,
+				A1C124ED2203FF4400EAD9CB /* move.c in Sources */,
+				A1C124A22203FE2600EAD9CB /* network.c in Sources */,
+				A1C124A62203FE2600EAD9CB /* cl_tempentities.c in Sources */,
+				A1C124E82203FF4400EAD9CB /* gunner.c in Sources */,
+				A1C124D82203FF1A00EAD9CB /* g_trigger.c in Sources */,
+				A1C124A92203FE2600EAD9CB /* movemsg.c in Sources */,
+				A1C124E72203FF4400EAD9CB /* gladiator.c in Sources */,
+				A1C124AB2203FE2600EAD9CB /* cl_input.c in Sources */,
+				A1C124AC2203FE2600EAD9CB /* ioapi.c in Sources */,
+				A1C124EB2203FF4400EAD9CB /* insane.c in Sources */,
+				A1C124C32203FF1600EAD9CB /* tag.c in Sources */,
+				A1C124AD2203FE2600EAD9CB /* vid.c in Sources */,
+				A1C124AE2203FE2600EAD9CB /* cl_inventory.c in Sources */,
+				A1C124D22203FF1A00EAD9CB /* g_newweap.c in Sources */,
+				A1C124E12203FF4400EAD9CB /* brain.c in Sources */,
+				A1C124DC2203FF2D00EAD9CB /* berserker.c in Sources */,
+				A1C124C92203FF1A00EAD9CB /* g_items.c in Sources */,
+				A1C124AF2203FE2600EAD9CB /* pmove.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3208,7 +3594,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_mp1;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3262,7 +3648,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_mp1;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3300,6 +3686,110 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "-D XATRIX";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		A1C124BE2203FE2600EAD9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_mp2;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					SDL2,
+					"YQ2OSTYPE=\\\"Darwin\\\"",
+					"YQ2ARCH=\\\"x86_64\\\"",
+					IOS,
+					GLES_SILENCE_DEPRECATION,
+					USE_GLES3,
+					ROGUE,
+					"OSTYPE=\\\"Darwin\\\"",
+					"ARCH=\\\"x86_64\\\"",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Quake2mp1-iOS copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "-D ROGUE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		A1C124BF2203FE2600EAD9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_mp2;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SDL2,
+					"YQ2OSTYPE=\\\"Darwin\\\"",
+					"YQ2ARCH=\\\"x86_64\\\"",
+					IOS,
+					GLES_SILENCE_DEPRECATION,
+					USE_GLES3,
+					ROGUE,
+					"OSTYPE=\\\"Darwin\\\"",
+					"ARCH=\\\"x86_64\\\"",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Quake2mp1-iOS copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "-D ROGUE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
 				SWIFT_VERSION = 4.2;
@@ -3434,6 +3924,15 @@
 			buildConfigurations = (
 				A1C123DB2203B37600EAD9CB /* Debug */,
 				A1C123DC2203B37600EAD9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C124BD2203FE2600EAD9CB /* Build configuration list for PBXNativeTarget "Quake2mp2-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C124BE2203FE2600EAD9CB /* Debug */,
+				A1C124BF2203FE2600EAD9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

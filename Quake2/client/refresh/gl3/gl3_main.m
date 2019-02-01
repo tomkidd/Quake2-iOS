@@ -203,7 +203,8 @@ GL3_Register(void)
 	r_mode = ri.Cvar_Get("r_mode", "4", CVAR_ARCHIVE);
     
 #ifdef IOS
-    r_mode = ri.Cvar_Get("r_mode", "-1", CVAR_ARCHIVE);
+    ri.Cvar_SetValue("r_mode", -1);
+    r_mode = ri.Cvar_Get("r_mode", "4", CVAR_ARCHIVE);
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     CGFloat screenScale = [[UIScreen mainScreen] scale];
     CGSize screenSize = CGSizeMake(screenBounds.size.width * screenScale, screenBounds.size.height * screenScale);

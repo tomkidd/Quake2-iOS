@@ -2,6 +2,7 @@
   "images" : [
     {
       "idiom" : "tv",
+      "filename" : "quake2mp1_tv_middle.png",
       "scale" : "1x"
     },
     {

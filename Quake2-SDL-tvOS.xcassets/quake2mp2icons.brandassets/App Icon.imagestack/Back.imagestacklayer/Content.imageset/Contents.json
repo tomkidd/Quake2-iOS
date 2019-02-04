@@ -2,18 +2,11 @@
   "images" : [
     {
       "idiom" : "tv",
+      "filename" : "quake2mp1_tv_back.png",
       "scale" : "1x"
     },
     {
       "idiom" : "tv",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "tv-marketing",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "tv-marketing",
       "scale" : "2x"
     }
   ],

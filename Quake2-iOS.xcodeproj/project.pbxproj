@@ -952,6 +952,12 @@
 		A1C126732204FE1400EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
 		A1C126752204FE1400EAD9CB /* Quake2-SDL-tvOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */; };
 		A1C1267B2205031F00EAD9CB /* rogue in Resources */ = {isa = PBXBuildFile; fileRef = A1C1233A2203B34F00EAD9CB /* rogue */; };
+		A1C1267D220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
+		A1C1267E220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
+		A1C1267F220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
+		A1C12680220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
+		A1C12681220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
+		A1C12682220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1398,6 +1404,7 @@
 		A1C125042204F73000EAD9CB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A1C125A32204FA3300EAD9CB /* Quake2mp1-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp1-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C126792204FE1400EAD9CB /* Quake2mp2-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp2-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C1267C220908DF00EAD9CB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FA8B4B96196703B400F8EB7C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FAE0E9641BAF967F0098DFA4 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		FD779EDD0E26BA1200F39101 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -2271,12 +2278,13 @@
 				A15BF75721FD02A0005F4B74 /* AppDelegate.m */,
 				A15BF75A21FD05C8005F4B74 /* bridging.h */,
 				A1C1205F21FE840C00EAD9CB /* CoreGraphics+Additions.swift */,
+				A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */,
+				A1C1267C220908DF00EAD9CB /* Extensions.swift */,
 				A15BF75F21FD0819005F4B74 /* GameViewController.swift */,
 				A1C1205621FE821900EAD9CB /* JoyStickView.swift */,
 				A15BF74A21FCF7E3005F4B74 /* Main.storyboard */,
 				A15BF75D21FD0604005F4B74 /* MainMenuViewController.swift */,
 				A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */,
-				A1C1206622026DED00EAD9CB /* DifficultyViewController.swift */,
 			);
 			path = "Quake2-iOS";
 			sourceTree = "<group>";
@@ -3356,6 +3364,7 @@
 				A15BF73521FCDD7A005F4B74 /* sdl.c in Sources */,
 				A15BF64521FCDD7A005F4B74 /* supertank.c in Sources */,
 				A15BF67D21FCDD7A005F4B74 /* cmdparser.c in Sources */,
+				A1C1267D220908DF00EAD9CB /* Extensions.swift in Sources */,
 				A15BF65121FCDD7A005F4B74 /* flipper.c in Sources */,
 				A15BF70721FCDD7A005F4B74 /* gl3_surf.c in Sources */,
 				A15BF61921FCDD7A005F4B74 /* sv_send.c in Sources */,
@@ -3440,6 +3449,7 @@
 				A15BF67021FCDD7A005F4B74 /* weapon.c in Sources */,
 				A15BF70E21FCDD7A005F4B74 /* gl3_draw.c in Sources */,
 				A15BF6AE21FCDD7A005F4B74 /* cl_network.c in Sources */,
+				A1C1267E220908DF00EAD9CB /* Extensions.swift in Sources */,
 				A15BF66021FCDD7A005F4B74 /* boss32.c in Sources */,
 				A15BF72621FCDD7A005F4B74 /* videomenu.c in Sources */,
 				A15BF67221FCDD7A005F4B74 /* client.c in Sources */,
@@ -3635,6 +3645,7 @@
 				A1C123F22203B4B400EAD9CB /* berserker.c in Sources */,
 				A1C123F92203B4B400EAD9CB /* chick.c in Sources */,
 				A1C124072203B4B400EAD9CB /* mutant.c in Sources */,
+				A1C1267F220908DF00EAD9CB /* Extensions.swift in Sources */,
 				A1C123B42203B37600EAD9CB /* sdl.c in Sources */,
 				A1C1240D2203B5AF00EAD9CB /* weapon.c in Sources */,
 				A1C123B62203B37600EAD9CB /* cmdparser.c in Sources */,
@@ -3757,6 +3768,7 @@
 				A1C124712203FE2600EAD9CB /* glimp_sdl.m in Sources */,
 				A1C124CF2203FF1A00EAD9CB /* g_newfnc.c in Sources */,
 				A1C124722203FE2600EAD9CB /* pcx.c in Sources */,
+				A1C12681220908DF00EAD9CB /* Extensions.swift in Sources */,
 				A1C124CD2203FF1A00EAD9CB /* g_newai.c in Sources */,
 				A1C124742203FE2600EAD9CB /* szone.c in Sources */,
 				A1C124752203FE2600EAD9CB /* sv_conless.c in Sources */,
@@ -3844,6 +3856,7 @@
 				A1C125B32204FAB600EAD9CB /* g_trigger.c in Sources */,
 				A1C125132204FA3300EAD9CB /* gl3_sp2.c in Sources */,
 				A1C125B82204FAE400EAD9CB /* boss2.c in Sources */,
+				A1C12680220908DF00EAD9CB /* Extensions.swift in Sources */,
 				A1C125142204FA3300EAD9CB /* ogg.c in Sources */,
 				A1C125152204FA3300EAD9CB /* menu.c in Sources */,
 				A1C125C92204FAE400EAD9CB /* insane.c in Sources */,
@@ -3989,6 +4002,7 @@
 				A1C125E22204FE1400EAD9CB /* g_trigger.c in Sources */,
 				A1C125E32204FE1400EAD9CB /* gl3_sp2.c in Sources */,
 				A1C125E42204FE1400EAD9CB /* boss2.c in Sources */,
+				A1C12682220908DF00EAD9CB /* Extensions.swift in Sources */,
 				A1C125E52204FE1400EAD9CB /* ogg.c in Sources */,
 				A1C125E62204FE1400EAD9CB /* menu.c in Sources */,
 				A1C125E72204FE1400EAD9CB /* insane.c in Sources */,

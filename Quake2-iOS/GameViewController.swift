@@ -12,8 +12,24 @@ class GameViewController: UIViewController {
     var difficulty = -1
     var newgame = false
 
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var loadingLabel: UILabel!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Mission Pack 1
+        #if XATRIX
+        backgroundImage.image = UIImage(named: "quake2mp1background")
+        loadingLabel.textColor = UIColor.white
+        #endif
+        
+        // Mission Pack 2
+        #if ROGUE
+        backgroundImage.image = UIImage(named: "quake2mp2background")
+        loadingLabel.textColor = UIColor(rgba: "FDDE8C")
+        #endif
         
         let documentsDir = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path
         

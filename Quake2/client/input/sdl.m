@@ -33,6 +33,10 @@
 #include "../../client/header/keyboard.h"
 #include "../../client/header/client.h"
 
+#if !TARGET_OS_TV
+#import <CoreMotion/CoreMotion.h>
+#endif
+
 // ----
 
 // Maximal mouse move per frame
@@ -113,6 +117,10 @@ qboolean show_haptic;
 static SDL_Haptic *joystick_haptic = NULL;
 static SDL_Joystick *joystick = NULL;
 static SDL_GameController *controller = NULL;
+
+#if !TARGET_OS_TV
+static CMMotionManager *motionManager = nil;
+#endif
 
 static int last_haptic_volume = 0;
 static int last_haptic_efffect_size = HAPTIC_EFFECT_LAST;
@@ -370,6 +378,10 @@ IN_Update(void)
 	static char last_hat = SDL_HAT_CENTERED;
 	static qboolean left_trigger = false;
 	static qboolean right_trigger = false;
+
+#if !TARGET_OS_TV
+    cl.viewangles[PITCH] = -(([[[motionManager deviceMotion] attitude] roll] - 1.5) * 45);
+#endif
 
 	/* Get and process an event */
 	while (SDL_PollEvent(&event))
@@ -1326,8 +1338,15 @@ IN_Init(void)
 #else
     SDL_SetHint(SDL_HINT_ACCELEROMETER_AS_JOYSTICK, "0");
     SDL_SetHint(SDL_HINT_TOUCH_MOUSE_EVENTS, "0");
+#if !TARGET_OS_TV
+    if (motionManager == nil) {
+        motionManager = [[CMMotionManager alloc] init];
+    }
+    motionManager.deviceMotionUpdateInterval = 0.1;
+    [motionManager startDeviceMotionUpdates];
 #endif
-    
+#endif
+
 	/* Joystick init */
 	if (!SDL_WasInit(SDL_INIT_GAMECONTROLLER | SDL_INIT_HAPTIC))
 	{

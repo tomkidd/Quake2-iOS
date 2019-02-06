@@ -380,7 +380,9 @@ IN_Update(void)
 	static qboolean right_trigger = false;
 
 #if !TARGET_OS_TV
-    cl.viewangles[PITCH] = -(([[[motionManager deviceMotion] attitude] roll] - 1.5) * 45);
+    if ([[NSUserDefaults standardUserDefaults] integerForKey:@"tiltAiming"] == 1) {
+        cl.viewangles[PITCH] = -(([[[motionManager deviceMotion] attitude] roll] - 1.5) * 45);
+    }
 #endif
 
 	/* Get and process an event */

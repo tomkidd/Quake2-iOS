@@ -377,6 +377,7 @@ GLimp_InitGraphics(int fullscreen, int *pwidth, int *pheight)
     [rootVC.view addSubview:[rootVC fireButtonWithRect:[rootVC.view frame]]];
     [rootVC.view addSubview:[rootVC jumpButtonWithRect:[rootVC.view frame]]];
     [rootVC.view addSubview:[rootVC joyStickWithRect:[rootVC.view frame]]];
+    [rootVC.view addSubview:[rootVC buttonStackWithRect:[rootVC.view frame]]];
 #endif
 
 	initSuccessful = true;

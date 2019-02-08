@@ -329,6 +329,67 @@
             </objects>
             <point key="canvasLocation" x="1725" y="391"/>
         </scene>
+        <!--Saved Game View Controller-->
+        <scene sceneID="Ahj-nW-gE5">
+            <objects>
+                <viewController id="Crn-DM-9m3" customClass="SavedGameViewController" customModule="RTCW_SP_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G70-va-pDs">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-r4-Kgp">
+                                <rect key="frame" x="64" y="20" width="684" height="274"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Crn-DM-9m3" id="Z6u-u9-hPQ"/>
+                                    <outlet property="delegate" destination="Crn-DM-9m3" id="gB1-mq-xIh"/>
+                                </connections>
+                            </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGr-rQ-nlJ">
+                                <rect key="frame" x="668" y="302" width="80" height="51"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="LOAD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mma-2x-Pvr">
+                                <rect key="frame" x="64" y="302" width="249" height="51"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Show Autosaves...">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAutosaves:" destination="Crn-DM-9m3" eventType="touchUpInside" id="Lss-Br-eYn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ahe-VX-FSd" firstAttribute="trailing" secondItem="Tob-r4-Kgp" secondAttribute="trailing" constant="20" id="72a-MS-jH3"/>
+                            <constraint firstItem="Tob-r4-Kgp" firstAttribute="top" secondItem="Ahe-VX-FSd" secondAttribute="top" constant="20" id="8z4-V6-WKO"/>
+                            <constraint firstItem="JGr-rQ-nlJ" firstAttribute="top" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="8" id="Ddu-cO-WF2"/>
+                            <constraint firstItem="Mma-2x-Pvr" firstAttribute="leading" secondItem="Tob-r4-Kgp" secondAttribute="leading" id="O03-9G-mrP"/>
+                            <constraint firstItem="JGr-rQ-nlJ" firstAttribute="trailing" secondItem="Tob-r4-Kgp" secondAttribute="trailing" id="Ojo-h3-rJP"/>
+                            <constraint firstItem="Mma-2x-Pvr" firstAttribute="top" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="8" id="ZlU-4J-z4Z"/>
+                            <constraint firstItem="Tob-r4-Kgp" firstAttribute="leading" secondItem="Ahe-VX-FSd" secondAttribute="leading" constant="20" id="efj-Aq-Km6"/>
+                            <constraint firstItem="Ahe-VX-FSd" firstAttribute="bottom" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="60" id="hJo-va-RDN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ahe-VX-FSd"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadGameButton" destination="JGr-rQ-nlJ" id="Kyp-1Z-nGj"/>
+                        <outlet property="savesList" destination="Tob-r4-Kgp" id="yGd-6k-gyO"/>
+                        <outlet property="showAutosavesButton" destination="Mma-2x-Pvr" id="wnw-OX-gJB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIW-xp-Slk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="1714"/>
+        </scene>
     </scenes>
     <resources>
         <image name="quake2background" width="1920" height="1080"/>

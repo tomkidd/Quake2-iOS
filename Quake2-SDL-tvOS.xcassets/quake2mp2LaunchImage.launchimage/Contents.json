@@ -10,6 +10,7 @@
     {
       "orientation" : "landscape",
       "idiom" : "tv",
+      "filename" : "quake2mp2launch.jpg",
       "extent" : "full-screen",
       "minimum-system-version" : "9.0",
       "scale" : "1x"

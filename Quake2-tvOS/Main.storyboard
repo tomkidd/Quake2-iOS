@@ -33,17 +33,29 @@
                                     <constraint firstAttribute="width" secondItem="WE9-jb-ZdU" secondAttribute="height" multiplier="16:9" id="eLd-Jm-Ii7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q u a k e  ii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-G9-Y44">
-                                <rect key="frame" x="1370" y="68" width="440" height="85"/>
-                                <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="72"/>
-                                <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eor-e5-7M8">
-                                <rect key="frame" x="1543" y="161" width="267" height="207"/>
+                                <rect key="frame" x="1370" y="60" width="440" height="378"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q u a k e  ii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-G9-Y44">
+                                        <rect key="frame" x="0.0" y="0.0" width="440" height="85"/>
+                                        <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="72"/>
+                                        <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mission pack" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjq-zj-wsy">
+                                        <rect key="frame" x="0.0" y="85" width="440" height="43"/>
+                                        <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="36"/>
+                                        <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q u a k e  ii" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0W-da-TTt">
+                                        <rect key="frame" x="0.0" y="128" width="440" height="43"/>
+                                        <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="36"/>
+                                        <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-Gj-xg9">
-                                        <rect key="frame" x="0.0" y="0.0" width="267" height="69"/>
+                                        <rect key="frame" x="0.0" y="171" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
                                         <state key="normal" title="new game">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,14 +65,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSs-6i-98s">
-                                        <rect key="frame" x="0.0" y="69" width="267" height="69"/>
+                                        <rect key="frame" x="0.0" y="240" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
-                                        <state key="normal" title="resume game">
+                                        <state key="normal" title="load game">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcJ-eO-fk8">
-                                        <rect key="frame" x="0.0" y="138" width="267" height="69"/>
+                                        <rect key="frame" x="0.0" y="309" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
                                         <state key="normal" title="demo">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,19 +86,23 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Eor-e5-7M8" firstAttribute="trailing" secondItem="i1s-G9-Y44" secondAttribute="trailing" id="C5s-6u-cEv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="i1s-G9-Y44" secondAttribute="trailing" constant="0.33000000000000002" id="Chh-1v-0Rn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Eor-e5-7M8" secondAttribute="trailing" id="0NW-eb-wha"/>
+                            <constraint firstAttribute="topMargin" secondItem="Eor-e5-7M8" secondAttribute="top" id="G9c-dL-2ls"/>
                             <constraint firstAttribute="top" secondItem="WE9-jb-ZdU" secondAttribute="top" id="HgZ-Bg-Ae8"/>
                             <constraint firstAttribute="trailing" secondItem="WE9-jb-ZdU" secondAttribute="trailing" constant="203" id="XBR-Fl-bah">
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
-                            <constraint firstItem="i1s-G9-Y44" firstAttribute="top" secondItem="qC1-tp-PXt" secondAttribute="top" constant="8" id="YZP-aH-wAN"/>
-                            <constraint firstItem="Eor-e5-7M8" firstAttribute="top" secondItem="i1s-G9-Y44" secondAttribute="bottom" constant="8.3333333333333286" id="dD3-NA-T2j"/>
                             <constraint firstAttribute="bottom" secondItem="WE9-jb-ZdU" secondAttribute="bottom" id="hwM-co-d4n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qC1-tp-PXt"/>
                     </view>
                     <navigationItem key="navigationItem" id="bJL-Du-FQP"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="WE9-jb-ZdU" id="jBU-WO-f6O"/>
+                        <outlet property="subtitle1" destination="gjq-zj-wsy" id="MVq-JP-mfs"/>
+                        <outlet property="subtitle2" destination="d0W-da-TTt" id="jyF-S9-ed0"/>
+                        <outlet property="titleLabel" destination="i1s-G9-Y44" id="2W4-hp-l39"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHd-Mz-pIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,6 +144,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Y3-kc-ye4"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="12b-vS-7K6" id="qOv-XR-bzJ"/>
+                        <outlet property="loadingLabel" destination="iOI-0W-Afg" id="x4B-PI-Hq6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="beh-dB-IMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,6 +236,10 @@
                         <viewLayoutGuide key="safeArea" id="jIC-8m-7cF"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="clm-3X-Zgg" id="oft-1T-MfX"/>
+                        <outlet property="easyButton" destination="phz-D5-rfO" id="xTB-6u-Jv6"/>
+                        <outlet property="hardButton" destination="8TW-h4-0A4" id="m6c-Yf-5fW"/>
+                        <outlet property="normalButton" destination="FyM-ch-HqE" id="FQn-zW-kZ3"/>
                         <segue destination="ZbM-Ov-oft" kind="show" identifier="StartGameSegue" id="Skt-XX-niO"/>
                     </connections>
                 </viewController>
@@ -228,6 +252,6 @@
         <image name="quake2background" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Skt-XX-niO"/>
+        <segue reference="ogQ-yk-2f9"/>
     </inferredMetricsTieBreakers>
 </document>

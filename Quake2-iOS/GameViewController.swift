@@ -14,19 +14,25 @@ class GameViewController: UIViewController {
 
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var loadingLabel: UILabel!
-    
+
+    var selectedSavedGame = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var gameDir = ""
+        gameDir = "baseq2"
+
         // Mission Pack 1
         #if XATRIX
+        gameDir = "xatrix"
         backgroundImage.image = UIImage(named: "quake2mp1background")
         loadingLabel.textColor = UIColor.white
         #endif
         
         // Mission Pack 2
         #if ROGUE
+        gameDir = "rogue"
         backgroundImage.image = UIImage(named: "quake2mp2background")
         loadingLabel.textColor = UIColor(rgba: "FDDE8C")
         #endif
@@ -63,6 +69,11 @@ class GameViewController: UIViewController {
             argv.append("game")
             argv.append("rogue")
             #endif
+            
+            if !self.selectedSavedGame.isEmpty {
+                argv.append("+load")
+                argv.append(self.selectedSavedGame)
+            }
             
             argv.append(nil)
             let argc:Int32 = Int32(argv.count - 1)

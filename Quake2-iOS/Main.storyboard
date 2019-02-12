@@ -72,6 +72,9 @@
                                         <state key="normal" title="load game">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Crn-DM-9m3" kind="show" id="tHY-Am-x4g"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg6-2x-SRT">
                                         <rect key="frame" x="0.0" y="184.66666666666666" width="439.66666666666669" height="50"/>
@@ -335,6 +338,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quake2background" translatesAutoresizingMaskIntoConstraints="NO" id="SOe-Tg-0Ox">
+                                <rect key="frame" x="0.0" y="-41" width="812" height="457"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SOe-Tg-0Ox" secondAttribute="height" multiplier="16:9" id="dqG-Lt-h0r"/>
+                                </constraints>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-r4-Kgp">
                                 <rect key="frame" x="64" y="20" width="684" height="274"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -344,44 +353,48 @@
                                 </connections>
                             </tableView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGr-rQ-nlJ">
-                                <rect key="frame" x="668" y="302" width="80" height="51"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <rect key="frame" x="658" y="302" width="90" height="45"/>
+                                <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="28"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="LOAD">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mma-2x-Pvr">
-                                <rect key="frame" x="64" y="302" width="249" height="51"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Show Autosaves...">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
                                 <connections>
-                                    <action selector="showAutosaves:" destination="Crn-DM-9m3" eventType="touchUpInside" id="Lss-Br-eYn"/>
+                                    <segue destination="ZbM-Ov-oft" kind="show" identifier="LoadGameSegue" id="BYG-YZ-3MD"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekb-oM-wIv">
+                                <rect key="frame" x="64" y="301" width="112" height="45"/>
+                                <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="28"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="&lt; BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.60392156860000001" green="0.1176470588" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ahe-VX-FSd" firstAttribute="trailing" secondItem="Tob-r4-Kgp" secondAttribute="trailing" constant="20" id="72a-MS-jH3"/>
-                            <constraint firstItem="Tob-r4-Kgp" firstAttribute="top" secondItem="Ahe-VX-FSd" secondAttribute="top" constant="20" id="8z4-V6-WKO"/>
-                            <constraint firstItem="JGr-rQ-nlJ" firstAttribute="top" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="8" id="Ddu-cO-WF2"/>
-                            <constraint firstItem="Mma-2x-Pvr" firstAttribute="leading" secondItem="Tob-r4-Kgp" secondAttribute="leading" id="O03-9G-mrP"/>
-                            <constraint firstItem="JGr-rQ-nlJ" firstAttribute="trailing" secondItem="Tob-r4-Kgp" secondAttribute="trailing" id="Ojo-h3-rJP"/>
-                            <constraint firstItem="Mma-2x-Pvr" firstAttribute="top" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="8" id="ZlU-4J-z4Z"/>
-                            <constraint firstItem="Tob-r4-Kgp" firstAttribute="leading" secondItem="Ahe-VX-FSd" secondAttribute="leading" constant="20" id="efj-Aq-Km6"/>
-                            <constraint firstItem="Ahe-VX-FSd" firstAttribute="bottom" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="60" id="hJo-va-RDN"/>
+                            <constraint firstItem="SOe-Tg-0Ox" firstAttribute="centerY" secondItem="G70-va-pDs" secondAttribute="centerY" id="0wZ-FC-bl6"/>
+                            <constraint firstItem="SOe-Tg-0Ox" firstAttribute="leading" secondItem="G70-va-pDs" secondAttribute="leading" id="6ck-9w-k0D"/>
+                            <constraint firstItem="JGr-rQ-nlJ" firstAttribute="trailing" secondItem="Tob-r4-Kgp" secondAttribute="trailing" id="8Rc-If-cWZ"/>
+                            <constraint firstItem="Tob-r4-Kgp" firstAttribute="leading" secondItem="Ahe-VX-FSd" secondAttribute="leading" constant="20" id="9Tl-QB-2Ru"/>
+                            <constraint firstItem="Tob-r4-Kgp" firstAttribute="top" secondItem="Ahe-VX-FSd" secondAttribute="top" constant="20" id="D2s-6U-cB1"/>
+                            <constraint firstItem="ekb-oM-wIv" firstAttribute="top" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="7" id="GS0-ql-QMV"/>
+                            <constraint firstItem="SOe-Tg-0Ox" firstAttribute="centerX" secondItem="G70-va-pDs" secondAttribute="centerX" id="WBO-fu-6Ld"/>
+                            <constraint firstItem="ekb-oM-wIv" firstAttribute="leading" secondItem="Tob-r4-Kgp" secondAttribute="leading" id="geA-PV-KbF"/>
+                            <constraint firstItem="Ahe-VX-FSd" firstAttribute="bottom" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="60" id="kD7-Yx-i2F"/>
+                            <constraint firstItem="JGr-rQ-nlJ" firstAttribute="top" secondItem="Tob-r4-Kgp" secondAttribute="bottom" constant="8" id="kbE-a6-AhN"/>
+                            <constraint firstAttribute="trailing" secondItem="SOe-Tg-0Ox" secondAttribute="trailing" id="tMg-1T-DA9"/>
+                            <constraint firstItem="Ahe-VX-FSd" firstAttribute="trailing" secondItem="Tob-r4-Kgp" secondAttribute="trailing" constant="20" id="v5o-Yz-h5T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ahe-VX-FSd"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="SOe-Tg-0Ox" id="V2I-OM-kGW"/>
                         <outlet property="loadGameButton" destination="JGr-rQ-nlJ" id="Kyp-1Z-nGj"/>
                         <outlet property="savesList" destination="Tob-r4-Kgp" id="yGd-6k-gyO"/>
-                        <outlet property="showAutosavesButton" destination="Mma-2x-Pvr" id="wnw-OX-gJB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIW-xp-Slk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -393,6 +406,6 @@
         <image name="quake2background" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="J25-id-i6M"/>
+        <segue reference="BYG-YZ-3MD"/>
     </inferredMetricsTieBreakers>
 </document>

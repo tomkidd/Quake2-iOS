@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		A132345A2209FFE200884138 /* Quake2mp1LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13234582209FFD000884138 /* Quake2mp1LaunchScreen.storyboard */; };
 		A132345B2209FFE500884138 /* Quake2mp2LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13234592209FFD000884138 /* Quake2mp2LaunchScreen.storyboard */; };
+		A142F96922138D03006A2A17 /* SavedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142F96822138D02006A2A17 /* SavedGameViewController.swift */; };
+		A142F96A22138D03006A2A17 /* SavedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142F96822138D02006A2A17 /* SavedGameViewController.swift */; };
+		A142F96B22138D03006A2A17 /* SavedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142F96822138D02006A2A17 /* SavedGameViewController.swift */; };
+		A142F96C22138D03006A2A17 /* SavedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142F96822138D02006A2A17 /* SavedGameViewController.swift */; };
+		A142F96D22138D03006A2A17 /* SavedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142F96822138D02006A2A17 /* SavedGameViewController.swift */; };
+		A142F96E22138D03006A2A17 /* SavedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142F96822138D02006A2A17 /* SavedGameViewController.swift */; };
 		A15BF5FD21FCDD7A005F4B74 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D721FCDD7A005F4B74 /* network.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A15BF5FE21FCDD7A005F4B74 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D721FCDD7A005F4B74 /* network.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A15BF5FF21FCDD7A005F4B74 /* signalhandler.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF4D821FCDD7A005F4B74 /* signalhandler.c */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -993,6 +999,7 @@
 		A13B68A421D54D3B00AA2472 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		A13B694F21D574A000AA2472 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = music; path = ../../../Dropbox/Files/quake2/music; sourceTree = "<group>"; };
 		A13B695021D574A000AA2472 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = ../../../Dropbox/Files/quake2/baseq2; sourceTree = "<group>"; };
+		A142F96822138D02006A2A17 /* SavedGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGameViewController.swift; sourceTree = "<group>"; };
 		A15BF4D721FCDD7A005F4B74 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
 		A15BF4D821FCDD7A005F4B74 /* signalhandler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = signalhandler.c; sourceTree = "<group>"; };
 		A15BF4D921FCDD7A005F4B74 /* system.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = system.c; sourceTree = "<group>"; };
@@ -2299,6 +2306,7 @@
 				A16571BC220BE29800FE9FC9 /* Quake2mp1-Info.plist */,
 				A16571BD220BE29800FE9FC9 /* Quake2mp2-Info.plist */,
 				A1C1206121FFC92400EAD9CB /* SDL_uikitviewcontroller+Additions.swift */,
+				A142F96822138D02006A2A17 /* SavedGameViewController.swift */,
 			);
 			path = "Quake2-iOS";
 			sourceTree = "<group>";
@@ -3398,6 +3406,7 @@
 				A15BF71B21FCDD7A005F4B74 /* cl_particles.c in Sources */,
 				A15BF5FD21FCDD7A005F4B74 /* network.c in Sources */,
 				A15BF6A921FCDD7A005F4B74 /* cl_tempentities.c in Sources */,
+				A142F96922138D03006A2A17 /* SavedGameViewController.swift in Sources */,
 				A15BF69521FCDD7A005F4B74 /* movemsg.c in Sources */,
 				A15BF71921FCDD7A005F4B74 /* cl_input.c in Sources */,
 				A15BF68321FCDD7A005F4B74 /* ioapi.c in Sources */,
@@ -3464,6 +3473,7 @@
 				A15BF73A21FCDD7A005F4B74 /* sound.m in Sources */,
 				A15BF61421FCDD7A005F4B74 /* sv_cmd.c in Sources */,
 				A15BF62021FCDD7A005F4B74 /* g_turret.c in Sources */,
+				A142F96A22138D03006A2A17 /* SavedGameViewController.swift in Sources */,
 				A15BF67021FCDD7A005F4B74 /* weapon.c in Sources */,
 				A15BF70E21FCDD7A005F4B74 /* gl3_draw.c in Sources */,
 				A15BF6AE21FCDD7A005F4B74 /* cl_network.c in Sources */,
@@ -3686,6 +3696,7 @@
 				A1C123C42203B37600EAD9CB /* network.c in Sources */,
 				A1C124002203B4B400EAD9CB /* gladiator.c in Sources */,
 				A1C123FD2203B4B400EAD9CB /* flyer.c in Sources */,
+				A142F96B22138D03006A2A17 /* SavedGameViewController.swift in Sources */,
 				A1C124112203B5B400EAD9CB /* savegame.c in Sources */,
 				A1C123C52203B37600EAD9CB /* cl_tempentities.c in Sources */,
 				A1C124102203B5AF00EAD9CB /* view.c in Sources */,
@@ -3822,6 +3833,7 @@
 				A1C124CC2203FF1A00EAD9CB /* g_monster.c in Sources */,
 				A1C124D52203FF1A00EAD9CB /* g_sphere.c in Sources */,
 				A1C124902203FE2600EAD9CB /* sdl.c in Sources */,
+				A142F96D22138D03006A2A17 /* SavedGameViewController.swift in Sources */,
 				A1C124922203FE2600EAD9CB /* cmdparser.c in Sources */,
 				A1C124932203FE2600EAD9CB /* gl3_surf.c in Sources */,
 				A1C124942203FE2600EAD9CB /* sv_send.c in Sources */,
@@ -3996,6 +4008,7 @@
 				A1C125892204FA3300EAD9CB /* ioapi.c in Sources */,
 				A1C1258A2204FA3300EAD9CB /* vid.c in Sources */,
 				A1C125CF2204FAE400EAD9CB /* supertank.c in Sources */,
+				A142F96C22138D03006A2A17 /* SavedGameViewController.swift in Sources */,
 				A1C125D02204FAE400EAD9CB /* tank.c in Sources */,
 				A1C125CD2204FAE400EAD9CB /* parasite.c in Sources */,
 				A1C1258B2204FA3300EAD9CB /* rand.c in Sources */,
@@ -4142,6 +4155,7 @@
 				A1C126592204FE1400EAD9CB /* ioapi.c in Sources */,
 				A1C1265A2204FE1400EAD9CB /* vid.c in Sources */,
 				A1C1265B2204FE1400EAD9CB /* supertank.c in Sources */,
+				A142F96E22138D03006A2A17 /* SavedGameViewController.swift in Sources */,
 				A1C1265C2204FE1400EAD9CB /* tank.c in Sources */,
 				A1C1265D2204FE1400EAD9CB /* parasite.c in Sources */,
 				A1C1265E2204FE1400EAD9CB /* rand.c in Sources */,

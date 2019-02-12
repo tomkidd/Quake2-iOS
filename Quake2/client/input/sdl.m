@@ -456,6 +456,8 @@ IN_Update(void)
                             Cbuf_AddText(va("bind JOY3 \"cmd help\"\n"));
                             Cbuf_AddText(va("bind JOY5 \"weapnext\"\n"));
                             Cbuf_AddText(va("bind JOY6 \"weapprev\"\n"));
+                            Cbuf_AddText(va("bind MWHEELDOWN \"weapprev\"\n"));
+                            Cbuf_AddText(va("bind MWHEELUP \"weapnext\"\n"));
 
                             break;
                         }

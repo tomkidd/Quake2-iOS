@@ -49,7 +49,7 @@ enum QKEYS {
 
 	K_COMMAND = 128,
 	K_CAPSLOCK,
-	K_POWER,
+	K_POWER, //130
 	K_PAUSE,
 
 	K_UPARROW,
@@ -61,18 +61,18 @@ enum QKEYS {
 	K_CTRL,
 	K_SHIFT,
 	K_INS,
-	K_DEL,
+	K_DEL, //140
 	K_PGDN,
 	K_PGUP,
 	K_HOME,
 	K_END,
 
-	K_F1,
+	K_F1, //145
 	K_F2,
 	K_F3,
 	K_F4,
 	K_F5,
-	K_F6,
+	K_F6, //150
 	K_F7,
 	K_F8,
 	K_F9,
@@ -83,7 +83,7 @@ enum QKEYS {
 	K_F14,
 	K_F15,
 
-	K_KP_HOME,
+	K_KP_HOME, //160
 	K_KP_UPARROW,
 	K_KP_PGUP,
 	K_KP_LEFTARROW,
@@ -93,7 +93,7 @@ enum QKEYS {
 	K_KP_DOWNARROW,
 	K_KP_PGDN,
 	K_KP_ENTER,
-	K_KP_INS,
+	K_KP_INS, //170
 	K_KP_DEL,
 	K_KP_SLASH,
 	K_KP_MINUS,
@@ -104,19 +104,19 @@ enum QKEYS {
 
 	K_MOUSE1,
 	K_MOUSE2,
-	K_MOUSE3,
+	K_MOUSE3, //180
 	K_MOUSE4,
 	K_MOUSE5,
 
-	K_MWHEELDOWN,
-	K_MWHEELUP,
+	K_MWHEELDOWN, //183
+	K_MWHEELUP, //184
 
 	K_JOY1,
 	K_JOY2,
 	K_JOY3,
 	K_JOY4,
 	K_JOY5,
-	K_JOY6,
+	K_JOY6, //160
 	K_JOY7,
 	K_JOY8,
 	K_JOY9,

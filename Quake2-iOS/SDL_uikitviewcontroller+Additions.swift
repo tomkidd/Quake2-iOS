@@ -22,6 +22,9 @@ extension SDL_uikitviewcontroller {
         static var _quickLoadButton: UIButton!
         static var _buttonStack = UIStackView(frame: .zero)
         static var _buttonStackExpanded = false
+        static var _f1Button = UIButton()
+        static var _prevWeaponButton = UIButton()
+        static var _nextWeaponButton = UIButton()
  }
     
     var fireButton:UIButton {
@@ -113,6 +116,34 @@ extension SDL_uikitviewcontroller {
             Holder._buttonStackExpanded = newValue
         }
     }
+    
+    var f1Button:UIButton {
+        get {
+            return Holder._f1Button
+        }
+        set(newValue) {
+            Holder._f1Button = newValue
+        }
+    }
+    
+    var prevWeaponButton:UIButton {
+        get {
+            return Holder._prevWeaponButton
+        }
+        set(newValue) {
+            Holder._prevWeaponButton = newValue
+        }
+    }
+
+    var nextWeaponButton:UIButton {
+        get {
+            return Holder._nextWeaponButton
+        }
+        set(newValue) {
+            Holder._nextWeaponButton = newValue
+        }
+    }
+
     @objc func fireButton(rect: CGRect) -> UIButton {
         fireButton = UIButton(frame: CGRect(x: rect.width - 155, y: rect.height - 90, width: 75, height: 75))
         fireButton.setTitle("FIRE", for: .normal)
@@ -155,6 +186,7 @@ extension SDL_uikitviewcontroller {
         expandButton.setTitle(" > ", for: .normal)
         expandButton.addTarget(self, action: #selector(self.expand), for: .touchUpInside)
         expandButton.sizeToFit()
+        expandButton.alpha = 0.5
         expandButton.frame.size.width = 50
 
         tildeButton = UIButton(type: .custom)
@@ -200,7 +232,7 @@ extension SDL_uikitviewcontroller {
         buttonStack.spacing = 8.0
         buttonStack.alignment = .leading
         buttonStack.addArrangedSubview(expandButton)
-        buttonStack.addArrangedSubview(tildeButton)
+//        buttonStack.addArrangedSubview(tildeButton)
         buttonStack.addArrangedSubview(escapeButton)
         buttonStack.addArrangedSubview(quickSaveButton)
         buttonStack.addArrangedSubview(quickLoadButton)
@@ -208,6 +240,34 @@ extension SDL_uikitviewcontroller {
         return buttonStack
         
     }
+    
+    @objc func f1Button(rect: CGRect) -> UIButton {
+        f1Button = UIButton(frame: CGRect(x: rect.width - 40, y: 10, width: 30, height: 30))
+        f1Button.setTitle(" F1 ", for: .normal)
+        f1Button.addTarget(self, action: #selector(self.f1Pressed), for: .touchDown)
+        f1Button.addTarget(self, action: #selector(self.f1Released), for: .touchUpInside)
+        f1Button.layer.borderColor = UIColor.white.cgColor
+        f1Button.layer.borderWidth = CGFloat(1)
+        f1Button.alpha = 0.5
+        return f1Button
+    }
+    
+    @objc func prevWeaponButton(rect: CGRect) -> UIButton {
+        prevWeaponButton = UIButton(frame: CGRect(x: (rect.width / 3), y: rect.height/2, width: (rect.width / 3), height: rect.height/2))
+        prevWeaponButton.addTarget(self, action: #selector(self.prevWeaponPressed), for: .touchDown)
+        prevWeaponButton.addTarget(self, action: #selector(self.prevWeaponReleased), for: .touchUpInside)
+        prevWeaponButton.alpha = 0
+        return prevWeaponButton
+    }
+    
+    @objc func nextWeaponButton(rect: CGRect) -> UIButton {
+        nextWeaponButton = UIButton(frame: CGRect(x: (rect.width / 3), y: 0, width: (rect.width / 3), height: rect.height/2))
+        nextWeaponButton.addTarget(self, action: #selector(self.nextWeaponPressed), for: .touchDown)
+        nextWeaponButton.addTarget(self, action: #selector(self.nextWeaponReleased), for: .touchUpInside)
+        nextWeaponButton.alpha = 0
+        return nextWeaponButton
+    }
+
     
     @objc func firePressed(sender: UIButton!) {
         Key_Event(137, qboolean(1), qboolean(1))
@@ -257,12 +317,37 @@ extension SDL_uikitviewcontroller {
         Key_Event(153, qboolean(0), qboolean(1))
     }
     
+    @objc func f1Pressed(sender: UIButton!) {
+        Key_Event(145, qboolean(1), qboolean(1))
+    }
+    
+    @objc func f1Released(sender: UIButton!) {
+        Key_Event(145, qboolean(0), qboolean(1))
+    }
+    
+    @objc func prevWeaponPressed(sender: UIButton!) {
+        Key_Event(183, qboolean(1), qboolean(1))
+    }
+    
+    @objc func prevWeaponReleased(sender: UIButton!) {
+        Key_Event(183, qboolean(0), qboolean(1))
+    }
+    
+    @objc func nextWeaponPressed(sender: UIButton!) {
+        Key_Event(184, qboolean(1), qboolean(1))
+    }
+    
+    @objc func nextWeaponReleased(sender: UIButton!) {
+        Key_Event(184, qboolean(0), qboolean(1))
+    }
+
 
     @objc func expand(_ sender: Any) {
         buttonStackExpanded = !buttonStackExpanded
         
         UIView.animate(withDuration: 0.5) {
             self.expandButton.setTitle(self.buttonStackExpanded ? " < " : " > ", for: .normal)
+            self.expandButton.alpha = self.buttonStackExpanded ? 1 : 0.5
             self.escapeButton.isHidden = !self.buttonStackExpanded
             self.escapeButton.alpha = self.buttonStackExpanded ? 1 : 0
             self.tildeButton.isHidden = !self.buttonStackExpanded

@@ -33,6 +33,8 @@ class GameViewController: UIViewController {
         
         let documentsDir = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path
         
+        print("documentsDir: \(documentsDir)")
+        
         Sys_SetHomeDir(documentsDir)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { // Change `2.0` to the desired number of seconds.

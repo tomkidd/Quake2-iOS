@@ -37,8 +37,12 @@ class GameViewController: UIViewController {
         loadingLabel.textColor = UIColor(rgba: "FDDE8C")
         #endif
         
+        #if os(tvOS)
+        let documentsDir = try! FileManager().url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path
+        #else
         let documentsDir = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path
-        
+        #endif
+
         print("documentsDir: \(documentsDir)")
         
         Sys_SetHomeDir(documentsDir)
@@ -47,13 +51,14 @@ class GameViewController: UIViewController {
             
             var argv: [String?] = [ Bundle.main.resourcePath! + "/quake2"];
             
-            if self.newgame {
-                argv.append("+newgame")
+            if self.difficulty >= 0 {
+                argv.append("+set")
+                argv.append("skill")
+                argv.append("\(self.difficulty)")
             }
             
-            if self.difficulty >= 0 {
-                argv.append("+skill")
-                argv.append("\(self.difficulty)")
+            if self.newgame {
+                argv.append("+newgame")
             }
             
             // Mission Pack 1
@@ -74,6 +79,14 @@ class GameViewController: UIViewController {
                 argv.append("+load")
                 argv.append(self.selectedSavedGame)
             }
+            
+            var commandLine = ""
+            
+            for arg in argv {
+                commandLine += " " + arg!
+            }
+            
+            print(commandLine)
             
             argv.append(nil)
             let argc:Int32 = Int32(argv.count - 1)

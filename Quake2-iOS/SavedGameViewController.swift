@@ -37,8 +37,12 @@ class SavedGameViewController: UIViewController {
         gameDir = "rogue"
         backgroundImage.image = UIImage(named: "quake2mp2background")
         #endif
-
-        let savesPath =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path + "/\(gameDir)/save"
+        
+        #if os(tvOS)
+        let savesPath = try! FileManager().url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path + "/\(gameDir)/save"
+        #else
+        let savesPath = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path + "/\(gameDir)/save"
+        #endif
         
         do {
             saves = try FileManager.default.contentsOfDirectory(atPath: savesPath)

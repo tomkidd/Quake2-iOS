@@ -70,6 +70,9 @@
                                         <state key="normal" title="load game">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="3mE-73-FRT" kind="show" id="w5G-xU-cO0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcJ-eO-fk8">
                                         <rect key="frame" x="0.0" y="309" width="440" height="69"/>
@@ -247,11 +250,78 @@
             </objects>
             <point key="canvasLocation" x="1747" y="-865"/>
         </scene>
+        <!--Saved Game View Controller-->
+        <scene sceneID="FL6-d0-LGm">
+            <objects>
+                <viewController id="3mE-73-FRT" customClass="SavedGameViewController" customModule="RTCW_SP_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s2z-pn-jqI"/>
+                        <viewControllerLayoutGuide type="bottom" id="M8g-TW-8wR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JYh-jo-iGc">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quake2background" translatesAutoresizingMaskIntoConstraints="NO" id="k81-eM-yLI">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3sX-c9-5ah">
+                                <rect key="frame" x="110" y="80" width="1200" height="775"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="775" id="LnR-ZG-aZ4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1200" id="cOp-jy-8Jj"/>
+                                    <constraint firstAttribute="width" constant="1200" id="iXx-Ar-JXA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="775" id="vzW-VL-MfC"/>
+                                </constraints>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3mE-73-FRT" id="6HH-L3-VL4"/>
+                                    <outlet property="delegate" destination="3mE-73-FRT" id="C23-7u-gLm"/>
+                                </connections>
+                            </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue8-Yw-jCH">
+                                <rect key="frame" x="1318" y="80" width="129" height="59"/>
+                                <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="40"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="LOAD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZbM-Ov-oft" kind="show" identifier="LoadGameSegue" id="vu2-zQ-5dr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3sX-c9-5ah" firstAttribute="leading" secondItem="gAB-dP-Ik6" secondAttribute="leading" constant="20" id="0Co-9f-fIj"/>
+                            <constraint firstItem="k81-eM-yLI" firstAttribute="centerY" secondItem="JYh-jo-iGc" secondAttribute="centerY" id="8fk-Xd-ovC"/>
+                            <constraint firstItem="k81-eM-yLI" firstAttribute="centerX" secondItem="JYh-jo-iGc" secondAttribute="centerX" id="9LA-XB-G8w"/>
+                            <constraint firstItem="ue8-Yw-jCH" firstAttribute="top" secondItem="3sX-c9-5ah" secondAttribute="top" id="HaY-Fq-0PN"/>
+                            <constraint firstAttribute="trailing" secondItem="k81-eM-yLI" secondAttribute="trailing" id="Mdy-Gg-9x6"/>
+                            <constraint firstItem="3sX-c9-5ah" firstAttribute="top" secondItem="gAB-dP-Ik6" secondAttribute="top" constant="20" id="REg-jn-d3V"/>
+                            <constraint firstItem="k81-eM-yLI" firstAttribute="leading" secondItem="JYh-jo-iGc" secondAttribute="leading" id="Upb-yo-nRv"/>
+                            <constraint firstItem="3sX-c9-5ah" firstAttribute="top" secondItem="s2z-pn-jqI" secondAttribute="bottom" constant="20" id="fMr-7S-YgC"/>
+                            <constraint firstItem="3sX-c9-5ah" firstAttribute="leading" secondItem="gAB-dP-Ik6" secondAttribute="leading" constant="20" id="oFJ-kn-Egs"/>
+                            <constraint firstItem="k81-eM-yLI" firstAttribute="width" secondItem="k81-eM-yLI" secondAttribute="height" multiplier="16:9" id="r6e-Yj-eZa"/>
+                            <constraint firstItem="ue8-Yw-jCH" firstAttribute="leading" secondItem="3sX-c9-5ah" secondAttribute="trailing" constant="8" id="x0e-uF-r3k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gAB-dP-Ik6"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadGameButton" destination="ue8-Yw-jCH" id="kEi-CN-VOv"/>
+                        <outlet property="savesList" destination="3sX-c9-5ah" id="hhd-Yw-ePW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEM-Sy-kAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1205" y="2794"/>
+        </scene>
     </scenes>
     <resources>
         <image name="quake2background" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ogQ-yk-2f9"/>
+        <segue reference="vu2-zQ-5dr"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,7 +10,6 @@ import UIKit
 class SavedGameViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var loadingLabel: UILabel!
 
     @IBOutlet weak var savesList: UITableView!
     @IBOutlet weak var loadGameButton: UIButton!
@@ -31,14 +30,12 @@ class SavedGameViewController: UIViewController {
         #if XATRIX
         gameDir = "xatrix"
         backgroundImage.image = UIImage(named: "quake2mp1background")
-        loadingLabel.textColor = UIColor.white
         #endif
         
         // Mission Pack 2
         #if ROGUE
         gameDir = "rogue"
         backgroundImage.image = UIImage(named: "quake2mp2background")
-        loadingLabel.textColor = UIColor(rgba: "FDDE8C")
         #endif
 
         let savesPath =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path + "/\(gameDir)/save"

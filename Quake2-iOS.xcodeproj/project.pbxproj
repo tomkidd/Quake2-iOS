@@ -297,8 +297,8 @@
 		A1B80ADA21F96DAA00560711 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD77A0840E26BDB800F39101 /* AudioToolbox.framework */; };
 		A1B80ADB21F96DAA00560711 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB8BFC50E5A0F6A00980157 /* CoreGraphics.framework */; };
 		A1B80ADC21F96DAA00560711 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8B4B96196703B400F8EB7C /* CoreMotion.framework */; };
-		A1B80AF421F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */; };
-		A1B80B0521FA5BF200560711 /* Quake2-SDL-tvOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */; };
+		A1B80AF421F98E6500560711 /* Quake2-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-iOS.xcassets */; };
+		A1B80B0521FA5BF200560711 /* Quake2-tvOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80B0421FA5BF200560711 /* Quake2-tvOS.xcassets */; };
 		A1B80B0C21FA5C6300560711 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
 		A1B80B0D21FA5C6500560711 /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
 		A1B80B0E21FA5C9400560711 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A131F34E21D530B500B4BB5D /* libSDL2.a */; };
@@ -322,7 +322,7 @@
 		A1C1233E2203B37600EAD9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BF74A21FCF7E3005F4B74 /* Main.storyboard */; };
 		A1C123402203B37600EAD9CB /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
 		A1C123412203B37600EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
-		A1C123422203B37600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */; };
+		A1C123422203B37600EAD9CB /* Quake2-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-iOS.xcassets */; };
 		A1C123442203B37600EAD9CB /* qal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E921FCDD7A005F4B74 /* qal.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A1C123452203B37600EAD9CB /* cl_cin.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E621FCDD7A005F4B74 /* cl_cin.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A1C123462203B37600EAD9CB /* cl_view.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FA21FCDD7A005F4B74 /* cl_view.c */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -482,7 +482,7 @@
 		A1C1241E2203FE2600EAD9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BF74A21FCF7E3005F4B74 /* Main.storyboard */; };
 		A1C1241F2203FE2600EAD9CB /* music in Resources */ = {isa = PBXBuildFile; fileRef = A13B694F21D574A000AA2472 /* music */; };
 		A1C124202203FE2600EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
-		A1C124212203FE2600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */; };
+		A1C124212203FE2600EAD9CB /* Quake2-iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80AF121F98E6400560711 /* Quake2-iOS.xcassets */; };
 		A1C124252203FE2600EAD9CB /* qal.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E921FCDD7A005F4B74 /* qal.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A1C124262203FE2600EAD9CB /* cl_cin.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E621FCDD7A005F4B74 /* cl_cin.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A1C124272203FE2600EAD9CB /* cl_view.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5FA21FCDD7A005F4B74 /* cl_view.c */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -755,7 +755,7 @@
 		A1C1259C2204FA3300EAD9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C125042204F73000EAD9CB /* Main.storyboard */; };
 		A1C1259D2204FA3300EAD9CB /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
 		A1C1259E2204FA3300EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
-		A1C1259F2204FA3300EAD9CB /* Quake2-SDL-tvOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */; };
+		A1C1259F2204FA3300EAD9CB /* Quake2-tvOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80B0421FA5BF200560711 /* Quake2-tvOS.xcassets */; };
 		A1C125A52204FA5700EAD9CB /* xatrix in Resources */ = {isa = PBXBuildFile; fileRef = A1C123392203B34F00EAD9CB /* xatrix */; };
 		A1C125A62204FAB600EAD9CB /* g_ai.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C1224E2203B31D00EAD9CB /* g_ai.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A1C125A72204FAB600EAD9CB /* g_chase.c in Sources */ = {isa = PBXBuildFile; fileRef = A1C122462203B31D00EAD9CB /* g_chase.c */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -959,7 +959,7 @@
 		A1C126712204FE1400EAD9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C125042204F73000EAD9CB /* Main.storyboard */; };
 		A1C126722204FE1400EAD9CB /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
 		A1C126732204FE1400EAD9CB /* dpquake.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C1204E21FD178100EAD9CB /* dpquake.ttf */; };
-		A1C126752204FE1400EAD9CB /* Quake2-SDL-tvOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */; };
+		A1C126752204FE1400EAD9CB /* Quake2-tvOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B80B0421FA5BF200560711 /* Quake2-tvOS.xcassets */; };
 		A1C1267B2205031F00EAD9CB /* rogue in Resources */ = {isa = PBXBuildFile; fileRef = A1C1233A2203B34F00EAD9CB /* rogue */; };
 		A1C1267D220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
 		A1C1267E220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
@@ -1211,9 +1211,9 @@
 		A16571C4220CF1D100FE9FC9 /* Quake2mp2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quake2mp2-Info.plist"; sourceTree = "<group>"; };
 		A1B80A0221F438C200560711 /* Quake2LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quake2LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1B80AE021F96DAA00560711 /* Quake2-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Quake2-SDL-iOS.xcassets"; sourceTree = "<group>"; };
+		A1B80AF121F98E6400560711 /* Quake2-iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Quake2-iOS.xcassets"; sourceTree = "<group>"; };
 		A1B80AF921FA5BEE00560711 /* Quake2-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Quake2-SDL-tvOS.xcassets"; sourceTree = "<group>"; };
+		A1B80B0421FA5BF200560711 /* Quake2-tvOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Quake2-tvOS.xcassets"; sourceTree = "<group>"; };
 		A1B80B0621FA5BF200560711 /* Quake2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quake2-Info.plist"; sourceTree = "<group>"; };
 		A1B80B0F21FA5D0500560711 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
 		A1B80B1021FA5D0500560711 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -1564,27 +1564,13 @@
 				A1C123392203B34F00EAD9CB /* xatrix */,
 				A1C1233A2203B34F00EAD9CB /* rogue */,
 				A13B694F21D574A000AA2472 /* music */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
 				A15BF4D421FCDD7A005F4B74 /* Quake2 */,
 				A15BF74921FCF773005F4B74 /* Quake2-iOS */,
 				A1C125012204F5F900EAD9CB /* Quake2-tvOS */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = CustomTemplate;
-			sourceTree = "<group>";
-		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A1C1204E21FD178100EAD9CB /* dpquake.ttf */,
-				A1B80AF121F98E6400560711 /* Quake2-SDL-iOS.xcassets */,
-				A1B80B0421FA5BF200560711 /* Quake2-SDL-tvOS.xcassets */,
-				A1B80A0221F438C200560711 /* Quake2LaunchScreen.storyboard */,
-				A13234582209FFD000884138 /* Quake2mp1LaunchScreen.storyboard */,
-				A13234592209FFD000884138 /* Quake2mp2LaunchScreen.storyboard */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -2291,6 +2277,11 @@
 		A15BF74921FCF773005F4B74 /* Quake2-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A1C1204E21FD178100EAD9CB /* dpquake.ttf */,
+				A1B80AF121F98E6400560711 /* Quake2-iOS.xcassets */,
+				A1B80A0221F438C200560711 /* Quake2LaunchScreen.storyboard */,
+				A13234582209FFD000884138 /* Quake2mp1LaunchScreen.storyboard */,
+				A13234592209FFD000884138 /* Quake2mp2LaunchScreen.storyboard */,
 				A15BF75921FD02AD005F4B74 /* AppDelegate.h */,
 				A15BF75721FD02A0005F4B74 /* AppDelegate.m */,
 				A15BF75A21FD05C8005F4B74 /* bridging.h */,
@@ -2992,6 +2983,7 @@
 		A1C125012204F5F900EAD9CB /* Quake2-tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				A1B80B0421FA5BF200560711 /* Quake2-tvOS.xcassets */,
 				A1C125042204F73000EAD9CB /* Main.storyboard */,
 				A1B80B0621FA5BF200560711 /* Quake2-Info.plist */,
 				A16571C3220CF1D100FE9FC9 /* Quake2mp1-Info.plist */,
@@ -3197,7 +3189,7 @@
 				A1B80A4821F96DAA00560711 /* baseq2 in Resources */,
 				A1B80A4B21F96DAA00560711 /* music in Resources */,
 				A1C1205421FD178100EAD9CB /* dpquake.ttf in Resources */,
-				A1B80AF421F98E6500560711 /* Quake2-SDL-iOS.xcassets in Resources */,
+				A1B80AF421F98E6500560711 /* Quake2-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3209,7 +3201,7 @@
 				A1C125052204F73000EAD9CB /* Main.storyboard in Resources */,
 				A1B80B0C21FA5C6300560711 /* baseq2 in Resources */,
 				A1C1205521FD178100EAD9CB /* dpquake.ttf in Resources */,
-				A1B80B0521FA5BF200560711 /* Quake2-SDL-tvOS.xcassets in Resources */,
+				A1B80B0521FA5BF200560711 /* Quake2-tvOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3223,7 +3215,7 @@
 				A1C1233E2203B37600EAD9CB /* Main.storyboard in Resources */,
 				A1C123402203B37600EAD9CB /* music in Resources */,
 				A1C123412203B37600EAD9CB /* dpquake.ttf in Resources */,
-				A1C123422203B37600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */,
+				A1C123422203B37600EAD9CB /* Quake2-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3237,7 +3229,7 @@
 				A1C1241E2203FE2600EAD9CB /* Main.storyboard in Resources */,
 				A1C1241F2203FE2600EAD9CB /* music in Resources */,
 				A1C124202203FE2600EAD9CB /* dpquake.ttf in Resources */,
-				A1C124212203FE2600EAD9CB /* Quake2-SDL-iOS.xcassets in Resources */,
+				A1C124212203FE2600EAD9CB /* Quake2-iOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3250,7 +3242,7 @@
 				A1C1259D2204FA3300EAD9CB /* baseq2 in Resources */,
 				A1C1259E2204FA3300EAD9CB /* dpquake.ttf in Resources */,
 				A1C125A52204FA5700EAD9CB /* xatrix in Resources */,
-				A1C1259F2204FA3300EAD9CB /* Quake2-SDL-tvOS.xcassets in Resources */,
+				A1C1259F2204FA3300EAD9CB /* Quake2-tvOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3263,7 +3255,7 @@
 				A1C126712204FE1400EAD9CB /* Main.storyboard in Resources */,
 				A1C126722204FE1400EAD9CB /* baseq2 in Resources */,
 				A1C126732204FE1400EAD9CB /* dpquake.ttf in Resources */,
-				A1C126752204FE1400EAD9CB /* Quake2-SDL-tvOS.xcassets in Resources */,
+				A1C126752204FE1400EAD9CB /* Quake2-tvOS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

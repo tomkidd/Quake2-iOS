@@ -34,7 +34,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eor-e5-7M8">
-                                <rect key="frame" x="1370" y="60" width="440" height="378"/>
+                                <rect key="frame" x="1370" y="60" width="440" height="292"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q u a k e  ii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-G9-Y44">
                                         <rect key="frame" x="0.0" y="0.0" width="440" height="85"/>
@@ -42,20 +42,20 @@
                                         <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mission pack" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjq-zj-wsy">
-                                        <rect key="frame" x="0.0" y="85" width="440" height="43"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mission pack" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjq-zj-wsy">
+                                        <rect key="frame" x="0.0" y="85" width="440" height="0.0"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="36"/>
                                         <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q u a k e  ii" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0W-da-TTt">
-                                        <rect key="frame" x="0.0" y="128" width="440" height="43"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q u a k e  ii" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0W-da-TTt">
+                                        <rect key="frame" x="0.0" y="85" width="440" height="0.0"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="36"/>
                                         <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-Gj-xg9">
-                                        <rect key="frame" x="0.0" y="171" width="440" height="69"/>
+                                        <rect key="frame" x="0.0" y="85" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
                                         <state key="normal" title="new game">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +65,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSs-6i-98s">
-                                        <rect key="frame" x="0.0" y="240" width="440" height="69"/>
+                                        <rect key="frame" x="0.0" y="154" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
                                         <state key="normal" title="load game">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,7 +75,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcJ-eO-fk8">
-                                        <rect key="frame" x="0.0" y="309" width="440" height="69"/>
+                                        <rect key="frame" x="0.0" y="223" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
                                         <state key="normal" title="demo">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -322,6 +322,6 @@
         <image name="quake2background" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vu2-zQ-5dr"/>
+        <segue reference="ogQ-yk-2f9"/>
     </inferredMetricsTieBreakers>
 </document>

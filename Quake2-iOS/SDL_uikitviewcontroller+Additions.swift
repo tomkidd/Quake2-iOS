@@ -256,7 +256,6 @@ extension SDL_uikitviewcontroller {
         prevWeaponButton = UIButton(frame: CGRect(x: (rect.width / 3), y: rect.height/2, width: (rect.width / 3), height: rect.height/2))
         prevWeaponButton.addTarget(self, action: #selector(self.prevWeaponPressed), for: .touchDown)
         prevWeaponButton.addTarget(self, action: #selector(self.prevWeaponReleased), for: .touchUpInside)
-        prevWeaponButton.alpha = 0
         return prevWeaponButton
     }
     
@@ -264,7 +263,6 @@ extension SDL_uikitviewcontroller {
         nextWeaponButton = UIButton(frame: CGRect(x: (rect.width / 3), y: 0, width: (rect.width / 3), height: rect.height/2))
         nextWeaponButton.addTarget(self, action: #selector(self.nextWeaponPressed), for: .touchDown)
         nextWeaponButton.addTarget(self, action: #selector(self.nextWeaponReleased), for: .touchUpInside)
-        nextWeaponButton.alpha = 0
         return nextWeaponButton
     }
 

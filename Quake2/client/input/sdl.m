@@ -456,8 +456,6 @@ IN_Update(void)
                             Cbuf_AddText(va("bind JOY3 \"cmd help\"\n"));
                             Cbuf_AddText(va("bind JOY5 \"weapnext\"\n"));
                             Cbuf_AddText(va("bind JOY6 \"weapprev\"\n"));
-                            Cbuf_AddText(va("bind MWHEELDOWN \"weapprev\"\n"));
-                            Cbuf_AddText(va("bind MWHEELUP \"weapnext\"\n"));
 
                             break;
                         }
@@ -1350,6 +1348,9 @@ IN_Init(void)
     [motionManager startDeviceMotionUpdates];
 #endif
 #endif
+    
+    Cbuf_AddText(va("bind MWHEELDOWN \"weapprev\"\n"));
+    Cbuf_AddText(va("bind MWHEELUP \"weapnext\"\n"));
 
 	/* Joystick init */
 	if (!SDL_WasInit(SDL_INIT_GAMECONTROLLER | SDL_INIT_HAPTIC))

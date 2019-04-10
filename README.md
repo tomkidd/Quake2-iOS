@@ -1,6 +1,12 @@
+<img align="left" width="100" height="100" src="https://raw.githubusercontent.com/tomkidd/Quake2-iOS/master/icon_quake2.png">  
+
 #  Quake II for iOS and tvOS for Apple TV
 
+&nbsp;
+
 This is my port of Quake II for iOS, running in modern resolutions including the full width of the iPhone X. I have also made a target and version for tvOS to run on Apple TV.
+
+![screenshot](https://raw.githubusercontent.com/tomkidd/Quake2-iOS/master/ss_quake2.png)
 
 Features
 
@@ -26,5 +32,7 @@ This port was based on [Yamagi Quake II](https://www.yamagi.org/quake2/) and use
 [Video of Quake II running on an iPhone X](https://www.youtube.com/watch?v=vS9WZ_yHy_8)
 
 [Video of Quake II running on an Apple TV](https://www.youtube.com/watch?v=jjO2pAVgb84)
+
+I have also made apps for [*Wolfenstein 3-D*](https://github.com/tomkidd/Wolf3D-iOS), [*DOOM*, *DOOM II* and *Final DOOM*](https://github.com/tomkidd/DOOM-iOS), [*Quake*](https://github.com/tomkidd/Quake-iOS), [*Quake III: Arena*](https://github.com/tomkidd/Quake3-iOS), [*Return to Castle Wolfenstein*](https://github.com/tomkidd/RTCW-iOS) and [*DOOM 3*](https://github.com/tomkidd/DOOM3-iOS).
 
 Have fun. For any questions I can be reached at tomkidd@gmail.com

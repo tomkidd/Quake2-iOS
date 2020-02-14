@@ -25,8 +25,8 @@ extension SDL_uikitviewcontroller {
         static var _f1Button = UIButton()
         static var _prevWeaponButton = UIButton()
         static var _nextWeaponButton = UIButton()
- }
-    
+     }
+
     var fireButton:UIButton {
         get {
             return Holder._fireButton

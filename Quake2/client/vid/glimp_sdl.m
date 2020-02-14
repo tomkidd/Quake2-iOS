@@ -31,11 +31,11 @@
 #include "../../common/header/common.h"
 #include "header/ref.h"
 
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_video.h>
+#include <SDL.h>
+#include <SDL_video.h>
 
 #include <UIKit/UIKit.h>
-#include <SDL2/SDL_syswm.h>
+#include <SDL_syswm.h>
 
 #if TARGET_OS_TV
 #if BASEQ2

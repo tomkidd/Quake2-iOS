@@ -29,7 +29,7 @@
 
 #include "header/local.h"
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 static SDL_Window* window = NULL;
 static SDL_GLContext context = NULL;

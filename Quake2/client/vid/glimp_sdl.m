@@ -40,6 +40,8 @@
 #if TARGET_OS_TV
 #if BASEQ2
 #import "Quake2_tvOS-Swift.h"
+#elif BASEQ2SW
+#import "Quake2_SW_tvOS-Swift.h"
 #elif XATRIX
 #import "Quake2mp1_tvOS-Swift.h"
 #elif ROGUE
@@ -48,6 +50,8 @@
 #else
 #if BASEQ2
 #import "Quake2_iOS-Swift.h"
+#elif BASEQ2SW
+#import "Quake2_SW_iOS-Swift.h"
 #elif XATRIX
 #import "Quake2mp1_iOS-Swift.h"
 #elif ROGUE

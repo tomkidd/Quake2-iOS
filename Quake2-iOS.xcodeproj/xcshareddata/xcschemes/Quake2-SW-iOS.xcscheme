@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1F1109B23F740B00030D586"
-               BuildableName = "Quake2-SW-iOS.app"
+               BuildableName = "Quake II (SW).app"
                BlueprintName = "Quake2-SW-iOS"
                ReferencedContainer = "container:Quake2-iOS.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1F1109B23F740B00030D586"
-            BuildableName = "Quake2-SW-iOS.app"
+            BuildableName = "Quake II (SW).app"
             BlueprintName = "Quake2-SW-iOS"
             ReferencedContainer = "container:Quake2-iOS.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1F1109B23F740B00030D586"
-            BuildableName = "Quake2-SW-iOS.app"
+            BuildableName = "Quake II (SW).app"
             BlueprintName = "Quake2-SW-iOS"
             ReferencedContainer = "container:Quake2-iOS.xcodeproj">
          </BuildableReference>

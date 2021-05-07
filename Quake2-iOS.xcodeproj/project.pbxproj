@@ -934,6 +934,9 @@
 		A1ED7A4A2644E7130039EB2E /* libSDL2_0_14_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */; };
 		A1ED7A4B2644E7140039EB2E /* libSDL2_0_14_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */; };
 		A1ED7A4C2644E7150039EB2E /* libSDL2_0_14_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */; };
+		A1ED7A502644E84C0039EB2E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A4F2644E8470039EB2E /* CoreHaptics.framework */; };
+		A1ED7A512644E84D0039EB2E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A4F2644E8470039EB2E /* CoreHaptics.framework */; };
+		A1ED7A522644E84E0039EB2E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A4F2644E8470039EB2E /* CoreHaptics.framework */; };
 		A1F1109D23F740B00030D586 /* Quake2LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B80A0221F438C200560711 /* Quake2LaunchScreen.storyboard */; };
 		A1F1109E23F740B00030D586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BF74A21FCF7E3005F4B74 /* Main.storyboard */; };
 		A1F1109F23F740B00030D586 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
@@ -1513,6 +1516,7 @@
 		A1ED7A3C2644E6C10039EB2E /* libsdl2_0_14_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_0_14_ios.a; path = Quake2/libs/ios/libsdl2_0_14_ios.a; sourceTree = "<group>"; };
 		A1ED7A442644E6E60039EB2E /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_0_14_tvos.a; path = Quake2/libs/tvos/libSDL2_0_14_tvos.a; sourceTree = "<group>"; };
+		A1ED7A4F2644E8470039EB2E /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.5.sdk/System/Library/Frameworks/CoreHaptics.framework; sourceTree = DEVELOPER_DIR; };
 		A1F1114023F740B00030D586 /* Quake II (SW).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake II (SW).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F1114A23F740B10030D586 /* Quake2-SW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quake2-SW-Info.plist"; sourceTree = "<group>"; };
 		A1F1114C23F740E10030D586 /* sw_part.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sw_part.c; sourceTree = "<group>"; };
@@ -1556,6 +1560,7 @@
 			files = (
 				A1ED7A4A2644E7130039EB2E /* libSDL2_0_14_tvos.a in Frameworks */,
 				A16B76BE24ACE19000D96F09 /* AVFoundation.framework in Frameworks */,
+				A1ED7A502644E84C0039EB2E /* CoreHaptics.framework in Frameworks */,
 				A16B76BF24ACE19100D96F09 /* AudioToolbox.framework in Frameworks */,
 				A16B76BA24ACE19000D96F09 /* GameController.framework in Frameworks */,
 			);
@@ -1593,6 +1598,7 @@
 			files = (
 				A1ED7A4B2644E7140039EB2E /* libSDL2_0_14_tvos.a in Frameworks */,
 				A16B76C824ACE19200D96F09 /* AVFoundation.framework in Frameworks */,
+				A1ED7A512644E84D0039EB2E /* CoreHaptics.framework in Frameworks */,
 				A16B76C924ACE19200D96F09 /* AudioToolbox.framework in Frameworks */,
 				A16B76C424ACE19200D96F09 /* GameController.framework in Frameworks */,
 			);
@@ -1604,6 +1610,7 @@
 			files = (
 				A1ED7A4C2644E7150039EB2E /* libSDL2_0_14_tvos.a in Frameworks */,
 				A16B76D224ACE19300D96F09 /* AVFoundation.framework in Frameworks */,
+				A1ED7A522644E84E0039EB2E /* CoreHaptics.framework in Frameworks */,
 				A16B76D324ACE19300D96F09 /* AudioToolbox.framework in Frameworks */,
 				A16B76CE24ACE19300D96F09 /* GameController.framework in Frameworks */,
 			);
@@ -2373,6 +2380,7 @@
 		A16B76AB24ACE17300D96F09 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				A1ED7A4F2644E8470039EB2E /* CoreHaptics.framework */,
 				A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */,
 				A16B76B224ACE17B00D96F09 /* AudioToolbox.framework */,
 				A16B76AF24ACE17B00D96F09 /* AVFoundation.framework */,

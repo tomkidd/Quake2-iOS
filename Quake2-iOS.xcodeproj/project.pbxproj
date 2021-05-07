@@ -923,12 +923,17 @@
 		A1C12680220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
 		A1C12681220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
 		A1C12682220908DF00EAD9CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1267C220908DF00EAD9CB /* Extensions.swift */; };
-		A1F1109323F73E740030D586 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F1108823F73E420030D586 /* libSDL2.a */; };
-		A1F1109523F73F450030D586 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F1108C23F73E420030D586 /* libSDL2.a */; };
-		A1F1109623F73F4C0030D586 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F1108823F73E420030D586 /* libSDL2.a */; };
-		A1F1109723F73F510030D586 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F1108C23F73E420030D586 /* libSDL2.a */; };
-		A1F1109823F73F5B0030D586 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F1108823F73E420030D586 /* libSDL2.a */; };
-		A1F1109923F73F610030D586 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F1108C23F73E420030D586 /* libSDL2.a */; };
+		A1ED7A3D2644E6C80039EB2E /* libsdl2_0_14_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A3C2644E6C10039EB2E /* libsdl2_0_14_ios.a */; };
+		A1ED7A3E2644E6C80039EB2E /* libsdl2_0_14_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A3C2644E6C10039EB2E /* libsdl2_0_14_ios.a */; };
+		A1ED7A3F2644E6C90039EB2E /* libsdl2_0_14_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A3C2644E6C10039EB2E /* libsdl2_0_14_ios.a */; };
+		A1ED7A412644E6CB0039EB2E /* libsdl2_0_14_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A3C2644E6C10039EB2E /* libsdl2_0_14_ios.a */; };
+		A1ED7A452644E6EC0039EB2E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A442644E6E60039EB2E /* CoreHaptics.framework */; };
+		A1ED7A462644E6EC0039EB2E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A442644E6E60039EB2E /* CoreHaptics.framework */; };
+		A1ED7A472644E6EE0039EB2E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A442644E6E60039EB2E /* CoreHaptics.framework */; };
+		A1ED7A482644E6EF0039EB2E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A442644E6E60039EB2E /* CoreHaptics.framework */; };
+		A1ED7A4A2644E7130039EB2E /* libSDL2_0_14_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */; };
+		A1ED7A4B2644E7140039EB2E /* libSDL2_0_14_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */; };
+		A1ED7A4C2644E7150039EB2E /* libSDL2_0_14_tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */; };
 		A1F1109D23F740B00030D586 /* Quake2LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B80A0221F438C200560711 /* Quake2LaunchScreen.storyboard */; };
 		A1F1109E23F740B00030D586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BF74A21FCF7E3005F4B74 /* Main.storyboard */; };
 		A1F1109F23F740B00030D586 /* baseq2 in Resources */ = {isa = PBXBuildFile; fileRef = A13B695021D574A000AA2472 /* baseq2 */; };
@@ -1060,7 +1065,6 @@
 		A1F1112D23F740B00030D586 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55F21FCDD7A005F4B74 /* rand.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A1F1112E23F740B00030D586 /* cl_inventory.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF5E721FCDD7A005F4B74 /* cl_inventory.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		A1F1112F23F740B00030D586 /* pmove.c in Sources */ = {isa = PBXBuildFile; fileRef = A15BF55421FCDD7A005F4B74 /* pmove.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		A1F1113923F740B00030D586 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F1108823F73E420030D586 /* libSDL2.a */; };
 		A1F1116023F740E10030D586 /* sw_part.c in Sources */ = {isa = PBXBuildFile; fileRef = A1F1114C23F740E10030D586 /* sw_part.c */; };
 		A1F1116123F740E10030D586 /* sw_scan.c in Sources */ = {isa = PBXBuildFile; fileRef = A1F1114D23F740E10030D586 /* sw_scan.c */; };
 		A1F1116223F740E10030D586 /* sw_alias.c in Sources */ = {isa = PBXBuildFile; fileRef = A1F1114E23F740E10030D586 /* sw_alias.c */; };
@@ -1079,51 +1083,6 @@
 		A1F1116F23F740E10030D586 /* sw_sprite.c in Sources */ = {isa = PBXBuildFile; fileRef = A1F1115B23F740E10030D586 /* sw_sprite.c */; };
 		A1F1117023F740E10030D586 /* sw_edge.c in Sources */ = {isa = PBXBuildFile; fileRef = A1F1115F23F740E10030D586 /* sw_edge.c */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A1F1108723F73E420030D586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F1107B23F73E420030D586 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FD6526630DE8FCCB002AD96B;
-			remoteInfo = "libSDL-iOS";
-		};
-		A1F1108923F73E420030D586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F1107B23F73E420030D586 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 52ED1E5C222889500061FCE0;
-			remoteInfo = "libSDL-iOS-dylib";
-		};
-		A1F1108B23F73E420030D586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F1107B23F73E420030D586 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FAB598141BB5C1B100BE72C5;
-			remoteInfo = "libSDL-tvOS";
-		};
-		A1F1108D23F73E420030D586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F1107B23F73E420030D586 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F3E3C7572241389A007D243C;
-			remoteInfo = "libSDL-tvOS-dylib";
-		};
-		A1F1108F23F73E420030D586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F1107B23F73E420030D586 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F3E3C65222406928007D243C;
-			remoteInfo = "libSDLmain-iOS";
-		};
-		A1F1109123F73E420030D586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F1107B23F73E420030D586 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F3E3C75F224138AE007D243C;
-			remoteInfo = "libSDLmain-tvOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8D1107310486CEB800E47090 /* Quake2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quake2-Info.plist"; sourceTree = "<group>"; };
@@ -1551,7 +1510,9 @@
 		A1C125A32204FA3300EAD9CB /* Quake2mp1-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp1-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C126792204FE1400EAD9CB /* Quake2mp2-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp2-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C1267C220908DF00EAD9CB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		A1F1107B23F73E420030D586 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "SDL/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
+		A1ED7A3C2644E6C10039EB2E /* libsdl2_0_14_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_0_14_ios.a; path = Quake2/libs/ios/libsdl2_0_14_ios.a; sourceTree = "<group>"; };
+		A1ED7A442644E6E60039EB2E /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_0_14_tvos.a; path = Quake2/libs/tvos/libSDL2_0_14_tvos.a; sourceTree = "<group>"; };
 		A1F1114023F740B00030D586 /* Quake II (SW).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake II (SW).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F1114A23F740B10030D586 /* Quake2-SW-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quake2-SW-Info.plist"; sourceTree = "<group>"; };
 		A1F1114C23F740E10030D586 /* sw_part.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sw_part.c; sourceTree = "<group>"; };
@@ -1581,10 +1542,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16B76D524ACE1A500D96F09 /* AVFoundation.framework in Frameworks */,
-				A1F1109323F73E740030D586 /* libSDL2.a in Frameworks */,
 				A16B770824ACE9AB00D96F09 /* GameController.framework in Frameworks */,
 				A16B76D724ACE1A500D96F09 /* CoreBluetooth.framework in Frameworks */,
 				A16B76D424ACE1A500D96F09 /* AudioToolbox.framework in Frameworks */,
+				A1ED7A452644E6EC0039EB2E /* CoreHaptics.framework in Frameworks */,
+				A1ED7A3D2644E6C80039EB2E /* libsdl2_0_14_ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1592,7 +1554,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F1109523F73F450030D586 /* libSDL2.a in Frameworks */,
+				A1ED7A4A2644E7130039EB2E /* libSDL2_0_14_tvos.a in Frameworks */,
 				A16B76BE24ACE19000D96F09 /* AVFoundation.framework in Frameworks */,
 				A16B76BF24ACE19100D96F09 /* AudioToolbox.framework in Frameworks */,
 				A16B76BA24ACE19000D96F09 /* GameController.framework in Frameworks */,
@@ -1605,9 +1567,10 @@
 			files = (
 				A16B76EB24ACE1AD00D96F09 /* AVFoundation.framework in Frameworks */,
 				A16B76F124ACE1AD00D96F09 /* GameController.framework in Frameworks */,
-				A1F1109623F73F4C0030D586 /* libSDL2.a in Frameworks */,
 				A16B76ED24ACE1AD00D96F09 /* CoreBluetooth.framework in Frameworks */,
 				A16B76EA24ACE1AD00D96F09 /* AudioToolbox.framework in Frameworks */,
+				A1ED7A472644E6EE0039EB2E /* CoreHaptics.framework in Frameworks */,
+				A1ED7A3F2644E6C90039EB2E /* libsdl2_0_14_ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1617,9 +1580,10 @@
 			files = (
 				A16B76F624ACE1AF00D96F09 /* AVFoundation.framework in Frameworks */,
 				A16B76FC24ACE1AF00D96F09 /* GameController.framework in Frameworks */,
-				A1F1109823F73F5B0030D586 /* libSDL2.a in Frameworks */,
 				A16B76F824ACE1AF00D96F09 /* CoreBluetooth.framework in Frameworks */,
 				A16B76F524ACE1AF00D96F09 /* AudioToolbox.framework in Frameworks */,
+				A1ED7A482644E6EF0039EB2E /* CoreHaptics.framework in Frameworks */,
+				A1ED7A412644E6CB0039EB2E /* libsdl2_0_14_ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1627,7 +1591,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F1109723F73F510030D586 /* libSDL2.a in Frameworks */,
+				A1ED7A4B2644E7140039EB2E /* libSDL2_0_14_tvos.a in Frameworks */,
 				A16B76C824ACE19200D96F09 /* AVFoundation.framework in Frameworks */,
 				A16B76C924ACE19200D96F09 /* AudioToolbox.framework in Frameworks */,
 				A16B76C424ACE19200D96F09 /* GameController.framework in Frameworks */,
@@ -1638,7 +1602,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F1109923F73F610030D586 /* libSDL2.a in Frameworks */,
+				A1ED7A4C2644E7150039EB2E /* libSDL2_0_14_tvos.a in Frameworks */,
 				A16B76D224ACE19300D96F09 /* AVFoundation.framework in Frameworks */,
 				A16B76D324ACE19300D96F09 /* AudioToolbox.framework in Frameworks */,
 				A16B76CE24ACE19300D96F09 /* GameController.framework in Frameworks */,
@@ -1651,9 +1615,10 @@
 			files = (
 				A16B76E024ACE1A600D96F09 /* AVFoundation.framework in Frameworks */,
 				A16B76E624ACE1A600D96F09 /* GameController.framework in Frameworks */,
-				A1F1113923F740B00030D586 /* libSDL2.a in Frameworks */,
 				A16B76E224ACE1A600D96F09 /* CoreBluetooth.framework in Frameworks */,
 				A16B76DF24ACE1A600D96F09 /* AudioToolbox.framework in Frameworks */,
+				A1ED7A462644E6EC0039EB2E /* CoreHaptics.framework in Frameworks */,
+				A1ED7A3E2644E6C80039EB2E /* libsdl2_0_14_ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1693,9 +1658,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A16B76AB24ACE17300D96F09 /* tvOS */,
 				A16B768A24ACE0E300D96F09 /* iOS */,
-				A1F1107B23F73E420030D586 /* SDL.xcodeproj */,
+				A16B76AB24ACE17300D96F09 /* tvOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2396,6 +2360,8 @@
 		A16B768A24ACE0E300D96F09 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A1ED7A442644E6E60039EB2E /* CoreHaptics.framework */,
+				A1ED7A3C2644E6C10039EB2E /* libsdl2_0_14_ios.a */,
 				A16B769124ACE0F200D96F09 /* AudioToolbox.framework */,
 				A16B768C24ACE0F200D96F09 /* AVFoundation.framework */,
 				A16B769524ACE0F300D96F09 /* CoreBluetooth.framework */,
@@ -2407,6 +2373,7 @@
 		A16B76AB24ACE17300D96F09 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				A1ED7A492644E70A0039EB2E /* libSDL2_0_14_tvos.a */,
 				A16B76B224ACE17B00D96F09 /* AudioToolbox.framework */,
 				A16B76AF24ACE17B00D96F09 /* AVFoundation.framework */,
 				A16B76AC24ACE17B00D96F09 /* GameController.framework */,
@@ -3104,19 +3071,6 @@
 			path = "Quake2-tvOS";
 			sourceTree = "<group>";
 		};
-		A1F1107C23F73E420030D586 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A1F1108823F73E420030D586 /* libSDL2.a */,
-				A1F1108A23F73E420030D586 /* libSDL2.dylib */,
-				A1F1108C23F73E420030D586 /* libSDL2.a */,
-				A1F1108E23F73E420030D586 /* libSDL2.dylib */,
-				A1F1109023F73E420030D586 /* libSDLmain.a */,
-				A1F1109223F73E420030D586 /* libSDLmain.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A1F1114B23F740E10030D586 /* soft */ = {
 			isa = PBXGroup;
 			children = (
@@ -3327,12 +3281,6 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A1F1107C23F73E420030D586 /* Products */;
-					ProjectRef = A1F1107B23F73E420030D586 /* SDL.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A1B80A4521F96DAA00560711 /* Quake2-iOS */,
@@ -3345,51 +3293,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A1F1108823F73E420030D586 /* libSDL2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2.a;
-			remoteRef = A1F1108723F73E420030D586 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1F1108A23F73E420030D586 /* libSDL2.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2.dylib;
-			remoteRef = A1F1108923F73E420030D586 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1F1108C23F73E420030D586 /* libSDL2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2.a;
-			remoteRef = A1F1108B23F73E420030D586 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1F1108E23F73E420030D586 /* libSDL2.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2.dylib;
-			remoteRef = A1F1108D23F73E420030D586 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1F1109023F73E420030D586 /* libSDLmain.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDLmain.a;
-			remoteRef = A1F1108F23F73E420030D586 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1F1109223F73E420030D586 /* libSDLmain.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDLmain.a;
-			remoteRef = A1F1109123F73E420030D586 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A1B80A4621F96DAA00560711 /* Resources */ = {
@@ -4568,7 +4471,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-iOS/Quake2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
@@ -4611,7 +4517,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-iOS/Quake2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
@@ -4654,6 +4563,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-tvOS/Quake2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/tvos",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2;
@@ -4699,6 +4612,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-tvOS/Quake2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/tvos",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2;
@@ -4745,7 +4662,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-iOS/Quake2mp1-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+				);
 				OTHER_SWIFT_FLAGS = "-D XATRIX";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4789,7 +4709,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-iOS/Quake2mp1-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+				);
 				OTHER_SWIFT_FLAGS = "-D XATRIX";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4833,7 +4756,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-iOS/Quake2mp2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+				);
 				OTHER_SWIFT_FLAGS = "-D ROGUE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4877,7 +4803,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-iOS/Quake2mp2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+				);
 				OTHER_SWIFT_FLAGS = "-D ROGUE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2mp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4921,6 +4850,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-tvOS/Quake2mp1-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+					"$(PROJECT_DIR)/Quake2/libs/tvos",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "-D XATRIX";
@@ -4967,6 +4901,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-tvOS/Quake2mp1-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+					"$(PROJECT_DIR)/Quake2/libs/tvos",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "-D XATRIX";
@@ -5014,6 +4953,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-tvOS/Quake2mp2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/tvos",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "-D ROGUE";
@@ -5060,6 +5003,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-tvOS/Quake2mp2-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/tvos",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "-D ROGUE";
@@ -5107,7 +5054,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-iOS/Quake2-SW-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2sw;
 				PRODUCT_NAME = "Quake II (SW)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";
@@ -5151,7 +5101,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "Quake2-iOS/Quake2-SW-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quake2/libs/ios",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.quake2sw;
 				PRODUCT_NAME = "Quake II (SW)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quake2-iOS/bridging.h";

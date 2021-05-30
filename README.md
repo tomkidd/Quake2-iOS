@@ -1,3 +1,7 @@
+<hr>
+<img align="left" width="50" height="50" src="https://schnapple.com/wp-content/uploads/2021/05/m1_small.jpg">
+I'm trying to fund an M1 Mac to keep old games running on new Macs. If you'd like to help you can contribute here: https://ko-fi.com/schnapple
+<hr>
 <img align="left" width="100" height="100" src="https://raw.githubusercontent.com/tomkidd/Quake2-iOS/master/icon_quake2.png">  
 
 #  Quake II for iOS and tvOS for Apple TV
@@ -23,7 +27,7 @@ You will need to provide your own copies of the `baseq2`, `xatrix` and `rogue` d
 
 You will need to drag your directories into the project and select "Create Folder References". The `baseq2` folder needs to be added to all targets, the `xatrix` folder only needs to be added to the "mp1" targets, and the `rogue` folder only needs to be added to the "mp2" targets. The folders will be blue if you've done it right:
 
-![folders](https://github.com/tomkidd/Quake2-iOS/raw/master/folders.png)
+![folders](https://raw.githubusercontent.com/tomkidd/Quake2-iOS/master/folders.png)
 
 You can read a lengthy blog article on how I did all this [here](http://schnapple.com/quake-2-for-ios-and-tvos-for-apple-tv/).
 

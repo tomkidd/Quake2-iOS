@@ -472,18 +472,19 @@ CL_BaseMove(usercmd_t *cmd)
         cmd->sidemove -= cl_sidespeed->value * CL_KeyState(&in_left);
     }
     
-    cmd->sidemove += cl_joyscale_x[0] * 2.0f * CL_KeyState(&in_moveright);
-    cmd->sidemove -= cl_joyscale_x[1] * 2.0f * CL_KeyState(&in_moveleft);
+    cmd->sidemove += cl_joyscale.strafe * 2.0f * CL_KeyState(&in_moveright);
+    cmd->sidemove -= cl_joyscale.strafe * 2.0f * CL_KeyState(&in_moveleft);
     
-    cl.viewangles[YAW] -= cl_joyscale_x[0];
+    cl.viewangles[YAW] -= cl_joyscale.yaw;
+    cl.viewangles[PITCH] -= cl_joyscale.pitch;
     
     cmd->upmove = cl_upspeed->value * CL_KeyState(&in_up);
     cmd->upmove -= cl_upspeed->value * CL_KeyState(&in_down);
     
     if (!(in_klook.state & 1))
     {
-        cmd->forwardmove += cl_joyscale_y[0] * 4.0f * CL_KeyState(&in_forward);
-        cmd->forwardmove -= cl_joyscale_y[1] * 4.0f * CL_KeyState(&in_back);
+        cmd->forwardmove += cl_joyscale.walk * 4.0f * CL_KeyState(&in_forward);
+        cmd->forwardmove -= cl_joyscale.walk * 4.0f * CL_KeyState(&in_back);
     }
 #else
 	if (in_strafe.state & 1)

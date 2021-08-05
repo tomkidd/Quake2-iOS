@@ -7,6 +7,10 @@
 
 import UIKit
 
+func applyJoystickCurve(position: CGFloat, range: CGFloat) -> Float {
+    return Float(pow(position / range, 2) * range * (position < 0 ? -1 : 1))
+}
+
 extension SDL_uikitviewcontroller {
     
     // A method of getting around the fact that Swift extensions cannot have stored properties
@@ -14,7 +18,8 @@ extension SDL_uikitviewcontroller {
     struct Holder {
         static var _fireButton = UIButton()
         static var _jumpButton = UIButton()
-        static var _joystickView = JoyStickView(frame: .zero)
+        static var _leftJoystickView = JoyStickView(frame: .zero)
+        static var _rightJoystickView = JoyStickView(frame: .zero)
         static var _tildeButton = UIButton()
         static var _expandButton = UIButton()
         static var _escapeButton = UIButton()
@@ -45,12 +50,21 @@ extension SDL_uikitviewcontroller {
         }
     }
     
-    var joystickView:JoyStickView {
+    var leftJoystickView:JoyStickView {
         get {
-            return Holder._joystickView
+            return Holder._leftJoystickView
         }
         set(newValue) {
-            Holder._joystickView = newValue
+            Holder._leftJoystickView = newValue
+        }
+    }
+    
+    var rightJoystickView:JoyStickView {
+        get {
+            return Holder._rightJoystickView
+        }
+        set(newValue) {
+            Holder._rightJoystickView = newValue
         }
     }
 
@@ -145,8 +159,9 @@ extension SDL_uikitviewcontroller {
     }
 
     @objc func fireButton(rect: CGRect) -> UIButton {
-        fireButton = UIButton(frame: CGRect(x: rect.width - 155, y: rect.height - 90, width: 75, height: 75))
+        fireButton = UIButton(frame: CGRect(x: rect.width - 205, y: rect.height - 150, width: 50, height: 50))
         fireButton.setTitle("FIRE", for: .normal)
+        fireButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         fireButton.setBackgroundImage(UIImage(named: "JoyStickBase")!, for: .normal)
         fireButton.addTarget(self, action: #selector(self.firePressed), for: .touchDown)
         fireButton.addTarget(self, action: #selector(self.fireReleased), for: .touchUpInside)
@@ -155,8 +170,9 @@ extension SDL_uikitviewcontroller {
     }
     
     @objc func jumpButton(rect: CGRect) -> UIButton {
-        jumpButton = UIButton(frame: CGRect(x: rect.width - 90, y: rect.height - 135, width: 75, height: 75))
+        jumpButton = UIButton(frame: CGRect(x: rect.width - 150, y: rect.height - 205, width: 50, height: 50))
         jumpButton.setTitle("JUMP", for: .normal)
+        jumpButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         jumpButton.setBackgroundImage(UIImage(named: "JoyStickBase")!, for: .normal)
         jumpButton.addTarget(self, action: #selector(self.jumpPressed), for: .touchDown)
         jumpButton.addTarget(self, action: #selector(self.jumpReleased), for: .touchUpInside)
@@ -164,19 +180,66 @@ extension SDL_uikitviewcontroller {
         return jumpButton
     }
     
-    @objc func joyStick(rect: CGRect) -> JoyStickView {
+    @objc func leftJoyStick(rect: CGRect) -> JoyStickView {
         let size = CGSize(width: 100.0, height: 100.0)
-        let joystick1Frame = CGRect(origin: CGPoint(x: 50.0,
-                                                    y: (rect.height - size.height - 50.0)),
+        let frame = CGRect(origin: CGPoint(x: 50.0,
+                                           y: (rect.height - size.height - 50.0)),
                                     size: size)
-        joystickView = JoyStickView(frame: joystick1Frame)
-        joystickView.delegate = self
+        leftJoystickView = JoyStickView(frame: frame)
+        leftJoystickView.monitor = .xy(monitor: { report in
+            
+            cl_joyscale.strafe = applyJoystickCurve(position: abs(report.x), range: size.width/2) * 5
+            if report.x > 0 {
+                Key_Event(Int32(Character("d").asciiValue!), qboolean(1), qboolean(1))
+                Key_Event(Int32(Character("a").asciiValue!), qboolean(0), qboolean(1))
+            } else if report.x < 0 {
+                Key_Event(Int32(Character("d").asciiValue!), qboolean(0), qboolean(1))
+                Key_Event(Int32(Character("a").asciiValue!), qboolean(1), qboolean(1))
+            } else {
+                cl_joyscale.strafe = 0
+                Key_Event(Int32(Character("d").asciiValue!), qboolean(0), qboolean(1))
+                Key_Event(Int32(Character("a").asciiValue!), qboolean(0), qboolean(1))
+            }
+            
+            cl_joyscale.walk = applyJoystickCurve(position: abs(report.y), range: size.width/2) * 2
+            if report.y > 0 {
+                Key_Event(Int32(K_UPARROW.rawValue), qboolean(1), qboolean(1))
+                Key_Event(Int32(K_DOWNARROW.rawValue), qboolean(0), qboolean(1))
+            } else if report.y < 0 {
+                Key_Event(Int32(K_UPARROW.rawValue), qboolean(0), qboolean(1))
+                Key_Event(Int32(K_DOWNARROW.rawValue), qboolean(1), qboolean(1))
+            } else {
+                cl_joyscale.walk = 0
+                Key_Event(Int32(K_UPARROW.rawValue), qboolean(0), qboolean(1))
+                Key_Event(Int32(K_DOWNARROW.rawValue), qboolean(0), qboolean(1))
+            }
+        })
         
-        joystickView.movable = false
-        joystickView.alpha = 0.5
-        joystickView.baseAlpha = 0.5 // let the background bleed thru the base
-        joystickView.handleTintColor = UIColor.darkGray // Colorize the handle
-        return joystickView
+        leftJoystickView.movable = false
+        leftJoystickView.alpha = 0.75
+        leftJoystickView.baseAlpha = 0.25 // let the background bleed thru the base
+        leftJoystickView.baseImage = UIImage(named: "JoyStickBase")
+        leftJoystickView.handleImage = UIImage(named: "JoyStickHandle")
+        return leftJoystickView
+    }
+    
+    @objc func rightJoyStick(rect: CGRect) -> JoyStickView {
+        let size = CGSize(width: 100.0, height: 100.0)
+        let frame = CGRect(origin: CGPoint(x: (rect.width - size.width - 50.0),
+                                           y: (rect.height - size.height - 50.0)),
+                                    size: size)
+        rightJoystickView = JoyStickView(frame: frame)
+        rightJoystickView.monitor = .xy(monitor: { report in
+            cl_joyscale.yaw = Float(applyJoystickCurve(position: report.x, range: size.width/2) * 0.1)
+            cl_joyscale.pitch = Float(applyJoystickCurve(position: report.y, range: size.width/2) * 0.05)
+        })
+        
+        rightJoystickView.movable = false
+        rightJoystickView.alpha = 0.75
+        rightJoystickView.baseAlpha = 0.25 // let the background bleed thru the base
+        rightJoystickView.baseImage = UIImage(named: "JoyStickBase")
+        rightJoystickView.handleImage = UIImage(named: "JoyStickHandle")
+        return rightJoystickView
     }
     
     @objc func buttonStack(rect: CGRect) -> UIStackView {
@@ -356,34 +419,6 @@ extension SDL_uikitviewcontroller {
             self.quickSaveButton.alpha = self.buttonStackExpanded ? 1 : 0
         }
         
-    }
-    
-}
-
-extension SDL_uikitviewcontroller: JoystickDelegate {
-    
-    func handleJoyStickPosition(x: CGFloat, y: CGFloat) {
-
-        if y > 0 {
-            cl_joyscale_y.0 = Int32(abs(y) * 60)
-            Key_Event(132, qboolean(1), qboolean(1))
-            Key_Event(133, qboolean(0), qboolean(1))
-        } else if y < 0 {
-            cl_joyscale_y.1 = Int32(abs(y) * 60)
-            Key_Event(132, qboolean(0), qboolean(1))
-            Key_Event(133, qboolean(1), qboolean(1))
-        } else {
-            cl_joyscale_y.0 = 0
-            cl_joyscale_y.1 = 0
-            Key_Event(132, qboolean(0), qboolean(1))
-            Key_Event(133, qboolean(0), qboolean(1))
-        }
-        
-        cl_joyscale_x.0 = Int32(x * 20)        
-    }
-    
-    func handleJoyStick(angle: CGFloat, displacement: CGFloat) {
-//        print("angle: \(angle) displacement: \(displacement)")
     }
     
 }

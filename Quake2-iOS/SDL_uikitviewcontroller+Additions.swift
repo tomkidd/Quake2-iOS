@@ -268,75 +268,75 @@ extension SDL_uikitviewcontroller {
 
     
     @objc func firePressed(sender: UIButton!) {
-        Key_Event(137, qboolean(1), qboolean(1))
+        Key_Event(Int32(K_CTRL.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func fireReleased(sender: UIButton!) {
-        Key_Event(137, qboolean(0), qboolean(1))
+        Key_Event(Int32(K_CTRL.rawValue), qboolean(0), qboolean(1))
     }
     
     @objc func jumpPressed(sender: UIButton!) {
-        Key_Event(32, qboolean(1), qboolean(1))
+        Key_Event(Int32(K_SPACE.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func jumpReleased(sender: UIButton!) {
-        Key_Event(32, qboolean(0), qboolean(1))
+        Key_Event(Int32(K_SPACE.rawValue), qboolean(0), qboolean(1))
     }
     
     @objc func tildePressed(sender: UIButton!) {
-//        Key_Event(32, qboolean(1), qboolean(1))
+//        Key_Event(Int32(K_SPACE.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func tildeReleased(sender: UIButton!) {
-//        Key_Event(32, qboolean(0), qboolean(1))
+//        Key_Event(Int32(K_SPACE.rawValue), qboolean(0), qboolean(1))
     }
     
     @objc func escapePressed(sender: UIButton!) {
-        Key_Event(27, qboolean(1), qboolean(1))
+        Key_Event(Int32(K_ESCAPE.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func escapeReleased(sender: UIButton!) {
-        Key_Event(27, qboolean(0), qboolean(1))
+        Key_Event(Int32(K_ESCAPE.rawValue), qboolean(0), qboolean(1))
     }
     
     @objc func quickSavePressed(sender: UIButton!) {
-        Key_Event(150, qboolean(1), qboolean(1))
+        Key_Event(Int32(K_F6.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func quickSaveReleased(sender: UIButton!) {
-        Key_Event(150, qboolean(0), qboolean(1))
+        Key_Event(Int32(K_F6.rawValue), qboolean(0), qboolean(1))
     }
     
     @objc func quickLoadPressed(sender: UIButton!) {
-        Key_Event(153, qboolean(1), qboolean(1))
+        Key_Event(Int32(K_F9.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func quickLoadReleased(sender: UIButton!) {
-        Key_Event(153, qboolean(0), qboolean(1))
+        Key_Event(Int32(K_F9.rawValue), qboolean(0), qboolean(1))
     }
     
     @objc func f1Pressed(sender: UIButton!) {
-        Key_Event(145, qboolean(1), qboolean(1))
+        Key_Event(Int32(K_F1.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func f1Released(sender: UIButton!) {
-        Key_Event(145, qboolean(0), qboolean(1))
+        Key_Event(Int32(K_F1.rawValue), qboolean(0), qboolean(1))
     }
     
     @objc func prevWeaponPressed(sender: UIButton!) {
-        Key_Event(183, qboolean(1), qboolean(1))
+        Key_Event(Int32(K_MWHEELDOWN.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func prevWeaponReleased(sender: UIButton!) {
-        Key_Event(183, qboolean(0), qboolean(1))
+        Key_Event(Int32(K_MWHEELDOWN.rawValue), qboolean(0), qboolean(1))
     }
     
     @objc func nextWeaponPressed(sender: UIButton!) {
-        Key_Event(184, qboolean(1), qboolean(1))
+        Key_Event(Int32(K_MWHEELUP.rawValue), qboolean(1), qboolean(1))
     }
     
     @objc func nextWeaponReleased(sender: UIButton!) {
-        Key_Event(184, qboolean(0), qboolean(1))
+        Key_Event(Int32(K_MWHEELUP.rawValue), qboolean(0), qboolean(1))
     }
 
 

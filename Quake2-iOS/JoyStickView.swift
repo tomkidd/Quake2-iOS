@@ -290,12 +290,21 @@ class JoyStickViewGestureRecognizer: UIGestureRecognizer {
         guard touch != nil else { return .zero }
         return touch!.location(in: view)
     }
+    
+    /**
+     Get touch offset
+     - parameter view: the view in which to return offset coordinates
+     */
+    public func offset(in view: UIView?) -> CGVector {
+        guard let last = lastLocation, let first = firstLocation else { return .zero }
+        return last - first
+    }
 }
 
 extension JoyStickView {
     @objc private func gestureRecognizerChanged(recognizer: JoyStickViewGestureRecognizer) {
         if recognizer.state == .began || recognizer.state == .changed {
-            updateLocation(location: recognizer.location(in: superview!))
+            handleMovement(location: recognizer.location(in: superview!), delta: recognizer.offset(in: superview!))
         } else if recognizer.state == .ended {
             homePosition()
             if recognizer.wasTap, let block = tappedBlock {
@@ -433,15 +442,14 @@ extension JoyStickView {
     }
     
     /**
-     Update the location of the joystick based on the given touch location. Resulting behavior depends on `movable`
-     setting.
-     - parameter location: the current handle position. NOTE: in coordinates of the superview
+     Handle joystick movement. Resulting behavior depends on `movable` setting.
+     - parameter location: the current handle position, in coordinates of the superview
+     - parameter delta: the current touch offset, in coordinates of the superview
      */
-    private func updateLocation(location: CGPoint) {
+    private func handleMovement(location: CGPoint, delta: CGVector) {
         guard let superview = self.superview else { return }
         guard superview.bounds.contains(location) else { return }
 
-        let delta = location - frame.mid
         let newDisplacement = delta.magnitude / radius
 
         // Calculate pointing angle used displacements. NOTE: using this ordering of dx, dy to atan2f to obtain

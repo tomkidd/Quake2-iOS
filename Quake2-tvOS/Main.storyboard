@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="appleTV" orientation="landscape">
-        <adaptation id="light"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
     <dependencies>
         <deployment identifier="tvOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,7 +32,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eor-e5-7M8">
-                                <rect key="frame" x="1370" y="60" width="440" height="292"/>
+                                <rect key="frame" x="1384" y="60" width="440" height="292"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q u a k e  ii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1s-G9-Y44">
                                         <rect key="frame" x="0.0" y="0.0" width="440" height="85"/>
@@ -54,7 +52,7 @@
                                         <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-Gj-xg9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-Gj-xg9">
                                         <rect key="frame" x="0.0" y="85" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
                                         <state key="normal" title="new game">
@@ -64,7 +62,7 @@
                                             <segue destination="h0z-nt-sVd" kind="show" id="tvD-Vk-2Ys"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSs-6i-98s">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSs-6i-98s">
                                         <rect key="frame" x="0.0" y="154" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
                                         <state key="normal" title="load game">
@@ -74,7 +72,7 @@
                                             <segue destination="3mE-73-FRT" kind="show" id="w5G-xU-cO0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcJ-eO-fk8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcJ-eO-fk8">
                                         <rect key="frame" x="0.0" y="223" width="440" height="69"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="48"/>
                                         <state key="normal" title="demo">
@@ -87,6 +85,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="qC1-tp-PXt"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Eor-e5-7M8" secondAttribute="trailing" id="0NW-eb-wha"/>
@@ -97,7 +96,6 @@
                             </constraint>
                             <constraint firstAttribute="bottom" secondItem="WE9-jb-ZdU" secondAttribute="bottom" id="hwM-co-d4n"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="qC1-tp-PXt"/>
                     </view>
                     <navigationItem key="navigationItem" id="bJL-Du-FQP"/>
                     <connections>
@@ -130,12 +128,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOI-0W-Afg">
-                                <rect key="frame" x="94" y="983" width="241" height="87"/>
+                                <rect key="frame" x="84" y="983" width="241" height="87"/>
                                 <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="74"/>
                                 <color key="textColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Y3-kc-ye4"/>
                         <color key="backgroundColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="iOI-0W-Afg" secondAttribute="bottom" constant="10" id="4WM-ih-oce"/>
@@ -145,7 +144,6 @@
                             <constraint firstItem="12b-vS-7K6" firstAttribute="leading" secondItem="zay-pc-Dpq" secondAttribute="leading" id="bdI-Zw-OIt"/>
                             <constraint firstItem="12b-vS-7K6" firstAttribute="centerY" secondItem="zay-pc-Dpq" secondAttribute="centerY" id="rw7-rJ-Efc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Y3-kc-ye4"/>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="12b-vS-7K6" id="qOv-XR-bzJ"/>
@@ -192,9 +190,9 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f0f-y2-c2z">
-                                <rect key="frame" x="849" y="385" width="222" height="311"/>
+                                <rect key="frame" x="849" y="384.5" width="222" height="311"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phz-D5-rfO">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phz-D5-rfO">
                                         <rect key="frame" x="44" y="0.0" width="134" height="97"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="72"/>
                                         <state key="normal" title="easy">
@@ -204,7 +202,7 @@
                                             <action selector="easyDifficulty:" destination="h0z-nt-sVd" eventType="primaryActionTriggered" id="SWc-lL-ahr"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyM-ch-HqE">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyM-ch-HqE">
                                         <rect key="frame" x="0.0" y="107" width="222" height="97"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="72"/>
                                         <state key="normal" title="normal">
@@ -214,8 +212,8 @@
                                             <action selector="normalDifficulty:" destination="h0z-nt-sVd" eventType="primaryActionTriggered" id="oLS-CO-wj9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TW-h4-0A4">
-                                        <rect key="frame" x="39" y="214" width="145" height="97"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TW-h4-0A4">
+                                        <rect key="frame" x="38.5" y="214" width="145" height="97"/>
                                         <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="72"/>
                                         <state key="normal" title="hard">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -227,6 +225,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="jIC-8m-7cF"/>
                         <color key="backgroundColor" red="0.52561199670000003" green="0.86642056700000003" blue="0.69806873800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="clm-3X-Zgg" firstAttribute="leading" secondItem="BgP-W1-HJj" secondAttribute="leading" id="DBE-Hm-WBC"/>
@@ -236,7 +235,6 @@
                             <constraint firstItem="f0f-y2-c2z" firstAttribute="centerY" secondItem="BgP-W1-HJj" secondAttribute="centerY" id="plM-VI-Tk2"/>
                             <constraint firstItem="clm-3X-Zgg" firstAttribute="centerX" secondItem="BgP-W1-HJj" secondAttribute="centerX" id="teV-hu-B6B"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="jIC-8m-7cF"/>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="clm-3X-Zgg" id="oft-1T-MfX"/>
@@ -253,7 +251,7 @@
         <!--Saved Game View Controller-->
         <scene sceneID="FL6-d0-LGm">
             <objects>
-                <viewController id="3mE-73-FRT" customClass="SavedGameViewController" customModule="RTCW_SP_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3mE-73-FRT" customClass="SavedGameViewController" customModule="Quake2_tvOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s2z-pn-jqI"/>
                         <viewControllerLayoutGuide type="bottom" id="M8g-TW-8wR"/>
@@ -266,8 +264,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3sX-c9-5ah">
-                                <rect key="frame" x="110" y="80" width="1200" height="775"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="100" y="80" width="1200" height="775"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="775" id="LnR-ZG-aZ4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1200" id="cOp-jy-8Jj"/>
@@ -280,8 +279,8 @@
                                     <outlet property="delegate" destination="3mE-73-FRT" id="C23-7u-gLm"/>
                                 </connections>
                             </tableView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue8-Yw-jCH">
-                                <rect key="frame" x="1318" y="80" width="129" height="59"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue8-Yw-jCH">
+                                <rect key="frame" x="1308" y="80" width="129" height="59"/>
                                 <fontDescription key="fontDescription" name="DpQuake" family="DpQuake" pointSize="40"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="LOAD">
@@ -292,6 +291,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="gAB-dP-Ik6"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3sX-c9-5ah" firstAttribute="leading" secondItem="gAB-dP-Ik6" secondAttribute="leading" constant="20" id="0Co-9f-fIj"/>
@@ -306,7 +306,6 @@
                             <constraint firstItem="k81-eM-yLI" firstAttribute="width" secondItem="k81-eM-yLI" secondAttribute="height" multiplier="16:9" id="r6e-Yj-eZa"/>
                             <constraint firstItem="ue8-Yw-jCH" firstAttribute="leading" secondItem="3sX-c9-5ah" secondAttribute="trailing" constant="8" id="x0e-uF-r3k"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gAB-dP-Ik6"/>
                     </view>
                     <connections>
                         <outlet property="loadGameButton" destination="ue8-Yw-jCH" id="kEi-CN-VOv"/>
@@ -318,10 +317,10 @@
             <point key="canvasLocation" x="-1205" y="2794"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vu2-zQ-5dr"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="quake2background" width="1920" height="1080"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ogQ-yk-2f9"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -29,7 +29,10 @@ import CoreGraphics
     /// Optional monitor which will receive updates as the joystick position changes. Supports polar and cartesian
     /// reporting. The function to call with a position report is held in the enumeration value.
     public var monitor: JoyStickViewMonitorKind = .none
-
+    
+    /// Optional block to be called upon a tap
+    public var tappedBlock: (() -> Void)?
+    
     /// Optional rectangular region that restricts where the handle may move. The region should be defined in
     /// this view's coordinates. For instance, to constrain the handle in the Y direction with a UIView of size 100x100,
     /// use `CGRect(x: 50, y: 0, width: 1, height: 100)`
@@ -209,6 +212,19 @@ import CoreGraphics
  */
 class JoyStickViewGestureRecognizer: UIGestureRecognizer {
     private var touch: UITouch?
+    private var firstTimestamp: TimeInterval?
+    private var lastTimestamp: TimeInterval?
+    private var firstLocation: CGPoint?
+    private var lastLocation: CGPoint?
+    
+    public var wasTap: Bool {
+        get {
+            if let start = firstTimestamp, let end = lastTimestamp, let startPoint = firstLocation, let lastPoint = lastLocation {
+                return end - start < 0.1 && max(abs(startPoint.x-lastPoint.x), abs(startPoint.y-lastPoint.y)) < 2
+            }
+            return false
+        }
+    }
     
     /**
      A touch began in the joystick view
@@ -217,6 +233,8 @@ class JoyStickViewGestureRecognizer: UIGestureRecognizer {
      */
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         touch = touches.first
+        firstTimestamp = touch?.timestamp
+        firstLocation = touch?.location(in: nil)
         state = .began
     }
     
@@ -226,6 +244,7 @@ class JoyStickViewGestureRecognizer: UIGestureRecognizer {
      - parameter event: additional event info (ignored)
      */
     public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        lastLocation = touch?.location(in: nil)
         state = .changed
     }
 
@@ -236,8 +255,9 @@ class JoyStickViewGestureRecognizer: UIGestureRecognizer {
      - parameter event: additional event info (ignored)
      */
     public override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        lastTimestamp = touch?.timestamp
+        lastLocation = touch?.location(in: nil)
         state = .ended
-        touch = nil
     }
 
     /**
@@ -246,8 +266,20 @@ class JoyStickViewGestureRecognizer: UIGestureRecognizer {
      - parameter event: additional event info (ignored)
      */
     public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        lastTimestamp = touch?.timestamp
+        lastLocation = touch?.location(in: nil)
         state = .ended
+    }
+    
+    /**
+     Clear state
+     */
+    public override func reset() {
         touch = nil
+        firstTimestamp = nil
+        lastTimestamp = nil
+        firstLocation = nil
+        lastLocation = nil
     }
     
     /**
@@ -266,6 +298,9 @@ extension JoyStickView {
             updateLocation(location: recognizer.location(in: superview!))
         } else if recognizer.state == .ended {
             homePosition()
+            if recognizer.wasTap, let block = tappedBlock {
+                block()
+            }
         }
     }
     

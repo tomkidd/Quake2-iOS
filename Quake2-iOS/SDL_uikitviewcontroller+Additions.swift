@@ -234,6 +234,11 @@ extension SDL_uikitviewcontroller {
             cl_joyscale.pitch = Float(applyJoystickCurve(position: report.y, range: size.width/2) * 0.05)
         })
         
+        rightJoystickView.tappedBlock = {
+            Key_Event(Int32(K_CTRL.rawValue), qboolean(1), qboolean(1))
+            Key_Event(Int32(K_CTRL.rawValue), qboolean(0), qboolean(1))
+        }
+        
         rightJoystickView.movable = false
         rightJoystickView.alpha = 0.75
         rightJoystickView.baseAlpha = 0.25 // let the background bleed thru the base

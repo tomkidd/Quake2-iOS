@@ -80,6 +80,22 @@ class GameViewController: UIViewController {
                 argv.append(self.selectedSavedGame)
             }
             
+            let screenBounds = UIScreen.main.bounds
+            let screenScale:CGFloat = UIScreen.main.scale
+            let screenSize = CGSize(width: screenBounds.size.width * screenScale, height: screenBounds.size.height * screenScale)
+
+            argv.append("+set")
+            argv.append("r_mode")
+            argv.append("-1")
+
+            argv.append("+set")
+            argv.append("r_customwidth")
+            argv.append("\(screenSize.width)")
+
+            argv.append("+set")
+            argv.append("r_customheight")
+            argv.append("\(screenSize.height)")
+            
             var commandLine = ""
             
             for arg in argv {

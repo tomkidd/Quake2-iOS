@@ -1091,8 +1091,8 @@
 		8D1107310486CEB800E47090 /* Quake2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quake2-Info.plist"; sourceTree = "<group>"; };
 		A13234582209FFD000884138 /* Quake2mp1LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quake2mp1LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A13234592209FFD000884138 /* Quake2mp2LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quake2mp2LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A13B694F21D574A000AA2472 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = music; path = ../../../Dropbox/Files/quake2/music; sourceTree = "<group>"; };
-		A13B695021D574A000AA2472 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = "../../../Dropbox/Files/quake2/quake2-vanilla/baseq2"; sourceTree = "<group>"; };
+		A13B694F21D574A000AA2472 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = music; path = ../../../.yq2/music; sourceTree = "<group>"; };
+		A13B695021D574A000AA2472 /* baseq2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq2; path = ../../../.yq2/baseq2; sourceTree = "<group>"; };
 		A142F96822138D02006A2A17 /* SavedGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGameViewController.swift; sourceTree = "<group>"; };
 		A15BF4D721FCDD7A005F4B74 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
 		A15BF4D821FCDD7A005F4B74 /* signalhandler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = signalhandler.c; sourceTree = "<group>"; };
@@ -1505,8 +1505,8 @@
 		A1C123362203B31D00EAD9CB /* client.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
 		A1C123372203B31D00EAD9CB /* hud.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hud.c; sourceTree = "<group>"; };
 		A1C123382203B31D00EAD9CB /* view.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = view.c; sourceTree = "<group>"; };
-		A1C123392203B34F00EAD9CB /* xatrix */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xatrix; path = ../../../Dropbox/Files/quake2/xatrix; sourceTree = "<group>"; };
-		A1C1233A2203B34F00EAD9CB /* rogue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rogue; path = ../../../Dropbox/Files/quake2/rogue; sourceTree = "<group>"; };
+		A1C123392203B34F00EAD9CB /* xatrix */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xatrix; path = ../../../.yq2/xatrix; sourceTree = "<group>"; };
+		A1C1233A2203B34F00EAD9CB /* rogue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rogue; path = ../../../.yq2/rogue; sourceTree = "<group>"; };
 		A1C123DD2203B37600EAD9CB /* Quake2mp1-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp1-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C124C02203FE2600EAD9CB /* Quake2mp2-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quake2mp2-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C125042204F73000EAD9CB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -3241,7 +3241,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					A1B80A4521F96DAA00560711 = {
 						DevelopmentTeam = 9UY8SFDNQ8;
@@ -5139,6 +5139,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -5194,6 +5195,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

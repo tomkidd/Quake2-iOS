@@ -256,8 +256,12 @@ extern client_static_t	cls;
 extern int num_power_sounds;
 
 #ifdef IOS
-int cl_joyscale_x[2];
-int cl_joyscale_y[2];
+struct cl_joyscale_t {
+    float yaw;
+    float pitch;
+    float walk;
+    float strafe;
+} cl_joyscale;
 #endif
 
 /* cvars */

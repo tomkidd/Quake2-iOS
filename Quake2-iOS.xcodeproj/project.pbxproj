@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C963DDC26BB446500F43256 /* JoyStickViewMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C963DDB26BB446400F43256 /* JoyStickViewMonitor.swift */; };
+		4C963DDD26BB447000F43256 /* JoyStickViewMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C963DDB26BB446400F43256 /* JoyStickViewMonitor.swift */; };
+		4C963DDE26BB447100F43256 /* JoyStickViewMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C963DDB26BB446400F43256 /* JoyStickViewMonitor.swift */; };
+		4C963DDF26BB447200F43256 /* JoyStickViewMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C963DDB26BB446400F43256 /* JoyStickViewMonitor.swift */; };
 		A132345A2209FFE200884138 /* Quake2mp1LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13234582209FFD000884138 /* Quake2mp1LaunchScreen.storyboard */; };
 		A132345B2209FFE500884138 /* Quake2mp2LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13234592209FFD000884138 /* Quake2mp2LaunchScreen.storyboard */; };
 		A142F96922138D03006A2A17 /* SavedGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142F96822138D02006A2A17 /* SavedGameViewController.swift */; };
@@ -1088,6 +1092,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C963DDB26BB446400F43256 /* JoyStickViewMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoyStickViewMonitor.swift; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Quake2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quake2-Info.plist"; sourceTree = "<group>"; };
 		A13234582209FFD000884138 /* Quake2mp1LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quake2mp1LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A13234592209FFD000884138 /* Quake2mp2LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quake2mp2LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -2351,6 +2356,7 @@
 				A1C1267C220908DF00EAD9CB /* Extensions.swift */,
 				A15BF75F21FD0819005F4B74 /* GameViewController.swift */,
 				A1C1205621FE821900EAD9CB /* JoyStickView.swift */,
+				4C963DDB26BB446400F43256 /* JoyStickViewMonitor.swift */,
 				A15BF74A21FCF7E3005F4B74 /* Main.storyboard */,
 				A15BF75D21FD0604005F4B74 /* MainMenuViewController.swift */,
 				A16571B8220B9FD900FE9FC9 /* OptionsViewController.swift */,
@@ -3518,6 +3524,7 @@
 				A15BF73521FCDD7A005F4B74 /* sdl.c in Sources */,
 				A15BF64521FCDD7A005F4B74 /* supertank.c in Sources */,
 				A15BF67D21FCDD7A005F4B74 /* cmdparser.c in Sources */,
+				4C963DDC26BB446500F43256 /* JoyStickViewMonitor.swift in Sources */,
 				A1C1267D220908DF00EAD9CB /* Extensions.swift in Sources */,
 				A15BF65121FCDD7A005F4B74 /* flipper.c in Sources */,
 				A15BF70721FCDD7A005F4B74 /* gl3_surf.c in Sources */,
@@ -3755,6 +3762,7 @@
 				A1C1237E2203B37600EAD9CB /* cl_network.c in Sources */,
 				A1C123802203B37600EAD9CB /* videomenu.c in Sources */,
 				A1C124052203B4B400EAD9CB /* medic.c in Sources */,
+				4C963DDE26BB447100F43256 /* JoyStickViewMonitor.swift in Sources */,
 				A1C123832203B37600EAD9CB /* CoreGraphics+Additions.swift in Sources */,
 				A1C123E92203B49200EAD9CB /* g_monster.c in Sources */,
 				A1C123F02203B49200EAD9CB /* g_utils.c in Sources */,
@@ -3946,6 +3954,7 @@
 				A1C1247F2203FE2600EAD9CB /* unzip.c in Sources */,
 				A1C124F72203FF4900EAD9CB /* client.c in Sources */,
 				A1C124802203FE2600EAD9CB /* frame.c in Sources */,
+				4C963DDF26BB447200F43256 /* JoyStickViewMonitor.swift in Sources */,
 				A1C124812203FE2600EAD9CB /* misc.c in Sources */,
 				A1C124DF2203FF2D00EAD9CB /* boss31.c in Sources */,
 				A1C124822203FE2600EAD9CB /* argproc.c in Sources */,
@@ -4336,6 +4345,7 @@
 				A1F1116A23F740E10030D586 /* sw_main.c in Sources */,
 				A1F110C823F740B00030D586 /* qmenu.c in Sources */,
 				A1F110C923F740B00030D586 /* cvar.c in Sources */,
+				4C963DDD26BB447000F43256 /* JoyStickViewMonitor.swift in Sources */,
 				A1F110CA23F740B00030D586 /* netchan.c in Sources */,
 				A1F1116423F740E10030D586 /* sw_aclip.c in Sources */,
 				A1F110CB23F740B00030D586 /* system.c in Sources */,
